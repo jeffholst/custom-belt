@@ -6,6 +6,19 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+         - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which project are you reporting this issue for?
+      options:
+        - docs (Default)
+        - custom-belt-lib
+        - vue-custom-belt
+        - other
+        - not sure
+    validations:
+      required: true
   - type: textarea
     id: bug-description
     attributes:
