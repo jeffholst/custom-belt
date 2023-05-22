@@ -4,7 +4,20 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for your interest in the project and taking the time to fill out this feature report!å
+        Thanks for your interest in the project and taking the time to fill out this feature report!
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Which project are you requesting this feature for?
+      options:
+        - docs (Default)
+        - custom-belt-lib
+        - vue-custom-belt
+        - other
+        - not sure
+    validations:
+      required: true
   - type: textarea
     id: feature-description
     attributes:
