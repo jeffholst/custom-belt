@@ -16,7 +16,7 @@ Custom Belt is a JavaScript library and application to easily create any style m
 - [Demo](https://jeffholst.github.io/custom-belt/demo.html): easily create custom belts online and download the images to be used directly in your own projects
 - [Documentation](https://jeffholst.github.io/custom-belt/introduction/what-is-custom-belt.html): learn how the library can be used to programmatically create custom belts in your own applications
 
-🐞 Report Bugs and 🚀 Feature Requests
+🐞 [Report Bugs](https://github.com/jeffholst/custom-belt/issues/new?assignees=&labels=bug%3A+pending+triage&projects=&template=bug_report.yml) and 🚀 [Feature Requests](https://github.com/jeffholst/custom-belt/issues/new?assignees=&labels=&projects=&template=feature_request.yml)
 
 ## ✨ Hightlights
 
@@ -51,7 +51,7 @@ and more ...
 ## 📁 Project Structure
 
 - `apps/docs`: a [VitePress](https://vitepress.dev/) documentation and demo site for Custom Library
-- `apps/vue-test`: quickly mock up and test vue library components
+- `apps/vue-playgound`: quickly mock up and test vue library components
 - `packages/custom-belt-lib`: the Custom Belt library
 - `packages/vue-custom-belt`: Vue component for Custom Belt
 
