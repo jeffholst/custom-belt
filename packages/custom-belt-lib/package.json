@@ -3,29 +3,6 @@
   "author": "Jeff Holst",
   "version": "0.0.1",
   "private": false,
-  "description": "Todo: update description",
-  "homepage": "Todo: update homepage",
-  "bugs": "Todo: update bugs",
-  "repostitory": "Todo: update repository",
-  "keywords": [],
-  "license": "MIT",
-  "funding": {
-    "type": "individual",
-    "url": "https://patreon.com/user?u=91003145"
-  },
-  "files": [
-    "dist"
-  ],
-  "type": "commonjs",
-  "main": "./dist/custom-belt-lib.umd.cjs",
-  "module": "./dist/custom-belt-lib.js",
-  "exports": {
-    ".": {
-      "import": "./dist/custom-belt-lib.js",
-      "require": "./dist/custom-belt-lib.umd.cjs"
-    }
-  },
-  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
