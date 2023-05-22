@@ -1,6 +1,6 @@
-[vue-custom-belt](README.md) / Modules
+[custom-belt-lib](README.md) / Modules
 
-# vue-custom-belt
+# custom-belt-lib
 
 ## Table of contents
 

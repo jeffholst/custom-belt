@@ -16,7 +16,7 @@
   "files": [
     "dist"
   ],
-  "type": "module",
+  "type": "commonjs",
   "main": "./dist/custom-belt-lib.umd.cjs",
   "module": "./dist/custom-belt-lib.js",
   "exports": {
@@ -29,10 +29,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "vitest --root src/",
-    "typedoc": "typedoc --tsconfig ./tsconfig-typedoc.json"
+    "build:docs": "typedoc --tsconfig ./tsconfig-typedoc.json && gulp copyFiles",
+    "test": "vitest --root src/"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
     "typedoc": "^0.24.7",
     "typedoc-plugin-markdown": "^3.15.3",
     "typedoc-plugin-missing-exports": "^2.0.0",

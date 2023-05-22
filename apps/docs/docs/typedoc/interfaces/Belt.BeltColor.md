@@ -1,4 +1,4 @@
-[vue-custom-belt](../README.md) / [Modules](../modules.md) / [Belt](../modules/Belt.md) / BeltColor
+[custom-belt-lib](../README.md) / [Modules](../modules.md) / [Belt](../modules/Belt.md) / BeltColor
 
 # Interface: BeltColor
 
@@ -21,9 +21,9 @@ Used to assign/lookup friendly names to hex colors
 
 #### Defined in
 
-[Belt.ts:104](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L104)
+[Belt.ts:104](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/Belt.ts#L104)
 
----
+___
 
 ### name
 
@@ -31,4 +31,4 @@ Used to assign/lookup friendly names to hex colors
 
 #### Defined in
 
-[Belt.ts:103](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L103)
+[Belt.ts:103](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/Belt.ts#L103)

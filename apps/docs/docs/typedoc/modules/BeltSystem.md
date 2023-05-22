@@ -1,4 +1,4 @@
-[vue-custom-belt](../README.md) / [Modules](../modules.md) / BeltSystem
+[custom-belt-lib](../README.md) / [Modules](../modules.md) / BeltSystem
 
 # Module: BeltSystem
 

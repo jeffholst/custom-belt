@@ -9,9 +9,11 @@
     "format": "prettier --write docs/",
     "dev": "vitepress dev docs --open",
     "build": "vitepress build docs",
+    "build:docs": "cd ../../packages/custom-belt-lib && npm run build:docs",
     "preview": "vitepress preview docs"
   },
   "dependencies": {
+    "gulp": "^4.0.2",
     "vue": "^3.2.47"
   },
   "devDependencies": {

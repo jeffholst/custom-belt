@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "build:docs": "cd packages/custom-belt-lib && npm run typedoc",
+    "build:docs": "cd packages/custom-belt-lib && npm run build:docs",
     "build:ghp": "cd apps/docs && npm run build",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
