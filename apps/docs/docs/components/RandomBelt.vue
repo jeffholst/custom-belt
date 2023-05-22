@@ -5,7 +5,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { BeltType, CustomBelt, getBeltPropsRandom } from 'vue-custom-belt';
+
+import CustomBelt from '../../../../packages/vue-custom-belt/src/components/CustomBelt.vue';
+import { BeltType, getBeltPropsRandom } from '../../../../packages/custom-belt-lib/src/Belt';
 
 defineProps({ showRefresh: Boolean });
 

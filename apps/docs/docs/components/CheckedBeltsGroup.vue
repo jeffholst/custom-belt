@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { BeltType } from 'vue-custom-belt';
+
+import { BeltType } from '../../../../packages/custom-belt-lib/src/Belt';
 
 const props = defineProps<{
   callback: Function;

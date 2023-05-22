@@ -61,19 +61,20 @@
 
 <script setup lang="ts">
 import { ref, watch, computed } from 'vue';
+
+import CustomBelt from '../../../../packages/vue-custom-belt/src/components/CustomBelt.vue';
+import BeltSystemJSON_IBJJF from '../../../../packages/custom-belt-lib/src/belt-systems/IBJJF.json';
+import { BeltSystem } from '../../../../packages/custom-belt-lib/src/BeltSystem';
 import {
-  CustomBelt,
+  StripePosition,
   getBeltProps,
   getBeltPropsRandom,
-  BeltSystemJSON_IBJJF,
-  BeltSystem,
+  getBeltColorCount,
   type Belt,
   BeltType,
-  // @ts-ignore
-  BeltTypeStandard,
-  StripePosition,
-  getBeltColorCount
-} from 'vue-custom-belt';
+  BeltTypeStandard
+} from '../../../../packages/custom-belt-lib/src/Belt';
+
 import CopyToClipboard from './CopyToClipboard.vue';
 import SelectControl from './SelectControl.vue';
 import CheckedBeltsGroup from './CheckedBeltsGroup.vue';
