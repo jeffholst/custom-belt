@@ -23,7 +23,7 @@ RDF metadata used in SVG tag
 
 [Belt.ts:199](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L199)
 
-___
+---
 
 ### title
 

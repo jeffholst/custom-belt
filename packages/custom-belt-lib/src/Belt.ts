@@ -1,5 +1,5 @@
 //import { version } from "../package.json"
-const version = "0.0.0"
+const version = "0.0.0";
 /*
  *  ___
  * | __|_ _ _  _ _ __  ___
@@ -73,26 +73,26 @@ export enum StripePosition {
  * @interface
  */
 export interface Belt {
-  system: string
-  id: number
-  name: string
-  sortOrder: number
-  type: BeltType
-  color1: string
-  color2: string
-  color3: string
-  borderColor: string
-  hasPatch: boolean
-  patchColor: string
-  patchBorderColor: string
-  hasProfessorPatch: boolean
-  professorPatchColor: string
-  professorBorderColor: string
-  stripeColor: string
-  stripeCount: number
-  stripePosition: StripePosition
-  minStripes: number
-  maxStripes: number
+  system: string;
+  id: number;
+  name: string;
+  sortOrder: number;
+  type: BeltType;
+  color1: string;
+  color2: string;
+  color3: string;
+  borderColor: string;
+  hasPatch: boolean;
+  patchColor: string;
+  patchBorderColor: string;
+  hasProfessorPatch: boolean;
+  professorPatchColor: string;
+  professorBorderColor: string;
+  stripeColor: string;
+  stripeCount: number;
+  stripePosition: StripePosition;
+  minStripes: number;
+  maxStripes: number;
 }
 
 /**
@@ -100,8 +100,8 @@ export interface Belt {
  * @interface
  */
 export interface BeltColor {
-  name: string
-  hex: string
+  name: string;
+  hex: string;
 }
 
 /**
@@ -109,85 +109,85 @@ export interface BeltColor {
  * @interface
  */
 export interface BeltProps {
-  version: string
-  id: string
-  belt: Belt
-  border: string
-  hasPatch: boolean
-  patch: string
-  patchBorder: string
-  professorPatch: string
-  professorBorder: string
-  hasProfessorPatch: boolean
-  stripeCount: number
-  stripePosition: StripePosition
-  stripe1: string
-  stripe2: string
-  stripe3: string
-  stripe4: string
-  stripe5: string
-  stripe6: string
-  stripe7: string
-  stripe8: string
-  stripe9: string
-  stripe10: string
-  s1l1: string
-  s1l2a: string
-  s1l2b: string
-  s1l3: string
-  s2l1: string
-  s2l2a: string
-  s2l2b: string
-  s2l3: string
-  s3l1: string
-  s3l2a: string
-  s3l2b: string
-  s3l3: string
-  s4l1: string
-  s4l2a: string
-  s4l2b: string
-  s4l3: string
-  s5l1: string
-  s5l2a: string
-  s5l2b: string
-  s5l3: string
-  s6l1: string
-  s6l2a: string
-  s6l2b: string
-  s6l3: string
-  s7l1: string
-  s7l2a: string
-  s7l2b: string
-  s7l3: string
-  s8l1: string
-  s8l2a: string
-  s8l2b: string
-  s8l3: string
-  s9l1: string
-  s9l2a: string
-  s9l2b: string
-  s9l3: string
-  s10l1: string
-  s10l2a: string
-  s10l2b: string
-  s10l3: string
-  s11l1: string
-  s11l2a: string
-  s11l2b: string
-  s11l3: string
-  s12l1: string
-  s12l2a: string
-  s12l2b: string
-  s12l3: string
-  s13l1: string
-  s13l2a: string
-  s13l2b: string
-  s13l3: string
-  transitionCSS: string
-  beltRDF: BeltRDF
-  randomSettings: RandomSettings
-  refreshInterval: number
-  callback: Function | null
+  version: string;
+  id: string;
+  belt: Belt;
+  border: string;
+  hasPatch: boolean;
+  patch: string;
+  patchBorder: string;
+  professorPatch: string;
+  professorBorder: string;
+  hasProfessorPatch: boolean;
+  stripeCount: number;
+  stripePosition: StripePosition;
+  stripe1: string;
+  stripe2: string;
+  stripe3: string;
+  stripe4: string;
+  stripe5: string;
+  stripe6: string;
+  stripe7: string;
+  stripe8: string;
+  stripe9: string;
+  stripe10: string;
+  s1l1: string;
+  s1l2a: string;
+  s1l2b: string;
+  s1l3: string;
+  s2l1: string;
+  s2l2a: string;
+  s2l2b: string;
+  s2l3: string;
+  s3l1: string;
+  s3l2a: string;
+  s3l2b: string;
+  s3l3: string;
+  s4l1: string;
+  s4l2a: string;
+  s4l2b: string;
+  s4l3: string;
+  s5l1: string;
+  s5l2a: string;
+  s5l2b: string;
+  s5l3: string;
+  s6l1: string;
+  s6l2a: string;
+  s6l2b: string;
+  s6l3: string;
+  s7l1: string;
+  s7l2a: string;
+  s7l2b: string;
+  s7l3: string;
+  s8l1: string;
+  s8l2a: string;
+  s8l2b: string;
+  s8l3: string;
+  s9l1: string;
+  s9l2a: string;
+  s9l2b: string;
+  s9l3: string;
+  s10l1: string;
+  s10l2a: string;
+  s10l2b: string;
+  s10l3: string;
+  s11l1: string;
+  s11l2a: string;
+  s11l2b: string;
+  s11l3: string;
+  s12l1: string;
+  s12l2a: string;
+  s12l2b: string;
+  s12l3: string;
+  s13l1: string;
+  s13l2a: string;
+  s13l2b: string;
+  s13l3: string;
+  transitionCSS: string;
+  beltRDF: BeltRDF;
+  randomSettings: RandomSettings;
+  refreshInterval: number;
+  callback: Function | null;
 }
 
 /**
@@ -195,8 +195,8 @@ export interface BeltProps {
  * @interface
  */
 export interface BeltRDF {
-  title: string
-  about: string
+  title: string;
+  about: string;
 }
 
 /**
@@ -204,11 +204,11 @@ export interface BeltRDF {
  * @interface
  */
 export interface RandomSettings {
-  hasPatch: boolean | undefined
-  hasProfessorPatch: boolean | undefined
-  stripeCount: number | undefined
-  stripePosition: StripePosition | undefined
-  includeBelts: Array<BeltType> | undefined
+  hasPatch: boolean | undefined;
+  hasProfessorPatch: boolean | undefined;
+  stripeCount: number | undefined;
+  stripePosition: StripePosition | undefined;
+  includeBelts: Array<BeltType> | undefined;
 }
 
 /*
@@ -218,17 +218,17 @@ export interface RandomSettings {
  * |___/\___|_| \__,_|\_,_|_|\__/__/
  */
 
-const AboutURL = "https://github.com/jeffholst/vue-custom-belt" // about URL
-const UniqueIDPrefix = "custom-belt-" // prefix for unique ID generation
+const AboutURL = "https://github.com/jeffholst/vue-custom-belt"; // about URL
+const UniqueIDPrefix = "custom-belt-"; // prefix for unique ID generation
 
 /** Default color when no color provided */
-export const DefaultColor = "#FF0000"
+export const DefaultColor = "#FF0000";
 /** Maximum number of stripes a belt may have */
-export const MaximumStripeCount = 10
+export const MaximumStripeCount = 10;
 /** Minimum number of stripes */
-export const MinimumStripeCount = 0
+export const MinimumStripeCount = 0;
 /** Default stripe position */
-export const StripePositionDefault = StripePosition.Right
+export const StripePositionDefault = StripePosition.Right;
 
 /*
  *  ___                   _     ___             _   _
@@ -244,12 +244,12 @@ export const StripePositionDefault = StripePosition.Right
  * @return {BeltProps[]} combined array of BeltProps[] arrays
  */
 export const combineBeltProps = (beltProps: BeltProps[][]): BeltProps[] => {
-  let combinedBeltProps: BeltProps[] = []
+  let combinedBeltProps: BeltProps[] = [];
   beltProps.forEach((beltProp) => {
-    combinedBeltProps = combinedBeltProps.concat(beltProp)
-  })
-  return combinedBeltProps
-}
+    combinedBeltProps = combinedBeltProps.concat(beltProp);
+  });
+  return combinedBeltProps;
+};
 
 /**
  * Create new Belt object
@@ -316,12 +316,12 @@ export const getBelt = (
     stripePosition: stripePosition ? stripePosition : StripePositionDefault,
     minStripes: minStripes ? minStripes : 0,
     maxStripes: maxStripes ? maxStripes : 4,
-  }
+  };
 
-  validateBelt(belt)
+  validateBelt(belt);
 
-  return belt
-}
+  return belt;
+};
 
 // Todo: use in custom-belt
 /**
@@ -330,26 +330,26 @@ export const getBelt = (
  * @return {number} number of colors in beltType
  */
 export const getBeltColorCount = (beltType: BeltType): number | undefined => {
-  let colorCount: number
+  let colorCount: number;
   switch (beltType) {
     case BeltType.Solid:
-      colorCount = 1
-      break
+      colorCount = 1;
+      break;
     case BeltType.Coral:
     case BeltType.Split:
     case BeltType.Checkered:
-      colorCount = 2
-      break
+      colorCount = 2;
+      break;
     case BeltType.Striped:
-      colorCount = 3
-      break
+      colorCount = 3;
+      break;
     case BeltType.Crazy:
-      colorCount = 3
-      break
+      colorCount = 3;
+      break;
   }
 
-  return colorCount
-}
+  return colorCount;
+};
 
 /**
  * Create new BeltProps[] array
@@ -419,7 +419,7 @@ export const getBeltProps = (
     stripePosition,
     minStripes,
     maxStripes
-  )
+  );
 
   const beltProps: BeltProps = getBeltPropsFromBelt(
     belt,
@@ -428,13 +428,13 @@ export const getBeltProps = (
     transitionCSS,
     refreshInterval,
     callback
-  )
+  );
 
-  const beltPropAry: BeltProps[] = []
-  beltPropAry.push(beltProps)
+  const beltPropAry: BeltProps[] = [];
+  beltPropAry.push(beltProps);
 
-  return beltPropAry
-}
+  return beltPropAry;
+};
 
 /**
  * Create new Checkered BeltProps[] array
@@ -502,8 +502,8 @@ export const getBeltPropsCheckered = (
     transitionCSS,
     refreshInterval,
     callback
-  )
-}
+  );
+};
 
 /**
  * Create new Coral BeltProps[] array
@@ -571,8 +571,8 @@ export const getBeltPropsCoral = (
     transitionCSS,
     refreshInterval,
     callback
-  )
-}
+  );
+};
 
 /**
  * Create new BeltProps[] array from Belt object
@@ -592,8 +592,8 @@ export const getBeltPropsFromBelt = (
   refreshInterval: number,
   callback: Function | null = null
 ): BeltProps => {
-  const beltRDF: BeltRDF = getBeltRDF(belt)
-  const randomSettings: RandomSettings = getRandomSettings()
+  const beltRDF: BeltRDF = getBeltRDF(belt);
+  const randomSettings: RandomSettings = getRandomSettings();
   const beltProps: BeltProps = {
     version: version,
     id: generateUniqueId(),
@@ -674,36 +674,36 @@ export const getBeltPropsFromBelt = (
     randomSettings: randomSettings,
     refreshInterval: 0,
     callback: callback,
-  }
+  };
 
-  beltProps.transitionCSS = transitionCSS
-  beltProps.refreshInterval = refreshInterval
-  beltProps.stripeCount = stripeCount
-  if (stripePosition != undefined) beltProps.stripePosition = stripePosition
-  else if (belt != undefined) beltProps.stripePosition = belt.stripePosition
+  beltProps.transitionCSS = transitionCSS;
+  beltProps.refreshInterval = refreshInterval;
+  beltProps.stripeCount = stripeCount;
+  if (stripePosition != undefined) beltProps.stripePosition = stripePosition;
+  else if (belt != undefined) beltProps.stripePosition = belt.stripePosition;
 
   if (belt) {
     switch (belt.type) {
       case "Solid":
-        setBeltSolid(belt, beltProps)
-        break
+        setBeltSolid(belt, beltProps);
+        break;
       case "Striped":
-        setBeltStriped(belt, beltProps)
-        break
+        setBeltStriped(belt, beltProps);
+        break;
       case "Coral":
-        setBeltCoral(belt, beltProps)
-        break
+        setBeltCoral(belt, beltProps);
+        break;
       case "Split":
-        setBeltSplit(belt, beltProps)
-        break
+        setBeltSplit(belt, beltProps);
+        break;
       case "Checkered":
-        setBeltCheckered(belt, beltProps)
-        break
+        setBeltCheckered(belt, beltProps);
+        break;
       case "Crazy":
-        setBeltCrazy(beltProps)
-        break
+        setBeltCrazy(beltProps);
+        break;
     }
-    beltProps.border = belt.borderColor
+    beltProps.border = belt.borderColor;
 
     setPatchProperties(
       beltProps,
@@ -716,11 +716,11 @@ export const getBeltPropsFromBelt = (
       belt.stripeColor,
       stripeCount,
       stripePosition
-    )
+    );
   }
 
-  return beltProps
-}
+  return beltProps;
+};
 
 /**
  * Create new random BeltProps[] array
@@ -744,69 +744,69 @@ export const getBeltPropsRandom = (
   refreshInterval: number | undefined = 0,
   callback: Function | null = null
 ): BeltProps[] => {
-  let randomBeltTypeIndex
-  const title = "Random"
+  let randomBeltTypeIndex;
+  const title = "Random";
   const randomSettings: RandomSettings = getRandomSettings(
     hasPatch,
     hasProfessorPatch,
     stripeCount,
     stripePosition,
     includeBelts
-  )
-  if (hasPatch == undefined) hasPatch = Math.random() < 0.5 // randomly pick true or false
-  if (hasProfessorPatch === undefined) hasProfessorPatch = Math.random() < 0.5 // randomly pick true or false
+  );
+  if (hasPatch == undefined) hasPatch = Math.random() < 0.5; // randomly pick true or false
+  if (hasProfessorPatch === undefined) hasProfessorPatch = Math.random() < 0.5; // randomly pick true or false
   if (stripeCount === undefined)
-    stripeCount = Math.floor(Math.random() * MaximumStripeCount + 1) // randomly pick between 0-10 stripes
+    stripeCount = Math.floor(Math.random() * MaximumStripeCount + 1); // randomly pick between 0-10 stripes
   if (stripePosition === undefined)
     Math.random() < 0.5 === true
       ? (stripePosition = StripePosition.Left)
-      : (stripePosition = StripePosition.Right) // randomly pick Left or Right
-  if (transitionCSS === undefined) transitionCSS = ""
+      : (stripePosition = StripePosition.Right); // randomly pick Left or Right
+  if (transitionCSS === undefined) transitionCSS = "";
   if (includeBelts !== undefined && includeBelts.length > 0) {
     if (includeBelts.length === 1) {
       // if only one includeBelt items is specified, then use that belt type
-      randomBeltTypeIndex = getBeltIndex(includeBelts[0])
+      randomBeltTypeIndex = getBeltIndex(includeBelts[0]);
     } else {
       // build array of includeBelt types and selct random one
-      const ary: Array<BeltType> = []
+      const ary: Array<BeltType> = [];
       for (let i = 0; i < includeBelts.length; i++) {
-        ary.push(includeBelts[i])
+        ary.push(includeBelts[i]);
       }
-      const rand = Math.floor(Math.random() * ary.length)
-      randomBeltTypeIndex = getBeltIndex(ary[rand])
+      const rand = Math.floor(Math.random() * ary.length);
+      randomBeltTypeIndex = getBeltIndex(ary[rand]);
     }
   } else {
     // no includeBelt types specified, for select random from all
-    randomBeltTypeIndex = Math.floor(Math.random() * 6)
+    randomBeltTypeIndex = Math.floor(Math.random() * 6);
   }
-  if (refreshInterval === undefined) refreshInterval = 0
-  let name = ""
-  let beltType: BeltType = BeltType.Solid
+  if (refreshInterval === undefined) refreshInterval = 0;
+  let name = "";
+  let beltType: BeltType = BeltType.Solid;
   switch (randomBeltTypeIndex) {
     case 0: // solid belt
-      name = `${title} Solid belt`
-      beltType = BeltType.Solid
-      break
+      name = `${title} Solid belt`;
+      beltType = BeltType.Solid;
+      break;
     case 1: // striped belt
-      name = `${title} Striped belt`
-      beltType = BeltType.Striped
-      break
+      name = `${title} Striped belt`;
+      beltType = BeltType.Striped;
+      break;
     case 2: // coral belt
-      name = `${title} Coral belt`
-      beltType = BeltType.Coral
-      break
+      name = `${title} Coral belt`;
+      beltType = BeltType.Coral;
+      break;
     case 3: // split belt
-      name = `${title} Split belt`
-      beltType = BeltType.Split
-      break
+      name = `${title} Split belt`;
+      beltType = BeltType.Split;
+      break;
     case 4: // checkered belt
-      name = `${title} Checkered belt`
-      beltType = BeltType.Checkered
-      break
+      name = `${title} Checkered belt`;
+      beltType = BeltType.Checkered;
+      break;
     case 5: // crazy belt
-      name = `${title} Crazy belt`
-      beltType = BeltType.Crazy
-      break
+      name = `${title} Crazy belt`;
+      beltType = BeltType.Crazy;
+      break;
   }
 
   const belt: Belt = getBelt(
@@ -829,7 +829,7 @@ export const getBeltPropsRandom = (
     StripePosition.Right,
     0,
     10
-  )
+  );
 
   const beltProps: BeltProps = getBeltPropsFromBelt(
     belt,
@@ -838,14 +838,14 @@ export const getBeltPropsRandom = (
     transitionCSS,
     refreshInterval,
     callback
-  )
+  );
 
-  beltProps.randomSettings = randomSettings
+  beltProps.randomSettings = randomSettings;
 
-  const beltPropsAry: BeltProps[] = []
-  beltPropsAry.push(beltProps)
-  return beltPropsAry
-}
+  const beltPropsAry: BeltProps[] = [];
+  beltPropsAry.push(beltProps);
+  return beltPropsAry;
+};
 
 /**
  * Create new Solid BeltProps[] array
@@ -911,8 +911,8 @@ export const getBeltPropsSolid = (
     transitionCSS,
     refreshInterval,
     callback
-  )
-}
+  );
+};
 
 /**
  * Create new Split BeltProps[] array
@@ -980,8 +980,8 @@ export const getBeltPropsSplit = (
     transitionCSS,
     refreshInterval,
     callback
-  )
-}
+  );
+};
 
 /**
  * Create new Striped BeltProps[] array
@@ -1051,8 +1051,8 @@ export const getBeltPropsStriped = (
     transitionCSS,
     refreshInterval,
     callback
-  )
-}
+  );
+};
 
 /**
  * Create new BeltRDF object used in svg metadata
@@ -1064,13 +1064,13 @@ export const getBeltRDF = (
   belt: Belt,
   about: string | undefined = undefined
 ): BeltRDF => {
-  if (about === undefined) about = AboutURL
+  if (about === undefined) about = AboutURL;
   const beltRDF: BeltRDF = {
     title: belt.name,
     about: about,
-  }
-  return beltRDF
-}
+  };
+  return beltRDF;
+};
 
 /**
  * Check for valid color hex code (must begin with # and then 3 or 6 valid hex characters)
@@ -1092,20 +1092,20 @@ export const getBeltRDF = (
  */
 export const isValidHexCode = (input: string): boolean => {
   // Regex to check for valid hex code
-  const regex = new RegExp(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/)
+  const regex = new RegExp(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/);
 
   // if str is empty return false
   if (input == null) {
-    return false
+    return false;
   }
 
   // Return true if the str matches the Regex
   if (regex.test(input) == true) {
-    return true
+    return true;
   } else {
-    return false
+    return false;
   }
-}
+};
 
 /**
  * Return hex code from BeltColor[] for color name
@@ -1119,19 +1119,19 @@ export const mapBeltColor = (color: string, colors: BeltColor[]): string => {
    * 2. else if color in colors, return hex code
    * 3. else return color
    */
-  let rval = color
+  let rval = color;
 
   if (!isValidHexCode(color)) {
     const beltColor = colors.find(
       (c) => c.name.toUpperCase() === color.toUpperCase()
-    )
+    );
     if (beltColor) {
-      rval = beltColor.hex
+      rval = beltColor.hex;
     }
   }
 
-  return rval
-}
+  return rval;
+};
 
 /**
  * Map all belt color names in all Belt array object to hex codes
@@ -1140,17 +1140,17 @@ export const mapBeltColor = (color: string, colors: BeltColor[]): string => {
  */
 export const mapBeltColors = (belts: Belt[], colors: BeltColor[]) => {
   belts.forEach((belt) => {
-    belt.color1 = mapBeltColor(belt.color1, colors)
-    belt.color2 = mapBeltColor(belt.color2, colors)
-    belt.color3 = mapBeltColor(belt.color3, colors)
-    belt.borderColor = mapBeltColor(belt.borderColor, colors)
-    belt.patchColor = mapBeltColor(belt.patchColor, colors)
-    belt.patchBorderColor = mapBeltColor(belt.patchBorderColor, colors)
-    belt.professorPatchColor = mapBeltColor(belt.professorPatchColor, colors)
-    belt.professorBorderColor = mapBeltColor(belt.professorBorderColor, colors)
-    belt.stripeColor = mapBeltColor(belt.stripeColor, colors)
-  })
-}
+    belt.color1 = mapBeltColor(belt.color1, colors);
+    belt.color2 = mapBeltColor(belt.color2, colors);
+    belt.color3 = mapBeltColor(belt.color3, colors);
+    belt.borderColor = mapBeltColor(belt.borderColor, colors);
+    belt.patchColor = mapBeltColor(belt.patchColor, colors);
+    belt.patchBorderColor = mapBeltColor(belt.patchBorderColor, colors);
+    belt.professorPatchColor = mapBeltColor(belt.professorPatchColor, colors);
+    belt.professorBorderColor = mapBeltColor(belt.professorBorderColor, colors);
+    belt.stripeColor = mapBeltColor(belt.stripeColor, colors);
+  });
+};
 
 /*
  *  _                 _   ___             _   _
@@ -1164,8 +1164,8 @@ export const mapBeltColors = (belts: Belt[], colors: BeltColor[]) => {
  * @return {string} unique id
  */
 const generateUniqueId = (): string => {
-  return `${UniqueIDPrefix}${Date.now()}${Math.floor(Math.random() * 1000)}`
-}
+  return `${UniqueIDPrefix}${Date.now()}${Math.floor(Math.random() * 1000)}`;
+};
 
 /**
  * Get index of BeltType
@@ -1173,30 +1173,30 @@ const generateUniqueId = (): string => {
  * @return {number} index of BeltType
  */
 const getBeltIndex = (bType: BeltType): number => {
-  let index: number = -1
+  let index: number = -1;
 
   switch (bType) {
     case "Solid":
-      index = 0
-      break
+      index = 0;
+      break;
     case "Striped":
-      index = 1
-      break
+      index = 1;
+      break;
     case "Coral":
-      index = 2
-      break
+      index = 2;
+      break;
     case "Split":
-      index = 3
-      break
+      index = 3;
+      break;
     case "Checkered":
-      index = 4
-      break
+      index = 4;
+      break;
     case "Crazy":
-      index = 5
-      break
+      index = 5;
+      break;
   }
-  return index
-}
+  return index;
+};
 
 /**
  * Get a random hex color
@@ -1205,8 +1205,8 @@ const getBeltIndex = (bType: BeltType): number => {
 const getRandomHexColor = (): string => {
   return `#${[...Array(6)]
     .map(() => Math.floor(Math.random() * 16).toString(16))
-    .join("")}`
-}
+    .join("")}`;
+};
 
 /**
  * Get new RandomSettings object
@@ -1230,10 +1230,10 @@ const getRandomSettings = (
     stripeCount: stripeCount,
     stripePosition: stripePosition,
     includeBelts: includeBelts,
-  }
+  };
 
-  return randomSettings
-}
+  return randomSettings;
+};
 
 /**
  * Log message to console
@@ -1248,11 +1248,11 @@ const logMessage = (
   beltId: number,
   message: string
 ) => {
-  const myName: string = beltName ? beltName : "Not Specified"
-  const msg: string = `CustomBelt ${ltype}: {'beltName': '${myName}', 'id': ${beltId}, 'message': '${message}'}`
+  const myName: string = beltName ? beltName : "Not Specified";
+  const msg: string = `CustomBelt ${ltype}: {'beltName': '${myName}', 'id': ${beltId}, 'message': '${message}'}`;
 
-  console.log(msg)
-}
+  console.log(msg);
+};
 
 /**
  * Set all BeltProps for Checkered Belt
@@ -1260,59 +1260,59 @@ const logMessage = (
  * @param {BeltProps} beltProps beltProps object to set values on
  */
 const setBeltCheckered = (belt: Belt, beltProps: BeltProps) => {
-  beltProps.s1l1 = belt.color1
-  beltProps.s1l2a = belt.color2
-  beltProps.s1l2b = belt.color2
-  beltProps.s1l3 = belt.color1
-  beltProps.s2l1 = belt.color2
-  beltProps.s2l2a = belt.color1
-  beltProps.s2l2b = belt.color1
-  beltProps.s2l3 = belt.color2
-  beltProps.s3l1 = belt.color1
-  beltProps.s3l2a = belt.color2
-  beltProps.s3l2b = belt.color2
-  beltProps.s3l3 = belt.color1
-  beltProps.s4l1 = belt.color2
-  beltProps.s4l2a = belt.color1
-  beltProps.s4l2b = belt.color1
-  beltProps.s4l3 = belt.color2
-  beltProps.s5l1 = belt.color2
-  beltProps.s5l2a = belt.color1
-  beltProps.s5l2b = belt.color1
-  beltProps.s5l3 = belt.color2
-  beltProps.s6l1 = belt.color1
-  beltProps.s6l2a = belt.color2
-  beltProps.s6l2b = belt.color2
-  beltProps.s6l3 = belt.color1
-  beltProps.s7l1 = belt.color1
-  beltProps.s7l2a = belt.color2
-  beltProps.s7l2b = belt.color2
-  beltProps.s7l3 = belt.color1
-  beltProps.s8l1 = belt.color1
-  beltProps.s8l2a = belt.color2
-  beltProps.s8l2b = belt.color2
-  beltProps.s8l3 = belt.color1
-  beltProps.s9l1 = belt.color2
-  beltProps.s9l2a = belt.color1
-  beltProps.s9l2b = belt.color1
-  beltProps.s9l3 = belt.color2
-  beltProps.s10l1 = belt.color2
-  beltProps.s10l2a = belt.color1
-  beltProps.s10l2b = belt.color1
-  beltProps.s10l3 = belt.color2
-  beltProps.s11l1 = belt.color1
-  beltProps.s11l2a = belt.color2
-  beltProps.s11l2b = belt.color2
-  beltProps.s11l3 = belt.color1
-  beltProps.s12l1 = belt.color2
-  beltProps.s12l2a = belt.color1
-  beltProps.s12l2b = belt.color1
-  beltProps.s12l3 = belt.color2
-  beltProps.s13l1 = belt.color1
-  beltProps.s13l2a = belt.color2
-  beltProps.s13l2b = belt.color2
-  beltProps.s13l3 = belt.color1
-}
+  beltProps.s1l1 = belt.color1;
+  beltProps.s1l2a = belt.color2;
+  beltProps.s1l2b = belt.color2;
+  beltProps.s1l3 = belt.color1;
+  beltProps.s2l1 = belt.color2;
+  beltProps.s2l2a = belt.color1;
+  beltProps.s2l2b = belt.color1;
+  beltProps.s2l3 = belt.color2;
+  beltProps.s3l1 = belt.color1;
+  beltProps.s3l2a = belt.color2;
+  beltProps.s3l2b = belt.color2;
+  beltProps.s3l3 = belt.color1;
+  beltProps.s4l1 = belt.color2;
+  beltProps.s4l2a = belt.color1;
+  beltProps.s4l2b = belt.color1;
+  beltProps.s4l3 = belt.color2;
+  beltProps.s5l1 = belt.color2;
+  beltProps.s5l2a = belt.color1;
+  beltProps.s5l2b = belt.color1;
+  beltProps.s5l3 = belt.color2;
+  beltProps.s6l1 = belt.color1;
+  beltProps.s6l2a = belt.color2;
+  beltProps.s6l2b = belt.color2;
+  beltProps.s6l3 = belt.color1;
+  beltProps.s7l1 = belt.color1;
+  beltProps.s7l2a = belt.color2;
+  beltProps.s7l2b = belt.color2;
+  beltProps.s7l3 = belt.color1;
+  beltProps.s8l1 = belt.color1;
+  beltProps.s8l2a = belt.color2;
+  beltProps.s8l2b = belt.color2;
+  beltProps.s8l3 = belt.color1;
+  beltProps.s9l1 = belt.color2;
+  beltProps.s9l2a = belt.color1;
+  beltProps.s9l2b = belt.color1;
+  beltProps.s9l3 = belt.color2;
+  beltProps.s10l1 = belt.color2;
+  beltProps.s10l2a = belt.color1;
+  beltProps.s10l2b = belt.color1;
+  beltProps.s10l3 = belt.color2;
+  beltProps.s11l1 = belt.color1;
+  beltProps.s11l2a = belt.color2;
+  beltProps.s11l2b = belt.color2;
+  beltProps.s11l3 = belt.color1;
+  beltProps.s12l1 = belt.color2;
+  beltProps.s12l2a = belt.color1;
+  beltProps.s12l2b = belt.color1;
+  beltProps.s12l3 = belt.color2;
+  beltProps.s13l1 = belt.color1;
+  beltProps.s13l2a = belt.color2;
+  beltProps.s13l2b = belt.color2;
+  beltProps.s13l3 = belt.color1;
+};
 
 /**
  * Set all BeltProps for Coral Belt
@@ -1320,63 +1320,63 @@ const setBeltCheckered = (belt: Belt, beltProps: BeltProps) => {
  * @param {BeltProps} beltProps beltProps object to set values on
  */
 const setBeltCoral = (belt: Belt, beltProps: BeltProps) => {
-  beltProps.s1l1 = belt.color2
-  beltProps.s1l2a = belt.color2
-  beltProps.s1l2b = belt.color2
-  beltProps.s1l3 = belt.color2
-  beltProps.s2l1 = belt.color1
-  beltProps.s2l2a = belt.color1
-  beltProps.s2l2b = belt.color1
-  beltProps.s2l3 = belt.color1
-  beltProps.s3l1 = belt.color1
-  beltProps.s3l2a = belt.color1
-  beltProps.s3l2b = belt.color1
-  beltProps.s3l3 = belt.color1
-  beltProps.s4l1 = belt.color2
-  beltProps.s4l2a = belt.color2
-  beltProps.s4l2b = belt.color2
-  beltProps.s4l3 = belt.color2
-  beltProps.s5l1 = belt.color2
-  beltProps.s5l2a = belt.color2
-  beltProps.s5l2b = belt.color2
-  beltProps.s5l3 = belt.color2
-  beltProps.s6l1 = belt.color1
-  beltProps.s6l2a = belt.color1
-  beltProps.s6l2b = belt.color1
-  beltProps.s6l3 = belt.color1
-  beltProps.s6l1 = belt.color1
-  beltProps.s6l2a = belt.color1
-  beltProps.s6l2b = belt.color1
-  beltProps.s6l3 = belt.color1
-  beltProps.s7l1 = belt.color1
-  beltProps.s7l2a = belt.color1
-  beltProps.s7l2b = belt.color1
-  beltProps.s7l3 = belt.color1
-  beltProps.s8l1 = belt.color1
-  beltProps.s8l2a = belt.color1
-  beltProps.s8l2b = belt.color1
-  beltProps.s8l3 = belt.color1
-  beltProps.s9l1 = belt.color2
-  beltProps.s9l2a = belt.color2
-  beltProps.s9l2b = belt.color2
-  beltProps.s9l3 = belt.color2
-  beltProps.s10l1 = belt.color2
-  beltProps.s10l2a = belt.color2
-  beltProps.s10l2b = belt.color2
-  beltProps.s10l3 = belt.color2
-  beltProps.s11l1 = belt.color1
-  beltProps.s11l2a = belt.color1
-  beltProps.s11l2b = belt.color1
-  beltProps.s11l3 = belt.color1
-  beltProps.s12l1 = belt.color2
-  beltProps.s12l2a = belt.color2
-  beltProps.s12l2b = belt.color2
-  beltProps.s12l3 = belt.color2
-  beltProps.s13l1 = belt.color1
-  beltProps.s13l2a = belt.color1
-  beltProps.s13l2b = belt.color1
-  beltProps.s13l3 = belt.color1
-}
+  beltProps.s1l1 = belt.color2;
+  beltProps.s1l2a = belt.color2;
+  beltProps.s1l2b = belt.color2;
+  beltProps.s1l3 = belt.color2;
+  beltProps.s2l1 = belt.color1;
+  beltProps.s2l2a = belt.color1;
+  beltProps.s2l2b = belt.color1;
+  beltProps.s2l3 = belt.color1;
+  beltProps.s3l1 = belt.color1;
+  beltProps.s3l2a = belt.color1;
+  beltProps.s3l2b = belt.color1;
+  beltProps.s3l3 = belt.color1;
+  beltProps.s4l1 = belt.color2;
+  beltProps.s4l2a = belt.color2;
+  beltProps.s4l2b = belt.color2;
+  beltProps.s4l3 = belt.color2;
+  beltProps.s5l1 = belt.color2;
+  beltProps.s5l2a = belt.color2;
+  beltProps.s5l2b = belt.color2;
+  beltProps.s5l3 = belt.color2;
+  beltProps.s6l1 = belt.color1;
+  beltProps.s6l2a = belt.color1;
+  beltProps.s6l2b = belt.color1;
+  beltProps.s6l3 = belt.color1;
+  beltProps.s6l1 = belt.color1;
+  beltProps.s6l2a = belt.color1;
+  beltProps.s6l2b = belt.color1;
+  beltProps.s6l3 = belt.color1;
+  beltProps.s7l1 = belt.color1;
+  beltProps.s7l2a = belt.color1;
+  beltProps.s7l2b = belt.color1;
+  beltProps.s7l3 = belt.color1;
+  beltProps.s8l1 = belt.color1;
+  beltProps.s8l2a = belt.color1;
+  beltProps.s8l2b = belt.color1;
+  beltProps.s8l3 = belt.color1;
+  beltProps.s9l1 = belt.color2;
+  beltProps.s9l2a = belt.color2;
+  beltProps.s9l2b = belt.color2;
+  beltProps.s9l3 = belt.color2;
+  beltProps.s10l1 = belt.color2;
+  beltProps.s10l2a = belt.color2;
+  beltProps.s10l2b = belt.color2;
+  beltProps.s10l3 = belt.color2;
+  beltProps.s11l1 = belt.color1;
+  beltProps.s11l2a = belt.color1;
+  beltProps.s11l2b = belt.color1;
+  beltProps.s11l3 = belt.color1;
+  beltProps.s12l1 = belt.color2;
+  beltProps.s12l2a = belt.color2;
+  beltProps.s12l2b = belt.color2;
+  beltProps.s12l3 = belt.color2;
+  beltProps.s13l1 = belt.color1;
+  beltProps.s13l2a = belt.color1;
+  beltProps.s13l2b = belt.color1;
+  beltProps.s13l3 = belt.color1;
+};
 
 /**
  * Set all BeltProps for Crazy Belt
@@ -1384,63 +1384,63 @@ const setBeltCoral = (belt: Belt, beltProps: BeltProps) => {
  * @param {BeltProps} beltProps beltProps object to set values on
  */
 const setBeltCrazy = (beltProps: BeltProps) => {
-  beltProps.s1l1 = getRandomHexColor()
-  beltProps.s1l2a = getRandomHexColor()
-  beltProps.s1l2b = getRandomHexColor()
-  beltProps.s1l3 = getRandomHexColor()
-  beltProps.s2l1 = getRandomHexColor()
-  beltProps.s2l2a = getRandomHexColor()
-  beltProps.s2l2b = getRandomHexColor()
-  beltProps.s2l3 = getRandomHexColor()
-  beltProps.s3l1 = getRandomHexColor()
-  beltProps.s3l2a = getRandomHexColor()
-  beltProps.s3l2b = getRandomHexColor()
-  beltProps.s3l3 = getRandomHexColor()
-  beltProps.s4l1 = getRandomHexColor()
-  beltProps.s4l2a = getRandomHexColor()
-  beltProps.s4l2b = getRandomHexColor()
-  beltProps.s4l3 = getRandomHexColor()
-  beltProps.s5l1 = getRandomHexColor()
-  beltProps.s5l2a = getRandomHexColor()
-  beltProps.s5l2b = getRandomHexColor()
-  beltProps.s5l3 = getRandomHexColor()
-  beltProps.s6l1 = getRandomHexColor()
-  beltProps.s6l2a = getRandomHexColor()
-  beltProps.s6l2b = getRandomHexColor()
-  beltProps.s6l3 = getRandomHexColor()
-  beltProps.s6l1 = getRandomHexColor()
-  beltProps.s6l2a = getRandomHexColor()
-  beltProps.s6l2b = getRandomHexColor()
-  beltProps.s6l3 = getRandomHexColor()
-  beltProps.s7l1 = getRandomHexColor()
-  beltProps.s7l2a = getRandomHexColor()
-  beltProps.s7l2b = getRandomHexColor()
-  beltProps.s7l3 = getRandomHexColor()
-  beltProps.s8l1 = getRandomHexColor()
-  beltProps.s8l2a = getRandomHexColor()
-  beltProps.s8l2b = getRandomHexColor()
-  beltProps.s8l3 = getRandomHexColor()
-  beltProps.s9l1 = getRandomHexColor()
-  beltProps.s9l2a = getRandomHexColor()
-  beltProps.s9l2b = getRandomHexColor()
-  beltProps.s9l3 = getRandomHexColor()
-  beltProps.s10l1 = getRandomHexColor()
-  beltProps.s10l2a = getRandomHexColor()
-  beltProps.s10l2b = getRandomHexColor()
-  beltProps.s10l3 = getRandomHexColor()
-  beltProps.s11l1 = getRandomHexColor()
-  beltProps.s11l2a = getRandomHexColor()
-  beltProps.s11l2b = getRandomHexColor()
-  beltProps.s11l3 = getRandomHexColor()
-  beltProps.s12l1 = getRandomHexColor()
-  beltProps.s12l2a = getRandomHexColor()
-  beltProps.s12l2b = getRandomHexColor()
-  beltProps.s12l3 = getRandomHexColor()
-  beltProps.s13l1 = getRandomHexColor()
-  beltProps.s13l2a = getRandomHexColor()
-  beltProps.s13l2b = getRandomHexColor()
-  beltProps.s13l3 = getRandomHexColor()
-}
+  beltProps.s1l1 = getRandomHexColor();
+  beltProps.s1l2a = getRandomHexColor();
+  beltProps.s1l2b = getRandomHexColor();
+  beltProps.s1l3 = getRandomHexColor();
+  beltProps.s2l1 = getRandomHexColor();
+  beltProps.s2l2a = getRandomHexColor();
+  beltProps.s2l2b = getRandomHexColor();
+  beltProps.s2l3 = getRandomHexColor();
+  beltProps.s3l1 = getRandomHexColor();
+  beltProps.s3l2a = getRandomHexColor();
+  beltProps.s3l2b = getRandomHexColor();
+  beltProps.s3l3 = getRandomHexColor();
+  beltProps.s4l1 = getRandomHexColor();
+  beltProps.s4l2a = getRandomHexColor();
+  beltProps.s4l2b = getRandomHexColor();
+  beltProps.s4l3 = getRandomHexColor();
+  beltProps.s5l1 = getRandomHexColor();
+  beltProps.s5l2a = getRandomHexColor();
+  beltProps.s5l2b = getRandomHexColor();
+  beltProps.s5l3 = getRandomHexColor();
+  beltProps.s6l1 = getRandomHexColor();
+  beltProps.s6l2a = getRandomHexColor();
+  beltProps.s6l2b = getRandomHexColor();
+  beltProps.s6l3 = getRandomHexColor();
+  beltProps.s6l1 = getRandomHexColor();
+  beltProps.s6l2a = getRandomHexColor();
+  beltProps.s6l2b = getRandomHexColor();
+  beltProps.s6l3 = getRandomHexColor();
+  beltProps.s7l1 = getRandomHexColor();
+  beltProps.s7l2a = getRandomHexColor();
+  beltProps.s7l2b = getRandomHexColor();
+  beltProps.s7l3 = getRandomHexColor();
+  beltProps.s8l1 = getRandomHexColor();
+  beltProps.s8l2a = getRandomHexColor();
+  beltProps.s8l2b = getRandomHexColor();
+  beltProps.s8l3 = getRandomHexColor();
+  beltProps.s9l1 = getRandomHexColor();
+  beltProps.s9l2a = getRandomHexColor();
+  beltProps.s9l2b = getRandomHexColor();
+  beltProps.s9l3 = getRandomHexColor();
+  beltProps.s10l1 = getRandomHexColor();
+  beltProps.s10l2a = getRandomHexColor();
+  beltProps.s10l2b = getRandomHexColor();
+  beltProps.s10l3 = getRandomHexColor();
+  beltProps.s11l1 = getRandomHexColor();
+  beltProps.s11l2a = getRandomHexColor();
+  beltProps.s11l2b = getRandomHexColor();
+  beltProps.s11l3 = getRandomHexColor();
+  beltProps.s12l1 = getRandomHexColor();
+  beltProps.s12l2a = getRandomHexColor();
+  beltProps.s12l2b = getRandomHexColor();
+  beltProps.s12l3 = getRandomHexColor();
+  beltProps.s13l1 = getRandomHexColor();
+  beltProps.s13l2a = getRandomHexColor();
+  beltProps.s13l2b = getRandomHexColor();
+  beltProps.s13l3 = getRandomHexColor();
+};
 
 /**
  * Set all BeltProps for Solid Belt
@@ -1448,63 +1448,63 @@ const setBeltCrazy = (beltProps: BeltProps) => {
  * @param {BeltProps} beltProps beltProps object to set values on
  */
 const setBeltSolid = (belt: Belt, beltProps: BeltProps) => {
-  beltProps.s1l1 = belt.color1
-  beltProps.s1l2a = belt.color1
-  beltProps.s1l2b = belt.color1
-  beltProps.s1l3 = belt.color1
-  beltProps.s2l1 = belt.color1
-  beltProps.s2l2a = belt.color1
-  beltProps.s2l2b = belt.color1
-  beltProps.s2l3 = belt.color1
-  beltProps.s3l1 = belt.color1
-  beltProps.s3l2a = belt.color1
-  beltProps.s3l2b = belt.color1
-  beltProps.s3l3 = belt.color1
-  beltProps.s4l1 = belt.color1
-  beltProps.s4l2a = belt.color1
-  beltProps.s4l2b = belt.color1
-  beltProps.s4l3 = belt.color1
-  beltProps.s5l1 = belt.color1
-  beltProps.s5l2a = belt.color1
-  beltProps.s5l2b = belt.color1
-  beltProps.s5l3 = belt.color1
-  beltProps.s6l1 = belt.color1
-  beltProps.s6l2a = belt.color1
-  beltProps.s6l2b = belt.color1
-  beltProps.s6l3 = belt.color1
-  beltProps.s6l1 = belt.color1
-  beltProps.s6l2a = belt.color1
-  beltProps.s6l2b = belt.color1
-  beltProps.s6l3 = belt.color1
-  beltProps.s7l1 = belt.color1
-  beltProps.s7l2a = belt.color1
-  beltProps.s7l2b = belt.color1
-  beltProps.s7l3 = belt.color1
-  beltProps.s8l1 = belt.color1
-  beltProps.s8l2a = belt.color1
-  beltProps.s8l2b = belt.color1
-  beltProps.s8l3 = belt.color1
-  beltProps.s9l1 = belt.color1
-  beltProps.s9l2a = belt.color1
-  beltProps.s9l2b = belt.color1
-  beltProps.s9l3 = belt.color1
-  beltProps.s10l1 = belt.color1
-  beltProps.s10l2a = belt.color1
-  beltProps.s10l2b = belt.color1
-  beltProps.s10l3 = belt.color1
-  beltProps.s11l1 = belt.color1
-  beltProps.s11l2a = belt.color1
-  beltProps.s11l2b = belt.color1
-  beltProps.s11l3 = belt.color1
-  beltProps.s12l1 = belt.color1
-  beltProps.s12l2a = belt.color1
-  beltProps.s12l2b = belt.color1
-  beltProps.s12l3 = belt.color1
-  beltProps.s13l1 = belt.color1
-  beltProps.s13l2a = belt.color1
-  beltProps.s13l2b = belt.color1
-  beltProps.s13l3 = belt.color1
-}
+  beltProps.s1l1 = belt.color1;
+  beltProps.s1l2a = belt.color1;
+  beltProps.s1l2b = belt.color1;
+  beltProps.s1l3 = belt.color1;
+  beltProps.s2l1 = belt.color1;
+  beltProps.s2l2a = belt.color1;
+  beltProps.s2l2b = belt.color1;
+  beltProps.s2l3 = belt.color1;
+  beltProps.s3l1 = belt.color1;
+  beltProps.s3l2a = belt.color1;
+  beltProps.s3l2b = belt.color1;
+  beltProps.s3l3 = belt.color1;
+  beltProps.s4l1 = belt.color1;
+  beltProps.s4l2a = belt.color1;
+  beltProps.s4l2b = belt.color1;
+  beltProps.s4l3 = belt.color1;
+  beltProps.s5l1 = belt.color1;
+  beltProps.s5l2a = belt.color1;
+  beltProps.s5l2b = belt.color1;
+  beltProps.s5l3 = belt.color1;
+  beltProps.s6l1 = belt.color1;
+  beltProps.s6l2a = belt.color1;
+  beltProps.s6l2b = belt.color1;
+  beltProps.s6l3 = belt.color1;
+  beltProps.s6l1 = belt.color1;
+  beltProps.s6l2a = belt.color1;
+  beltProps.s6l2b = belt.color1;
+  beltProps.s6l3 = belt.color1;
+  beltProps.s7l1 = belt.color1;
+  beltProps.s7l2a = belt.color1;
+  beltProps.s7l2b = belt.color1;
+  beltProps.s7l3 = belt.color1;
+  beltProps.s8l1 = belt.color1;
+  beltProps.s8l2a = belt.color1;
+  beltProps.s8l2b = belt.color1;
+  beltProps.s8l3 = belt.color1;
+  beltProps.s9l1 = belt.color1;
+  beltProps.s9l2a = belt.color1;
+  beltProps.s9l2b = belt.color1;
+  beltProps.s9l3 = belt.color1;
+  beltProps.s10l1 = belt.color1;
+  beltProps.s10l2a = belt.color1;
+  beltProps.s10l2b = belt.color1;
+  beltProps.s10l3 = belt.color1;
+  beltProps.s11l1 = belt.color1;
+  beltProps.s11l2a = belt.color1;
+  beltProps.s11l2b = belt.color1;
+  beltProps.s11l3 = belt.color1;
+  beltProps.s12l1 = belt.color1;
+  beltProps.s12l2a = belt.color1;
+  beltProps.s12l2b = belt.color1;
+  beltProps.s12l3 = belt.color1;
+  beltProps.s13l1 = belt.color1;
+  beltProps.s13l2a = belt.color1;
+  beltProps.s13l2b = belt.color1;
+  beltProps.s13l3 = belt.color1;
+};
 
 /**
  * Set all BeltProps for Split Belt
@@ -1512,63 +1512,63 @@ const setBeltSolid = (belt: Belt, beltProps: BeltProps) => {
  * @param {BeltProps} beltProps beltProps object to set values on
  */
 const setBeltSplit = (belt: Belt, beltProps: BeltProps) => {
-  beltProps.s1l1 = belt.color1
-  beltProps.s1l2a = belt.color1
-  beltProps.s1l2b = belt.color2
-  beltProps.s1l3 = belt.color2
-  beltProps.s2l1 = belt.color1
-  beltProps.s2l2a = belt.color1
-  beltProps.s2l2b = belt.color2
-  beltProps.s2l3 = belt.color2
-  beltProps.s3l1 = belt.color1
-  beltProps.s3l2a = belt.color1
-  beltProps.s3l2b = belt.color2
-  beltProps.s3l3 = belt.color2
-  beltProps.s4l1 = belt.color1
-  beltProps.s4l2a = belt.color1
-  beltProps.s4l2b = belt.color2
-  beltProps.s4l3 = belt.color2
-  beltProps.s5l1 = belt.color1
-  beltProps.s5l2b = belt.color1
-  beltProps.s5l2a = belt.color2
-  beltProps.s5l3 = belt.color2
-  beltProps.s6l1 = belt.color1
-  beltProps.s6l2b = belt.color1
-  beltProps.s6l2a = belt.color2
-  beltProps.s6l3 = belt.color2
-  beltProps.s6l1 = belt.color1
-  beltProps.s6l2b = belt.color1
-  beltProps.s6l2a = belt.color2
-  beltProps.s6l3 = belt.color2
-  beltProps.s7l1 = belt.color1
-  beltProps.s7l2a = belt.color1
-  beltProps.s7l2b = belt.color2
-  beltProps.s7l3 = belt.color2
-  beltProps.s8l1 = belt.color1
-  beltProps.s8l2a = belt.color1
-  beltProps.s8l2b = belt.color2
-  beltProps.s8l3 = belt.color2
-  beltProps.s9l1 = belt.color1
-  beltProps.s9l2a = belt.color1
-  beltProps.s9l2b = belt.color2
-  beltProps.s9l3 = belt.color2
-  beltProps.s10l1 = belt.color1
-  beltProps.s10l2a = belt.color1
-  beltProps.s10l2b = belt.color2
-  beltProps.s10l3 = belt.color2
-  beltProps.s11l1 = belt.color1
-  beltProps.s11l2a = belt.color1
-  beltProps.s11l2b = belt.color2
-  beltProps.s11l3 = belt.color2
-  beltProps.s12l1 = belt.color1
-  beltProps.s12l2a = belt.color1
-  beltProps.s12l2b = belt.color2
-  beltProps.s12l3 = belt.color2
-  beltProps.s13l1 = belt.color1
-  beltProps.s13l2a = belt.color1
-  beltProps.s13l2b = belt.color2
-  beltProps.s13l3 = belt.color2
-}
+  beltProps.s1l1 = belt.color1;
+  beltProps.s1l2a = belt.color1;
+  beltProps.s1l2b = belt.color2;
+  beltProps.s1l3 = belt.color2;
+  beltProps.s2l1 = belt.color1;
+  beltProps.s2l2a = belt.color1;
+  beltProps.s2l2b = belt.color2;
+  beltProps.s2l3 = belt.color2;
+  beltProps.s3l1 = belt.color1;
+  beltProps.s3l2a = belt.color1;
+  beltProps.s3l2b = belt.color2;
+  beltProps.s3l3 = belt.color2;
+  beltProps.s4l1 = belt.color1;
+  beltProps.s4l2a = belt.color1;
+  beltProps.s4l2b = belt.color2;
+  beltProps.s4l3 = belt.color2;
+  beltProps.s5l1 = belt.color1;
+  beltProps.s5l2b = belt.color1;
+  beltProps.s5l2a = belt.color2;
+  beltProps.s5l3 = belt.color2;
+  beltProps.s6l1 = belt.color1;
+  beltProps.s6l2b = belt.color1;
+  beltProps.s6l2a = belt.color2;
+  beltProps.s6l3 = belt.color2;
+  beltProps.s6l1 = belt.color1;
+  beltProps.s6l2b = belt.color1;
+  beltProps.s6l2a = belt.color2;
+  beltProps.s6l3 = belt.color2;
+  beltProps.s7l1 = belt.color1;
+  beltProps.s7l2a = belt.color1;
+  beltProps.s7l2b = belt.color2;
+  beltProps.s7l3 = belt.color2;
+  beltProps.s8l1 = belt.color1;
+  beltProps.s8l2a = belt.color1;
+  beltProps.s8l2b = belt.color2;
+  beltProps.s8l3 = belt.color2;
+  beltProps.s9l1 = belt.color1;
+  beltProps.s9l2a = belt.color1;
+  beltProps.s9l2b = belt.color2;
+  beltProps.s9l3 = belt.color2;
+  beltProps.s10l1 = belt.color1;
+  beltProps.s10l2a = belt.color1;
+  beltProps.s10l2b = belt.color2;
+  beltProps.s10l3 = belt.color2;
+  beltProps.s11l1 = belt.color1;
+  beltProps.s11l2a = belt.color1;
+  beltProps.s11l2b = belt.color2;
+  beltProps.s11l3 = belt.color2;
+  beltProps.s12l1 = belt.color1;
+  beltProps.s12l2a = belt.color1;
+  beltProps.s12l2b = belt.color2;
+  beltProps.s12l3 = belt.color2;
+  beltProps.s13l1 = belt.color1;
+  beltProps.s13l2a = belt.color1;
+  beltProps.s13l2b = belt.color2;
+  beltProps.s13l3 = belt.color2;
+};
 
 /**
  * Set all BeltProps for Striped Belt
@@ -1576,63 +1576,63 @@ const setBeltSplit = (belt: Belt, beltProps: BeltProps) => {
  * @param {BeltProps} beltProps beltProps object to set values on
  */
 const setBeltStriped = (belt: Belt, beltProps: BeltProps) => {
-  beltProps.s1l1 = belt.color1
-  beltProps.s1l2a = belt.color2
-  beltProps.s1l2b = belt.color2
-  beltProps.s1l3 = belt.color3
-  beltProps.s2l1 = belt.color1
-  beltProps.s2l2a = belt.color2
-  beltProps.s2l2b = belt.color2
-  beltProps.s2l3 = belt.color3
-  beltProps.s3l1 = belt.color1
-  beltProps.s3l2a = belt.color2
-  beltProps.s3l2b = belt.color2
-  beltProps.s3l3 = belt.color3
-  beltProps.s4l1 = belt.color1
-  beltProps.s4l2a = belt.color2
-  beltProps.s4l2b = belt.color2
-  beltProps.s4l3 = belt.color3
-  beltProps.s5l1 = belt.color1
-  beltProps.s5l2a = belt.color2
-  beltProps.s5l2b = belt.color2
-  beltProps.s5l3 = belt.color3
-  beltProps.s6l1 = belt.color1
-  beltProps.s6l2a = belt.color2
-  beltProps.s6l2b = belt.color2
-  beltProps.s6l3 = belt.color3
-  beltProps.s6l1 = belt.color1
-  beltProps.s6l2a = belt.color2
-  beltProps.s6l2b = belt.color2
-  beltProps.s6l3 = belt.color3
-  beltProps.s7l1 = belt.color1
-  beltProps.s7l2a = belt.color2
-  beltProps.s7l2b = belt.color2
-  beltProps.s7l3 = belt.color3
-  beltProps.s8l1 = belt.color1
-  beltProps.s8l2a = belt.color2
-  beltProps.s8l2b = belt.color2
-  beltProps.s8l3 = belt.color3
-  beltProps.s9l1 = belt.color1
-  beltProps.s9l2a = belt.color2
-  beltProps.s9l2b = belt.color2
-  beltProps.s9l3 = belt.color3
-  beltProps.s10l1 = belt.color1
-  beltProps.s10l2a = belt.color2
-  beltProps.s10l2b = belt.color2
-  beltProps.s10l3 = belt.color3
-  beltProps.s11l1 = belt.color1
-  beltProps.s11l2a = belt.color2
-  beltProps.s11l2b = belt.color2
-  beltProps.s11l3 = belt.color3
-  beltProps.s12l1 = belt.color1
-  beltProps.s12l2a = belt.color2
-  beltProps.s12l2b = belt.color2
-  beltProps.s12l3 = belt.color3
-  beltProps.s13l1 = belt.color1
-  beltProps.s13l2a = belt.color2
-  beltProps.s13l2b = belt.color2
-  beltProps.s13l3 = belt.color3
-}
+  beltProps.s1l1 = belt.color1;
+  beltProps.s1l2a = belt.color2;
+  beltProps.s1l2b = belt.color2;
+  beltProps.s1l3 = belt.color3;
+  beltProps.s2l1 = belt.color1;
+  beltProps.s2l2a = belt.color2;
+  beltProps.s2l2b = belt.color2;
+  beltProps.s2l3 = belt.color3;
+  beltProps.s3l1 = belt.color1;
+  beltProps.s3l2a = belt.color2;
+  beltProps.s3l2b = belt.color2;
+  beltProps.s3l3 = belt.color3;
+  beltProps.s4l1 = belt.color1;
+  beltProps.s4l2a = belt.color2;
+  beltProps.s4l2b = belt.color2;
+  beltProps.s4l3 = belt.color3;
+  beltProps.s5l1 = belt.color1;
+  beltProps.s5l2a = belt.color2;
+  beltProps.s5l2b = belt.color2;
+  beltProps.s5l3 = belt.color3;
+  beltProps.s6l1 = belt.color1;
+  beltProps.s6l2a = belt.color2;
+  beltProps.s6l2b = belt.color2;
+  beltProps.s6l3 = belt.color3;
+  beltProps.s6l1 = belt.color1;
+  beltProps.s6l2a = belt.color2;
+  beltProps.s6l2b = belt.color2;
+  beltProps.s6l3 = belt.color3;
+  beltProps.s7l1 = belt.color1;
+  beltProps.s7l2a = belt.color2;
+  beltProps.s7l2b = belt.color2;
+  beltProps.s7l3 = belt.color3;
+  beltProps.s8l1 = belt.color1;
+  beltProps.s8l2a = belt.color2;
+  beltProps.s8l2b = belt.color2;
+  beltProps.s8l3 = belt.color3;
+  beltProps.s9l1 = belt.color1;
+  beltProps.s9l2a = belt.color2;
+  beltProps.s9l2b = belt.color2;
+  beltProps.s9l3 = belt.color3;
+  beltProps.s10l1 = belt.color1;
+  beltProps.s10l2a = belt.color2;
+  beltProps.s10l2b = belt.color2;
+  beltProps.s10l3 = belt.color3;
+  beltProps.s11l1 = belt.color1;
+  beltProps.s11l2a = belt.color2;
+  beltProps.s11l2b = belt.color2;
+  beltProps.s11l3 = belt.color3;
+  beltProps.s12l1 = belt.color1;
+  beltProps.s12l2a = belt.color2;
+  beltProps.s12l2b = belt.color2;
+  beltProps.s12l3 = belt.color3;
+  beltProps.s13l1 = belt.color1;
+  beltProps.s13l2a = belt.color2;
+  beltProps.s13l2b = belt.color2;
+  beltProps.s13l3 = belt.color3;
+};
 
 /**
  * Set patch properties on BeltProps object
@@ -1659,26 +1659,26 @@ const setPatchProperties = (
   stripeCount: number,
   stripePosition: StripePosition | undefined
 ) => {
-  beltProps.hasPatch = hasPatch
-  beltProps.patch = patchColor
-  beltProps.patchBorder = patchBorderColor
-  beltProps.professorPatch = professorPatchColor
-  beltProps.professorBorder = professorBorderColor
-  beltProps.hasProfessorPatch = hasProfessorPatch
-  beltProps.stripeCount = stripeCount
+  beltProps.hasPatch = hasPatch;
+  beltProps.patch = patchColor;
+  beltProps.patchBorder = patchBorderColor;
+  beltProps.professorPatch = professorPatchColor;
+  beltProps.professorBorder = professorBorderColor;
+  beltProps.hasProfessorPatch = hasProfessorPatch;
+  beltProps.stripeCount = stripeCount;
   beltProps.stripePosition =
-    stripePosition != undefined ? stripePosition : StripePositionDefault
-  beltProps.stripe1 = stripeColor
-  beltProps.stripe2 = stripeColor
-  beltProps.stripe3 = stripeColor
-  beltProps.stripe4 = stripeColor
-  beltProps.stripe5 = stripeColor
-  beltProps.stripe6 = stripeColor
-  beltProps.stripe7 = stripeColor
-  beltProps.stripe8 = stripeColor
-  beltProps.stripe9 = stripeColor
-  beltProps.stripe10 = stripeColor
-}
+    stripePosition != undefined ? stripePosition : StripePositionDefault;
+  beltProps.stripe1 = stripeColor;
+  beltProps.stripe2 = stripeColor;
+  beltProps.stripe3 = stripeColor;
+  beltProps.stripe4 = stripeColor;
+  beltProps.stripe5 = stripeColor;
+  beltProps.stripe6 = stripeColor;
+  beltProps.stripe7 = stripeColor;
+  beltProps.stripe8 = stripeColor;
+  beltProps.stripe9 = stripeColor;
+  beltProps.stripe10 = stripeColor;
+};
 
 /**
  * __   __    _ _    _      _             ___             _   _
@@ -1692,87 +1692,87 @@ const setPatchProperties = (
  * @param {Belt} belt belt object to validate
  */
 const validateBelt = (belt: Belt) => {
-  validateBelt_Colors(belt)
-  validateBelt_StripeCount(belt)
-}
+  validateBelt_Colors(belt);
+  validateBelt_StripeCount(belt);
+};
 
 /**
  * Validate color parameters for  Belt object
  * @param {Belt} belt belt object to validate
  */
 const validateBelt_Colors = (belt: Belt) => {
-  let msg
-  const colorCount: number | undefined = getBeltColorCount(belt.type)
+  let msg;
+  const colorCount: number | undefined = getBeltColorCount(belt.type);
 
   if (colorCount === undefined) {
-    msg = `unknown color count`
-    logMessage(LogType.Error, belt.name, belt.id, msg)
+    msg = `unknown color count`;
+    logMessage(LogType.Error, belt.name, belt.id, msg);
   } else {
     if (colorCount >= 1) {
       if (!belt.color1) {
-        msg = `color1 is required setting to (${DefaultColor})`
-        logMessage(LogType.Error, belt.name, belt.id, msg)
-        belt.color1 = DefaultColor
+        msg = `color1 is required setting to (${DefaultColor})`;
+        logMessage(LogType.Error, belt.name, belt.id, msg);
+        belt.color1 = DefaultColor;
       } else if (!isValidHexCode(belt.color1)) {
-        msg = `invalid color1 (${belt.color1}) setting to (${DefaultColor})`
-        logMessage(LogType.Warning, belt.name, belt.id, msg)
-        belt.color1 = DefaultColor
+        msg = `invalid color1 (${belt.color1}) setting to (${DefaultColor})`;
+        logMessage(LogType.Warning, belt.name, belt.id, msg);
+        belt.color1 = DefaultColor;
       }
     }
     if (colorCount >= 2) {
       if (!belt.color2) {
-        msg = `color2 is required setting to (${DefaultColor})`
-        logMessage(LogType.Error, belt.name, belt.id, msg)
-        belt.color2 = DefaultColor
+        msg = `color2 is required setting to (${DefaultColor})`;
+        logMessage(LogType.Error, belt.name, belt.id, msg);
+        belt.color2 = DefaultColor;
       } else if (!isValidHexCode(belt.color2)) {
-        msg = `invalid color2 (${belt.color2}) setting to (${DefaultColor})`
-        logMessage(LogType.Warning, belt.name, belt.id, msg)
-        belt.color2 = DefaultColor
+        msg = `invalid color2 (${belt.color2}) setting to (${DefaultColor})`;
+        logMessage(LogType.Warning, belt.name, belt.id, msg);
+        belt.color2 = DefaultColor;
       }
     }
     if (colorCount >= 3) {
       if (!belt.color3) {
-        msg = `color3 is required setting to (${DefaultColor})`
-        logMessage(LogType.Error, belt.name, belt.id, msg)
-        belt.color3 = DefaultColor
+        msg = `color3 is required setting to (${DefaultColor})`;
+        logMessage(LogType.Error, belt.name, belt.id, msg);
+        belt.color3 = DefaultColor;
       } else if (!isValidHexCode(belt.color3)) {
-        msg = `invalid color2 (${belt.color3}) setting to (${DefaultColor})`
-        logMessage(LogType.Warning, belt.name, belt.id, msg)
-        belt.color3 = DefaultColor
+        msg = `invalid color2 (${belt.color3}) setting to (${DefaultColor})`;
+        logMessage(LogType.Warning, belt.name, belt.id, msg);
+        belt.color3 = DefaultColor;
       }
     }
   }
-}
+};
 
 /**
  * Validate minStripes and maxStripes parameters received for Belt object
  * @param {Belt} belt belt object to validate
  */
 const validateBelt_StripeCount = (belt: Belt) => {
-  let msg
+  let msg;
   if (belt.minStripes < MinimumStripeCount) {
-    msg = `invalid minStripes (${belt.minStripes}) setting to (${MinimumStripeCount})`
-    logMessage(LogType.Warning, belt.name, belt.id, msg)
-    belt.minStripes = MinimumStripeCount
+    msg = `invalid minStripes (${belt.minStripes}) setting to (${MinimumStripeCount})`;
+    logMessage(LogType.Warning, belt.name, belt.id, msg);
+    belt.minStripes = MinimumStripeCount;
   } else if (belt.minStripes > MaximumStripeCount) {
-    msg = `invalid minStripes (${belt.minStripes}) setting to (${MinimumStripeCount})`
-    logMessage(LogType.Warning, belt.name, belt.id, msg)
-    belt.minStripes = MinimumStripeCount
+    msg = `invalid minStripes (${belt.minStripes}) setting to (${MinimumStripeCount})`;
+    logMessage(LogType.Warning, belt.name, belt.id, msg);
+    belt.minStripes = MinimumStripeCount;
   }
 
   if (belt.maxStripes > MaximumStripeCount) {
-    msg = `invalid maxStripes (${belt.maxStripes}) setting to (${MaximumStripeCount})`
-    logMessage(LogType.Warning, belt.name, belt.id, msg)
-    belt.maxStripes = MaximumStripeCount
+    msg = `invalid maxStripes (${belt.maxStripes}) setting to (${MaximumStripeCount})`;
+    logMessage(LogType.Warning, belt.name, belt.id, msg);
+    belt.maxStripes = MaximumStripeCount;
   } else if (belt.maxStripes < MinimumStripeCount) {
-    msg = `invalid maxStripes (${belt.maxStripes}) setting to (${MaximumStripeCount})`
-    logMessage(LogType.Warning, belt.name, belt.id, msg)
-    belt.maxStripes = MaximumStripeCount
+    msg = `invalid maxStripes (${belt.maxStripes}) setting to (${MaximumStripeCount})`;
+    logMessage(LogType.Warning, belt.name, belt.id, msg);
+    belt.maxStripes = MaximumStripeCount;
   }
 
   if (belt.minStripes > belt.maxStripes) {
-    msg = `minStripes (${belt.minStripes}) must be <= maxStripes (${belt.maxStripes}) setting minStripes to (${MinimumStripeCount})`
-    logMessage(LogType.Warning, belt.name, belt.id, msg)
-    belt.minStripes = MinimumStripeCount
+    msg = `minStripes (${belt.minStripes}) must be <= maxStripes (${belt.maxStripes}) setting minStripes to (${MinimumStripeCount})`;
+    logMessage(LogType.Warning, belt.name, belt.id, msg);
+    belt.minStripes = MinimumStripeCount;
   }
-}
+};

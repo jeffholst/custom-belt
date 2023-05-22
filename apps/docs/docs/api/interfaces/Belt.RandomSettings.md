@@ -26,7 +26,7 @@ Settings for random belt generation
 
 [Belt.ts:207](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L207)
 
-___
+---
 
 ### hasProfessorPatch
 
@@ -36,7 +36,7 @@ ___
 
 [Belt.ts:208](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L208)
 
-___
+---
 
 ### includeBelts
 
@@ -46,7 +46,7 @@ ___
 
 [Belt.ts:211](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L211)
 
-___
+---
 
 ### stripeCount
 
@@ -56,7 +56,7 @@ ___
 
 [Belt.ts:209](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L209)
 
-___
+---
 
 ### stripePosition
 

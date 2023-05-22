@@ -24,7 +24,7 @@ Belt types excluding Crazy
 
 #### Defined in
 
-Belt.ts:42
+[Belt.ts:42](https://github.com/jeffholst/custom-belt/blob/e4514da/packages/custom-belt-lib/src/Belt.ts#L42)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-Belt.ts:40
+[Belt.ts:40](https://github.com/jeffholst/custom-belt/blob/e4514da/packages/custom-belt-lib/src/Belt.ts#L40)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-Belt.ts:38
+[Belt.ts:38](https://github.com/jeffholst/custom-belt/blob/e4514da/packages/custom-belt-lib/src/Belt.ts#L38)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-Belt.ts:41
+[Belt.ts:41](https://github.com/jeffholst/custom-belt/blob/e4514da/packages/custom-belt-lib/src/Belt.ts#L41)
 
 ___
 
@@ -64,4 +64,4 @@ ___
 
 #### Defined in
 
-Belt.ts:39
+[Belt.ts:39](https://github.com/jeffholst/custom-belt/blob/e4514da/packages/custom-belt-lib/src/Belt.ts#L39)

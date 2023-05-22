@@ -17,17 +17,17 @@ Where to start stripe placement on patch (Left or Right)
 
 ### Left
 
-• **Left** = ``"Left"``
+• **Left** = `"Left"`
 
 #### Defined in
 
 [Belt.ts:60](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L60)
 
-___
+---
 
 ### Right
 
-• **Right** = ``"Right"``
+• **Right** = `"Right"`
 
 #### Defined in
 

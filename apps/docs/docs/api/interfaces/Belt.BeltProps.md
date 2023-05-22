@@ -100,7 +100,7 @@ Property object passed to <CustomBelt /> component
 
 [Belt.ts:114](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L114)
 
-___
+---
 
 ### beltRDF
 
@@ -110,7 +110,7 @@ ___
 
 [Belt.ts:187](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L187)
 
-___
+---
 
 ### border
 
@@ -120,7 +120,7 @@ ___
 
 [Belt.ts:115](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L115)
 
-___
+---
 
 ### callback
 
@@ -130,7 +130,7 @@ ___
 
 [Belt.ts:190](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L190)
 
-___
+---
 
 ### hasPatch
 
@@ -140,7 +140,7 @@ ___
 
 [Belt.ts:116](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L116)
 
-___
+---
 
 ### hasProfessorPatch
 
@@ -150,7 +150,7 @@ ___
 
 [Belt.ts:121](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L121)
 
-___
+---
 
 ### id
 
@@ -160,7 +160,7 @@ ___
 
 [Belt.ts:113](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L113)
 
-___
+---
 
 ### patch
 
@@ -170,7 +170,7 @@ ___
 
 [Belt.ts:117](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L117)
 
-___
+---
 
 ### patchBorder
 
@@ -180,7 +180,7 @@ ___
 
 [Belt.ts:118](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L118)
 
-___
+---
 
 ### professorBorder
 
@@ -190,7 +190,7 @@ ___
 
 [Belt.ts:120](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L120)
 
-___
+---
 
 ### professorPatch
 
@@ -200,7 +200,7 @@ ___
 
 [Belt.ts:119](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L119)
 
-___
+---
 
 ### randomSettings
 
@@ -210,7 +210,7 @@ ___
 
 [Belt.ts:188](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L188)
 
-___
+---
 
 ### refreshInterval
 
@@ -220,7 +220,7 @@ ___
 
 [Belt.ts:189](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L189)
 
-___
+---
 
 ### s10l1
 
@@ -230,7 +230,7 @@ ___
 
 [Belt.ts:170](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L170)
 
-___
+---
 
 ### s10l2a
 
@@ -240,7 +240,7 @@ ___
 
 [Belt.ts:171](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L171)
 
-___
+---
 
 ### s10l2b
 
@@ -250,7 +250,7 @@ ___
 
 [Belt.ts:172](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L172)
 
-___
+---
 
 ### s10l3
 
@@ -260,7 +260,7 @@ ___
 
 [Belt.ts:173](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L173)
 
-___
+---
 
 ### s11l1
 
@@ -270,7 +270,7 @@ ___
 
 [Belt.ts:174](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L174)
 
-___
+---
 
 ### s11l2a
 
@@ -280,7 +280,7 @@ ___
 
 [Belt.ts:175](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L175)
 
-___
+---
 
 ### s11l2b
 
@@ -290,7 +290,7 @@ ___
 
 [Belt.ts:176](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L176)
 
-___
+---
 
 ### s11l3
 
@@ -300,7 +300,7 @@ ___
 
 [Belt.ts:177](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L177)
 
-___
+---
 
 ### s12l1
 
@@ -310,7 +310,7 @@ ___
 
 [Belt.ts:178](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L178)
 
-___
+---
 
 ### s12l2a
 
@@ -320,7 +320,7 @@ ___
 
 [Belt.ts:179](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L179)
 
-___
+---
 
 ### s12l2b
 
@@ -330,7 +330,7 @@ ___
 
 [Belt.ts:180](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L180)
 
-___
+---
 
 ### s12l3
 
@@ -340,7 +340,7 @@ ___
 
 [Belt.ts:181](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L181)
 
-___
+---
 
 ### s13l1
 
@@ -350,7 +350,7 @@ ___
 
 [Belt.ts:182](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L182)
 
-___
+---
 
 ### s13l2a
 
@@ -360,7 +360,7 @@ ___
 
 [Belt.ts:183](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L183)
 
-___
+---
 
 ### s13l2b
 
@@ -370,7 +370,7 @@ ___
 
 [Belt.ts:184](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L184)
 
-___
+---
 
 ### s13l3
 
@@ -380,7 +380,7 @@ ___
 
 [Belt.ts:185](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L185)
 
-___
+---
 
 ### s1l1
 
@@ -390,7 +390,7 @@ ___
 
 [Belt.ts:134](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L134)
 
-___
+---
 
 ### s1l2a
 
@@ -400,7 +400,7 @@ ___
 
 [Belt.ts:135](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L135)
 
-___
+---
 
 ### s1l2b
 
@@ -410,7 +410,7 @@ ___
 
 [Belt.ts:136](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L136)
 
-___
+---
 
 ### s1l3
 
@@ -420,7 +420,7 @@ ___
 
 [Belt.ts:137](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L137)
 
-___
+---
 
 ### s2l1
 
@@ -430,7 +430,7 @@ ___
 
 [Belt.ts:138](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L138)
 
-___
+---
 
 ### s2l2a
 
@@ -440,7 +440,7 @@ ___
 
 [Belt.ts:139](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L139)
 
-___
+---
 
 ### s2l2b
 
@@ -450,7 +450,7 @@ ___
 
 [Belt.ts:140](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L140)
 
-___
+---
 
 ### s2l3
 
@@ -460,7 +460,7 @@ ___
 
 [Belt.ts:141](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L141)
 
-___
+---
 
 ### s3l1
 
@@ -470,7 +470,7 @@ ___
 
 [Belt.ts:142](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L142)
 
-___
+---
 
 ### s3l2a
 
@@ -480,7 +480,7 @@ ___
 
 [Belt.ts:143](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L143)
 
-___
+---
 
 ### s3l2b
 
@@ -490,7 +490,7 @@ ___
 
 [Belt.ts:144](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L144)
 
-___
+---
 
 ### s3l3
 
@@ -500,7 +500,7 @@ ___
 
 [Belt.ts:145](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L145)
 
-___
+---
 
 ### s4l1
 
@@ -510,7 +510,7 @@ ___
 
 [Belt.ts:146](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L146)
 
-___
+---
 
 ### s4l2a
 
@@ -520,7 +520,7 @@ ___
 
 [Belt.ts:147](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L147)
 
-___
+---
 
 ### s4l2b
 
@@ -530,7 +530,7 @@ ___
 
 [Belt.ts:148](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L148)
 
-___
+---
 
 ### s4l3
 
@@ -540,7 +540,7 @@ ___
 
 [Belt.ts:149](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L149)
 
-___
+---
 
 ### s5l1
 
@@ -550,7 +550,7 @@ ___
 
 [Belt.ts:150](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L150)
 
-___
+---
 
 ### s5l2a
 
@@ -560,7 +560,7 @@ ___
 
 [Belt.ts:151](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L151)
 
-___
+---
 
 ### s5l2b
 
@@ -570,7 +570,7 @@ ___
 
 [Belt.ts:152](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L152)
 
-___
+---
 
 ### s5l3
 
@@ -580,7 +580,7 @@ ___
 
 [Belt.ts:153](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L153)
 
-___
+---
 
 ### s6l1
 
@@ -590,7 +590,7 @@ ___
 
 [Belt.ts:154](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L154)
 
-___
+---
 
 ### s6l2a
 
@@ -600,7 +600,7 @@ ___
 
 [Belt.ts:155](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L155)
 
-___
+---
 
 ### s6l2b
 
@@ -610,7 +610,7 @@ ___
 
 [Belt.ts:156](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L156)
 
-___
+---
 
 ### s6l3
 
@@ -620,7 +620,7 @@ ___
 
 [Belt.ts:157](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L157)
 
-___
+---
 
 ### s7l1
 
@@ -630,7 +630,7 @@ ___
 
 [Belt.ts:158](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L158)
 
-___
+---
 
 ### s7l2a
 
@@ -640,7 +640,7 @@ ___
 
 [Belt.ts:159](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L159)
 
-___
+---
 
 ### s7l2b
 
@@ -650,7 +650,7 @@ ___
 
 [Belt.ts:160](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L160)
 
-___
+---
 
 ### s7l3
 
@@ -660,7 +660,7 @@ ___
 
 [Belt.ts:161](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L161)
 
-___
+---
 
 ### s8l1
 
@@ -670,7 +670,7 @@ ___
 
 [Belt.ts:162](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L162)
 
-___
+---
 
 ### s8l2a
 
@@ -680,7 +680,7 @@ ___
 
 [Belt.ts:163](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L163)
 
-___
+---
 
 ### s8l2b
 
@@ -690,7 +690,7 @@ ___
 
 [Belt.ts:164](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L164)
 
-___
+---
 
 ### s8l3
 
@@ -700,7 +700,7 @@ ___
 
 [Belt.ts:165](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L165)
 
-___
+---
 
 ### s9l1
 
@@ -710,7 +710,7 @@ ___
 
 [Belt.ts:166](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L166)
 
-___
+---
 
 ### s9l2a
 
@@ -720,7 +720,7 @@ ___
 
 [Belt.ts:167](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L167)
 
-___
+---
 
 ### s9l2b
 
@@ -730,7 +730,7 @@ ___
 
 [Belt.ts:168](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L168)
 
-___
+---
 
 ### s9l3
 
@@ -740,7 +740,7 @@ ___
 
 [Belt.ts:169](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L169)
 
-___
+---
 
 ### stripe1
 
@@ -750,7 +750,7 @@ ___
 
 [Belt.ts:124](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L124)
 
-___
+---
 
 ### stripe10
 
@@ -760,7 +760,7 @@ ___
 
 [Belt.ts:133](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L133)
 
-___
+---
 
 ### stripe2
 
@@ -770,7 +770,7 @@ ___
 
 [Belt.ts:125](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L125)
 
-___
+---
 
 ### stripe3
 
@@ -780,7 +780,7 @@ ___
 
 [Belt.ts:126](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L126)
 
-___
+---
 
 ### stripe4
 
@@ -790,7 +790,7 @@ ___
 
 [Belt.ts:127](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L127)
 
-___
+---
 
 ### stripe5
 
@@ -800,7 +800,7 @@ ___
 
 [Belt.ts:128](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L128)
 
-___
+---
 
 ### stripe6
 
@@ -810,7 +810,7 @@ ___
 
 [Belt.ts:129](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L129)
 
-___
+---
 
 ### stripe7
 
@@ -820,7 +820,7 @@ ___
 
 [Belt.ts:130](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L130)
 
-___
+---
 
 ### stripe8
 
@@ -830,7 +830,7 @@ ___
 
 [Belt.ts:131](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L131)
 
-___
+---
 
 ### stripe9
 
@@ -840,7 +840,7 @@ ___
 
 [Belt.ts:132](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L132)
 
-___
+---
 
 ### stripeCount
 
@@ -850,7 +850,7 @@ ___
 
 [Belt.ts:122](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L122)
 
-___
+---
 
 ### stripePosition
 
@@ -860,7 +860,7 @@ ___
 
 [Belt.ts:123](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L123)
 
-___
+---
 
 ### transitionCSS
 
@@ -870,7 +870,7 @@ ___
 
 [Belt.ts:186](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L186)
 
-___
+---
 
 ### version
 

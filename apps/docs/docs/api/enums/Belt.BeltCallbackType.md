@@ -18,27 +18,27 @@ Callback types for belt interactions
 
 ### Click
 
-• **Click** = ``"Click"``
+• **Click** = `"Click"`
 
 #### Defined in
 
 [Belt.ts:16](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L16)
 
-___
+---
 
 ### DoubleClick
 
-• **DoubleClick** = ``"DoubleClick"``
+• **DoubleClick** = `"DoubleClick"`
 
 #### Defined in
 
 [Belt.ts:17](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L17)
 
-___
+---
 
 ### Refresh
 
-• **Refresh** = ``"Refresh"``
+• **Refresh** = `"Refresh"`
 
 #### Defined in
 

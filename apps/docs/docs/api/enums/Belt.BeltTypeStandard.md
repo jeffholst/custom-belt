@@ -20,47 +20,47 @@ Belt types excluding Crazy
 
 ### Checkered
 
-• **Checkered** = ``"Checkered"``
+• **Checkered** = `"Checkered"`
 
 #### Defined in
 
 [Belt.ts:42](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L42)
 
-___
+---
 
 ### Coral
 
-• **Coral** = ``"Coral"``
+• **Coral** = `"Coral"`
 
 #### Defined in
 
 [Belt.ts:40](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L40)
 
-___
+---
 
 ### Solid
 
-• **Solid** = ``"Solid"``
+• **Solid** = `"Solid"`
 
 #### Defined in
 
 [Belt.ts:38](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L38)
 
-___
+---
 
 ### Split
 
-• **Split** = ``"Split"``
+• **Split** = `"Split"`
 
 #### Defined in
 
 [Belt.ts:41](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L41)
 
-___
+---
 
 ### Striped
 
-• **Striped** = ``"Striped"``
+• **Striped** = `"Striped"`
 
 #### Defined in
 

@@ -23,7 +23,7 @@ Used to assign/lookup friendly names to hex colors
 
 [Belt.ts:104](https://github.com/jeffholst/vue-custom-belt/blob/98d6c2b/src/Belt.ts#L104)
 
-___
+---
 
 ### name
 

@@ -1,77 +1,84 @@
 custom-belt-lib / [Modules](modules.md)
 
-# Turborepo starter
+# Custom Belt
 
-This is an official starter Turborepo.
+<h1 align="center">
+ <br>
+ <br>
+  <img src="https://jeffholst.github.io/custom-belt/belts-animated.gif" alt="Animated Belts">
+ <br>
+ <br>
+ <br>
+</h1>
 
-## Using this example
+👋 Howdy and welcome!
 
-Run the following command:
+Custom Belt is a JavaScript library and application to easily create any style martial arts belt in [SVG](https://en.wikipedia.org/wiki/SVG) format
 
-```sh
-npx create-turbo@latest
-```
+- [Demo](https://jeffholst.github.io/custom-belt/demo.html): easily create custom belts online and download the images to be used directly in your own projects
+- [Documentation](https://jeffholst.github.io/custom-belt/introduction/what-is-custom-belt.html): learn how the library can be used to programmatically create custom belts in your own applications
 
-## What's inside?
+🐞 Report Bugs and 🚀 Feature Requests
 
-This Turborepo includes the following packages/apps:
+## ✨ Hightlights
 
-### Apps and Packages
+- SVG vector images
+- Predefined belts
+- Random belt generator
+- Clean and focused
+- Actively maintained
+- Easy to use
+- Open Source (MIT license)
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+## 🧰️ Tooling
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Custom Belt is built, maintained, and tested using industry standard best practices, and first in class tooling including:
 
-### Utilities
+[ESLint](https://eslint.org/),
+[GitHub](https://github.com/),
+[GitHub Pages](https://pages.github.com/),
+[Gulp](https://gulpjs.com/),
+[NPM](https://www.npmjs.com/),
+[Prettier](https://prettier.io),
+[Turborepo](https://turbo.build/),
+[TypeDoc](https://typedoc.org/),
+[TypeScript](https://www.typescriptlang.org/),
+[Visual Studio Code](https://code.visualstudio.com/),
+[Vite](https://vitejs.dev/),
+[VitePress](https://vitepress.dev/),
+[Vitest](https://vitest.dev/),
+[Vue](https://vuejs.org/),
+and more ...
 
-This Turborepo has some additional tools already setup for you:
+## 📁 Project Structure
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- `apps/docs`: a [VitePress](https://vitepress.dev/) documentation and demo site for Custom Library
+- `apps/vue-test`: quickly mock up and test vue library components
+- `packages/custom-belt-lib`: the Custom Belt library
+- `packages/vue-custom-belt`: Vue component for Custom Belt
 
-### Build
+## 💻 Turborepo Commands
 
-To build all apps and packages, run the following command:
+The following monorepo wide commands can be run from /root
 
-```
-cd my-turborepo
-pnpm build
-```
+| Command              | Action                                      |
+| :------------------- | :------------------------------------------ |
+| `npm install`        | Installs all dependencies                   |
+| `npm run build`      | Rebuilds all projects                       |
+| `npm run build:docs` | Rebuild TypeDocs for custom-belt-lib        |
+| `npm run build:ghp`  | Used by github deploy.yml workflow          |
+| `npm run dev`        | Starts local dev server                     |
+| `npm run format`     | Run prettier formatter                      |
+| `npm run lint`       | Run lint for all projects                   |
+| `npm run test`       | Run all test cases                          |
 
-### Develop
+## 💬 Tips
 
-To develop all apps and packages, run the following command:
+- Navigate to individual **apps** or **packages** to see project specific README files.
+- Be sure to run `npm install` from the root directory to install all dependencies.
+- GitHub Pages build action is only triggered by **github-pages** branch commits.
 
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
+## ⛓️ Turborepo Links
 
 Learn more about the power of Turborepo:
 

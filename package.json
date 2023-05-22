@@ -1,12 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "test": "turbo run test",
     "build": "turbo run build",
-    "build-github-pages": "cd apps/docs && npm run build",
+    "build:docs": "cd packages/custom-belt-lib && npm run typedoc",
+    "build:ghp": "cd apps/docs && npm run build",
     "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "test": "turbo run test"
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",
