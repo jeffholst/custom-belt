@@ -2,7 +2,7 @@
 
 **Custom Belt** is a JavaScript library and application to easily create any
 style martial arts belt in [SVG](https://en.wikipedia.org/wiki/SVG) format.
-Visit the [demo](/demo) to generate any style belt which can be downloaded
+Visit the [Demo](/demo) to generate any style belt which can be downloaded
 and used independantly as an SVG image.
 
 Alternativley, see [Quick Start](/introduction/quick-start) for instructions how to
