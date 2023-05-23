@@ -16,7 +16,6 @@
 - [Belt](../interfaces/Belt.Belt.md)
 - [BeltColor](../interfaces/Belt.BeltColor.md)
 - [BeltProps](../interfaces/Belt.BeltProps.md)
-- [BeltRDF](../interfaces/Belt.BeltRDF.md)
 - [RandomSettings](../interfaces/Belt.RandomSettings.md)
 
 ### Variables
@@ -39,7 +38,6 @@
 - [getBeltPropsSolid](Belt.md#getbeltpropssolid)
 - [getBeltPropsSplit](Belt.md#getbeltpropssplit)
 - [getBeltPropsStriped](Belt.md#getbeltpropsstriped)
-- [getBeltRDF](Belt.md#getbeltrdf)
 - [isValidHexCode](Belt.md#isvalidhexcode)
 - [mapBeltColor](Belt.md#mapbeltcolor)
 - [mapBeltColors](Belt.md#mapbeltcolors)
@@ -54,7 +52,7 @@ Default color when no color provided
 
 #### Defined in
 
-[Belt.ts:229](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L229)
+[Belt.ts:228](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L228)
 
 ___
 
@@ -66,7 +64,7 @@ Maximum number of stripes a belt may have
 
 #### Defined in
 
-[Belt.ts:231](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L231)
+[Belt.ts:230](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L230)
 
 ___
 
@@ -78,7 +76,7 @@ Minimum number of stripes
 
 #### Defined in
 
-[Belt.ts:233](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L233)
+[Belt.ts:232](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L232)
 
 ___
 
@@ -90,7 +88,7 @@ Default stripe position
 
 #### Defined in
 
-[Belt.ts:235](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L235)
+[Belt.ts:234](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L234)
 
 ## Functions
 
@@ -114,7 +112,7 @@ combined array of BeltProps[] arrays
 
 #### Defined in
 
-[Belt.ts:250](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L250)
+[Belt.ts:249](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L249)
 
 ___
 
@@ -156,7 +154,7 @@ Belt object
 
 #### Defined in
 
-[Belt.ts:281](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L281)
+[Belt.ts:280](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L280)
 
 ___
 
@@ -180,7 +178,7 @@ number of colors in beltType
 
 #### Defined in
 
-[Belt.ts:336](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L336)
+[Belt.ts:335](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L335)
 
 ___
 
@@ -224,7 +222,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:383](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L383)
+[Belt.ts:382](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L382)
 
 ___
 
@@ -266,7 +264,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:470](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L470)
+[Belt.ts:469](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L469)
 
 ___
 
@@ -308,7 +306,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:543](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L543)
+[Belt.ts:542](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L542)
 
 ___
 
@@ -337,7 +335,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:603](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L603)
+[Belt.ts:602](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L602)
 
 ___
 
@@ -368,7 +366,7 @@ Belt object
 
 #### Defined in
 
-[Belt.ts:757](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L757)
+[Belt.ts:754](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L754)
 
 ___
 
@@ -409,7 +407,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:896](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L896)
+[Belt.ts:893](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L893)
 
 ___
 
@@ -451,7 +449,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:968](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L968)
+[Belt.ts:965](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L965)
 
 ___
 
@@ -494,32 +492,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:1042](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L1042)
-
-___
-
-### getBeltRDF
-
-▸ **getBeltRDF**(`belt`, `about?`): [`BeltRDF`](../interfaces/Belt.BeltRDF.md)
-
-Create new BeltRDF object used in svg metadata
-
-#### Parameters
-
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `belt` | [`Belt`](../interfaces/Belt.Belt.md) | `undefined` | belt object |
-| `about` | `undefined` \| `string` | `undefined` | about information |
-
-#### Returns
-
-[`BeltRDF`](../interfaces/Belt.BeltRDF.md)
-
-BeltRDF object
-
-#### Defined in
-
-[Belt.ts:1099](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L1099)
+[Belt.ts:1039](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L1039)
 
 ___
 
@@ -555,7 +528,7 @@ true if valid color hex code, false otherwise
 
 #### Defined in
 
-[Belt.ts:1129](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L1129)
+[Belt.ts:1108](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L1108)
 
 ___
 
@@ -580,7 +553,7 @@ found hex code or original color name
 
 #### Defined in
 
-[Belt.ts:1152](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L1152)
+[Belt.ts:1131](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L1131)
 
 ___
 
@@ -603,4 +576,4 @@ Map all belt color names in all Belt array object to hex codes
 
 #### Defined in
 
-[Belt.ts:1177](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L1177)
+[Belt.ts:1156](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L1156)

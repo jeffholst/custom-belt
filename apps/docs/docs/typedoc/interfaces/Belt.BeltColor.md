@@ -6,6 +6,10 @@
 
 Used to assign/lookup friendly names to hex colors
 
+```js
+const beltColors: BeltColor = { name: "White", hex: "#FFFFFF"};
+```
+
 ## Table of contents
 
 ### Properties
@@ -19,9 +23,11 @@ Used to assign/lookup friendly names to hex colors
 
 • **hex**: `string`
 
+hex code beginning with # then 3 or 6 valid hex characters (ex. "#FFFFFF")
+
 #### Defined in
 
-[Belt.ts:104](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L104)
+[Belt.ts:110](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L110)
 
 ___
 
@@ -29,6 +35,8 @@ ___
 
 • **name**: `string`
 
+friendly lookup name for hex color (ex. "White")
+
 #### Defined in
 
-[Belt.ts:103](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/Belt.ts#L103)
+[Belt.ts:114](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L114)

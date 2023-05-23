@@ -24,7 +24,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'API',
+        text: 'Usage',
         items: [
           {
             text: 'Modules',
@@ -53,7 +53,6 @@ export default defineConfig({
               { text: 'Belt', link: '/typedoc/interfaces/Belt.Belt' },
               { text: 'BeltColor', link: '/typedoc/interfaces/Belt.BeltColor' },
               { text: 'BeltProps', link: '/typedoc/interfaces/Belt.BeltProps' },
-              { text: 'BeltRDF', link: '/typedoc/interfaces/Belt.BeltRDF' },
               { text: 'RandomSettings', link: '/typedoc/interfaces/Belt.RandomSettings' }
             ]
           }

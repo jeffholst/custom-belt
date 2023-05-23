@@ -10,22 +10,6 @@
     role="img"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <metadata>
-      <rdf:RDF
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-        xmlns:dc="http://purl.org/dc/elements/1.1/"
-      >
-        <rdf:Description
-          :dc:about="myBelt != undefined ? myBelt.beltRDF.about : ''"
-          :dc:title="myBelt != undefined ? myBelt.beltRDF.title : ''"
-          :dc:date="new Date().toISOString().slice(0, 10)"
-          dc:format="image/svg"
-          dc:language="en"
-        >
-        </rdf:Description>
-      </rdf:RDF>
-    </metadata>
     <g id="KnotBend3">
       <path
         id="s7l3a"

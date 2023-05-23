@@ -2,11 +2,11 @@
 layout: home
 
 title: Custom Belt
-titleTemplate: Demo and Documenttion for vue-custom-belt
+titleTemplate: Demo and Docs 
 
 hero:
   name: Custom Belt
-  tagline: A Vue 3 component to easily create any style martial arts belt
+  tagline: Custom Belt is a JavaScript library and application to easily create any style martial arts belt. 
   actions:
     - theme: brand
       text: Demo
@@ -15,12 +15,12 @@ hero:
       text: Documentation
       link: /introduction/what-is-custom-belt
 features:
-  - icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path fill="#41b883" d="M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6 3.22-5.6Z"/><path fill="#41b883" d="m2 3.925 14 24.15 14-24.15h-5.6L16 18.415 7.53 3.925Z"/><path fill="#35495e" d="M7.53 3.925 16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z"/></svg>
+  - icon: ✨ 
     title: Modern Tooling
-    details: Built with with Vue, Vite and TypeScript. Unit testing with Vitest.
+    details: Built, maintained, and tested using industry standard best pracitices.
   - icon: <svg width="32" height="13" viewBox="0 0 256 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><path d="M0 0v85.498h71.166V99.83H128V85.498h128V0H0z" fill="#CB3837"/><path d="M42.502 14.332h-28.17v56.834h28.17V28.664h14.332v42.502h14.332V14.332H42.502zM85.498 14.332v71.166h28.664V71.166h28.17V14.332H85.498zM128 56.834h-13.838v-28.17H128v28.17zM184.834 14.332h-28.17v56.834h28.17V28.664h14.332v42.502h14.332V28.664h14.332v42.502h14.332V14.332h-57.328z" fill="#FFF"/></svg>
     title: NPM integration
-    details: Just add the 'vue-custom-belt' NPM package to your Vue project and you are ready to go.
+    details: Just add the appropriate NPM package to your project and you are ready to go.
   - icon: 🚀
     title: Get Started Fast
     details: Quick setup and fully documented reference guide with multiple examples.
