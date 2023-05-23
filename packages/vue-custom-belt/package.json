@@ -5,11 +5,11 @@
   "description": "Vue 3 component to easily create any style martial arts belt",
   "homepage": "https://jeffholst.github.io/custom-belt/",
   "bugs": {
-    "url": "https://github.com/jeffholst/vue-custom-belt/issues"
+    "url": "https://github.com/jeffholst/custom-belt/issues/new?assignees=&labels=bug%3A+pending+triage&projects=&template=bug_report.yml"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeffholst/vue-custom-belt"
+    "url": "https://github.com/jeffholst/custom-belt/tree/main/packages/vue-custom-belt"
   },
   "keywords": [
     "vue",
@@ -41,15 +41,10 @@
     }
   },
   "scripts": {
-    "dev": "vite --open",
     "build": "vite build && vue-tsc --emitDeclarationOnly",
-    "build-original": "run-p type-check build-only",
-    "preview": "vite preview",
-    "test:unit": "vitest --environment jsdom --root src/",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
+    "dev": "vite --open",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "typedoc": "typedoc --tsconfig ./tsconfig-typedoc.json"
+    "test": "vitest --environment jsdom --root src/"
   },
   "dependencies": {
     "vue": "^3.2.45"

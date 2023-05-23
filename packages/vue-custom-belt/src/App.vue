@@ -13,7 +13,9 @@ import {
 } from "../../custom-belt-lib/src/Belt";
 import BeltSystemJSON_IBJJF from "../../custom-belt-lib/src/belt-systems/IBJJF.json";
 
-const ibjjfSystem: BeltSystem = new BeltSystem(BeltSystemJSON_IBJJF);
+const ibjjfSystem: BeltSystem = new BeltSystem(
+  JSON.stringify(BeltSystemJSON_IBJJF)
+);
 
 let randomCrazy: BeltProps[] = getBeltPropsRandom(
   true,
@@ -76,7 +78,7 @@ let randomSplit: BeltProps[] = getBeltPropsRandom(
 );
 
 const flagBeltsCallback = (
-  event: Event,
+  event: Event | null,
   callbackType: BeltCallbackType,
   bp: BeltProps
 ) => {
@@ -136,7 +138,7 @@ const MexicoBelt = getBeltPropsStriped(
 const flagBelts = combineBeltProps([usaBelt, MexicoBelt]);
 
 const IBBJFBeltsCallback = (
-  event: Event,
+  event: Event | null,
   callbackType: BeltCallbackType,
   beltProps: BeltProps
 ) => {

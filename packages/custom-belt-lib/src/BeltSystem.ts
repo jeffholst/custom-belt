@@ -5,7 +5,17 @@ import {
   StripePosition,
   mapBeltColors,
   getBeltPropsFromBelt,
+  BeltCallbackType,
 } from "./Belt";
+
+export interface BeltSystemInt {
+  name: string;
+  title: string;
+  transitionCSS: string;
+  refreshInterval: number;
+  colors: BeltColor[];
+  belts: Belt[];
+}
 
 /**
  * Class used to represent predefined belt systems
@@ -26,15 +36,28 @@ export class BeltSystem {
 
   /**
    * Instantiate a new BeltSystem object
-   * @param {BeltSystem} system belt system object to use
+   * @param {BeltSystemInt} system belt system object to use
    */
-  constructor(system: BeltSystem | any) {
-    this.name = system.name;
-    this.title = system.title;
-    this.transitionCSS = system.transitionCSS;
-    this.refreshInterval = system.refreshInterval;
-    this.colors = system.colors;
-    this.belts = system.belts;
+  constructor(system: string) {
+    let beltSystem: BeltSystemInt = {
+      name: "",
+      title: "",
+      transitionCSS: "",
+      refreshInterval: 0,
+      colors: [],
+      belts: [],
+    };
+    try {
+      beltSystem = JSON.parse(system);
+    } catch (e) {
+      console.log("Error parsing belt system: " + e);
+    }
+    this.name = beltSystem.name;
+    this.title = beltSystem.title;
+    this.transitionCSS = beltSystem.transitionCSS;
+    this.refreshInterval = beltSystem.refreshInterval;
+    this.colors = beltSystem.colors;
+    this.belts = beltSystem.belts;
 
     // Replace friendly color names in Belt objects with hex values
     mapBeltColors(this.belts, this.colors);
@@ -71,7 +94,11 @@ export class BeltSystem {
     belt: Belt,
     stripeCount: number,
     stripePosition: StripePosition | undefined = undefined,
-    callback: Function | null = null
+    callback?: (
+      event: Event | null,
+      callbackType: BeltCallbackType,
+      belt: BeltProps
+    ) => void
   ): BeltProps {
     belt.system = this.title;
     const beltProps: BeltProps = getBeltPropsFromBelt(
@@ -93,9 +120,13 @@ export class BeltSystem {
    * @return {BeltProps[]} all belts in the belt system
    */
   getBeltPropsAll(
-    transitionCSS: string = "",
-    refreshInterval: number = 0,
-    callback: Function | null = null
+    transitionCSS = "",
+    refreshInterval = 0,
+    callback?: (
+      event: Event | null,
+      callbackType: BeltCallbackType,
+      belt: BeltProps
+    ) => void
   ): BeltProps[] {
     const beltPropsAry: BeltProps[] = [];
     let uniqueElementId: string | undefined = undefined;
@@ -128,7 +159,11 @@ export class BeltSystem {
     id: number,
     stripeCount: number | undefined = undefined,
     stripePosition: StripePosition | undefined = undefined,
-    callback: Function | null = null
+    callback?: (
+      event: Event | null,
+      callbackType: BeltCallbackType,
+      belt: BeltProps
+    ) => void
   ): BeltProps[] {
     const beltPropsAry: BeltProps[] = [];
     const belt = this.getBeltById(id);
@@ -160,9 +195,13 @@ export class BeltSystem {
     ids: number[],
     stripeCount: number | undefined = undefined,
     stripePosition: StripePosition | undefined = undefined,
-    transitionCSS: string = "",
-    refreshInterval: number = 0,
-    callback: Function | null = null
+    transitionCSS = "",
+    refreshInterval = 0,
+    callback?: (
+      event: Event | null,
+      callbackType: BeltCallbackType,
+      belt: BeltProps
+    ) => void
   ): BeltProps[] {
     const beltPropsAry: BeltProps[] = [];
     const belts = this.getBeltsByIds(ids);
@@ -195,7 +234,11 @@ export class BeltSystem {
     name: string,
     stripeCount: number | undefined = undefined,
     stripePosition: StripePosition | undefined = undefined,
-    callback: Function | null = null
+    callback?: (
+      event: Event | null,
+      callbackType: BeltCallbackType,
+      belt: BeltProps
+    ) => void
   ): BeltProps[] {
     const beltPropsAry: BeltProps[] = [];
     const belt = this.getBeltByName(name);
@@ -227,9 +270,13 @@ export class BeltSystem {
     names: string[],
     stripeCount: number | undefined = undefined,
     stripePosition: StripePosition | undefined = undefined,
-    transitionCSS: string = "",
-    refreshInterval: number = 0,
-    callback: Function | null = null
+    transitionCSS = "",
+    refreshInterval = 0,
+    callback?: (
+      event: Event | null,
+      callbackType: BeltCallbackType,
+      belt: BeltProps
+    ) => void
   ): BeltProps[] {
     const beltPropsAry: BeltProps[] = [];
     const belts = this.getBeltsByNames(names);

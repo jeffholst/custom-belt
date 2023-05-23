@@ -7,7 +7,9 @@ import { BeltSystem } from "../BeltSystem";
  * BeltSystem tests
  */
 describe("BeltSystem", () => {
-  const ibjjfSystem: BeltSystem = new BeltSystem(BeltSystemJSON_IBJJF);
+  const ibjjfSystem: BeltSystem = new BeltSystem(
+    JSON.stringify(BeltSystemJSON_IBJJF)
+  );
 
   /**
    * Test that getBeltById returns undefined for invalid belt id

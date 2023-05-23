@@ -8,7 +8,7 @@ import BeltSystemJSON_IBJJF from '../../../../packages/custom-belt-lib/src/belt-
 import { BeltSystem } from '../../../../packages/custom-belt-lib/src/BeltSystem';
 import { StripePosition } from '../../../../packages/custom-belt-lib/src/Belt';
 
-const ibjjfSystem: BeltSystem = new BeltSystem(BeltSystemJSON_IBJJF);
+const ibjjfSystem: BeltSystem = new BeltSystem(JSON.stringify(BeltSystemJSON_IBJJF));
 const belts = ibjjfSystem.getBeltPropsByNames(
   ['White', 'Blue', 'Purple', 'Brown', 'Black'],
   0,

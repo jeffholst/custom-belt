@@ -591,7 +591,7 @@ const oneClick = (event: any) => {
 
 const doCallback = (event: Event | null, callbackType: BeltCallbackType) => {
   if (myBelt.value != undefined && myBelt.value.callback != null) {
-    myBelt.value.callback(event, callbackType, { ...myBelt.value });
+    myBelt.value.callback(event, callbackType, myBelt.value);
   }
 };
 

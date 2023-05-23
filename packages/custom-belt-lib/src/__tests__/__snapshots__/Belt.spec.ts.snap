@@ -29,7 +29,7 @@ exports[`getBeltProps > should match snap 1`] = `
     "title": "",
   },
   "border": "",
-  "callback": null,
+  "callback": undefined,
   "hasPatch": false,
   "hasProfessorPatch": false,
   "id": "",

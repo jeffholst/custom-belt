@@ -46,11 +46,11 @@ Instantiate a new BeltSystem object
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `system` | `any` | belt system object to use |
+| `system` | `string` | belt system object to use |
 
 #### Defined in
 
-[BeltSystem.ts:31](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L31)
+[BeltSystem.ts:41](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L41)
 
 ## Properties
 
@@ -62,7 +62,7 @@ belts in the system
 
 #### Defined in
 
-[BeltSystem.ts:25](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L25)
+[BeltSystem.ts:35](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L35)
 
 ___
 
@@ -74,7 +74,7 @@ lookup table of friendly color names to hex codes
 
 #### Defined in
 
-[BeltSystem.ts:23](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L23)
+[BeltSystem.ts:33](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L33)
 
 ___
 
@@ -86,7 +86,7 @@ name of belt system
 
 #### Defined in
 
-[BeltSystem.ts:15](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L15)
+[BeltSystem.ts:25](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L25)
 
 ___
 
@@ -98,7 +98,7 @@ refresh interval in milliseconds
 
 #### Defined in
 
-[BeltSystem.ts:21](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L21)
+[BeltSystem.ts:31](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L31)
 
 ___
 
@@ -110,7 +110,7 @@ title of belt system
 
 #### Defined in
 
-[BeltSystem.ts:17](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L17)
+[BeltSystem.ts:27](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L27)
 
 ___
 
@@ -122,7 +122,7 @@ transition CSS
 
 #### Defined in
 
-[BeltSystem.ts:19](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L19)
+[BeltSystem.ts:29](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L29)
 
 ## Methods
 
@@ -146,7 +146,7 @@ matching Belt or undefined
 
 #### Defined in
 
-[BeltSystem.ts:48](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L48)
+[BeltSystem.ts:71](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L71)
 
 ___
 
@@ -170,7 +170,7 @@ matching Belt or undefined
 
 #### Defined in
 
-[BeltSystem.ts:57](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L57)
+[BeltSystem.ts:80](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L80)
 
 ___
 
@@ -187,7 +187,7 @@ Get BeltpProps for provided Belt object and stripe info
 | `belt` | [`Belt`](../interfaces/Belt.Belt.md) | `undefined` | belt object to use |
 | `stripeCount` | `number` | `undefined` | number of stripes to use (0-10) |
 | `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | `undefined` | stripe placement |
-| `callback` | ``null`` \| `Function` | `null` | - |
+| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | - |
 
 #### Returns
 
@@ -197,7 +197,7 @@ BeltProps for provided Belt object and stripe info
 
 #### Defined in
 
-[BeltSystem.ts:70](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L70)
+[BeltSystem.ts:93](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L93)
 
 ___
 
@@ -213,7 +213,7 @@ Get all BeltProps from the belt system
 | :------ | :------ | :------ | :------ |
 | `transitionCSS` | `string` | `""` | transition css to use between belt changes. Empty for no effect |
 | `refreshInterval` | `number` | `0` | milliseconds to wait before changing belt. 0 for no rotate |
-| `callback` | ``null`` \| `Function` | `null` | - |
+| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | - |
 
 #### Returns
 
@@ -223,7 +223,7 @@ all belts in the belt system
 
 #### Defined in
 
-[BeltSystem.ts:95](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L95)
+[BeltSystem.ts:122](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L122)
 
 ___
 
@@ -240,7 +240,7 @@ Get BeltProps for matching belt id
 | `id` | `number` | `undefined` | belt id to find |
 | `stripeCount` | `undefined` \| `number` | `undefined` | number of stripes to use (0-10) |
 | `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | `undefined` | stripe placement (Right or Left) |
-| `callback` | ``null`` \| `Function` | `null` | - |
+| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | - |
 
 #### Returns
 
@@ -250,7 +250,7 @@ BeltProps for matching belt name
 
 #### Defined in
 
-[BeltSystem.ts:127](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L127)
+[BeltSystem.ts:158](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L158)
 
 ___
 
@@ -269,7 +269,7 @@ Get BeltProps for matching belt ids
 | `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | `undefined` | the stripe position to use |
 | `transitionCSS` | `string` | `""` | transition css to use between belt changes |
 | `refreshInterval` | `number` | `0` | milliseconds to wait before changing belt |
-| `callback` | ``null`` \| `Function` | `null` | - |
+| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | - |
 
 #### Returns
 
@@ -279,7 +279,7 @@ BeltProps[] of matching belts
 
 #### Defined in
 
-[BeltSystem.ts:159](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L159)
+[BeltSystem.ts:194](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L194)
 
 ___
 
@@ -296,7 +296,7 @@ Get BeltProps for matching belt name
 | `name` | `string` | `undefined` | belt name to find |
 | `stripeCount` | `undefined` \| `number` | `undefined` | number of stripes to use (0-10) |
 | `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | `undefined` | stripe placement (Right or Left) |
-| `callback` | ``null`` \| `Function` | `null` | - |
+| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | - |
 
 #### Returns
 
@@ -306,7 +306,7 @@ BeltProps for matching belt name
 
 #### Defined in
 
-[BeltSystem.ts:194](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L194)
+[BeltSystem.ts:233](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L233)
 
 ___
 
@@ -325,7 +325,7 @@ Get BeltProps for matching belt names
 | `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | `undefined` | the stripe position to use |
 | `transitionCSS` | `string` | `""` | transition css to use between belt changes |
 | `refreshInterval` | `number` | `0` | milliseconds to wait before changing belt |
-| `callback` | ``null`` \| `Function` | `null` | - |
+| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | - |
 
 #### Returns
 
@@ -335,7 +335,7 @@ BeltProps[] of matching belts
 
 #### Defined in
 
-[BeltSystem.ts:226](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L226)
+[BeltSystem.ts:269](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L269)
 
 ___
 
@@ -359,7 +359,7 @@ Belt[] of matching belts
 
 #### Defined in
 
-[BeltSystem.ts:259](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L259)
+[BeltSystem.ts:306](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L306)
 
 ___
 
@@ -383,4 +383,4 @@ Belt[] of matching belts
 
 #### Defined in
 
-[BeltSystem.ts:276](https://github.com/jeffholst/custom-belt/blob/332743c/packages/custom-belt-lib/src/BeltSystem.ts#L276)
+[BeltSystem.ts:323](https://github.com/jeffholst/custom-belt/blob/937c9ba/packages/custom-belt-lib/src/BeltSystem.ts#L323)

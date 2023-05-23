@@ -187,7 +187,11 @@ export interface BeltProps {
   beltRDF: BeltRDF;
   randomSettings: RandomSettings;
   refreshInterval: number;
-  callback: Function | null;
+  callback?: (
+    event: Event | null,
+    callbackType: BeltCallbackType,
+    belt: BeltProps
+  ) => void;
 }
 
 /**
@@ -275,22 +279,22 @@ export const combineBeltProps = (beltProps: BeltProps[][]): BeltProps[] => {
  * @return {Belt} Belt object
  */
 export const getBelt = (
-  id: number = 0,
-  name: string = "",
+  id = 0,
+  name = "",
   type: BeltType = BeltType.Solid,
-  sortOrder: number = 0,
-  color1: string = "",
-  color2: string = "",
-  color3: string = "",
-  borderColor: string = "",
-  hasPatch: boolean = false,
-  patchColor: string = "",
-  patchBorderColor: string = "",
-  hasProfessorPatch: boolean = false,
-  professorPatchColor: string = "",
-  professorBorderColor: string = "",
-  stripeColor: string = "",
-  stripeCount: number = 0,
+  sortOrder = 0,
+  color1 = "",
+  color2 = "",
+  color3 = "",
+  borderColor = "",
+  hasPatch = false,
+  patchColor = "",
+  patchBorderColor = "",
+  hasProfessorPatch = false,
+  professorPatchColor = "",
+  professorBorderColor = "",
+  stripeColor = "",
+  stripeCount = 0,
   stripePosition: StripePosition = StripePositionDefault,
   minStripes: number = MinimumStripeCount,
   maxStripes: number = MaximumStripeCount
@@ -373,7 +377,7 @@ export const getBeltColorCount = (beltType: BeltType): number | undefined => {
  * @param {number} maxStripes maximum number of stripes for belt
  * @param {string} transitionCSS CSS for transition animation
  * @param {number} refreshInterval interval for refreshing belt in milliseconds
- * @param {Function | null} callback callback function to call after belt actions
+ * @param {(event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void} callback callback function to call after belt actions
  * @return {BeltProps[]} BeltProps[] array
  */
 export const getBeltProps = (
@@ -383,21 +387,25 @@ export const getBeltProps = (
   color1: string,
   color2: string,
   color3: string,
-  borderColor: string = "#434244",
-  hasPatch: boolean = true,
-  patchColor: string = "#000000",
-  patchBorderColor: string = "",
-  hasProfessorPatch: boolean = false,
-  professorPatchColor: string = "",
-  professorBorderColor: string = "",
-  stripeColor: string = "",
-  stripeCount: number = 0,
+  borderColor = "#434244",
+  hasPatch = true,
+  patchColor = "#000000",
+  patchBorderColor = "",
+  hasProfessorPatch = false,
+  professorPatchColor = "",
+  professorBorderColor = "",
+  stripeColor = "",
+  stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
-  minStripes: number = 0,
-  maxStripes: number = 10,
-  transitionCSS: string = "",
-  refreshInterval: number = 0,
-  callback: Function | null = null
+  minStripes = 0,
+  maxStripes = 10,
+  transitionCSS = "",
+  refreshInterval = 0,
+  callback?: (
+    event: Event | null,
+    callbackType: BeltCallbackType,
+    belt: BeltProps
+  ) => void
 ): BeltProps[] => {
   const belt: Belt = getBelt(
     id,
@@ -456,29 +464,33 @@ export const getBeltProps = (
  * @param {number} maxStripes maximum number of stripes for belt
  * @param {string} transitionCSS CSS for transition animation
  * @param {number} refreshInterval interval for refreshing belt in milliseconds
- * @param {Function | null} callback callback function to call after belt actions
+ * @param {(event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void} callback callback function to call after belt actions
  * @return {BeltProps[]} BeltProps[] array
  */
 export const getBeltPropsCheckered = (
   name: string,
   color1: string,
   color2: string,
-  id: number = 0,
-  borderColor: string = "#434244",
-  hasPatch: boolean = true,
-  patchColor: string = "#000000",
-  patchBorderColor: string = "",
-  hasProfessorPatch: boolean = false,
-  professorPatchColor: string = "",
-  professorBorderColor: string = "",
-  stripeColor: string = "",
-  stripeCount: number = 0,
+  id = 0,
+  borderColor = "#434244",
+  hasPatch = true,
+  patchColor = "#000000",
+  patchBorderColor = "",
+  hasProfessorPatch = false,
+  professorPatchColor = "",
+  professorBorderColor = "",
+  stripeColor = "",
+  stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
-  minStripes: number = 0,
-  maxStripes: number = 10,
-  transitionCSS: string = "",
-  refreshInterval: number = 0,
-  callback: Function | null = null
+  minStripes = 0,
+  maxStripes = 10,
+  transitionCSS = "",
+  refreshInterval = 0,
+  callback?: (
+    event: Event | null,
+    callbackType: BeltCallbackType,
+    belt: BeltProps
+  ) => void
 ): BeltProps[] => {
   return getBeltProps(
     id,
@@ -525,29 +537,33 @@ export const getBeltPropsCheckered = (
  * @param {number} maxStripes maximum number of stripes for belt
  * @param {string} transitionCSS CSS for transition animation
  * @param {number} refreshInterval interval for refreshing belt in milliseconds
- * @param {Function | null} callback callback function to call after belt actions
+ * @param {(event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void} callback callback function to call after belt actions
  * @return {BeltProps[]} BeltProps[] array
  */
 export const getBeltPropsCoral = (
   name: string,
   color1: string,
   color2: string,
-  id: number = 0,
-  borderColor: string = "#434244",
-  hasPatch: boolean = true,
-  patchColor: string = "#000000",
-  patchBorderColor: string = "",
-  hasProfessorPatch: boolean = false,
-  professorPatchColor: string = "",
-  professorBorderColor: string = "",
-  stripeColor: string = "",
-  stripeCount: number = 0,
+  id = 0,
+  borderColor = "#434244",
+  hasPatch = true,
+  patchColor = "#000000",
+  patchBorderColor = "",
+  hasProfessorPatch = false,
+  professorPatchColor = "",
+  professorBorderColor = "",
+  stripeColor = "",
+  stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
-  minStripes: number = 0,
-  maxStripes: number = 10,
-  transitionCSS: string = "",
-  refreshInterval: number = 0,
-  callback: Function | null = null
+  minStripes = 0,
+  maxStripes = 10,
+  transitionCSS = "",
+  refreshInterval = 0,
+  callback?: (
+    event: Event | null,
+    callbackType: BeltCallbackType,
+    belt: BeltProps
+  ) => void
 ): BeltProps[] => {
   return getBeltProps(
     id,
@@ -581,7 +597,7 @@ export const getBeltPropsCoral = (
  * @param {StripePosition} stripePosition starting position of stripes on belt patch
  * @param {string} transitionCSS CSS for transition animation
  * @param {number} refreshInterval interval in milliseconds before displaying next belt
- * @param {Function | null} callback callback function to call after belt actions
+ * @param {(event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void} callback callback function to call after belt actions
  * @return {BeltProps[]} BeltProps[] array
  */
 export const getBeltPropsFromBelt = (
@@ -590,7 +606,11 @@ export const getBeltPropsFromBelt = (
   stripePosition: StripePosition | undefined,
   transitionCSS: string,
   refreshInterval: number,
-  callback: Function | null = null
+  callback?: (
+    event: Event | null,
+    callbackType: BeltCallbackType,
+    belt: BeltProps
+  ) => void
 ): BeltProps => {
   const beltRDF: BeltRDF = getBeltRDF(belt);
   const randomSettings: RandomSettings = getRandomSettings();
@@ -731,7 +751,7 @@ export const getBeltPropsFromBelt = (
  * @param {string | undefined} transitionCSS CSS for transition animation
  * @param {Array<BeltType> | undefined} includeBelts array of BeltTyps to include in random selection
  * @param {number} refreshInterval interval in milliseconds before displaying next belt
- * @param {Function | null} callback callback function to call after belt actions
+ * @param {(event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void} callback callback function to call after belt actions
  * @return {BeltProps[]} Belt object
  */
 export const getBeltPropsRandom = (
@@ -742,7 +762,11 @@ export const getBeltPropsRandom = (
   transitionCSS: string | undefined = "",
   includeBelts: Array<BeltType> | undefined = [],
   refreshInterval: number | undefined = 0,
-  callback: Function | null = null
+  callback?: (
+    event: Event | null,
+    callbackType: BeltCallbackType,
+    belt: BeltProps
+  ) => void
 ): BeltProps[] => {
   let randomBeltTypeIndex;
   const title = "Random";
@@ -866,28 +890,32 @@ export const getBeltPropsRandom = (
  * @param {number} maxStripes maximum number of stripes for belt
  * @param {string} transitionCSS CSS for transition animation
  * @param {number} refreshInterval interval for refreshing belt in milliseconds
- * @param {Function | null} callback callback function to call after belt actions
+ * @param {(event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void} callback callback function to call after belt actions
  * @return {BeltProps[]} BeltProps[] array
  */
 export const getBeltPropsSolid = (
   name: string,
   color: string,
-  id: number = 0,
-  borderColor: string = "#434244",
-  hasPatch: boolean = true,
-  patchColor: string = "#000000",
-  patchBorderColor: string = "",
-  hasProfessorPatch: boolean = false,
-  professorPatchColor: string = "",
-  professorBorderColor: string = "",
-  stripeColor: string = "",
-  stripeCount: number = 0,
+  id = 0,
+  borderColor = "#434244",
+  hasPatch = true,
+  patchColor = "#000000",
+  patchBorderColor = "",
+  hasProfessorPatch = false,
+  professorPatchColor = "",
+  professorBorderColor = "",
+  stripeColor = "",
+  stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
-  minStripes: number = 0,
-  maxStripes: number = 10,
-  transitionCSS: string = "",
-  refreshInterval: number = 0,
-  callback: Function | null = null
+  minStripes = 0,
+  maxStripes = 10,
+  transitionCSS = "",
+  refreshInterval = 0,
+  callback?: (
+    event: Event | null,
+    callbackType: BeltCallbackType,
+    belt: BeltProps
+  ) => void
 ): BeltProps[] => {
   return getBeltProps(
     id,
@@ -934,29 +962,33 @@ export const getBeltPropsSolid = (
  * @param {number} maxStripes maximum number of stripes for belt
  * @param {string} transitionCSS CSS for transition animation
  * @param {number} refreshInterval interval for refreshing belt in milliseconds
- * @param {Function | null} callback callback function to call after belt actions
+ * @param {(event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void} callback callback function to call after belt actions
  * @return {BeltProps[]} BeltProps[] array
  */
 export const getBeltPropsSplit = (
   name: string,
   color1: string,
   color2: string,
-  id: number = 0,
-  borderColor: string = "#434244",
-  hasPatch: boolean = true,
-  patchColor: string = "#000000",
-  patchBorderColor: string = "",
-  hasProfessorPatch: boolean = false,
-  professorPatchColor: string = "",
-  professorBorderColor: string = "",
-  stripeColor: string = "",
-  stripeCount: number = 0,
+  id = 0,
+  borderColor = "#434244",
+  hasPatch = true,
+  patchColor = "#000000",
+  patchBorderColor = "",
+  hasProfessorPatch = false,
+  professorPatchColor = "",
+  professorBorderColor = "",
+  stripeColor = "",
+  stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
-  minStripes: number = 0,
-  maxStripes: number = 10,
-  transitionCSS: string = "",
-  refreshInterval: number = 0,
-  callback: Function | null = null
+  minStripes = 0,
+  maxStripes = 10,
+  transitionCSS = "",
+  refreshInterval = 0,
+  callback?: (
+    event: Event | null,
+    callbackType: BeltCallbackType,
+    belt: BeltProps
+  ) => void
 ): BeltProps[] => {
   return getBeltProps(
     id,
@@ -1004,7 +1036,7 @@ export const getBeltPropsSplit = (
  * @param {number} maxStripes maximum number of stripes for belt
  * @param {string} transitionCSS CSS for transition animation
  * @param {number} refreshInterval interval for refreshing belt in milliseconds
- * @param {Function | null} callback callback function to call after belt actions
+ * @param {(event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void} callback callback function to call after belt actions
  * @return {BeltProps[]} BeltProps[] array
  */
 export const getBeltPropsStriped = (
@@ -1012,22 +1044,26 @@ export const getBeltPropsStriped = (
   color1: string,
   color2: string,
   color3: string,
-  id: number = 0,
-  borderColor: string = "#434244",
-  hasPatch: boolean = true,
-  patchColor: string = "#000000",
-  patchBorderColor: string = "",
-  hasProfessorPatch: boolean = false,
-  professorPatchColor: string = "",
-  professorBorderColor: string = "",
-  stripeColor: string = "",
-  stripeCount: number = 0,
+  id = 0,
+  borderColor = "#434244",
+  hasPatch = true,
+  patchColor = "#000000",
+  patchBorderColor = "",
+  hasProfessorPatch = false,
+  professorPatchColor = "",
+  professorBorderColor = "",
+  stripeColor = "",
+  stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
-  minStripes: number = 0,
-  maxStripes: number = 10,
-  transitionCSS: string = "",
-  refreshInterval: number = 0,
-  callback: Function | null = null
+  minStripes = 0,
+  maxStripes = 10,
+  transitionCSS = "",
+  refreshInterval = 0,
+  callback?: (
+    event: Event | null,
+    callbackType: BeltCallbackType,
+    belt: BeltProps
+  ) => void
 ): BeltProps[] => {
   return getBeltProps(
     id,
@@ -1173,7 +1209,7 @@ const generateUniqueId = (): string => {
  * @return {number} index of BeltType
  */
 const getBeltIndex = (bType: BeltType): number => {
-  let index: number = -1;
+  let index = -1;
 
   switch (bType) {
     case "Solid":
@@ -1249,7 +1285,7 @@ const logMessage = (
   message: string
 ) => {
   const myName: string = beltName ? beltName : "Not Specified";
-  const msg: string = `CustomBelt ${ltype}: {'beltName': '${myName}', 'id': ${beltId}, 'message': '${message}'}`;
+  const msg = `CustomBelt ${ltype}: {'beltName': '${myName}', 'id': ${beltId}, 'message': '${message}'}`;
 
   console.log(msg);
 };

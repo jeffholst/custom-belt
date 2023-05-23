@@ -1,4 +1,6 @@
-# [Custom Belt](https://jeffholst.github.io/custom-belt/) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jeffholst/custom-belt/blob/main/LICENSE.md) [![npm version](https://img.shields.io/npm/v/vue-custom-belt)](https://www.npmjs.com/package/vue-custom-belt) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/jeffholst/custom-belt/pulls) ![GitHub last commit](https://img.shields.io/github/last-commit/jeffholst/custom-belt) ![GitHub issues](https://img.shields.io/github/issues/jeffholst/custom-belt) ![GitHub pull requests](https://img.shields.io/github/issues-pr/jeffholst/custom-belt)
+# [Custom Belt](https://jeffholst.github.io/custom-belt/)
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jeffholst/custom-belt/blob/main/LICENSE.md) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/jeffholst/custom-belt/pulls) ![GitHub last commit](https://img.shields.io/github/last-commit/jeffholst/custom-belt) ![GitHub issues](https://img.shields.io/github/issues/jeffholst/custom-belt) ![GitHub pull requests](https://img.shields.io/github/issues-pr/jeffholst/custom-belt)
 
 <h1 align="center">
  <br>
@@ -50,25 +52,27 @@ and more ...
 
 ## 📁 Project Structure
 
-- `apps/docs`: a [VitePress](https://vitepress.dev/) documentation and demo site for Custom Library
-- `apps/vue-playgound`: quickly mock up and test vue library components
-- `packages/custom-belt-lib`: the Custom Belt library
-- `packages/vue-custom-belt`: Vue component for Custom Belt
+- [apps](https://github.com/jeffholst/custom-belt/tree/main/apps)
+  - [docs](https://github.com/jeffholst/custom-belt/tree/main/apps/docs): a [VitePress](https://vitepress.dev/) documentation and demo site for Custom Library
+  - [vue-playgound](https://github.com/jeffholst/custom-belt/tree/main/apps/vue-playground): quickly mock up and test vue library components
+- [packages](https://github.com/jeffholst/custom-belt/tree/main/packages)
+  - [custom-belt-lib](https://github.com/jeffholst/custom-belt/tree/main/packages/custom-belt-lib): the Custom Belt library
+  - [vue-custom-belt](https://github.com/jeffholst/custom-belt/tree/main/packages/vue-custom-belt): Vue component for Custom Belt
 
 ## 💻 Turborepo Commands
 
 The following monorepo wide commands can be run from /root
 
-| Command              | Action                                      |
-| :------------------- | :------------------------------------------ |
-| `npm install`        | Installs all dependencies                   |
-| `npm run build`      | Rebuilds all projects                       |
-| `npm run build:docs` | Rebuild TypeDocs for custom-belt-lib        |
-| `npm run build:ghp`  | Used by github deploy.yml workflow          |
-| `npm run dev`        | Starts local dev server                     |
-| `npm run format`     | Run prettier formatter                      |
-| `npm run lint`       | Run lint for all projects                   |
-| `npm run test`       | Run all test cases                          |
+| Command              | Action                               |
+| :------------------- | :----------------------------------- |
+| `npm install`        | Installs all dependencies            |
+| `npm run build`      | Rebuilds all projects                |
+| `npm run build:docs` | Rebuild TypeDocs for custom-belt-lib |
+| `npm run build:ghp`  | Used by github deploy.yml workflow   |
+| `npm run dev`        | Starts local dev server              |
+| `npm run format`     | Run prettier formatter               |
+| `npm run lint`       | Run lint for all projects            |
+| `npm run test`       | Run all test cases                   |
 
 ## 💬 Tips
 

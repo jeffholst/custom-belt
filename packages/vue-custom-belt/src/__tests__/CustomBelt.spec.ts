@@ -4,7 +4,9 @@ import CustomBelt from "../components/CustomBelt.vue";
 import BeltSystemJSON_IBJJF from "../../../custom-belt-lib/src/belt-systems/IBJJF.json";
 import { BeltSystem } from "../../../custom-belt-lib/src/BeltSystem";
 
-const ibjjfSystem: BeltSystem = new BeltSystem(BeltSystemJSON_IBJJF);
+const ibjjfSystem: BeltSystem = new BeltSystem(
+  JSON.stringify(BeltSystemJSON_IBJJF)
+);
 
 describe("CustomBelt", () => {
   it("reports missing beltParms", () => {

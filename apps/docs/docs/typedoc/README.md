@@ -1,6 +1,10 @@
 custom-belt-lib / [Modules](modules.md)
 
-# Custom Belt
+# [custom-belt-lib](https://github.com/jeffholst/custom-belt/tree/main/packages/custom-belt-lib)
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jeffholst/custom-belt/blob/main/LICENSE.md) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/jeffholst/custom-belt/pulls) ![GitHub pull requests](https://img.shields.io/github/issues-pr/jeffholst/custom-belt)
+
+[custom-belt-lib](https://github.com/jeffholst/custom-belt/tree/main/packages/custom-belt-lib) is part of the [Custom Belt](https://github.com/jeffholst/custom-belt) **Turborepo**. It is a JavaScript library containing all the core functionality of **Custom Belt** and is meant to be imported by other UI packages such as [vue-custom-belt](https://github.com/jeffholst/custom-belt/tree/main/packages/vue-custom-belt).
 
 <h1 align="center">
  <br>
@@ -11,80 +15,14 @@ custom-belt-lib / [Modules](modules.md)
  <br>
 </h1>
 
-👋 Howdy and welcome!
-
-Custom Belt is a JavaScript library and application to easily create any style martial arts belt in [SVG](https://en.wikipedia.org/wiki/SVG) format
-
-- [Demo](https://jeffholst.github.io/custom-belt/demo.html): easily create custom belts online and download the images to be used directly in your own projects
-- [Documentation](https://jeffholst.github.io/custom-belt/introduction/what-is-custom-belt.html): learn how the library can be used to programmatically create custom belts in your own applications
-
 🐞 [Report Bugs](https://github.com/jeffholst/custom-belt/issues/new?assignees=&labels=bug%3A+pending+triage&projects=&template=bug_report.yml) and 🚀 [Feature Requests](https://github.com/jeffholst/custom-belt/issues/new?assignees=&labels=&projects=&template=feature_request.yml)
 
-## ✨ Hightlights
+## 💻 NPM Commands
 
-- SVG vector images
-- Predefined belts
-- Random belt generator
-- Clean and focused
-- Actively maintained
-- Easy to use
-- Open Source (MIT license)
-
-## 🧰️ Tooling
-
-Custom Belt is built, maintained, and tested using industry standard best practices, and first in class tooling including:
-
-[ESLint](https://eslint.org/),
-[GitHub](https://github.com/),
-[GitHub Pages](https://pages.github.com/),
-[Gulp](https://gulpjs.com/),
-[NPM](https://www.npmjs.com/),
-[Prettier](https://prettier.io),
-[Turborepo](https://turbo.build/),
-[TypeDoc](https://typedoc.org/),
-[TypeScript](https://www.typescriptlang.org/),
-[Visual Studio Code](https://code.visualstudio.com/),
-[Vite](https://vitejs.dev/),
-[VitePress](https://vitepress.dev/),
-[Vitest](https://vitest.dev/),
-[Vue](https://vuejs.org/),
-and more ...
-
-## 📁 Project Structure
-
-- `apps/docs`: a [VitePress](https://vitepress.dev/) documentation and demo site for Custom Library
-- `apps/vue-playgound`: quickly mock up and test vue library components
-- `packages/custom-belt-lib`: the Custom Belt library
-- `packages/vue-custom-belt`: Vue component for Custom Belt
-
-## 💻 Turborepo Commands
-
-The following monorepo wide commands can be run from /root
-
-| Command              | Action                                      |
-| :------------------- | :------------------------------------------ |
-| `npm install`        | Installs all dependencies                   |
-| `npm run build`      | Rebuilds all projects                       |
-| `npm run build:docs` | Rebuild TypeDocs for custom-belt-lib        |
-| `npm run build:ghp`  | Used by github deploy.yml workflow          |
-| `npm run dev`        | Starts local dev server                     |
-| `npm run format`     | Run prettier formatter                      |
-| `npm run lint`       | Run lint for all projects                   |
-| `npm run test`       | Run all test cases                          |
-
-## 💬 Tips
-
-- Navigate to individual **apps** or **packages** to see project specific README files.
-- Be sure to run `npm install` from the root directory to install all dependencies.
-- GitHub Pages build action is only triggered by **github-pages** branch commits.
-
-## ⛓️ Turborepo Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+| Command              | Action                               |
+| :------------------- | :----------------------------------- |
+| `npm install`        | Installs all dependencies            |
+| `npm run build`      | Rebuilds project                     |
+| `npm run build:docs` | Rebuild TypeDocs                     |
+| `npm run lint`       | Run lint for project                 |
+| `npm run test`       | Run all test cases                   |

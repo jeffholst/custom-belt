@@ -4,13 +4,10 @@
   "version": "0.0.19",
   "private": false,
   "scripts": {
-    "type-check": "vue-tsc --noEmit",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write docs/",
-    "dev": "vitepress dev docs --open",
     "build": "vitepress build docs",
     "build:docs": "cd ../../packages/custom-belt-lib && npm run build:docs",
-    "preview": "vitepress preview docs"
+    "dev": "vitepress dev docs --open",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
     "gulp": "^4.0.2",

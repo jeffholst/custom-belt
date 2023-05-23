@@ -80,7 +80,7 @@ import SelectControl from './SelectControl.vue';
 import CheckedBeltsGroup from './CheckedBeltsGroup.vue';
 import SliderControl from './SliderControl.vue';
 
-const ibjjfSystem = new BeltSystem(BeltSystemJSON_IBJJF);
+const ibjjfSystem = new BeltSystem(JSON.stringify(BeltSystemJSON_IBJJF));
 
 const beltGroups = [
   { name: 'IBJJF', value: 0 },

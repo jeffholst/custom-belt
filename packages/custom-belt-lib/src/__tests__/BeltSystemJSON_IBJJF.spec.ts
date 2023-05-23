@@ -4,7 +4,9 @@ import { BeltType, BeltProps, StripePosition } from "../Belt";
 import { BeltSystem } from "../BeltSystem";
 import BeltSystemJSON_IBJJF from "../belt-systems/IBJJF.json";
 
-const ibjjfSystem: BeltSystem = new BeltSystem(BeltSystemJSON_IBJJF);
+const ibjjfSystem: BeltSystem = new BeltSystem(
+  JSON.stringify(BeltSystemJSON_IBJJF)
+);
 
 describe("IBJJF System", () => {
   it("JSON should match", () => {

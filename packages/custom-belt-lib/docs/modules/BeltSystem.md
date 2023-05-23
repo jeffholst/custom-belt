@@ -7,3 +7,7 @@
 ### Classes
 
 - [BeltSystem](../classes/BeltSystem.BeltSystem.md)
+
+### Interfaces
+
+- [BeltSystemInt](../interfaces/BeltSystem.BeltSystemInt.md)

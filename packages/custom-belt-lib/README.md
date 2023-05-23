@@ -1,5 +1,3 @@
-custom-belt-lib / [Modules](modules.md)
-
 # [custom-belt-lib](https://github.com/jeffholst/custom-belt/tree/main/packages/custom-belt-lib)
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jeffholst/custom-belt/blob/main/LICENSE.md) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/jeffholst/custom-belt/pulls) ![GitHub pull requests](https://img.shields.io/github/issues-pr/jeffholst/custom-belt)

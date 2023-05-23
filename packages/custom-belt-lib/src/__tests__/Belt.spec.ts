@@ -95,6 +95,7 @@ describe("BeltTypeStandard", () => {
    * Test that beltTypeStandard does not contain Crazy
    */
   it(`does not contain Crazy`, () => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     expect(belt.BeltTypeStandard.Crazy).toBe(undefined);
   });
@@ -103,6 +104,7 @@ describe("BeltTypeStandard", () => {
    * BeltType.Solid matches BeltTypeStandard.Solid
    */
   it(`matches BeltType`, () => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     expect(belt.BeltType.Solid === belt.BeltTypeStandard.Solid).toBeTruthy();
   });
@@ -183,7 +185,7 @@ describe("getBeltProps", () => {
       belt.StripePosition.Left,
       "",
       0,
-      null
+      undefined
     );
     beltProps.id = ""; // blank id so snapshot doesn't fail
     beltProps.version = ""; // blank out version so snapshot does not fail
