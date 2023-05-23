@@ -59,7 +59,3 @@ For full usage and examples see the [Demo](https://jeffholst.github.io/custom-be
 | `npm run dev`   | Starts local dev server   |
 | `npm run lint`  | Run lint project          |
 | `npm run test`  | Run all test cases        |
-
-## 💬 Tips
-
-- publish to [npmjs.com](https://www.npmjs.com/package/vue-custom-belt) with ```npm publish```
