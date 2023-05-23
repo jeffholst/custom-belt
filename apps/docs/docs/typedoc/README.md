@@ -19,10 +19,10 @@ custom-belt-lib / [Modules](modules.md)
 
 ## 💻 NPM Commands
 
-| Command              | Action                               |
-| :------------------- | :----------------------------------- |
-| `npm install`        | Installs all dependencies            |
-| `npm run build`      | Rebuilds project                     |
-| `npm run build:docs` | Rebuild TypeDocs                     |
-| `npm run lint`       | Run lint for project                 |
-| `npm run test`       | Run all test cases                   |
+| Command              | Action                    |
+| :------------------- | :------------------------ |
+| `npm install`        | Installs all dependencies |
+| `npm run build`      | Rebuilds project          |
+| `npm run build:docs` | Rebuild TypeDocs          |
+| `npm run lint`       | Run lint for project      |
+| `npm run test`       | Run all test cases        |

@@ -1,4 +1,17 @@
-# Custom Belt
+# [docs](https://github.com/jeffholst/custom-belt/tree/main/apps/docs)
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jeffholst/custom-belt/blob/main/LICENSE.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/jeffholst/custom-belt/pulls)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/jeffholst/custom-belt)
+
+[docs](https://github.com/jeffholst/custom-belt/tree/main/apps/docs) is part of the
+[Custom Belt](https://github.com/jeffholst/custom-belt) **Turborepo**.
+It is a [VitePress](https://vitepress.dev/) static generated site that serves as
+the [Demo](https://jeffholst.github.io/custom-belt/demo.html) and
+[Documentation](https://jeffholst.github.io/custom-belt/introduction/what-is-custom-belt.html)
+for the **Custom Belt** project.
+
+The live version of this site is hosted on GitHub Pages and can be seen [here](https://jeffholst.github.io/custom-belt/).
 
 <h1 align="center">
  <br>
@@ -9,51 +22,18 @@
  <br>
 </h1>
 
-👋 Howdy and welcome!
+🐞 [Report Bugs](https://github.com/jeffholst/custom-belt/issues/new?assignees=&labels=bug%3A+pending+triage&projects=&template=bug_report.yml) and 🚀 [Feature Requests](https://github.com/jeffholst/custom-belt/issues/new?assignees=&labels=&projects=&template=feature_request.yml)
 
-If you're interested in the [demo](https://jeffholst.github.io/custom-belt/demo.html) and [documentation](https://jeffholst.github.io/custom-belt/introduction/what-is-custom-belt.html) project for [vue-custom-belt](https://github.com/jeffholst/vue-custom-belt) then you are in the right place. Otherwise you may want to visit the [vue-custom-belt](https://github.com/jeffholst/vue-custom-belt) repo.
+## 💻 NPM Commands
 
-[vue-custom-belt](https://github.com/jeffholst/vue-custom-belt) is a Vue 3 component to easily create any style martial arts belt in SVG format.
+| Command              | Action                    |
+| :------------------- | :------------------------ |
+| `npm install`        | Installs all dependencies |
+| `npm run build`      | Rebuilds project          |
+| `npm run build:docs` | Rebuild TypeDocs          |
+| `npm run dev`        | Starts local dev server   |
+| `npm run lint`       | Run lint for project      |
 
-## Recommended IDE Setup
+## 💬 Tips
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+* GitHub Pages build action is only triggered by github-pages branch commits.

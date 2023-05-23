@@ -46,39 +46,39 @@
 
 ### DefaultColor
 
-• `Const` **DefaultColor**: ``"#FF0000"``
+• `Const` **DefaultColor**: `"#FF0000"`
 
 Default color when no color provided
 
 #### Defined in
 
-[Belt.ts:228](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L228)
+[Belt.ts:228](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L228)
 
-___
+---
 
 ### MaximumStripeCount
 
-• `Const` **MaximumStripeCount**: ``10``
+• `Const` **MaximumStripeCount**: `10`
 
 Maximum number of stripes a belt may have
 
 #### Defined in
 
-[Belt.ts:230](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L230)
+[Belt.ts:230](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L230)
 
-___
+---
 
 ### MinimumStripeCount
 
-• `Const` **MinimumStripeCount**: ``0``
+• `Const` **MinimumStripeCount**: `0`
 
 Minimum number of stripes
 
 #### Defined in
 
-[Belt.ts:232](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L232)
+[Belt.ts:232](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L232)
 
-___
+---
 
 ### StripePositionDefault
 
@@ -88,7 +88,7 @@ Default stripe position
 
 #### Defined in
 
-[Belt.ts:234](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L234)
+[Belt.ts:234](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L234)
 
 ## Functions
 
@@ -100,8 +100,8 @@ Combine multiple BeltProps[] arrays into a single BeltProps[] array
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name        | Type                                               | Description                           |
+| :---------- | :------------------------------------------------- | :------------------------------------ |
 | `beltProps` | [`BeltProps`](../interfaces/Belt.BeltProps.md)[][] | array of BeltProp[] arrays to combine |
 
 #### Returns
@@ -112,9 +112,9 @@ combined array of BeltProps[] arrays
 
 #### Defined in
 
-[Belt.ts:249](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L249)
+[Belt.ts:249](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L249)
 
-___
+---
 
 ### getBelt
 
@@ -124,27 +124,27 @@ Create new Belt object
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `id` | `number` | `0` | unique identifier for belt |
-| `name` | `string` | `""` | name of belt |
-| `type` | [`BeltType`](../enums/Belt.BeltType.md) | `BeltType.Solid` | type of belt |
-| `sortOrder` | `number` | `0` | used for sorting belts for display |
-| `color1` | `string` | `""` | hex value for belt color 1 |
-| `color2` | `string` | `""` | hex value for belt color 2 |
-| `color3` | `string` | `""` | hex value for belt color 3 |
-| `borderColor` | `string` | `""` | hex value for belt border color |
-| `hasPatch` | `boolean` | `false` | whether belt has patch or not |
-| `patchColor` | `string` | `""` | hex value for patch color |
-| `patchBorderColor` | `string` | `""` | hex value for patch border color |
-| `hasProfessorPatch` | `boolean` | `false` | whether belt has professor patch or not |
-| `professorPatchColor` | `string` | `""` | hex value for professor patch color |
-| `professorBorderColor` | `string` | `""` | hex value for professor patch border color |
-| `stripeColor` | `string` | `""` | hex value for stripe color |
-| `stripeCount` | `number` | `0` | number of stripes for belt [0-10] |
-| `stripePosition` | [`StripePosition`](../enums/Belt.StripePosition.md) | `StripePositionDefault` | starting position of stripes on belt |
-| `minStripes` | `number` | `MinimumStripeCount` | minimum number of stripes for belt |
-| `maxStripes` | `number` | `MaximumStripeCount` | maximum number of stripes for belt |
+| Name                   | Type                                                | Default value           | Description                                |
+| :--------------------- | :-------------------------------------------------- | :---------------------- | :----------------------------------------- |
+| `id`                   | `number`                                            | `0`                     | unique identifier for belt                 |
+| `name`                 | `string`                                            | `""`                    | name of belt                               |
+| `type`                 | [`BeltType`](../enums/Belt.BeltType.md)             | `BeltType.Solid`        | type of belt                               |
+| `sortOrder`            | `number`                                            | `0`                     | used for sorting belts for display         |
+| `color1`               | `string`                                            | `""`                    | hex value for belt color 1                 |
+| `color2`               | `string`                                            | `""`                    | hex value for belt color 2                 |
+| `color3`               | `string`                                            | `""`                    | hex value for belt color 3                 |
+| `borderColor`          | `string`                                            | `""`                    | hex value for belt border color            |
+| `hasPatch`             | `boolean`                                           | `false`                 | whether belt has patch or not              |
+| `patchColor`           | `string`                                            | `""`                    | hex value for patch color                  |
+| `patchBorderColor`     | `string`                                            | `""`                    | hex value for patch border color           |
+| `hasProfessorPatch`    | `boolean`                                           | `false`                 | whether belt has professor patch or not    |
+| `professorPatchColor`  | `string`                                            | `""`                    | hex value for professor patch color        |
+| `professorBorderColor` | `string`                                            | `""`                    | hex value for professor patch border color |
+| `stripeColor`          | `string`                                            | `""`                    | hex value for stripe color                 |
+| `stripeCount`          | `number`                                            | `0`                     | number of stripes for belt [0-10]          |
+| `stripePosition`       | [`StripePosition`](../enums/Belt.StripePosition.md) | `StripePositionDefault` | starting position of stripes on belt       |
+| `minStripes`           | `number`                                            | `MinimumStripeCount`    | minimum number of stripes for belt         |
+| `maxStripes`           | `number`                                            | `MaximumStripeCount`    | maximum number of stripes for belt         |
 
 #### Returns
 
@@ -154,9 +154,9 @@ Belt object
 
 #### Defined in
 
-[Belt.ts:280](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L280)
+[Belt.ts:280](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L280)
 
-___
+---
 
 ### getBeltColorCount
 
@@ -166,8 +166,8 @@ Get number of colors in BeltType [1-3]
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name       | Type                                    | Description                    |
+| :--------- | :-------------------------------------- | :----------------------------- |
 | `beltType` | [`BeltType`](../enums/Belt.BeltType.md) | BeltType to lookup color count |
 
 #### Returns
@@ -178,9 +178,9 @@ number of colors in beltType
 
 #### Defined in
 
-[Belt.ts:335](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L335)
+[Belt.ts:335](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L335)
 
-___
+---
 
 ### getBeltProps
 
@@ -190,29 +190,29 @@ Create new BeltProps[] array
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `id` | `number` | `undefined` | unique identifier for belt |
-| `name` | `string` | `undefined` | name of belt |
-| `beltType` | [`BeltType`](../enums/Belt.BeltType.md) | `undefined` | type of belt |
-| `color1` | `string` | `undefined` | hex value for belt color 1 |
-| `color2` | `string` | `undefined` | hex value for belt color 2 |
-| `color3` | `string` | `undefined` | hex value for belt color 3 |
-| `borderColor` | `string` | `"#434244"` | hex value for belt border color |
-| `hasPatch` | `boolean` | `true` | whether belt has patch or not |
-| `patchColor` | `string` | `"#000000"` | hex value for patch color |
-| `patchBorderColor` | `string` | `""` | hex value for patch border color |
-| `hasProfessorPatch` | `boolean` | `false` | whether belt has professor patch or not |
-| `professorPatchColor` | `string` | `""` | hex value for professor patch color |
-| `professorBorderColor` | `string` | `""` | hex value for professor patch border color |
-| `stripeColor` | `string` | `""` | hex value for stripe color |
-| `stripeCount` | `number` | `0` | number of stripes for belt [0-10] |
-| `stripePosition` | [`StripePosition`](../enums/Belt.StripePosition.md) | `StripePosition.Right` | starting position of stripes on belt |
-| `minStripes` | `number` | `0` | minimum number of stripes for belt |
-| `maxStripes` | `number` | `10` | maximum number of stripes for belt |
-| `transitionCSS` | `string` | `""` | CSS for transition animation |
-| `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| Name                   | Type                                                                                                                                                                    | Default value          | Description                                  |
+| :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :------------------------------------------- |
+| `id`                   | `number`                                                                                                                                                                | `undefined`            | unique identifier for belt                   |
+| `name`                 | `string`                                                                                                                                                                | `undefined`            | name of belt                                 |
+| `beltType`             | [`BeltType`](../enums/Belt.BeltType.md)                                                                                                                                 | `undefined`            | type of belt                                 |
+| `color1`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 1                   |
+| `color2`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 2                   |
+| `color3`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 3                   |
+| `borderColor`          | `string`                                                                                                                                                                | `"#434244"`            | hex value for belt border color              |
+| `hasPatch`             | `boolean`                                                                                                                                                               | `true`                 | whether belt has patch or not                |
+| `patchColor`           | `string`                                                                                                                                                                | `"#000000"`            | hex value for patch color                    |
+| `patchBorderColor`     | `string`                                                                                                                                                                | `""`                   | hex value for patch border color             |
+| `hasProfessorPatch`    | `boolean`                                                                                                                                                               | `false`                | whether belt has professor patch or not      |
+| `professorPatchColor`  | `string`                                                                                                                                                                | `""`                   | hex value for professor patch color          |
+| `professorBorderColor` | `string`                                                                                                                                                                | `""`                   | hex value for professor patch border color   |
+| `stripeColor`          | `string`                                                                                                                                                                | `""`                   | hex value for stripe color                   |
+| `stripeCount`          | `number`                                                                                                                                                                | `0`                    | number of stripes for belt [0-10]            |
+| `stripePosition`       | [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                                     | `StripePosition.Right` | starting position of stripes on belt         |
+| `minStripes`           | `number`                                                                                                                                                                | `0`                    | minimum number of stripes for belt           |
+| `maxStripes`           | `number`                                                                                                                                                                | `10`                   | maximum number of stripes for belt           |
+| `transitionCSS`        | `string`                                                                                                                                                                | `""`                   | CSS for transition animation                 |
+| `refreshInterval`      | `number`                                                                                                                                                                | `0`                    | interval for refreshing belt in milliseconds |
+| `callback?`            | (`event`: `null` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined`            | callback function to call after belt actions |
 
 #### Returns
 
@@ -222,9 +222,9 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:382](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L382)
+[Belt.ts:382](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L382)
 
-___
+---
 
 ### getBeltPropsCheckered
 
@@ -234,27 +234,27 @@ Create new Checkered BeltProps[] array
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `name` | `string` | `undefined` | name of belt |
-| `color1` | `string` | `undefined` | hex value for belt color 1 |
-| `color2` | `string` | `undefined` | hex value for belt color 2 |
-| `id` | `number` | `0` | unique identifier for belt |
-| `borderColor` | `string` | `"#434244"` | hex value for belt border color |
-| `hasPatch` | `boolean` | `true` | whether belt has patch or not |
-| `patchColor` | `string` | `"#000000"` | hex value for patch color |
-| `patchBorderColor` | `string` | `""` | hex value for patch border color |
-| `hasProfessorPatch` | `boolean` | `false` | whether belt has professor patch or not |
-| `professorPatchColor` | `string` | `""` | hex value for professor patch color |
-| `professorBorderColor` | `string` | `""` | hex value for professor patch border color |
-| `stripeColor` | `string` | `""` | hex value for stripe color |
-| `stripeCount` | `number` | `0` | number of stripes for belt [0-10] |
-| `stripePosition` | [`StripePosition`](../enums/Belt.StripePosition.md) | `StripePosition.Right` | starting position of stripes on belt |
-| `minStripes` | `number` | `0` | minimum number of stripes for belt |
-| `maxStripes` | `number` | `10` | maximum number of stripes for belt |
-| `transitionCSS` | `string` | `""` | CSS for transition animation |
-| `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| Name                   | Type                                                                                                                                                                    | Default value          | Description                                  |
+| :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :------------------------------------------- |
+| `name`                 | `string`                                                                                                                                                                | `undefined`            | name of belt                                 |
+| `color1`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 1                   |
+| `color2`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 2                   |
+| `id`                   | `number`                                                                                                                                                                | `0`                    | unique identifier for belt                   |
+| `borderColor`          | `string`                                                                                                                                                                | `"#434244"`            | hex value for belt border color              |
+| `hasPatch`             | `boolean`                                                                                                                                                               | `true`                 | whether belt has patch or not                |
+| `patchColor`           | `string`                                                                                                                                                                | `"#000000"`            | hex value for patch color                    |
+| `patchBorderColor`     | `string`                                                                                                                                                                | `""`                   | hex value for patch border color             |
+| `hasProfessorPatch`    | `boolean`                                                                                                                                                               | `false`                | whether belt has professor patch or not      |
+| `professorPatchColor`  | `string`                                                                                                                                                                | `""`                   | hex value for professor patch color          |
+| `professorBorderColor` | `string`                                                                                                                                                                | `""`                   | hex value for professor patch border color   |
+| `stripeColor`          | `string`                                                                                                                                                                | `""`                   | hex value for stripe color                   |
+| `stripeCount`          | `number`                                                                                                                                                                | `0`                    | number of stripes for belt [0-10]            |
+| `stripePosition`       | [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                                     | `StripePosition.Right` | starting position of stripes on belt         |
+| `minStripes`           | `number`                                                                                                                                                                | `0`                    | minimum number of stripes for belt           |
+| `maxStripes`           | `number`                                                                                                                                                                | `10`                   | maximum number of stripes for belt           |
+| `transitionCSS`        | `string`                                                                                                                                                                | `""`                   | CSS for transition animation                 |
+| `refreshInterval`      | `number`                                                                                                                                                                | `0`                    | interval for refreshing belt in milliseconds |
+| `callback?`            | (`event`: `null` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined`            | callback function to call after belt actions |
 
 #### Returns
 
@@ -264,9 +264,9 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:469](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L469)
+[Belt.ts:469](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L469)
 
-___
+---
 
 ### getBeltPropsCoral
 
@@ -276,27 +276,27 @@ Create new Coral BeltProps[] array
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `name` | `string` | `undefined` | name of belt |
-| `color1` | `string` | `undefined` | hex value for belt color 1 |
-| `color2` | `string` | `undefined` | hex value for belt color 2 |
-| `id` | `number` | `0` | unique identifier for belt |
-| `borderColor` | `string` | `"#434244"` | hex value for belt border color |
-| `hasPatch` | `boolean` | `true` | whether belt has patch or not |
-| `patchColor` | `string` | `"#000000"` | hex value for patch color |
-| `patchBorderColor` | `string` | `""` | hex value for patch border color |
-| `hasProfessorPatch` | `boolean` | `false` | whether belt has professor patch or not |
-| `professorPatchColor` | `string` | `""` | hex value for professor patch color |
-| `professorBorderColor` | `string` | `""` | hex value for professor patch border color |
-| `stripeColor` | `string` | `""` | hex value for stripe color |
-| `stripeCount` | `number` | `0` | number of stripes for belt [0-10] |
-| `stripePosition` | [`StripePosition`](../enums/Belt.StripePosition.md) | `StripePosition.Right` | starting position of stripes on belt |
-| `minStripes` | `number` | `0` | minimum number of stripes for belt |
-| `maxStripes` | `number` | `10` | maximum number of stripes for belt |
-| `transitionCSS` | `string` | `""` | CSS for transition animation |
-| `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| Name                   | Type                                                                                                                                                                    | Default value          | Description                                  |
+| :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :------------------------------------------- |
+| `name`                 | `string`                                                                                                                                                                | `undefined`            | name of belt                                 |
+| `color1`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 1                   |
+| `color2`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 2                   |
+| `id`                   | `number`                                                                                                                                                                | `0`                    | unique identifier for belt                   |
+| `borderColor`          | `string`                                                                                                                                                                | `"#434244"`            | hex value for belt border color              |
+| `hasPatch`             | `boolean`                                                                                                                                                               | `true`                 | whether belt has patch or not                |
+| `patchColor`           | `string`                                                                                                                                                                | `"#000000"`            | hex value for patch color                    |
+| `patchBorderColor`     | `string`                                                                                                                                                                | `""`                   | hex value for patch border color             |
+| `hasProfessorPatch`    | `boolean`                                                                                                                                                               | `false`                | whether belt has professor patch or not      |
+| `professorPatchColor`  | `string`                                                                                                                                                                | `""`                   | hex value for professor patch color          |
+| `professorBorderColor` | `string`                                                                                                                                                                | `""`                   | hex value for professor patch border color   |
+| `stripeColor`          | `string`                                                                                                                                                                | `""`                   | hex value for stripe color                   |
+| `stripeCount`          | `number`                                                                                                                                                                | `0`                    | number of stripes for belt [0-10]            |
+| `stripePosition`       | [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                                     | `StripePosition.Right` | starting position of stripes on belt         |
+| `minStripes`           | `number`                                                                                                                                                                | `0`                    | minimum number of stripes for belt           |
+| `maxStripes`           | `number`                                                                                                                                                                | `10`                   | maximum number of stripes for belt           |
+| `transitionCSS`        | `string`                                                                                                                                                                | `""`                   | CSS for transition animation                 |
+| `refreshInterval`      | `number`                                                                                                                                                                | `0`                    | interval for refreshing belt in milliseconds |
+| `callback?`            | (`event`: `null` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined`            | callback function to call after belt actions |
 
 #### Returns
 
@@ -306,9 +306,9 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:542](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L542)
+[Belt.ts:542](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L542)
 
-___
+---
 
 ### getBeltPropsFromBelt
 
@@ -318,14 +318,14 @@ Create new BeltProps[] array from Belt object
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `belt` | [`Belt`](../interfaces/Belt.Belt.md) | Belt object to create BeltProps[] array from |
-| `stripeCount` | `number` | number of stripes for belt [0-10] |
-| `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | starting position of stripes on belt patch |
-| `transitionCSS` | `string` | CSS for transition animation |
-| `refreshInterval` | `number` | interval in milliseconds before displaying next belt |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | callback function to call after belt actions |
+| Name              | Type                                                                                                                                                                    | Description                                          |
+| :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------- |
+| `belt`            | [`Belt`](../interfaces/Belt.Belt.md)                                                                                                                                    | Belt object to create BeltProps[] array from         |
+| `stripeCount`     | `number`                                                                                                                                                                | number of stripes for belt [0-10]                    |
+| `stripePosition`  | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                      | starting position of stripes on belt patch           |
+| `transitionCSS`   | `string`                                                                                                                                                                | CSS for transition animation                         |
+| `refreshInterval` | `number`                                                                                                                                                                | interval in milliseconds before displaying next belt |
+| `callback?`       | (`event`: `null` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | callback function to call after belt actions         |
 
 #### Returns
 
@@ -335,9 +335,9 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:602](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L602)
+[Belt.ts:602](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L602)
 
-___
+---
 
 ### getBeltPropsRandom
 
@@ -347,16 +347,16 @@ Create new random BeltProps[] array
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `hasPatch` | `undefined` \| `boolean` | `undefined` | whether belt has a patch |
-| `hasProfessorPatch` | `undefined` \| `boolean` | `undefined` | whether belt has a professor patch |
-| `stripeCount` | `undefined` \| `number` | `undefined` | number of stripes for belt [0-10] |
-| `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | `undefined` | starting position of streips on belt patch |
-| `transitionCSS` | `undefined` \| `string` | `""` | CSS for transition animation |
-| `includeBelts` | `undefined` \| [`BeltType`](../enums/Belt.BeltType.md)[] | `[]` | array of BeltTyps to include in random selection |
-| `refreshInterval` | `undefined` \| `number` | `0` | interval in milliseconds before displaying next belt |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| Name                | Type                                                                                                                                                                    | Default value | Description                                          |
+| :------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :--------------------------------------------------- |
+| `hasPatch`          | `undefined` \| `boolean`                                                                                                                                                | `undefined`   | whether belt has a patch                             |
+| `hasProfessorPatch` | `undefined` \| `boolean`                                                                                                                                                | `undefined`   | whether belt has a professor patch                   |
+| `stripeCount`       | `undefined` \| `number`                                                                                                                                                 | `undefined`   | number of stripes for belt [0-10]                    |
+| `stripePosition`    | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                      | `undefined`   | starting position of streips on belt patch           |
+| `transitionCSS`     | `undefined` \| `string`                                                                                                                                                 | `""`          | CSS for transition animation                         |
+| `includeBelts`      | `undefined` \| [`BeltType`](../enums/Belt.BeltType.md)[]                                                                                                                | `[]`          | array of BeltTyps to include in random selection     |
+| `refreshInterval`   | `undefined` \| `number`                                                                                                                                                 | `0`           | interval in milliseconds before displaying next belt |
+| `callback?`         | (`event`: `null` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined`   | callback function to call after belt actions         |
 
 #### Returns
 
@@ -366,9 +366,9 @@ Belt object
 
 #### Defined in
 
-[Belt.ts:754](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L754)
+[Belt.ts:754](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L754)
 
-___
+---
 
 ### getBeltPropsSolid
 
@@ -378,26 +378,26 @@ Create new Solid BeltProps[] array
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `name` | `string` | `undefined` | name of belt |
-| `color` | `string` | `undefined` | hex value for belt color 1 |
-| `id` | `number` | `0` | unique identifier for belt |
-| `borderColor` | `string` | `"#434244"` | hex value for belt border color |
-| `hasPatch` | `boolean` | `true` | whether belt has patch or not |
-| `patchColor` | `string` | `"#000000"` | hex value for patch color |
-| `patchBorderColor` | `string` | `""` | hex value for patch border color |
-| `hasProfessorPatch` | `boolean` | `false` | whether belt has professor patch or not |
-| `professorPatchColor` | `string` | `""` | hex value for professor patch color |
-| `professorBorderColor` | `string` | `""` | hex value for professor patch border color |
-| `stripeColor` | `string` | `""` | hex value for stripe color |
-| `stripeCount` | `number` | `0` | number of stripes for belt [0-10] |
-| `stripePosition` | [`StripePosition`](../enums/Belt.StripePosition.md) | `StripePosition.Right` | starting position of stripes on belt |
-| `minStripes` | `number` | `0` | minimum number of stripes for belt |
-| `maxStripes` | `number` | `10` | maximum number of stripes for belt |
-| `transitionCSS` | `string` | `""` | CSS for transition animation |
-| `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| Name                   | Type                                                                                                                                                                    | Default value          | Description                                  |
+| :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :------------------------------------------- |
+| `name`                 | `string`                                                                                                                                                                | `undefined`            | name of belt                                 |
+| `color`                | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 1                   |
+| `id`                   | `number`                                                                                                                                                                | `0`                    | unique identifier for belt                   |
+| `borderColor`          | `string`                                                                                                                                                                | `"#434244"`            | hex value for belt border color              |
+| `hasPatch`             | `boolean`                                                                                                                                                               | `true`                 | whether belt has patch or not                |
+| `patchColor`           | `string`                                                                                                                                                                | `"#000000"`            | hex value for patch color                    |
+| `patchBorderColor`     | `string`                                                                                                                                                                | `""`                   | hex value for patch border color             |
+| `hasProfessorPatch`    | `boolean`                                                                                                                                                               | `false`                | whether belt has professor patch or not      |
+| `professorPatchColor`  | `string`                                                                                                                                                                | `""`                   | hex value for professor patch color          |
+| `professorBorderColor` | `string`                                                                                                                                                                | `""`                   | hex value for professor patch border color   |
+| `stripeColor`          | `string`                                                                                                                                                                | `""`                   | hex value for stripe color                   |
+| `stripeCount`          | `number`                                                                                                                                                                | `0`                    | number of stripes for belt [0-10]            |
+| `stripePosition`       | [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                                     | `StripePosition.Right` | starting position of stripes on belt         |
+| `minStripes`           | `number`                                                                                                                                                                | `0`                    | minimum number of stripes for belt           |
+| `maxStripes`           | `number`                                                                                                                                                                | `10`                   | maximum number of stripes for belt           |
+| `transitionCSS`        | `string`                                                                                                                                                                | `""`                   | CSS for transition animation                 |
+| `refreshInterval`      | `number`                                                                                                                                                                | `0`                    | interval for refreshing belt in milliseconds |
+| `callback?`            | (`event`: `null` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined`            | callback function to call after belt actions |
 
 #### Returns
 
@@ -407,9 +407,9 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:893](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L893)
+[Belt.ts:893](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L893)
 
-___
+---
 
 ### getBeltPropsSplit
 
@@ -419,27 +419,27 @@ Create new Split BeltProps[] array
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `name` | `string` | `undefined` | name of belt |
-| `color1` | `string` | `undefined` | hex value for belt color 1 |
-| `color2` | `string` | `undefined` | hex value for belt color 2 |
-| `id` | `number` | `0` | unique identifier for belt |
-| `borderColor` | `string` | `"#434244"` | hex value for belt border color |
-| `hasPatch` | `boolean` | `true` | whether belt has patch or not |
-| `patchColor` | `string` | `"#000000"` | hex value for patch color |
-| `patchBorderColor` | `string` | `""` | hex value for patch border color |
-| `hasProfessorPatch` | `boolean` | `false` | whether belt has professor patch or not |
-| `professorPatchColor` | `string` | `""` | hex value for professor patch color |
-| `professorBorderColor` | `string` | `""` | hex value for professor patch border color |
-| `stripeColor` | `string` | `""` | hex value for stripe color |
-| `stripeCount` | `number` | `0` | number of stripes for belt [0-10] |
-| `stripePosition` | [`StripePosition`](../enums/Belt.StripePosition.md) | `StripePosition.Right` | starting position of stripes on belt |
-| `minStripes` | `number` | `0` | minimum number of stripes for belt |
-| `maxStripes` | `number` | `10` | maximum number of stripes for belt |
-| `transitionCSS` | `string` | `""` | CSS for transition animation |
-| `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| Name                   | Type                                                                                                                                                                    | Default value          | Description                                  |
+| :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :------------------------------------------- |
+| `name`                 | `string`                                                                                                                                                                | `undefined`            | name of belt                                 |
+| `color1`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 1                   |
+| `color2`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 2                   |
+| `id`                   | `number`                                                                                                                                                                | `0`                    | unique identifier for belt                   |
+| `borderColor`          | `string`                                                                                                                                                                | `"#434244"`            | hex value for belt border color              |
+| `hasPatch`             | `boolean`                                                                                                                                                               | `true`                 | whether belt has patch or not                |
+| `patchColor`           | `string`                                                                                                                                                                | `"#000000"`            | hex value for patch color                    |
+| `patchBorderColor`     | `string`                                                                                                                                                                | `""`                   | hex value for patch border color             |
+| `hasProfessorPatch`    | `boolean`                                                                                                                                                               | `false`                | whether belt has professor patch or not      |
+| `professorPatchColor`  | `string`                                                                                                                                                                | `""`                   | hex value for professor patch color          |
+| `professorBorderColor` | `string`                                                                                                                                                                | `""`                   | hex value for professor patch border color   |
+| `stripeColor`          | `string`                                                                                                                                                                | `""`                   | hex value for stripe color                   |
+| `stripeCount`          | `number`                                                                                                                                                                | `0`                    | number of stripes for belt [0-10]            |
+| `stripePosition`       | [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                                     | `StripePosition.Right` | starting position of stripes on belt         |
+| `minStripes`           | `number`                                                                                                                                                                | `0`                    | minimum number of stripes for belt           |
+| `maxStripes`           | `number`                                                                                                                                                                | `10`                   | maximum number of stripes for belt           |
+| `transitionCSS`        | `string`                                                                                                                                                                | `""`                   | CSS for transition animation                 |
+| `refreshInterval`      | `number`                                                                                                                                                                | `0`                    | interval for refreshing belt in milliseconds |
+| `callback?`            | (`event`: `null` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined`            | callback function to call after belt actions |
 
 #### Returns
 
@@ -449,9 +449,9 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:965](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L965)
+[Belt.ts:965](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L965)
 
-___
+---
 
 ### getBeltPropsStriped
 
@@ -461,28 +461,28 @@ Create new Striped BeltProps[] array
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `name` | `string` | `undefined` | name of belt |
-| `color1` | `string` | `undefined` | hex value for belt color 1 |
-| `color2` | `string` | `undefined` | hex value for belt color 2 |
-| `color3` | `string` | `undefined` | hex value for belt color 3 |
-| `id` | `number` | `0` | unique identifier for belt |
-| `borderColor` | `string` | `"#434244"` | hex value for belt border color |
-| `hasPatch` | `boolean` | `true` | whether belt has patch or not |
-| `patchColor` | `string` | `"#000000"` | hex value for patch color |
-| `patchBorderColor` | `string` | `""` | hex value for patch border color |
-| `hasProfessorPatch` | `boolean` | `false` | whether belt has professor patch or not |
-| `professorPatchColor` | `string` | `""` | hex value for professor patch color |
-| `professorBorderColor` | `string` | `""` | hex value for professor patch border color |
-| `stripeColor` | `string` | `""` | hex value for stripe color |
-| `stripeCount` | `number` | `0` | number of stripes for belt [0-10] |
-| `stripePosition` | [`StripePosition`](../enums/Belt.StripePosition.md) | `StripePosition.Right` | starting position of stripes on belt |
-| `minStripes` | `number` | `0` | minimum number of stripes for belt |
-| `maxStripes` | `number` | `10` | maximum number of stripes for belt |
-| `transitionCSS` | `string` | `""` | CSS for transition animation |
-| `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| Name                   | Type                                                                                                                                                                    | Default value          | Description                                  |
+| :--------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :------------------------------------------- |
+| `name`                 | `string`                                                                                                                                                                | `undefined`            | name of belt                                 |
+| `color1`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 1                   |
+| `color2`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 2                   |
+| `color3`               | `string`                                                                                                                                                                | `undefined`            | hex value for belt color 3                   |
+| `id`                   | `number`                                                                                                                                                                | `0`                    | unique identifier for belt                   |
+| `borderColor`          | `string`                                                                                                                                                                | `"#434244"`            | hex value for belt border color              |
+| `hasPatch`             | `boolean`                                                                                                                                                               | `true`                 | whether belt has patch or not                |
+| `patchColor`           | `string`                                                                                                                                                                | `"#000000"`            | hex value for patch color                    |
+| `patchBorderColor`     | `string`                                                                                                                                                                | `""`                   | hex value for patch border color             |
+| `hasProfessorPatch`    | `boolean`                                                                                                                                                               | `false`                | whether belt has professor patch or not      |
+| `professorPatchColor`  | `string`                                                                                                                                                                | `""`                   | hex value for professor patch color          |
+| `professorBorderColor` | `string`                                                                                                                                                                | `""`                   | hex value for professor patch border color   |
+| `stripeColor`          | `string`                                                                                                                                                                | `""`                   | hex value for stripe color                   |
+| `stripeCount`          | `number`                                                                                                                                                                | `0`                    | number of stripes for belt [0-10]            |
+| `stripePosition`       | [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                                     | `StripePosition.Right` | starting position of stripes on belt         |
+| `minStripes`           | `number`                                                                                                                                                                | `0`                    | minimum number of stripes for belt           |
+| `maxStripes`           | `number`                                                                                                                                                                | `10`                   | maximum number of stripes for belt           |
+| `transitionCSS`        | `string`                                                                                                                                                                | `""`                   | CSS for transition animation                 |
+| `refreshInterval`      | `number`                                                                                                                                                                | `0`                    | interval for refreshing belt in milliseconds |
+| `callback?`            | (`event`: `null` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined`            | callback function to call after belt actions |
 
 #### Returns
 
@@ -492,9 +492,9 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:1039](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L1039)
+[Belt.ts:1039](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L1039)
 
-___
+---
 
 ### isValidHexCode
 
@@ -516,8 +516,8 @@ isValidHexCode("#afafah"); // returns false (contains invalid character)
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type     | Description        |
+| :------ | :------- | :----------------- |
 | `input` | `string` | string to validate |
 
 #### Returns
@@ -528,9 +528,9 @@ true if valid color hex code, false otherwise
 
 #### Defined in
 
-[Belt.ts:1108](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L1108)
+[Belt.ts:1108](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L1108)
 
-___
+---
 
 ### mapBeltColor
 
@@ -540,9 +540,9 @@ Return hex code from BeltColor[] for color name
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `color` | `string` | color name to lookup |
+| Name     | Type                                             | Description              |
+| :------- | :----------------------------------------------- | :----------------------- |
+| `color`  | `string`                                         | color name to lookup     |
 | `colors` | [`BeltColor`](../interfaces/Belt.BeltColor.md)[] | BeltColor[] lookup array |
 
 #### Returns
@@ -553,9 +553,9 @@ found hex code or original color name
 
 #### Defined in
 
-[Belt.ts:1131](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L1131)
+[Belt.ts:1131](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L1131)
 
-___
+---
 
 ### mapBeltColors
 
@@ -565,9 +565,9 @@ Map all belt color names in all Belt array object to hex codes
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `belts` | [`Belt`](../interfaces/Belt.Belt.md)[] | belt object |
+| Name     | Type                                             | Description              |
+| :------- | :----------------------------------------------- | :----------------------- |
+| `belts`  | [`Belt`](../interfaces/Belt.Belt.md)[]           | belt object              |
 | `colors` | [`BeltColor`](../interfaces/Belt.BeltColor.md)[] | BeltColor[] lookup array |
 
 #### Returns
@@ -576,4 +576,4 @@ Map all belt color names in all Belt array object to hex codes
 
 #### Defined in
 
-[Belt.ts:1156](https://github.com/jeffholst/custom-belt/blob/88ac18a/packages/custom-belt-lib/src/Belt.ts#L1156)
+[Belt.ts:1156](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L1156)

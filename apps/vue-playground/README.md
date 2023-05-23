@@ -4,8 +4,8 @@
 
 ## 💻 NPM Commands
 
-| Command              | Action                               |
-| :------------------- | :----------------------------------- |
-| `npm install`        | Installs all dependencies            |
-| `npm run build`      | Rebuilds project                     |
-| `npm run dev`        | Starts local dev server              |
+| Command         | Action                    |
+| :-------------- | :------------------------ |
+| `npm install`   | Installs all dependencies |
+| `npm run build` | Rebuilds project          |
+| `npm run dev`   | Starts local dev server   |
