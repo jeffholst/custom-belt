@@ -1,26 +1,41 @@
 # Quick Start
 
-Begin by installating the appropriate npm package to your existing project.
+<div style="text-align: right;">
+<LanguageSelect
+   :selected-value="selectedLanguage"
+   :callback="languageCallback"
+/>
+</div>
 
 ## Installation
 
-::: code-group
+<div v-if="selectedLanguage === '0'">
 
-```sh [Vue]
+```html
+Coming soon..
+```
+
+</div>
+<div v-if="selectedLanguage === '1'">
+
+```sh
 npm install -D vue-custom-belt
 ```
 
-```html [JavaScript]
-Coming soon. 
-```
-
-:::
+</div>
 
 ## Up and running
 
-::: code-group
+<div v-if="selectedLanguage === '0'">
 
-```vue [Vue]
+```html
+Coming soon..
+```
+
+</div>
+<div v-if="selectedLanguage === '1'">
+
+```vue
 <template>
   <CustomBelt :belt-props="whiteBelt" />
 </template>
@@ -34,20 +49,24 @@ const whiteBelt = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
 <style scoped></style>
 ```
 
-```html [JavaScript]
-Coming soon.
-```
-
-:::
+</div>
 
 ## Output
 
 The above code should produce the image below.
 
-<template style="display: inline;">
-  <WhiteBelt style="padding-top: 50px; max-width: 600px;"/>
-</template>
+<WhiteBelt style="padding-top: 50px; max-width: 600px;"/>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+import { useData } from 'vitepress'
 import WhiteBelt from '../components/WhiteBelt.vue';
+import LanguageSelect from '../components/LanguageSelect.vue';
+
+const selectedLanguage = ref('0');
+const myData = useData();
+
+const languageCallback = (newValue) => {
+  selectedLanguage.value = newValue;
+}
 </script>
