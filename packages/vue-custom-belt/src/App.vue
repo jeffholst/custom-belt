@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import CustomBelt from "./components/CustomBelt.vue";
-import { BeltSystem } from "../../custom-belt-lib/src/BeltSystem";
+import { ref } from 'vue';
+import CustomBelt from './components/CustomBelt.vue';
+import { BeltSystem } from '../../custom-belt-lib/src/BeltSystem';
 import {
   BeltProps,
   BeltType,
@@ -9,20 +9,18 @@ import {
   getBeltPropsRandom,
   getBeltPropsStriped,
   combineBeltProps,
-  BeltCallbackType,
-} from "../../custom-belt-lib/src/Belt";
-import BeltSystemJSON_IBJJF from "../../custom-belt-lib/src/belt-systems/IBJJF.json";
+  BeltCallbackType
+} from '../../custom-belt-lib/src/Belt';
+import BeltSystemJSON_IBJJF from '../../custom-belt-lib/src/belt-systems/IBJJF.json';
 
-const ibjjfSystem: BeltSystem = new BeltSystem(
-  JSON.stringify(BeltSystemJSON_IBJJF)
-);
+const ibjjfSystem: BeltSystem = new BeltSystem(JSON.stringify(BeltSystemJSON_IBJJF));
 
 let randomCrazy: BeltProps[] = getBeltPropsRandom(
   true,
   false,
   0,
   undefined,
-  "transition: all 3.0s ease-in-out;",
+  'transition: all 3.0s ease-in-out;',
   [BeltType.Crazy],
   4000
 );
@@ -32,7 +30,7 @@ let randomCheckered: BeltProps[] = getBeltPropsRandom(
   false,
   0,
   undefined,
-  "transition: all 3.0s ease-in-out;",
+  'transition: all 3.0s ease-in-out;',
   [BeltType.Checkered],
   4000
 );
@@ -42,7 +40,7 @@ let randomSolid: BeltProps[] = getBeltPropsRandom(
   false,
   0,
   undefined,
-  "transition: all 3.0s ease-in-out;",
+  'transition: all 3.0s ease-in-out;',
   [BeltType.Solid],
   4000
 );
@@ -52,7 +50,7 @@ let randomStriped: BeltProps[] = getBeltPropsRandom(
   false,
   0,
   undefined,
-  "transition: all 3.0s ease-in-out;",
+  'transition: all 3.0s ease-in-out;',
   [BeltType.Striped],
   4000
 );
@@ -62,7 +60,7 @@ let randomCoral: BeltProps[] = getBeltPropsRandom(
   false,
   0,
   undefined,
-  "transition: all 3.0s ease-in-out;",
+  'transition: all 3.0s ease-in-out;',
   [BeltType.Coral],
   4000
 );
@@ -72,40 +70,36 @@ let randomSplit: BeltProps[] = getBeltPropsRandom(
   false,
   0,
   undefined,
-  "transition: all 3.0s ease-in-out;",
+  'transition: all 3.0s ease-in-out;',
   [BeltType.Split],
   4000
 );
 
-const flagBeltsCallback = (
-  event: Event | null,
-  callbackType: BeltCallbackType,
-  bp: BeltProps
-) => {
+const flagBeltsCallback = (event: Event | null, callbackType: BeltCallbackType, bp: BeltProps) => {
   if (callbackType === BeltCallbackType.Refresh) {
     flagBeltName.value = `${bp.belt.name as string}`;
   }
 };
 
 const usaBelt: BeltProps[] = getBeltPropsStriped(
-  "USA Belt",
-  "#BF0A30",
-  "#FFFFFF",
-  "#002868",
+  'USA Belt',
+  '#BF0A30',
+  '#FFFFFF',
+  '#002868',
   1,
-  "Black",
+  'Black',
   true,
-  "White",
-  "Black",
+  'White',
+  'Black',
   false,
-  "",
-  "",
-  "",
+  '',
+  '',
+  '',
   0,
   StripePosition.Right,
   0,
   4,
-  "transition: all 2.0s ease;",
+  'transition: all 2.0s ease;',
   3000,
   flagBeltsCallback
 );
@@ -113,24 +107,24 @@ const usaBelt: BeltProps[] = getBeltPropsStriped(
 const flagBeltName = ref(usaBelt[0].belt.name);
 
 const MexicoBelt = getBeltPropsStriped(
-  "Mexico Belt",
-  "#006847",
-  "#FFFFFF",
-  "#ce1127",
+  'Mexico Belt',
+  '#006847',
+  '#FFFFFF',
+  '#ce1127',
   2,
-  "Black",
+  'Black',
   true,
-  "White",
-  "Black",
+  'White',
+  'Black',
   false,
-  "",
-  "",
-  "",
+  '',
+  '',
+  '',
   0,
   StripePosition.Right,
   0,
   4,
-  "transition: all 2.0s ease;",
+  'transition: all 2.0s ease;',
   3000,
   flagBeltsCallback
 );
@@ -148,7 +142,7 @@ const IBBJFBeltsCallback = (
 };
 
 const allIBJJBelts: BeltProps[] = ibjjfSystem.getBeltPropsAll(
-  "transition: all 3.0s ease-in-out;",
+  'transition: all 3.0s ease-in-out;',
   4000,
   IBBJFBeltsCallback
 );
@@ -178,44 +172,30 @@ const ibjjBeltName = ref(allIBJJBelts[0].belt.name);
           <CustomBelt :belt-props="ibjjfSystem.getBeltPropsByName(belt.name)" />
         </div>
       </div>
-      <h1 class="text-2xl font-bold text-slate-800 dark:text-white py-10">
-        Random Belts
-      </h1>
+      <h1 class="text-2xl font-bold text-slate-800 dark:text-white py-10">Random Belts</h1>
       <div class="columns-3">
         <div>
-          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">
-            Solid
-          </h2>
+          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">Solid</h2>
           <CustomBelt :belt-props="randomSolid" />
         </div>
         <div>
-          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">
-            Split
-          </h2>
+          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">Split</h2>
           <CustomBelt :belt-props="randomSplit" />
         </div>
         <div>
-          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">
-            Striped
-          </h2>
+          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">Striped</h2>
           <CustomBelt :belt-props="randomStriped" />
         </div>
         <div>
-          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">
-            Checkered
-          </h2>
+          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">Checkered</h2>
           <CustomBelt :belt-props="randomCheckered" />
         </div>
         <div>
-          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">
-            Coral
-          </h2>
+          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">Coral</h2>
           <CustomBelt :belt-props="randomCoral" />
         </div>
         <div>
-          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">
-            Crazy
-          </h2>
+          <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">Crazy</h2>
           <CustomBelt :belt-props="randomCrazy" />
         </div>
       </div>

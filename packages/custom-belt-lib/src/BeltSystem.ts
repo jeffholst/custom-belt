@@ -5,8 +5,8 @@ import {
   StripePosition,
   mapBeltColors,
   getBeltPropsFromBelt,
-  BeltCallbackType,
-} from "./Belt";
+  BeltCallbackType
+} from './Belt';
 
 export interface BeltSystemInt {
   name: string;
@@ -40,17 +40,17 @@ export class BeltSystem {
    */
   constructor(system: string) {
     let beltSystem: BeltSystemInt = {
-      name: "",
-      title: "",
-      transitionCSS: "",
+      name: '',
+      title: '',
+      transitionCSS: '',
       refreshInterval: 0,
       colors: [],
-      belts: [],
+      belts: []
     };
     try {
       beltSystem = JSON.parse(system);
     } catch (e) {
-      console.log("Error parsing belt system: " + e);
+      console.log('Error parsing belt system: ' + e);
     }
     this.name = beltSystem.name;
     this.title = beltSystem.title;
@@ -78,9 +78,7 @@ export class BeltSystem {
    * @return {Belt | undefined} matching Belt or undefined
    */
   getBeltByName(name: string): Belt | undefined {
-    return this.belts.find(
-      (belt) => belt.name.toUpperCase() === name.toUpperCase()
-    );
+    return this.belts.find((belt) => belt.name.toUpperCase() === name.toUpperCase());
   }
 
   /**
@@ -94,11 +92,7 @@ export class BeltSystem {
     belt: Belt,
     stripeCount: number,
     stripePosition: StripePosition | undefined = undefined,
-    callback?: (
-      event: Event | null,
-      callbackType: BeltCallbackType,
-      belt: BeltProps
-    ) => void
+    callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
   ): BeltProps {
     belt.system = this.title;
     const beltProps: BeltProps = getBeltPropsFromBelt(
@@ -120,23 +114,14 @@ export class BeltSystem {
    * @return {BeltProps[]} all belts in the belt system
    */
   getBeltPropsAll(
-    transitionCSS = "",
+    transitionCSS = '',
     refreshInterval = 0,
-    callback?: (
-      event: Event | null,
-      callbackType: BeltCallbackType,
-      belt: BeltProps
-    ) => void
+    callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
   ): BeltProps[] {
     const beltPropsAry: BeltProps[] = [];
     let uniqueElementId: string | undefined = undefined;
     this.belts.forEach((belt) => {
-      const beltProps = this.getBeltProps(
-        belt,
-        belt.minStripes,
-        belt.stripePosition,
-        callback
-      );
+      const beltProps = this.getBeltProps(belt, belt.minStripes, belt.stripePosition, callback);
       // use same element id for all belts
       if (uniqueElementId === undefined) uniqueElementId = beltProps.id;
       else beltProps.id = uniqueElementId;
@@ -159,11 +144,7 @@ export class BeltSystem {
     id: number,
     stripeCount: number | undefined = undefined,
     stripePosition: StripePosition | undefined = undefined,
-    callback?: (
-      event: Event | null,
-      callbackType: BeltCallbackType,
-      belt: BeltProps
-    ) => void
+    callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
   ): BeltProps[] {
     const beltPropsAry: BeltProps[] = [];
     const belt = this.getBeltById(id);
@@ -195,13 +176,9 @@ export class BeltSystem {
     ids: number[],
     stripeCount: number | undefined = undefined,
     stripePosition: StripePosition | undefined = undefined,
-    transitionCSS = "",
+    transitionCSS = '',
     refreshInterval = 0,
-    callback?: (
-      event: Event | null,
-      callbackType: BeltCallbackType,
-      belt: BeltProps
-    ) => void
+    callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
   ): BeltProps[] {
     const beltPropsAry: BeltProps[] = [];
     const belts = this.getBeltsByIds(ids);
@@ -234,11 +211,7 @@ export class BeltSystem {
     name: string,
     stripeCount: number | undefined = undefined,
     stripePosition: StripePosition | undefined = undefined,
-    callback?: (
-      event: Event | null,
-      callbackType: BeltCallbackType,
-      belt: BeltProps
-    ) => void
+    callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
   ): BeltProps[] {
     const beltPropsAry: BeltProps[] = [];
     const belt = this.getBeltByName(name);
@@ -270,13 +243,9 @@ export class BeltSystem {
     names: string[],
     stripeCount: number | undefined = undefined,
     stripePosition: StripePosition | undefined = undefined,
-    transitionCSS = "",
+    transitionCSS = '',
     refreshInterval = 0,
-    callback?: (
-      event: Event | null,
-      callbackType: BeltCallbackType,
-      belt: BeltProps
-    ) => void
+    callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
   ): BeltProps[] {
     const beltPropsAry: BeltProps[] = [];
     const belts = this.getBeltsByNames(names);

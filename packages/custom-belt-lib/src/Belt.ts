@@ -1,5 +1,5 @@
 //import { version } from "../package.json"
-const version = "0.0.0";
+const version = '0.0.0';
 /*
  *  ___
  * | __|_ _ _  _ _ __  ___
@@ -12,9 +12,9 @@ const version = "0.0.0";
  * @enum
  */
 export enum BeltCallbackType {
-  Refresh = "Refresh",
-  Click = "Click",
-  DoubleClick = "DoubleClick",
+  Refresh = 'Refresh',
+  Click = 'Click',
+  DoubleClick = 'DoubleClick'
 }
 
 /**
@@ -22,12 +22,12 @@ export enum BeltCallbackType {
  * @enum
  */
 export enum BeltType {
-  Solid = "Solid",
-  Striped = "Striped",
-  Coral = "Coral",
-  Split = "Split",
-  Checkered = "Checkered",
-  Crazy = "Crazy",
+  Solid = 'Solid',
+  Striped = 'Striped',
+  Coral = 'Coral',
+  Split = 'Split',
+  Checkered = 'Checkered',
+  Crazy = 'Crazy'
 }
 
 /**
@@ -35,11 +35,11 @@ export enum BeltType {
  * @enum
  */
 export enum BeltTypeStandard {
-  Solid = "Solid",
-  Striped = "Striped",
-  Coral = "Coral",
-  Split = "Split",
-  Checkered = "Checkered",
+  Solid = 'Solid',
+  Striped = 'Striped',
+  Coral = 'Coral',
+  Split = 'Split',
+  Checkered = 'Checkered'
 }
 
 /**
@@ -47,9 +47,9 @@ export enum BeltTypeStandard {
  * @enum
  */
 enum LogType {
-  Info = "Info",
-  Warning = "Warning",
-  Error = "Error",
+  Info = 'Info',
+  Warning = 'Warning',
+  Error = 'Error'
 }
 
 /**
@@ -57,8 +57,8 @@ enum LogType {
  * @enum
  */
 export enum StripePosition {
-  Left = "Left",
-  Right = "Right",
+  Left = 'Left',
+  Right = 'Right'
 }
 
 /*
@@ -196,11 +196,7 @@ export interface BeltProps {
   transitionCSS: string;
   randomSettings: RandomSettings;
   refreshInterval: number;
-  callback?: (
-    event: Event | null,
-    callbackType: BeltCallbackType,
-    belt: BeltProps
-  ) => void;
+  callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void;
 }
 
 /**
@@ -222,10 +218,10 @@ export interface RandomSettings {
  * |___/\___|_| \__,_|\_,_|_|\__/__/
  */
 
-const UniqueIDPrefix = "custom-belt-"; // prefix for unique ID generation
+const UniqueIDPrefix = 'custom-belt-'; // prefix for unique ID generation
 
 /** Default color when no color provided */
-export const DefaultColor = "#FF0000";
+export const DefaultColor = '#FF0000';
 /** Maximum number of stripes a belt may have */
 export const MaximumStripeCount = 10;
 /** Minimum number of stripes */
@@ -279,46 +275,46 @@ export const combineBeltProps = (beltProps: BeltProps[][]): BeltProps[] => {
  */
 export const getBelt = (
   id = 0,
-  name = "",
+  name = '',
   type: BeltType = BeltType.Solid,
   sortOrder = 0,
-  color1 = "",
-  color2 = "",
-  color3 = "",
-  borderColor = "",
+  color1 = '',
+  color2 = '',
+  color3 = '',
+  borderColor = '',
   hasPatch = false,
-  patchColor = "",
-  patchBorderColor = "",
+  patchColor = '',
+  patchBorderColor = '',
   hasProfessorPatch = false,
-  professorPatchColor = "",
-  professorBorderColor = "",
-  stripeColor = "",
+  professorPatchColor = '',
+  professorBorderColor = '',
+  stripeColor = '',
   stripeCount = 0,
   stripePosition: StripePosition = StripePositionDefault,
   minStripes: number = MinimumStripeCount,
   maxStripes: number = MaximumStripeCount
 ): Belt => {
   const belt: Belt = {
-    system: "none",
+    system: 'none',
     id: id ? id : 0,
-    name: name ? name : "",
+    name: name ? name : '',
     type: type ? type : BeltType.Solid,
     sortOrder: sortOrder ? sortOrder : 0,
-    color1: color1 ? color1 : "",
-    color2: color2 ? color2 : "",
-    color3: color3 ? color3 : "",
-    borderColor: borderColor ? borderColor : "",
+    color1: color1 ? color1 : '',
+    color2: color2 ? color2 : '',
+    color3: color3 ? color3 : '',
+    borderColor: borderColor ? borderColor : '',
     hasPatch: hasPatch ? hasPatch : false,
-    patchColor: patchColor ? patchColor : "",
-    patchBorderColor: patchBorderColor ? patchBorderColor : "",
+    patchColor: patchColor ? patchColor : '',
+    patchBorderColor: patchBorderColor ? patchBorderColor : '',
     hasProfessorPatch: hasProfessorPatch ? hasProfessorPatch : false,
-    professorPatchColor: professorPatchColor ? professorPatchColor : "",
-    professorBorderColor: professorBorderColor ? professorBorderColor : "",
-    stripeColor: stripeColor ? stripeColor : "",
+    professorPatchColor: professorPatchColor ? professorPatchColor : '',
+    professorBorderColor: professorBorderColor ? professorBorderColor : '',
+    stripeColor: stripeColor ? stripeColor : '',
     stripeCount: stripeCount ? stripeCount : 0,
     stripePosition: stripePosition ? stripePosition : StripePositionDefault,
     minStripes: minStripes ? minStripes : 0,
-    maxStripes: maxStripes ? maxStripes : 4,
+    maxStripes: maxStripes ? maxStripes : 4
   };
 
   validateBelt(belt);
@@ -386,25 +382,21 @@ export const getBeltProps = (
   color1: string,
   color2: string,
   color3: string,
-  borderColor = "#434244",
+  borderColor = '#434244',
   hasPatch = true,
-  patchColor = "#000000",
-  patchBorderColor = "",
+  patchColor = '#000000',
+  patchBorderColor = '',
   hasProfessorPatch = false,
-  professorPatchColor = "",
-  professorBorderColor = "",
-  stripeColor = "",
+  professorPatchColor = '',
+  professorBorderColor = '',
+  stripeColor = '',
   stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
   minStripes = 0,
   maxStripes = 10,
-  transitionCSS = "",
+  transitionCSS = '',
   refreshInterval = 0,
-  callback?: (
-    event: Event | null,
-    callbackType: BeltCallbackType,
-    belt: BeltProps
-  ) => void
+  callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   const belt: Belt = getBelt(
     id,
@@ -471,25 +463,21 @@ export const getBeltPropsCheckered = (
   color1: string,
   color2: string,
   id = 0,
-  borderColor = "#434244",
+  borderColor = '#434244',
   hasPatch = true,
-  patchColor = "#000000",
-  patchBorderColor = "",
+  patchColor = '#000000',
+  patchBorderColor = '',
   hasProfessorPatch = false,
-  professorPatchColor = "",
-  professorBorderColor = "",
-  stripeColor = "",
+  professorPatchColor = '',
+  professorBorderColor = '',
+  stripeColor = '',
   stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
   minStripes = 0,
   maxStripes = 10,
-  transitionCSS = "",
+  transitionCSS = '',
   refreshInterval = 0,
-  callback?: (
-    event: Event | null,
-    callbackType: BeltCallbackType,
-    belt: BeltProps
-  ) => void
+  callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   return getBeltProps(
     id,
@@ -497,7 +485,7 @@ export const getBeltPropsCheckered = (
     BeltType.Checkered,
     color1,
     color2,
-    "",
+    '',
     borderColor,
     hasPatch,
     patchColor,
@@ -544,25 +532,21 @@ export const getBeltPropsCoral = (
   color1: string,
   color2: string,
   id = 0,
-  borderColor = "#434244",
+  borderColor = '#434244',
   hasPatch = true,
-  patchColor = "#000000",
-  patchBorderColor = "",
+  patchColor = '#000000',
+  patchBorderColor = '',
   hasProfessorPatch = false,
-  professorPatchColor = "",
-  professorBorderColor = "",
-  stripeColor = "",
+  professorPatchColor = '',
+  professorBorderColor = '',
+  stripeColor = '',
   stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
   minStripes = 0,
   maxStripes = 10,
-  transitionCSS = "",
+  transitionCSS = '',
   refreshInterval = 0,
-  callback?: (
-    event: Event | null,
-    callbackType: BeltCallbackType,
-    belt: BeltProps
-  ) => void
+  callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   return getBeltProps(
     id,
@@ -570,7 +554,7 @@ export const getBeltPropsCoral = (
     BeltType.Coral,
     color1,
     color2,
-    "",
+    '',
     borderColor,
     hasPatch,
     patchColor,
@@ -593,104 +577,100 @@ export const getBeltPropsCoral = (
  * Create new BeltProps[] array from Belt object
  * @param {Belt} belt Belt object to create BeltProps[] array from
  * @param {number} stripeCount number of stripes for belt [0-10]
- * @param {StripePosition} stripePosition starting position of stripes on belt patch
- * @param {string} transitionCSS CSS for transition animation
- * @param {number} refreshInterval interval in milliseconds before displaying next belt
- * @param {(event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void} callback callback function to call after belt actions
+ * @param {StripePosition} [stripePosition=StripePositionDefault] starting position of stripes on belt patch
+ * @param {string?} transitionCSS CSS for transition animation
+ * @param {number?} refreshInterval interval in milliseconds before displaying next belt
+ * @param {(event?: Event, callbackType: BeltCallbackType, belt: BeltProps) => void} callback callback function to call after belt actions
  * @return {BeltProps[]} BeltProps[] array
  */
 export const getBeltPropsFromBelt = (
   belt: Belt,
-  stripeCount: number,
-  stripePosition: StripePosition | undefined,
-  transitionCSS: string,
-  refreshInterval: number,
-  callback?: (
-    event: Event | null,
-    callbackType: BeltCallbackType,
-    belt: BeltProps
-  ) => void
+  stripeCount = 0,
+  stripePosition: StripePosition = StripePositionDefault,
+  transitionCSS = '',
+  refreshInterval = 0,
+  callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps => {
   const randomSettings: RandomSettings = getRandomSettings();
   const beltProps: BeltProps = {
     version: version,
     id: generateUniqueId(),
     belt: belt,
-    border: "",
+    border: '',
     hasPatch: true,
-    patch: "",
-    patchBorder: "",
-    professorPatch: "",
-    professorBorder: "",
+    patch: '',
+    patchBorder: '',
+    professorPatch: '',
+    professorBorder: '',
     hasProfessorPatch: false,
     stripeCount: stripeCount,
     stripePosition: StripePositionDefault,
-    stripe1: "",
-    stripe2: "",
-    stripe3: "",
-    stripe4: "",
-    stripe5: "",
-    stripe6: "",
-    stripe7: "",
-    stripe8: "",
-    stripe9: "",
-    stripe10: "",
-    s1l1: "",
-    s1l2a: "",
-    s1l2b: "",
-    s1l3: "",
-    s2l1: "",
-    s2l2a: "",
-    s2l2b: "",
-    s2l3: "",
-    s3l1: "",
-    s3l2a: "",
-    s3l2b: "",
-    s3l3: "",
-    s4l1: "",
-    s4l2a: "",
-    s4l2b: "",
-    s4l3: "",
-    s5l1: "",
-    s5l2a: "",
-    s5l2b: "",
-    s5l3: "",
-    s6l1: "",
-    s6l2a: "",
-    s6l2b: "",
-    s6l3: "",
-    s7l1: "",
-    s7l2a: "",
-    s7l2b: "",
-    s7l3: "",
-    s8l1: "",
-    s8l2a: "",
-    s8l2b: "",
-    s8l3: "",
-    s9l1: "",
-    s9l2a: "",
-    s9l2b: "",
-    s9l3: "",
-    s10l1: "",
-    s10l2a: "",
-    s10l2b: "",
-    s10l3: "",
-    s11l1: "",
-    s11l2a: "",
-    s11l2b: "",
-    s11l3: "",
-    s12l1: "",
-    s12l2a: "",
-    s12l2b: "",
-    s12l3: "",
-    s13l1: "",
-    s13l2a: "",
-    s13l2b: "",
-    s13l3: "",
-    transitionCSS: "",
+    stripe1: '',
+    stripe2: '',
+    stripe3: '',
+    stripe4: '',
+    stripe5: '',
+    stripe6: '',
+    stripe7: '',
+    stripe8: '',
+    stripe9: '',
+    stripe10: '',
+    s1l1: '',
+    s1l2a: '',
+    s1l2b: '',
+    s1l3: '',
+    s2l1: '',
+    s2l2a: '',
+    s2l2b: '',
+    s2l3: '',
+    s3l1: '',
+    s3l2a: '',
+    s3l2b: '',
+    s3l3: '',
+    s4l1: '',
+    s4l2a: '',
+    s4l2b: '',
+    s4l3: '',
+    s5l1: '',
+    s5l2a: '',
+    s5l2b: '',
+    s5l3: '',
+    s6l1: '',
+    s6l2a: '',
+    s6l2b: '',
+    s6l3: '',
+    s7l1: '',
+    s7l2a: '',
+    s7l2b: '',
+    s7l3: '',
+    s8l1: '',
+    s8l2a: '',
+    s8l2b: '',
+    s8l3: '',
+    s9l1: '',
+    s9l2a: '',
+    s9l2b: '',
+    s9l3: '',
+    s10l1: '',
+    s10l2a: '',
+    s10l2b: '',
+    s10l3: '',
+    s11l1: '',
+    s11l2a: '',
+    s11l2b: '',
+    s11l3: '',
+    s12l1: '',
+    s12l2a: '',
+    s12l2b: '',
+    s12l3: '',
+    s13l1: '',
+    s13l2a: '',
+    s13l2b: '',
+    s13l3: '',
+    transitionCSS: '',
     randomSettings: randomSettings,
     refreshInterval: 0,
-    callback: callback,
+    callback: callback
   };
 
   beltProps.transitionCSS = transitionCSS;
@@ -701,22 +681,22 @@ export const getBeltPropsFromBelt = (
 
   if (belt) {
     switch (belt.type) {
-      case "Solid":
+      case 'Solid':
         setBeltSolid(belt, beltProps);
         break;
-      case "Striped":
+      case 'Striped':
         setBeltStriped(belt, beltProps);
         break;
-      case "Coral":
+      case 'Coral':
         setBeltCoral(belt, beltProps);
         break;
-      case "Split":
+      case 'Split':
         setBeltSplit(belt, beltProps);
         break;
-      case "Checkered":
+      case 'Checkered':
         setBeltCheckered(belt, beltProps);
         break;
-      case "Crazy":
+      case 'Crazy':
         setBeltCrazy(beltProps);
         break;
     }
@@ -756,17 +736,13 @@ export const getBeltPropsRandom = (
   hasProfessorPatch: boolean | undefined = undefined,
   stripeCount: number | undefined = undefined,
   stripePosition: StripePosition | undefined = undefined,
-  transitionCSS: string | undefined = "",
+  transitionCSS: string | undefined = '',
   includeBelts: Array<BeltType> | undefined = [],
   refreshInterval: number | undefined = 0,
-  callback?: (
-    event: Event | null,
-    callbackType: BeltCallbackType,
-    belt: BeltProps
-  ) => void
+  callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   let randomBeltTypeIndex;
-  const title = "Random";
+  const title = 'Random';
   const randomSettings: RandomSettings = getRandomSettings(
     hasPatch,
     hasProfessorPatch,
@@ -776,13 +752,12 @@ export const getBeltPropsRandom = (
   );
   if (hasPatch == undefined) hasPatch = Math.random() < 0.5; // randomly pick true or false
   if (hasProfessorPatch === undefined) hasProfessorPatch = Math.random() < 0.5; // randomly pick true or false
-  if (stripeCount === undefined)
-    stripeCount = Math.floor(Math.random() * MaximumStripeCount + 1); // randomly pick between 0-10 stripes
+  if (stripeCount === undefined) stripeCount = Math.floor(Math.random() * MaximumStripeCount + 1); // randomly pick between 0-10 stripes
   if (stripePosition === undefined)
     Math.random() < 0.5 === true
       ? (stripePosition = StripePosition.Left)
       : (stripePosition = StripePosition.Right); // randomly pick Left or Right
-  if (transitionCSS === undefined) transitionCSS = "";
+  if (transitionCSS === undefined) transitionCSS = '';
   if (includeBelts !== undefined && includeBelts.length > 0) {
     if (includeBelts.length === 1) {
       // if only one includeBelt items is specified, then use that belt type
@@ -801,7 +776,7 @@ export const getBeltPropsRandom = (
     randomBeltTypeIndex = Math.floor(Math.random() * 6);
   }
   if (refreshInterval === undefined) refreshInterval = 0;
-  let name = "";
+  let name = '';
   let beltType: BeltType = BeltType.Solid;
   switch (randomBeltTypeIndex) {
     case 0: // solid belt
@@ -894,33 +869,29 @@ export const getBeltPropsSolid = (
   name: string,
   color: string,
   id = 0,
-  borderColor = "#434244",
+  borderColor = '#434244',
   hasPatch = true,
-  patchColor = "#000000",
-  patchBorderColor = "",
+  patchColor = '#000000',
+  patchBorderColor = '',
   hasProfessorPatch = false,
-  professorPatchColor = "",
-  professorBorderColor = "",
-  stripeColor = "",
+  professorPatchColor = '',
+  professorBorderColor = '',
+  stripeColor = '',
   stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
   minStripes = 0,
   maxStripes = 10,
-  transitionCSS = "",
+  transitionCSS = '',
   refreshInterval = 0,
-  callback?: (
-    event: Event | null,
-    callbackType: BeltCallbackType,
-    belt: BeltProps
-  ) => void
+  callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   return getBeltProps(
     id,
     name,
     BeltType.Solid,
     color,
-    "",
-    "",
+    '',
+    '',
     borderColor,
     hasPatch,
     patchColor,
@@ -967,25 +938,21 @@ export const getBeltPropsSplit = (
   color1: string,
   color2: string,
   id = 0,
-  borderColor = "#434244",
+  borderColor = '#434244',
   hasPatch = true,
-  patchColor = "#000000",
-  patchBorderColor = "",
+  patchColor = '#000000',
+  patchBorderColor = '',
   hasProfessorPatch = false,
-  professorPatchColor = "",
-  professorBorderColor = "",
-  stripeColor = "",
+  professorPatchColor = '',
+  professorBorderColor = '',
+  stripeColor = '',
   stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
   minStripes = 0,
   maxStripes = 10,
-  transitionCSS = "",
+  transitionCSS = '',
   refreshInterval = 0,
-  callback?: (
-    event: Event | null,
-    callbackType: BeltCallbackType,
-    belt: BeltProps
-  ) => void
+  callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   return getBeltProps(
     id,
@@ -993,7 +960,7 @@ export const getBeltPropsSplit = (
     BeltType.Split,
     color1,
     color2,
-    "",
+    '',
     borderColor,
     hasPatch,
     patchColor,
@@ -1042,25 +1009,21 @@ export const getBeltPropsStriped = (
   color2: string,
   color3: string,
   id = 0,
-  borderColor = "#434244",
+  borderColor = '#434244',
   hasPatch = true,
-  patchColor = "#000000",
-  patchBorderColor = "",
+  patchColor = '#000000',
+  patchBorderColor = '',
   hasProfessorPatch = false,
-  professorPatchColor = "",
-  professorBorderColor = "",
-  stripeColor = "",
+  professorPatchColor = '',
+  professorBorderColor = '',
+  stripeColor = '',
   stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
   minStripes = 0,
   maxStripes = 10,
-  transitionCSS = "",
+  transitionCSS = '',
   refreshInterval = 0,
-  callback?: (
-    event: Event | null,
-    callbackType: BeltCallbackType,
-    belt: BeltProps
-  ) => void
+  callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   return getBeltProps(
     id,
@@ -1137,9 +1100,7 @@ export const mapBeltColor = (color: string, colors: BeltColor[]): string => {
   let rval = color;
 
   if (!isValidHexCode(color)) {
-    const beltColor = colors.find(
-      (c) => c.name.toUpperCase() === color.toUpperCase()
-    );
+    const beltColor = colors.find((c) => c.name.toUpperCase() === color.toUpperCase());
     if (beltColor) {
       rval = beltColor.hex;
     }
@@ -1191,22 +1152,22 @@ const getBeltIndex = (bType: BeltType): number => {
   let index = -1;
 
   switch (bType) {
-    case "Solid":
+    case 'Solid':
       index = 0;
       break;
-    case "Striped":
+    case 'Striped':
       index = 1;
       break;
-    case "Coral":
+    case 'Coral':
       index = 2;
       break;
-    case "Split":
+    case 'Split':
       index = 3;
       break;
-    case "Checkered":
+    case 'Checkered':
       index = 4;
       break;
-    case "Crazy":
+    case 'Crazy':
       index = 5;
       break;
   }
@@ -1218,9 +1179,7 @@ const getBeltIndex = (bType: BeltType): number => {
  * @return {string} random hex color
  */
 const getRandomHexColor = (): string => {
-  return `#${[...Array(6)]
-    .map(() => Math.floor(Math.random() * 16).toString(16))
-    .join("")}`;
+  return `#${[...Array(6)].map(() => Math.floor(Math.random() * 16).toString(16)).join('')}`;
 };
 
 /**
@@ -1244,7 +1203,7 @@ const getRandomSettings = (
     hasProfessorPatch: hasProfessorPatch,
     stripeCount: stripeCount,
     stripePosition: stripePosition,
-    includeBelts: includeBelts,
+    includeBelts: includeBelts
   };
 
   return randomSettings;
@@ -1257,13 +1216,8 @@ const getRandomSettings = (
  * @param {number} beltId id of belt
  * @param {string} message message to log
  */
-const logMessage = (
-  ltype: LogType,
-  beltName: string,
-  beltId: number,
-  message: string
-) => {
-  const myName: string = beltName ? beltName : "Not Specified";
+const logMessage = (ltype: LogType, beltName: string, beltId: number, message: string) => {
+  const myName: string = beltName ? beltName : 'Not Specified';
   const msg = `CustomBelt ${ltype}: {'beltName': '${myName}', 'id': ${beltId}, 'message': '${message}'}`;
 
   console.log(msg);
@@ -1681,8 +1635,7 @@ const setPatchProperties = (
   beltProps.professorBorder = professorBorderColor;
   beltProps.hasProfessorPatch = hasProfessorPatch;
   beltProps.stripeCount = stripeCount;
-  beltProps.stripePosition =
-    stripePosition != undefined ? stripePosition : StripePositionDefault;
+  beltProps.stripePosition = stripePosition != undefined ? stripePosition : StripePositionDefault;
   beltProps.stripe1 = stripeColor;
   beltProps.stripe2 = stripeColor;
   beltProps.stripe3 = stripeColor;

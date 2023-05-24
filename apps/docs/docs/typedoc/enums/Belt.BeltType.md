@@ -21,58 +21,58 @@ Available belt types
 
 ### Checkered
 
-• **Checkered** = `"Checkered"`
+• **Checkered** = ``"Checkered"``
 
 #### Defined in
 
-[Belt.ts:29](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L29)
+[Belt.ts:29](https://github.com/jeffholst/custom-belt/blob/56a3584/packages/custom-belt-lib/src/Belt.ts#L29)
 
----
+___
 
 ### Coral
 
-• **Coral** = `"Coral"`
+• **Coral** = ``"Coral"``
 
 #### Defined in
 
-[Belt.ts:27](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L27)
+[Belt.ts:27](https://github.com/jeffholst/custom-belt/blob/56a3584/packages/custom-belt-lib/src/Belt.ts#L27)
 
----
+___
 
 ### Crazy
 
-• **Crazy** = `"Crazy"`
+• **Crazy** = ``"Crazy"``
 
 #### Defined in
 
-[Belt.ts:30](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L30)
+[Belt.ts:30](https://github.com/jeffholst/custom-belt/blob/56a3584/packages/custom-belt-lib/src/Belt.ts#L30)
 
----
+___
 
 ### Solid
 
-• **Solid** = `"Solid"`
+• **Solid** = ``"Solid"``
 
 #### Defined in
 
-[Belt.ts:25](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L25)
+[Belt.ts:25](https://github.com/jeffholst/custom-belt/blob/56a3584/packages/custom-belt-lib/src/Belt.ts#L25)
 
----
+___
 
 ### Split
 
-• **Split** = `"Split"`
+• **Split** = ``"Split"``
 
 #### Defined in
 
-[Belt.ts:28](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L28)
+[Belt.ts:28](https://github.com/jeffholst/custom-belt/blob/56a3584/packages/custom-belt-lib/src/Belt.ts#L28)
 
----
+___
 
 ### Striped
 
-• **Striped** = `"Striped"`
+• **Striped** = ``"Striped"``
 
 #### Defined in
 
-[Belt.ts:26](https://github.com/jeffholst/custom-belt/blob/e321ac8/packages/custom-belt-lib/src/Belt.ts#L26)
+[Belt.ts:26](https://github.com/jeffholst/custom-belt/blob/56a3584/packages/custom-belt-lib/src/Belt.ts#L26)

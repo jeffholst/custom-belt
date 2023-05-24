@@ -24,10 +24,6 @@ exports[`getBeltProps > should match snap 1`] = `
     "system": "none",
     "type": "Solid",
   },
-  "beltRDF": {
-    "about": "https://github.com/jeffholst/vue-custom-belt",
-    "title": "",
-  },
   "border": "",
   "callback": undefined,
   "hasPatch": false,

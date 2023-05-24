@@ -26,3 +26,9 @@ custom-belt-lib / [Modules](modules.md)
 | `npm run build:docs` | Rebuild TypeDocs          |
 | `npm run lint`       | Run lint for project      |
 | `npm run test`       | Run all test cases        |
+
+## 💬 Tips
+
+- running ```npm run build:docs``` will generate the TypeDocs for this package and use
+gulp to replace the files at ../../apps/docs/docs/typedoc for inclusion with the
+VitePress site.
