@@ -3,7 +3,6 @@ import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
-import dts from "vite-plugin-dts";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -29,15 +28,9 @@ export default defineConfig({
     },
   },
   plugins: [
-    dts({ compilerOptions: { rootDir: "src" } }),
     vue({
       template: {
-        compilerOptions: {
-          // i am ignorning my custom '<container>' tag
-          isCustomElement: (tag) => {
-            return tag.startsWith("rdf");
-          },
-        },
+        compilerOptions: {},
       },
     }),
   ],
