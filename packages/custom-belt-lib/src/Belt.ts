@@ -253,7 +253,7 @@ export const combineBeltProps = (beltProps: BeltProps[][]): BeltProps[] => {
 /**
  * Create new Belt object
  * @param {number} id unique identifier for belt
- * @param {string} name name of belt
+ * @param {string} name unique name of belt
  * @param {BeltType} type type of belt
  * @param {number} sortOrder used for sorting belts for display
  * @param {string} color1 hex value for belt color 1
@@ -328,8 +328,8 @@ export const getBelt = (
  * @param {BeltType} beltType BeltType to lookup color count
  * @return {number} number of colors in beltType
  */
-export const getBeltColorCount = (beltType: BeltType): number | undefined => {
-  let colorCount: number;
+export const getBeltColorCount = (beltType: BeltType): number => {
+  let colorCount = 0;
   switch (beltType) {
     case BeltType.Solid:
       colorCount = 1;
@@ -352,12 +352,12 @@ export const getBeltColorCount = (beltType: BeltType): number | undefined => {
 
 /**
  * Create new BeltProps[] array
- * @param {number} id unique identifier for belt
- * @param {string} name name of belt
+ * @param {string} name unique name of belt
  * @param {BeltType} beltType type of belt
  * @param {string} color1 hex value for belt color 1
  * @param {string} color2 hex value for belt color 2
  * @param {string} color3 hex value for belt color 3
+ * @param {number} id unique identifier for belt
  * @param {string} borderColor hex value for belt border color
  * @param {boolean} hasPatch whether belt has patch or not
  * @param {string} patchColor hex value for patch color
@@ -376,12 +376,12 @@ export const getBeltColorCount = (beltType: BeltType): number | undefined => {
  * @return {BeltProps[]} BeltProps[] array
  */
 export const getBeltProps = (
-  id: number,
   name: string,
   beltType: BeltType,
   color1: string,
   color2: string,
   color3: string,
+  id = 0,
   borderColor = '#434244',
   hasPatch = true,
   patchColor = '#000000',
@@ -437,10 +437,10 @@ export const getBeltProps = (
 
 /**
  * Create new Checkered BeltProps[] array
- * @param {number} id unique identifier for belt
- * @param {string} name name of belt
+ * @param {string} name unique name of belt
  * @param {string} color1 hex value for belt color 1
  * @param {string} color2 hex value for belt color 2
+ * @param {number} id unique identifier for belt
  * @param {string} borderColor hex value for belt border color
  * @param {boolean} hasPatch whether belt has patch or not
  * @param {string} patchColor hex value for patch color
@@ -480,12 +480,12 @@ export const getBeltPropsCheckered = (
   callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   return getBeltProps(
-    id,
     name,
     BeltType.Checkered,
     color1,
     color2,
     '',
+    id,
     borderColor,
     hasPatch,
     patchColor,
@@ -506,10 +506,10 @@ export const getBeltPropsCheckered = (
 
 /**
  * Create new Coral BeltProps[] array
- * @param {number} id unique identifier for belt
- * @param {string} name name of belt
+ * @param {string} name unique name of belt
  * @param {string} color1 hex value for belt color 1
  * @param {string} color2 hex value for belt color 2
+ * @param {number} id unique identifier for belt
  * @param {string} borderColor hex value for belt border color
  * @param {boolean} hasPatch whether belt has patch or not
  * @param {string} patchColor hex value for patch color
@@ -549,12 +549,12 @@ export const getBeltPropsCoral = (
   callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   return getBeltProps(
-    id,
     name,
     BeltType.Coral,
     color1,
     color2,
     '',
+    id,
     borderColor,
     hasPatch,
     patchColor,
@@ -732,13 +732,13 @@ export const getBeltPropsFromBelt = (
  * @return {BeltProps[]} Belt object
  */
 export const getBeltPropsRandom = (
-  hasPatch: boolean | undefined = undefined,
-  hasProfessorPatch: boolean | undefined = undefined,
-  stripeCount: number | undefined = undefined,
-  stripePosition: StripePosition | undefined = undefined,
-  transitionCSS: string | undefined = '',
-  includeBelts: Array<BeltType> | undefined = [],
-  refreshInterval: number | undefined = 0,
+  hasPatch?: boolean,
+  hasProfessorPatch?: boolean,
+  stripeCount?: number,
+  stripePosition?: StripePosition,
+  transitionCSS?: string,
+  includeBelts?: Array<BeltType>,
+  refreshInterval?: number,
   callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   let randomBeltTypeIndex;
@@ -845,9 +845,9 @@ export const getBeltPropsRandom = (
 
 /**
  * Create new Solid BeltProps[] array
- * @param {number} id unique identifier for belt
- * @param {string} name name of belt
+ * @param {string} name unique name of belt
  * @param {string} color hex value for belt color 1
+ * @param {number} id unique identifier for belt
  * @param {string} borderColor hex value for belt border color
  * @param {boolean} hasPatch whether belt has patch or not
  * @param {string} patchColor hex value for patch color
@@ -886,12 +886,12 @@ export const getBeltPropsSolid = (
   callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   return getBeltProps(
-    id,
     name,
     BeltType.Solid,
     color,
     '',
     '',
+    id,
     borderColor,
     hasPatch,
     patchColor,
@@ -912,10 +912,10 @@ export const getBeltPropsSolid = (
 
 /**
  * Create new Split BeltProps[] array
- * @param {number} id unique identifier for belt
- * @param {string} name name of belt
+ * @param {string} name unique name of belt
  * @param {string} color1 hex value for belt color 1
  * @param {string} color2 hex value for belt color 2
+ * @param {number} id unique identifier for belt
  * @param {string} borderColor hex value for belt border color
  * @param {boolean} hasPatch whether belt has patch or not
  * @param {string} patchColor hex value for patch color
@@ -955,12 +955,12 @@ export const getBeltPropsSplit = (
   callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   return getBeltProps(
-    id,
     name,
     BeltType.Split,
     color1,
     color2,
     '',
+    id,
     borderColor,
     hasPatch,
     patchColor,
@@ -981,11 +981,11 @@ export const getBeltPropsSplit = (
 
 /**
  * Create new Striped BeltProps[] array
- * @param {number} id unique identifier for belt
- * @param {string} name name of belt
+ * @param {string} name unique name of belt
  * @param {string} color1 hex value for belt color 1
  * @param {string} color2 hex value for belt color 2
  * @param {string} color3 hex value for belt color 3
+ * @param {number} id unique identifier for belt
  * @param {string} borderColor hex value for belt border color
  * @param {boolean} hasPatch whether belt has patch or not
  * @param {string} patchColor hex value for patch color
@@ -1026,12 +1026,12 @@ export const getBeltPropsStriped = (
   callback?: (event: Event | null, callbackType: BeltCallbackType, belt: BeltProps) => void
 ): BeltProps[] => {
   return getBeltProps(
-    id,
     name,
     BeltType.Striped,
     color1,
     color2,
     color3,
+    id,
     borderColor,
     hasPatch,
     patchColor,
@@ -1145,13 +1145,13 @@ const generateUniqueId = (): string => {
 
 /**
  * Get index of BeltType
- * @param {BeltType} bType BeltType
+ * @param {BeltType} beltType BeltType
  * @return {number} index of BeltType
  */
-const getBeltIndex = (bType: BeltType): number => {
+const getBeltIndex = (beltType: BeltType): number => {
   let index = -1;
 
-  switch (bType) {
+  switch (beltType) {
     case 'Solid':
       index = 0;
       break;
@@ -1184,19 +1184,19 @@ const getRandomHexColor = (): string => {
 
 /**
  * Get new RandomSettings object
- * @param {boolean | undefined} hasPatch whether random belt should have patch or not
- * @param {boolean | undefined} hasProfessorPatch whether random belt should have professor patch or not
- * @param {number | undefined} stripeCount stripes for random belt [0-10]
- * @param {StripePosition | undefined} stripePosition starting position of stripes on random belt patch
- * @param {Array<BeltType> | undefined} includeBelts array of BeltTypes to include in random selection
- * @return {RandomSettings} RandomSettings object
+ * @param {boolean?} hasPatch whether random belt should have patch or not
+ * @param {boolean?} hasProfessorPatch whether random belt should have professor patch or not
+ * @param {number?} stripeCount stripes for random belt [0-10]
+ * @param {StripePosition?} stripePosition starting position of stripes on random belt patch
+ * @param {Array<BeltType>?} includeBelts array of BeltTypes to include in random selection
+ * @return {RandomSettings?} RandomSettings object
  */
 const getRandomSettings = (
-  hasPatch: boolean | undefined = undefined,
-  hasProfessorPatch: boolean | undefined = undefined,
-  stripeCount: number | undefined = undefined,
-  stripePosition: StripePosition | undefined = undefined,
-  includeBelts: Array<BeltType> | undefined = undefined
+  hasPatch?: boolean,
+  hasProfessorPatch?: boolean,
+  stripeCount?: number,
+  stripePosition?: StripePosition,
+  includeBelts?: Array<BeltType>
 ): RandomSettings => {
   const randomSettings: RandomSettings = {
     hasPatch: hasPatch,
@@ -1211,14 +1211,14 @@ const getRandomSettings = (
 
 /**
  * Log message to console
- * @param {LogType} ltype type of log message
+ * @param {LogType} logType type of log message
  * @param {string} beltName name of belt
  * @param {number} beltId id of belt
  * @param {string} message message to log
  */
-const logMessage = (ltype: LogType, beltName: string, beltId: number, message: string) => {
+const logMessage = (logType: LogType, beltName: string, beltId: number, message: string) => {
   const myName: string = beltName ? beltName : 'Not Specified';
-  const msg = `CustomBelt ${ltype}: {'beltName': '${myName}', 'id': ${beltId}, 'message': '${message}'}`;
+  const msg = `CustomBelt ${logType}: {'beltName': '${myName}', 'id': ${beltId}, 'message': '${message}'}`;
 
   console.log(msg);
 };
@@ -1349,7 +1349,6 @@ const setBeltCoral = (belt: Belt, beltProps: BeltProps) => {
 
 /**
  * Set all BeltProps for Crazy Belt
- * @param {Belt} belt belt object
  * @param {BeltProps} beltProps beltProps object to set values on
  */
 const setBeltCrazy = (beltProps: BeltProps) => {
