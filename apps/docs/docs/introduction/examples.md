@@ -1,19 +1,19 @@
 # Examples
 
 <div style="text-align: right;">
-<LanguageSelect
-   :callback="languageCallback"
+<FrameworkSelect
+   :callback="frameworkCallback"
 />
 </div>
 
-<div v-if="selectedLanguage === '0'">
+<div v-if="selectedFramework === '0'">
 
 ## JavaScript
 
 Coming soon.
 
 </div>
-<div v-if="selectedLanguage === '1'">
+<div v-if="selectedFramework === '1'">
 
 ## Vue
 
@@ -23,11 +23,11 @@ Coming soon.
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import LanguageSelect from '../components/LanguageSelect.vue';
+import FrameworkSelect from '../components/FrameworkSelect.vue';
 
-const selectedLanguage = ref('0');
+const selectedFramework = ref('0');
 
-const languageCallback = (newValue) => {
-  selectedLanguage.value = newValue;
+const frameworkCallback = (newValue) => {
+  selectedFramework.value = newValue;
 }
 </script>
