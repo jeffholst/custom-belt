@@ -1,7 +1,7 @@
 # Quick Start
 
 <div style="text-align: right;">
-<FrameworkSelect
+<SelectFramework
    :callback="frameworkCallback"
 />
 </div>
@@ -75,7 +75,7 @@ The above code will produce the image below.
 <script setup lang="ts">
 import { ref } from 'vue'
 import WhiteBelt from '../components/WhiteBelt.vue';
-import FrameworkSelect from '../components/FrameworkSelect.vue';
+import SelectFramework from '../components/SelectFramework.vue';
 
 const selectedFramework = ref('0');
 

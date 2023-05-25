@@ -1,7 +1,7 @@
 # Examples
 
 <div style="text-align: right;">
-<FrameworkSelect
+<SelectFramework
    :callback="frameworkCallback"
 />
 </div>
@@ -23,7 +23,7 @@ Coming soon.
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import FrameworkSelect from '../components/FrameworkSelect.vue';
+import SelectFramework from '../components/SelectFramework.vue';
 
 const selectedFramework = ref('0');
 
