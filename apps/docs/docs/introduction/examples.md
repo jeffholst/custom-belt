@@ -2,7 +2,6 @@
 
 <div style="text-align: right;">
 <LanguageSelect
-   :selected-value="selectedLanguage"
    :callback="languageCallback"
 />
 </div>
@@ -11,10 +10,14 @@
 
 ## JavaScript
 
+Coming soon.
+
 </div>
 <div v-if="selectedLanguage === '1'">
 
 ## Vue
+
+Coming soon.
 
 </div>
 

@@ -1,6 +1,6 @@
 <template>
   <SelectControl
-    label="Language"
+    label="Framework"
     :available-options="languages"
     :selected-option="selectedLanguage"
     :callback="languageCallback"
@@ -9,21 +9,33 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, getCurrentInstance, onBeforeMount } from 'vue';
 import SelectControl from './SelectControl.vue';
 
 const props = defineProps<{
-  selectedValue: string;
   callback: Function;
 }>();
 
 const languages = [
-  { name: 'JavaScript', value: '0' },
+  { name: 'None', value: '0' },
   { name: 'Vue', value: '1' }
 ];
+
+let currentInstance: any;
+
 const selectedLanguage = ref('0');
 
+onBeforeMount(() => {
+  currentInstance = getCurrentInstance();
+  if (currentInstance) {
+    languageCallback(currentInstance.appContext.config.globalProperties.selectedLanguage);
+  }
+});
+
 const languageCallback = (newValue: string) => {
+  if (currentInstance) {
+    currentInstance.appContext.config.globalProperties.selectedLanguage = newValue;
+  }
   selectedLanguage.value = newValue;
   props.callback(newValue);
 };
