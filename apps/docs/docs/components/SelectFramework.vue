@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, getCurrentInstance, onBeforeMount } from 'vue';
+import { ref, getCurrentInstance } from 'vue';
 import SelectControl from './SelectControl.vue';
 
 const props = defineProps<{
@@ -21,20 +21,15 @@ const frameworks = [
   { name: 'Vue', value: '1' }
 ];
 
-let currentInstance: any;
-
-const selectedFramework = ref('0');
-
-onBeforeMount(() => {
-  currentInstance = getCurrentInstance();
-  if (currentInstance) {
-    frameworkCallback(currentInstance.appContext.config.globalProperties.selectedLanguage);
-  }
-});
+const currentInstance: any = getCurrentInstance();
+console.log(
+  `selectedFramework: ${currentInstance.appContext.config.globalProperties.selectedFramework}`
+);
+const selectedFramework = ref(currentInstance.appContext.config.globalProperties.selectedFramework);
 
 const frameworkCallback = (newValue: string) => {
   if (currentInstance) {
-    currentInstance.appContext.config.globalProperties.selectedLanguage = newValue;
+    currentInstance.appContext.config.globalProperties.selectedFramework = newValue;
   }
   selectedFramework.value = newValue;
   props.callback(newValue);

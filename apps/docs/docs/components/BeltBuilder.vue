@@ -107,12 +107,12 @@ const stripesAvailable = ref();
 
 const updateBeltCustom = () => {
   belt.value = getBeltProps(
-    0,
     'Belt Name',
     selectedCustomBelt.value,
     color1.value,
     color2.value,
     color3.value,
+    0,
     '#000000',
     true,
     '#000000',

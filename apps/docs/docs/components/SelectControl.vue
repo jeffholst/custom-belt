@@ -1,13 +1,23 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted, watch } from 'vue';
 
 const props = defineProps<{
   label: string;
   availableOptions: any;
-  selectedOption: number | string;
+  selectedOption?: number | string;
   callback: Function;
   showNav: boolean | undefined;
 }>();
+
+watch(
+  () => props.selectedOption,
+  (newValue) => {
+    selection.value = newValue;
+  }
+);
+onMounted(() => {
+  props.callback(selection.value);
+});
 
 const selection = ref(props.selectedOption);
 const showNav = props.showNav === undefined ? false : props.showNav;

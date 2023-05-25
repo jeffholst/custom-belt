@@ -28,6 +28,6 @@ import SelectFramework from '../components/SelectFramework.vue';
 const selectedFramework = ref('0');
 
 const frameworkCallback = (newValue) => {
-  selectedFramework.value = newValue;
+  if (newValue) selectedFramework.value = newValue;
 }
 </script>
