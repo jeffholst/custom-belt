@@ -1,6 +1,6 @@
 <template>
   <SelectControl
-    label="Framework"
+    label="Pick a Framework"
     :available-options="frameworks"
     :selected-option="selectedFramework"
     :callback="frameworkCallback"
