@@ -150,7 +150,7 @@ export class VanillaBeltSystem {
     return `fill: ${this.beltProps.border}; ${this.additionalStyles()}`;
   };
 
-  getColor = (hexColor: String) => {
+  getColor = (hexColor: string) => {
     if (hexColor === undefined) {
       return '';
     }
