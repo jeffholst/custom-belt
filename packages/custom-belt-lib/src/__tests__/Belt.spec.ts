@@ -1,51 +1,51 @@
-import { describe, it, expect } from "vitest";
-import * as belt from "../Belt";
+import { describe, it, expect } from 'vitest';
+import * as belt from '../Belt';
 
 const colors: belt.BeltColor[] = [
   {
-    name: "White",
-    hex: "#FFFFFF",
+    name: 'White',
+    hex: '#FFFFFF'
   },
   {
-    name: "Black",
-    hex: "#000000",
+    name: 'Black',
+    hex: '#000000'
   },
   {
-    name: "Gray",
-    hex: "#999999",
-  },
+    name: 'Gray',
+    hex: '#999999'
+  }
 ];
 
 const belts: belt.Belt[] = [
   {
-    system: "none",
+    system: 'none',
     id: 1,
-    name: "White",
+    name: 'White',
     sortOrder: 10,
     type: belt.BeltType.Solid,
-    color1: "wHiTe",
-    color2: "Black",
-    color3: "Gray",
-    borderColor: "DarkBorder",
+    color1: 'wHiTe',
+    color2: 'Black',
+    color3: 'Gray',
+    borderColor: 'DarkBorder',
     hasPatch: true,
-    patchColor: "Black",
-    patchBorderColor: "DarkBorder",
+    patchColor: 'Black',
+    patchBorderColor: 'DarkBorder',
     hasProfessorPatch: false,
-    professorPatchColor: "",
-    professorBorderColor: "",
-    stripeColor: "White",
+    professorPatchColor: '',
+    professorBorderColor: '',
+    stripeColor: 'White',
     stripeCount: 0,
     stripePosition: belt.StripePosition.Right,
     minStripes: 0,
-    maxStripes: 4,
-  },
+    maxStripes: 4
+  }
 ];
 
 /**
  * StripeStart tests
  */
-describe("StripeStart", () => {
-  let rval = "";
+describe('StripeStart', () => {
+  let rval = '';
   for (const ss in belt.StripePosition) {
     rval += ss;
 
@@ -53,7 +53,7 @@ describe("StripeStart", () => {
      * Test that stripePosition only contains expected values
      */
     it(`is iterable`, () => {
-      expect(rval).toBe("LeftRight");
+      expect(rval).toBe('LeftRight');
     });
   }
 });
@@ -61,8 +61,8 @@ describe("StripeStart", () => {
 /**
  * BeltType tests
  */
-describe("BeltType", () => {
-  let rval = "";
+describe('BeltType', () => {
+  let rval = '';
   for (const bt in belt.BeltType) {
     rval += bt;
   }
@@ -71,15 +71,15 @@ describe("BeltType", () => {
    * Test that BeltType only contains expected values
    */
   it(`has correct values`, () => {
-    expect(rval).toBe("SolidStripedCoralSplitCheckeredCrazy");
+    expect(rval).toBe('SolidStripedCoralSplitCheckeredCrazy');
   });
 });
 
 /**
  * BeltTypeStandard tests
  */
-describe("BeltTypeStandard", () => {
-  let rval = "";
+describe('BeltTypeStandard', () => {
+  let rval = '';
   for (const bt in belt.BeltTypeStandard) {
     rval += bt;
   }
@@ -88,7 +88,7 @@ describe("BeltTypeStandard", () => {
    * Test that BeltTypeStandard only contains expected values
    */
   it(`has correct values`, () => {
-    expect(rval).toBe("SolidStripedCoralSplitCheckered");
+    expect(rval).toBe('SolidStripedCoralSplitCheckered');
   });
 
   /**
@@ -113,14 +113,8 @@ describe("BeltTypeStandard", () => {
 /**
  * Test isValidHexCode for various values
  */
-describe("isValidHexCode", () => {
-  const hexCodes: string[] = [
-    "#1AFFa1",
-    "#F00",
-    "123456",
-    "#123abce",
-    "#afafah",
-  ];
+describe('isValidHexCode', () => {
+  const hexCodes: string[] = ['#1AFFa1', '#F00', '123456', '#123abce', '#afafah'];
   const results: boolean[] = [true, true, false, false, false];
 
   hexCodes.forEach((hexCode, index) => {
@@ -133,84 +127,84 @@ describe("isValidHexCode", () => {
 /**
  * Test that mapBeltColor returns expected values
  */
-describe("mapBeltColor", () => {
-  it("should return valid hexcode", () => {
-    expect(belt.mapBeltColor("#FFFFFF", colors)).toBe("#FFFFFF");
+describe('mapBeltColor', () => {
+  it('should return valid hexcode', () => {
+    expect(belt.mapBeltColor('#FFFFFF', colors)).toBe('#FFFFFF');
   });
 
-  it("should return mapped value for White", () => {
-    expect(belt.mapBeltColor("White", colors)).toBe("#FFFFFF");
+  it('should return mapped value for White', () => {
+    expect(belt.mapBeltColor('White', colors)).toBe('#FFFFFF');
   });
 
-  it("should return mapped value for mixed case wHiTe", () => {
-    expect(belt.mapBeltColor("wHiTe", colors)).toBe("#FFFFFF");
+  it('should return mapped value for mixed case wHiTe', () => {
+    expect(belt.mapBeltColor('wHiTe', colors)).toBe('#FFFFFF');
   });
 
-  it("should return mapped value for Gray", () => {
-    expect(belt.mapBeltColor("Gray", colors)).toBe("#999999");
+  it('should return mapped value for Gray', () => {
+    expect(belt.mapBeltColor('Gray', colors)).toBe('#999999');
   });
 
-  it("should return passed color", () => {
-    expect(belt.mapBeltColor("Red", colors)).toBe("Red");
+  it('should return passed color', () => {
+    expect(belt.mapBeltColor('Red', colors)).toBe('Red');
   });
 });
 
 /**
  * Test that mapBeltColors maps colors correctly
  */
-describe("mapBeltColors", () => {
+describe('mapBeltColors', () => {
   belt.mapBeltColors(belts, colors);
-  it("should return mapped color for White", () => {
-    expect(belts[0].color1).toBe("#FFFFFF");
+  it('should return mapped color for White', () => {
+    expect(belts[0].color1).toBe('#FFFFFF');
   });
 
-  it("should return mapped color for Black", () => {
-    expect(belts[0].color2).toBe("#000000");
+  it('should return mapped color for Black', () => {
+    expect(belts[0].color2).toBe('#000000');
   });
 
-  it("should return mapped color for Gray", () => {
-    expect(belts[0].color3).toBe("#999999");
+  it('should return mapped color for Gray', () => {
+    expect(belts[0].color3).toBe('#999999');
   });
 });
 
 /**
  * Test that getBeltProps returns expected values
  */
-describe("getBeltProps", () => {
+describe('getBeltProps', () => {
   const myBelt: belt.Belt = belt.getBelt();
-  it("should match snap", () => {
+  it('should match snap', () => {
     const beltProps: belt.BeltProps = belt.getBeltPropsFromBelt(
       myBelt,
       0,
       belt.StripePosition.Left,
-      "",
+      '',
       0,
       undefined
     );
-    beltProps.id = ""; // blank id so snapshot doesn't fail
-    beltProps.version = ""; // blank out version so snapshot does not fail
+    beltProps.id = ''; // blank id so snapshot doesn't fail
+    beltProps.version = ''; // blank out version so snapshot does not fail
     expect(beltProps).toMatchSnapshot();
   });
 });
 
-describe("validateBelt_StripeCount", () => {
+describe('validateBelt_StripeCount', () => {
   it(`minStripe < ${belt.MinimumStripeCount} should return ${belt.MinimumStripeCount}`, () => {
     const b = belt.getBelt(
       0,
-      "",
+      '',
       belt.BeltType.Solid,
       0,
-      "",
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
+      '',
       false,
-      "",
-      "",
+      '',
+      '',
       false,
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
       0,
       belt.StripePosition.Right,
       belt.MinimumStripeCount - 1, // here is invalid stripe value
@@ -222,20 +216,20 @@ describe("validateBelt_StripeCount", () => {
   it(`minStripe > ${belt.MaximumStripeCount} should return ${belt.MinimumStripeCount}`, () => {
     const b = belt.getBelt(
       0,
-      "",
+      '',
       belt.BeltType.Solid,
       0,
-      "",
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
+      '',
       false,
-      "",
-      "",
+      '',
+      '',
       false,
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
       0,
       belt.StripePosition.Right,
       belt.MaximumStripeCount + 1, // here is invalid stripe value
@@ -247,20 +241,20 @@ describe("validateBelt_StripeCount", () => {
   it(`maxStripe > ${belt.MaximumStripeCount} should return ${belt.MaximumStripeCount}`, () => {
     const b = belt.getBelt(
       0,
-      "",
+      '',
       belt.BeltType.Solid,
       0,
-      "",
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
+      '',
       false,
-      "",
-      "",
+      '',
+      '',
       false,
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
       0,
       belt.StripePosition.Right,
       0,
@@ -272,20 +266,20 @@ describe("validateBelt_StripeCount", () => {
   it(`maxStripe < ${belt.MinimumStripeCount} should return ${belt.MaximumStripeCount}`, () => {
     const b = belt.getBelt(
       0,
-      "",
+      '',
       belt.BeltType.Solid,
       0,
-      "",
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
+      '',
       false,
-      "",
-      "",
+      '',
+      '',
       false,
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
       0,
       belt.StripePosition.Right,
       0,
@@ -294,23 +288,23 @@ describe("validateBelt_StripeCount", () => {
     expect(b.maxStripes).toBe(belt.MaximumStripeCount);
   });
 
-  it("minStripe is not > maxStripe check", () => {
+  it('minStripe is not > maxStripe check', () => {
     const b = belt.getBelt(
       0,
-      "",
+      '',
       belt.BeltType.Solid,
       0,
-      "",
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
+      '',
       false,
-      "",
-      "",
+      '',
+      '',
       false,
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
       0,
       belt.StripePosition.Right,
       5, // here is invalid minStripevalue
@@ -320,81 +314,81 @@ describe("validateBelt_StripeCount", () => {
     expect(b.maxStripes).toBe(4);
   });
 
-  it("must have color1", () => {
+  it('must have color1', () => {
     const b = belt.getBelt(
       0,
-      "",
+      '',
       belt.BeltType.Solid, // requires 1 color
       0,
-      "", //required color1 missing
-      "",
-      "",
-      "",
+      '', //required color1 missing
+      '',
+      '',
+      '',
       false,
-      "",
-      "",
+      '',
+      '',
       false,
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
       0,
       belt.StripePosition.Right,
       0,
       1
     );
-    expect(b.color1).toBe(belt.DefaultColor);
+    expect(b.color1).toBe(belt.DefaultBeltColor);
   });
 
-  it("must have color1 and color2", () => {
+  it('must have color1 and color2', () => {
     const b = belt.getBelt(
       0,
-      "",
+      '',
       belt.BeltType.Coral, // requires 2 colors
       0,
-      "", // required color1 missing
-      "", // required color2 missing
-      "",
-      "",
+      '', // required color1 missing
+      '', // required color2 missing
+      '',
+      '',
       false,
-      "",
-      "",
+      '',
+      '',
       false,
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
       0,
       belt.StripePosition.Right,
       0,
       1
     );
-    expect(b.color1).toBe(belt.DefaultColor);
-    expect(b.color2).toBe(belt.DefaultColor);
+    expect(b.color1).toBe(belt.DefaultBeltColor);
+    expect(b.color2).toBe(belt.DefaultBeltColor);
   });
 
-  it("must have color1, color2 and color3", () => {
+  it('must have color1, color2 and color3', () => {
     const b = belt.getBelt(
       0,
-      "",
+      '',
       belt.BeltType.Striped, // requires 3 colors
       0,
-      "", // required color1 missing
-      "", // required color2 missing
-      "", // required color3 missing
-      "",
+      '', // required color1 missing
+      '', // required color2 missing
+      '', // required color3 missing
+      '',
       false,
-      "",
-      "",
+      '',
+      '',
       false,
-      "",
-      "",
-      "",
+      '',
+      '',
+      '',
       0,
       belt.StripePosition.Right,
       0,
       1
     );
-    expect(b.color1).toBe(belt.DefaultColor);
-    expect(b.color2).toBe(belt.DefaultColor);
-    expect(b.color3).toBe(belt.DefaultColor);
+    expect(b.color1).toBe(belt.DefaultBeltColor);
+    expect(b.color2).toBe(belt.DefaultBeltColor);
+    expect(b.color3).toBe(belt.DefaultBeltColor);
   });
 });

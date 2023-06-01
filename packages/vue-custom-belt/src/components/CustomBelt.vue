@@ -599,7 +599,7 @@ const borderColor = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return `fill: ${myBelt.value.border}; ${additionalStyles()}`;
+  return `fill: ${myBelt.value.borderColor}; ${additionalStyles()}`;
 });
 
 const s1l1 = computed(() => {
@@ -998,7 +998,7 @@ const patchColor = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return `fill: ${myBelt.value.patch}; ${additionalStyles()}`;
+  return `fill: ${myBelt.value.patchColor}; ${additionalStyles()}`;
 });
 
 const patchBorderColor = computed(() => {
@@ -1032,70 +1032,70 @@ const stripe1 = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return stripeStyle(getStripeIndex(1), myBelt.value.stripe1);
+  return stripeStyle(getStripeIndex(1), myBelt.value.stripeColor1);
 });
 
 const stripe2 = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return stripeStyle(getStripeIndex(2), myBelt.value.stripe2);
+  return stripeStyle(getStripeIndex(2), myBelt.value.stripeColor2);
 });
 
 const stripe3 = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return stripeStyle(getStripeIndex(3), myBelt.value.stripe3);
+  return stripeStyle(getStripeIndex(3), myBelt.value.stripeColor3);
 });
 
 const stripe4 = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return stripeStyle(getStripeIndex(4), myBelt.value.stripe4);
+  return stripeStyle(getStripeIndex(4), myBelt.value.stripeColor4);
 });
 
 const stripe5 = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return stripeStyle(getStripeIndex(5), myBelt.value.stripe5);
+  return stripeStyle(getStripeIndex(5), myBelt.value.stripeColor5);
 });
 
 const stripe6 = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return stripeStyle(getStripeIndex(6), myBelt.value.stripe6);
+  return stripeStyle(getStripeIndex(6), myBelt.value.stripeColor6);
 });
 
 const stripe7 = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return stripeStyle(getStripeIndex(7), myBelt.value.stripe7);
+  return stripeStyle(getStripeIndex(7), myBelt.value.stripeColor7);
 });
 
 const stripe8 = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return stripeStyle(getStripeIndex(8), myBelt.value.stripe8);
+  return stripeStyle(getStripeIndex(8), myBelt.value.stripeColor8);
 });
 
 const stripe9 = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return stripeStyle(getStripeIndex(9), myBelt.value.stripe9);
+  return stripeStyle(getStripeIndex(9), myBelt.value.stripeColor9);
 });
 
 const stripe10 = computed(() => {
   if (myBelt.value === undefined) {
     return '';
   }
-  return stripeStyle(getStripeIndex(10), myBelt.value.stripe10);
+  return stripeStyle(getStripeIndex(10), myBelt.value.stripeColor10);
 });
 </script>
 

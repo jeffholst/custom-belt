@@ -122,25 +122,25 @@ export interface BeltProps {
   version: string;
   id: string;
   belt: Belt;
-  border: string;
+  borderColor: string;
   hasPatch: boolean;
-  patch: string;
+  patchColor: string;
   patchBorder: string;
   professorPatch: string;
   professorBorder: string;
   hasProfessorPatch: boolean;
   stripeCount: number;
   stripePosition: StripePosition;
-  stripe1: string;
-  stripe2: string;
-  stripe3: string;
-  stripe4: string;
-  stripe5: string;
-  stripe6: string;
-  stripe7: string;
-  stripe8: string;
-  stripe9: string;
-  stripe10: string;
+  stripeColor1: string;
+  stripeColor2: string;
+  stripeColor3: string;
+  stripeColor4: string;
+  stripeColor5: string;
+  stripeColor6: string;
+  stripeColor7: string;
+  stripeColor8: string;
+  stripeColor9: string;
+  stripeColor10: string;
   s1l1: string;
   s1l2a: string;
   s1l2b: string;
@@ -221,7 +221,7 @@ export interface RandomSettings {
 const UniqueIDPrefix = 'custom-belt-'; // prefix for unique ID generation
 
 /** Default color when no color provided */
-export const DefaultColor = '#FF0000';
+export const DefaultBeltColor = '#FF0000';
 /** Maximum number of stripes a belt may have */
 export const MaximumStripeCount = 10;
 /** Minimum number of stripes */
@@ -596,25 +596,25 @@ export const getBeltPropsFromBelt = (
     version: version,
     id: generateUniqueId(),
     belt: belt,
-    border: '',
+    borderColor: '',
     hasPatch: true,
-    patch: '',
+    patchColor: '',
     patchBorder: '',
     professorPatch: '',
     professorBorder: '',
     hasProfessorPatch: false,
     stripeCount: stripeCount,
     stripePosition: StripePositionDefault,
-    stripe1: '',
-    stripe2: '',
-    stripe3: '',
-    stripe4: '',
-    stripe5: '',
-    stripe6: '',
-    stripe7: '',
-    stripe8: '',
-    stripe9: '',
-    stripe10: '',
+    stripeColor1: '',
+    stripeColor2: '',
+    stripeColor3: '',
+    stripeColor4: '',
+    stripeColor5: '',
+    stripeColor6: '',
+    stripeColor7: '',
+    stripeColor8: '',
+    stripeColor9: '',
+    stripeColor10: '',
     s1l1: '',
     s1l2a: '',
     s1l2b: '',
@@ -700,7 +700,7 @@ export const getBeltPropsFromBelt = (
         setBeltCrazy(beltProps);
         break;
     }
-    beltProps.border = belt.borderColor;
+    beltProps.borderColor = belt.borderColor;
 
     setPatchProperties(
       beltProps,
@@ -1628,23 +1628,23 @@ const setPatchProperties = (
   stripePosition: StripePosition | undefined
 ) => {
   beltProps.hasPatch = hasPatch;
-  beltProps.patch = patchColor;
+  beltProps.patchColor = patchColor;
   beltProps.patchBorder = patchBorderColor;
   beltProps.professorPatch = professorPatchColor;
   beltProps.professorBorder = professorBorderColor;
   beltProps.hasProfessorPatch = hasProfessorPatch;
   beltProps.stripeCount = stripeCount;
   beltProps.stripePosition = stripePosition != undefined ? stripePosition : StripePositionDefault;
-  beltProps.stripe1 = stripeColor;
-  beltProps.stripe2 = stripeColor;
-  beltProps.stripe3 = stripeColor;
-  beltProps.stripe4 = stripeColor;
-  beltProps.stripe5 = stripeColor;
-  beltProps.stripe6 = stripeColor;
-  beltProps.stripe7 = stripeColor;
-  beltProps.stripe8 = stripeColor;
-  beltProps.stripe9 = stripeColor;
-  beltProps.stripe10 = stripeColor;
+  beltProps.stripeColor1 = stripeColor;
+  beltProps.stripeColor2 = stripeColor;
+  beltProps.stripeColor3 = stripeColor;
+  beltProps.stripeColor4 = stripeColor;
+  beltProps.stripeColor5 = stripeColor;
+  beltProps.stripeColor6 = stripeColor;
+  beltProps.stripeColor7 = stripeColor;
+  beltProps.stripeColor8 = stripeColor;
+  beltProps.stripeColor9 = stripeColor;
+  beltProps.stripeColor10 = stripeColor;
 };
 
 /**
@@ -1677,35 +1677,35 @@ const validateBelt_Colors = (belt: Belt) => {
   } else {
     if (colorCount >= 1) {
       if (!belt.color1) {
-        msg = `color1 is required setting to (${DefaultColor})`;
+        msg = `color1 is required setting to (${DefaultBeltColor})`;
         logMessage(LogType.Error, belt.name, belt.id, msg);
-        belt.color1 = DefaultColor;
+        belt.color1 = DefaultBeltColor;
       } else if (!isValidHexCode(belt.color1)) {
-        msg = `invalid color1 (${belt.color1}) setting to (${DefaultColor})`;
+        msg = `invalid color1 (${belt.color1}) setting to (${DefaultBeltColor})`;
         logMessage(LogType.Warning, belt.name, belt.id, msg);
-        belt.color1 = DefaultColor;
+        belt.color1 = DefaultBeltColor;
       }
     }
     if (colorCount >= 2) {
       if (!belt.color2) {
-        msg = `color2 is required setting to (${DefaultColor})`;
+        msg = `color2 is required setting to (${DefaultBeltColor})`;
         logMessage(LogType.Error, belt.name, belt.id, msg);
-        belt.color2 = DefaultColor;
+        belt.color2 = DefaultBeltColor;
       } else if (!isValidHexCode(belt.color2)) {
-        msg = `invalid color2 (${belt.color2}) setting to (${DefaultColor})`;
+        msg = `invalid color2 (${belt.color2}) setting to (${DefaultBeltColor})`;
         logMessage(LogType.Warning, belt.name, belt.id, msg);
-        belt.color2 = DefaultColor;
+        belt.color2 = DefaultBeltColor;
       }
     }
     if (colorCount >= 3) {
       if (!belt.color3) {
-        msg = `color3 is required setting to (${DefaultColor})`;
+        msg = `color3 is required setting to (${DefaultBeltColor})`;
         logMessage(LogType.Error, belt.name, belt.id, msg);
-        belt.color3 = DefaultColor;
+        belt.color3 = DefaultBeltColor;
       } else if (!isValidHexCode(belt.color3)) {
-        msg = `invalid color2 (${belt.color3}) setting to (${DefaultColor})`;
+        msg = `invalid color2 (${belt.color3}) setting to (${DefaultBeltColor})`;
         logMessage(LogType.Warning, belt.name, belt.id, msg);
-        belt.color3 = DefaultColor;
+        belt.color3 = DefaultBeltColor;
       }
     }
   }
