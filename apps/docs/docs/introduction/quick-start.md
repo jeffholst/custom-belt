@@ -16,7 +16,7 @@
 <a href='https://www.npmjs.com/package/vue-custom-belt' target='_blank'>vue-custom-belt</a> npm</h2>
 </div>
 
-### Try it Online
+## Try it Online
 
 <div v-if="selectedFramework === '0'">
 Coming soon.
@@ -29,7 +29,7 @@ StackBlitz
 </a>.
 </div>
 
-### Installation
+## Installation
 
 <div v-if="selectedFramework === '0'">
 
@@ -38,6 +38,7 @@ Coming soon..
 ```
 
 </div>
+
 <div v-if="selectedFramework === '1'">
 
 ```sh
@@ -55,12 +56,12 @@ Coming soon..
 ```
 
 </div>
-<div v-if="selectedFramework === '1'">
+
+<span v-if="selectedFramework === '1'">
 
 ::: code-group
 
 ```vue [TypeScript]
-// sample .vue file
 <template>
   <CustomBelt :belt-props="whiteBelt" />
 </template>
@@ -73,7 +74,6 @@ const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
 ```
 
 ```vue [JavaScript]
-// sample .vue file
 <template>
   <CustomBelt :belt-props="whiteBelt" />
 </template>
@@ -87,7 +87,7 @@ const whiteBelt = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
 
 :::
 
-</div>
+</span>
 
 ## Output
 

@@ -22,58 +22,58 @@ Property object passed to <CustomBelt /> component
 - [professorPatch](Belt.BeltProps.md#professorpatch)
 - [randomSettings](Belt.BeltProps.md#randomsettings)
 - [refreshInterval](Belt.BeltProps.md#refreshinterval)
-- [s10l1](Belt.BeltProps.md#s10l1)
-- [s10l2a](Belt.BeltProps.md#s10l2a)
-- [s10l2b](Belt.BeltProps.md#s10l2b)
-- [s10l3](Belt.BeltProps.md#s10l3)
-- [s11l1](Belt.BeltProps.md#s11l1)
-- [s11l2a](Belt.BeltProps.md#s11l2a)
-- [s11l2b](Belt.BeltProps.md#s11l2b)
-- [s11l3](Belt.BeltProps.md#s11l3)
-- [s12l1](Belt.BeltProps.md#s12l1)
-- [s12l2a](Belt.BeltProps.md#s12l2a)
-- [s12l2b](Belt.BeltProps.md#s12l2b)
-- [s12l3](Belt.BeltProps.md#s12l3)
-- [s13l1](Belt.BeltProps.md#s13l1)
-- [s13l2a](Belt.BeltProps.md#s13l2a)
-- [s13l2b](Belt.BeltProps.md#s13l2b)
-- [s13l3](Belt.BeltProps.md#s13l3)
-- [s1l1](Belt.BeltProps.md#s1l1)
-- [s1l2a](Belt.BeltProps.md#s1l2a)
-- [s1l2b](Belt.BeltProps.md#s1l2b)
-- [s1l3](Belt.BeltProps.md#s1l3)
-- [s2l1](Belt.BeltProps.md#s2l1)
-- [s2l2a](Belt.BeltProps.md#s2l2a)
-- [s2l2b](Belt.BeltProps.md#s2l2b)
-- [s2l3](Belt.BeltProps.md#s2l3)
-- [s3l1](Belt.BeltProps.md#s3l1)
-- [s3l2a](Belt.BeltProps.md#s3l2a)
-- [s3l2b](Belt.BeltProps.md#s3l2b)
-- [s3l3](Belt.BeltProps.md#s3l3)
-- [s4l1](Belt.BeltProps.md#s4l1)
-- [s4l2a](Belt.BeltProps.md#s4l2a)
-- [s4l2b](Belt.BeltProps.md#s4l2b)
-- [s4l3](Belt.BeltProps.md#s4l3)
-- [s5l1](Belt.BeltProps.md#s5l1)
-- [s5l2a](Belt.BeltProps.md#s5l2a)
-- [s5l2b](Belt.BeltProps.md#s5l2b)
-- [s5l3](Belt.BeltProps.md#s5l3)
-- [s6l1](Belt.BeltProps.md#s6l1)
-- [s6l2a](Belt.BeltProps.md#s6l2a)
-- [s6l2b](Belt.BeltProps.md#s6l2b)
-- [s6l3](Belt.BeltProps.md#s6l3)
-- [s7l1](Belt.BeltProps.md#s7l1)
-- [s7l2a](Belt.BeltProps.md#s7l2a)
-- [s7l2b](Belt.BeltProps.md#s7l2b)
-- [s7l3](Belt.BeltProps.md#s7l3)
-- [s8l1](Belt.BeltProps.md#s8l1)
-- [s8l2a](Belt.BeltProps.md#s8l2a)
-- [s8l2b](Belt.BeltProps.md#s8l2b)
-- [s8l3](Belt.BeltProps.md#s8l3)
-- [s9l1](Belt.BeltProps.md#s9l1)
-- [s9l2a](Belt.BeltProps.md#s9l2a)
-- [s9l2b](Belt.BeltProps.md#s9l2b)
-- [s9l3](Belt.BeltProps.md#s9l3)
+- [s10l1Color](Belt.BeltProps.md#s10l1Color)
+- [s10l2aColor](Belt.BeltProps.md#s10l2aColor)
+- [s10l2bColor](Belt.BeltProps.md#s10l2bColor)
+- [s10l3Color](Belt.BeltProps.md#s10l3Color)
+- [s11l1Color](Belt.BeltProps.md#s11l1Color)
+- [s11l2aColor](Belt.BeltProps.md#s11l2aColor)
+- [s11l2bColor](Belt.BeltProps.md#s11l2bColor)
+- [s11l3Color](Belt.BeltProps.md#s11l3Color)
+- [s12l1Color](Belt.BeltProps.md#s12l1Color)
+- [s12l2aColor](Belt.BeltProps.md#s12l2aColor)
+- [s12l2bColor](Belt.BeltProps.md#s12l2bColor)
+- [s12l3Color](Belt.BeltProps.md#s12l3Color)
+- [s13l1Color](Belt.BeltProps.md#s13l1Color)
+- [s13l2aColor](Belt.BeltProps.md#s13l2aColor)
+- [s13l2bColor](Belt.BeltProps.md#s13l2bColor)
+- [s13l3Color](Belt.BeltProps.md#s13l3Color)
+- [s1l1Color](Belt.BeltProps.md#s1l1Color)
+- [s1l2aColor](Belt.BeltProps.md#s1l2aColor)
+- [s1l2bColor](Belt.BeltProps.md#s1l2bColor)
+- [s1l3Color](Belt.BeltProps.md#s1l3Color)
+- [s2l1Color](Belt.BeltProps.md#s2l1Color)
+- [s2l2aColor](Belt.BeltProps.md#s2l2aColor)
+- [s2l2bColor](Belt.BeltProps.md#s2l2bColor)
+- [s2l3Color](Belt.BeltProps.md#s2l3Color)
+- [s3l1Color](Belt.BeltProps.md#s3l1Color)
+- [s3l2aColor](Belt.BeltProps.md#s3l2aColor)
+- [s3l2bColor](Belt.BeltProps.md#s3l2bColor)
+- [s3l3Color](Belt.BeltProps.md#s3l3Color)
+- [s4l1Color](Belt.BeltProps.md#s4l1Color)
+- [s4l2aColor](Belt.BeltProps.md#s4l2aColor)
+- [s4l2bColor](Belt.BeltProps.md#s4l2bColor)
+- [s4l3Color](Belt.BeltProps.md#s4l3Color)
+- [s5l1Color](Belt.BeltProps.md#s5l1Color)
+- [s5l2aColor](Belt.BeltProps.md#s5l2aColor)
+- [s5l2bColor](Belt.BeltProps.md#s5l2bColor)
+- [s5l3Color](Belt.BeltProps.md#s5l3Color)
+- [s6l1Color](Belt.BeltProps.md#s6l1Color)
+- [s6l2aColor](Belt.BeltProps.md#s6l2aColor)
+- [s6l2bColor](Belt.BeltProps.md#s6l2bColor)
+- [s6l3Color](Belt.BeltProps.md#s6l3Color)
+- [s7l1Color](Belt.BeltProps.md#s7l1Color)
+- [s7l2aColor](Belt.BeltProps.md#s7l2aColor)
+- [s7l2bColor](Belt.BeltProps.md#s7l2bColor)
+- [s7l3Color](Belt.BeltProps.md#s7l3Color)
+- [s8l1Color](Belt.BeltProps.md#s8l1Color)
+- [s8l2aColor](Belt.BeltProps.md#s8l2aColor)
+- [s8l2bColor](Belt.BeltProps.md#s8l2bColor)
+- [s8l3Color](Belt.BeltProps.md#s8l3Color)
+- [s9l1Color](Belt.BeltProps.md#s9l1Color)
+- [s9l2aColor](Belt.BeltProps.md#s9l2aColor)
+- [s9l2bColor](Belt.BeltProps.md#s9l2bColor)
+- [s9l3Color](Belt.BeltProps.md#s9l3Color)
 - [stripeColor1](Belt.BeltProps.md#stripecolor1)
 - [stripeColor10](Belt.BeltProps.md#stripecolor10)
 - [stripeColor2](Belt.BeltProps.md#stripecolor2)
@@ -227,9 +227,9 @@ ___
 
 ___
 
-### s10l1
+### s10l1Color
 
-• **s10l1**: `string`
+• **s10l1Color**: `string`
 
 #### Defined in
 
@@ -237,9 +237,9 @@ ___
 
 ___
 
-### s10l2a
+### s10l2aColor
 
-• **s10l2a**: `string`
+• **s10l2aColor**: `string`
 
 #### Defined in
 
@@ -247,9 +247,9 @@ ___
 
 ___
 
-### s10l2b
+### s10l2bColor
 
-• **s10l2b**: `string`
+• **s10l2bColor**: `string`
 
 #### Defined in
 
@@ -257,9 +257,9 @@ ___
 
 ___
 
-### s10l3
+### s10l3Color
 
-• **s10l3**: `string`
+• **s10l3Color**: `string`
 
 #### Defined in
 
@@ -267,9 +267,9 @@ ___
 
 ___
 
-### s11l1
+### s11l1Color
 
-• **s11l1**: `string`
+• **s11l1Color**: `string`
 
 #### Defined in
 
@@ -277,9 +277,9 @@ ___
 
 ___
 
-### s11l2a
+### s11l2aColor
 
-• **s11l2a**: `string`
+• **s11l2aColor**: `string`
 
 #### Defined in
 
@@ -287,9 +287,9 @@ ___
 
 ___
 
-### s11l2b
+### s11l2bColor
 
-• **s11l2b**: `string`
+• **s11l2bColor**: `string`
 
 #### Defined in
 
@@ -297,9 +297,9 @@ ___
 
 ___
 
-### s11l3
+### s11l3Color
 
-• **s11l3**: `string`
+• **s11l3Color**: `string`
 
 #### Defined in
 
@@ -307,9 +307,9 @@ ___
 
 ___
 
-### s12l1
+### s12l1Color
 
-• **s12l1**: `string`
+• **s12l1Color**: `string`
 
 #### Defined in
 
@@ -317,9 +317,9 @@ ___
 
 ___
 
-### s12l2a
+### s12l2aColor
 
-• **s12l2a**: `string`
+• **s12l2aColor**: `string`
 
 #### Defined in
 
@@ -327,9 +327,9 @@ ___
 
 ___
 
-### s12l2b
+### s12l2bColor
 
-• **s12l2b**: `string`
+• **s12l2bColor**: `string`
 
 #### Defined in
 
@@ -337,9 +337,9 @@ ___
 
 ___
 
-### s12l3
+### s12l3Color
 
-• **s12l3**: `string`
+• **s12l3Color**: `string`
 
 #### Defined in
 
@@ -347,9 +347,9 @@ ___
 
 ___
 
-### s13l1
+### s13l1Color
 
-• **s13l1**: `string`
+• **s13l1Color**: `string`
 
 #### Defined in
 
@@ -357,9 +357,9 @@ ___
 
 ___
 
-### s13l2a
+### s13l2aColor
 
-• **s13l2a**: `string`
+• **s13l2aColor**: `string`
 
 #### Defined in
 
@@ -367,9 +367,9 @@ ___
 
 ___
 
-### s13l2b
+### s13l2bColor
 
-• **s13l2b**: `string`
+• **s13l2bColor**: `string`
 
 #### Defined in
 
@@ -377,9 +377,9 @@ ___
 
 ___
 
-### s13l3
+### s13l3Color
 
-• **s13l3**: `string`
+• **s13l3Color**: `string`
 
 #### Defined in
 
@@ -387,9 +387,9 @@ ___
 
 ___
 
-### s1l1
+### s1l1Color
 
-• **s1l1**: `string`
+• **s1l1Color**: `string`
 
 #### Defined in
 
@@ -397,9 +397,9 @@ ___
 
 ___
 
-### s1l2a
+### s1l2aColor
 
-• **s1l2a**: `string`
+• **s1l2aColor**: `string`
 
 #### Defined in
 
@@ -407,9 +407,9 @@ ___
 
 ___
 
-### s1l2b
+### s1l2bColor
 
-• **s1l2b**: `string`
+• **s1l2bColor**: `string`
 
 #### Defined in
 
@@ -417,9 +417,9 @@ ___
 
 ___
 
-### s1l3
+### s1l3Color
 
-• **s1l3**: `string`
+• **s1l3Color**: `string`
 
 #### Defined in
 
@@ -427,9 +427,9 @@ ___
 
 ___
 
-### s2l1
+### s2l1Color
 
-• **s2l1**: `string`
+• **s2l1Color**: `string`
 
 #### Defined in
 
@@ -437,9 +437,9 @@ ___
 
 ___
 
-### s2l2a
+### s2l2aColor
 
-• **s2l2a**: `string`
+• **s2l2aColor**: `string`
 
 #### Defined in
 
@@ -447,9 +447,9 @@ ___
 
 ___
 
-### s2l2b
+### s2l2bColor
 
-• **s2l2b**: `string`
+• **s2l2bColor**: `string`
 
 #### Defined in
 
@@ -457,9 +457,9 @@ ___
 
 ___
 
-### s2l3
+### s2l3Color
 
-• **s2l3**: `string`
+• **s2l3Color**: `string`
 
 #### Defined in
 
@@ -467,9 +467,9 @@ ___
 
 ___
 
-### s3l1
+### s3l1Color
 
-• **s3l1**: `string`
+• **s3l1Color**: `string`
 
 #### Defined in
 
@@ -477,9 +477,9 @@ ___
 
 ___
 
-### s3l2a
+### s3l2aColor
 
-• **s3l2a**: `string`
+• **s3l2aColor**: `string`
 
 #### Defined in
 
@@ -487,9 +487,9 @@ ___
 
 ___
 
-### s3l2b
+### s3l2bColor
 
-• **s3l2b**: `string`
+• **s3l2bColor**: `string`
 
 #### Defined in
 
@@ -497,9 +497,9 @@ ___
 
 ___
 
-### s3l3
+### s3l3Color
 
-• **s3l3**: `string`
+• **s3l3Color**: `string`
 
 #### Defined in
 
@@ -507,9 +507,9 @@ ___
 
 ___
 
-### s4l1
+### s4l1Color
 
-• **s4l1**: `string`
+• **s4l1Color**: `string`
 
 #### Defined in
 
@@ -517,9 +517,9 @@ ___
 
 ___
 
-### s4l2a
+### s4l2aColor
 
-• **s4l2a**: `string`
+• **s4l2aColor**: `string`
 
 #### Defined in
 
@@ -527,9 +527,9 @@ ___
 
 ___
 
-### s4l2b
+### s4l2bColor
 
-• **s4l2b**: `string`
+• **s4l2bColor**: `string`
 
 #### Defined in
 
@@ -537,9 +537,9 @@ ___
 
 ___
 
-### s4l3
+### s4l3Color
 
-• **s4l3**: `string`
+• **s4l3Color**: `string`
 
 #### Defined in
 
@@ -547,9 +547,9 @@ ___
 
 ___
 
-### s5l1
+### s5l1Color
 
-• **s5l1**: `string`
+• **s5l1Color**: `string`
 
 #### Defined in
 
@@ -557,9 +557,9 @@ ___
 
 ___
 
-### s5l2a
+### s5l2aColor
 
-• **s5l2a**: `string`
+• **s5l2aColor**: `string`
 
 #### Defined in
 
@@ -567,9 +567,9 @@ ___
 
 ___
 
-### s5l2b
+### s5l2bColor
 
-• **s5l2b**: `string`
+• **s5l2bColor**: `string`
 
 #### Defined in
 
@@ -577,9 +577,9 @@ ___
 
 ___
 
-### s5l3
+### s5l3Color
 
-• **s5l3**: `string`
+• **s5l3Color**: `string`
 
 #### Defined in
 
@@ -587,9 +587,9 @@ ___
 
 ___
 
-### s6l1
+### s6l1Color
 
-• **s6l1**: `string`
+• **s6l1Color**: `string`
 
 #### Defined in
 
@@ -597,9 +597,9 @@ ___
 
 ___
 
-### s6l2a
+### s6l2aColor
 
-• **s6l2a**: `string`
+• **s6l2aColor**: `string`
 
 #### Defined in
 
@@ -607,9 +607,9 @@ ___
 
 ___
 
-### s6l2b
+### s6l2bColor
 
-• **s6l2b**: `string`
+• **s6l2bColor**: `string`
 
 #### Defined in
 
@@ -617,9 +617,9 @@ ___
 
 ___
 
-### s6l3
+### s6l3Color
 
-• **s6l3**: `string`
+• **s6l3Color**: `string`
 
 #### Defined in
 
@@ -627,9 +627,9 @@ ___
 
 ___
 
-### s7l1
+### s7l1Color
 
-• **s7l1**: `string`
+• **s7l1Color**: `string`
 
 #### Defined in
 
@@ -637,9 +637,9 @@ ___
 
 ___
 
-### s7l2a
+### s7l2aColor
 
-• **s7l2a**: `string`
+• **s7l2aColor**: `string`
 
 #### Defined in
 
@@ -647,9 +647,9 @@ ___
 
 ___
 
-### s7l2b
+### s7l2bColor
 
-• **s7l2b**: `string`
+• **s7l2bColor**: `string`
 
 #### Defined in
 
@@ -657,9 +657,9 @@ ___
 
 ___
 
-### s7l3
+### s7l3Color
 
-• **s7l3**: `string`
+• **s7l3Color**: `string`
 
 #### Defined in
 
@@ -667,9 +667,9 @@ ___
 
 ___
 
-### s8l1
+### s8l1Color
 
-• **s8l1**: `string`
+• **s8l1Color**: `string`
 
 #### Defined in
 
@@ -677,9 +677,9 @@ ___
 
 ___
 
-### s8l2a
+### s8l2aColor
 
-• **s8l2a**: `string`
+• **s8l2aColor**: `string`
 
 #### Defined in
 
@@ -687,9 +687,9 @@ ___
 
 ___
 
-### s8l2b
+### s8l2bColor
 
-• **s8l2b**: `string`
+• **s8l2bColor**: `string`
 
 #### Defined in
 
@@ -697,9 +697,9 @@ ___
 
 ___
 
-### s8l3
+### s8l3Color
 
-• **s8l3**: `string`
+• **s8l3Color**: `string`
 
 #### Defined in
 
@@ -707,9 +707,9 @@ ___
 
 ___
 
-### s9l1
+### s9l1Color
 
-• **s9l1**: `string`
+• **s9l1Color**: `string`
 
 #### Defined in
 
@@ -717,9 +717,9 @@ ___
 
 ___
 
-### s9l2a
+### s9l2aColor
 
-• **s9l2a**: `string`
+• **s9l2aColor**: `string`
 
 #### Defined in
 
@@ -727,9 +727,9 @@ ___
 
 ___
 
-### s9l2b
+### s9l2bColor
 
-• **s9l2b**: `string`
+• **s9l2bColor**: `string`
 
 #### Defined in
 
@@ -737,9 +737,9 @@ ___
 
 ___
 
-### s9l3
+### s9l3Color
 
-• **s9l3**: `string`
+• **s9l3Color**: `string`
 
 #### Defined in
 
