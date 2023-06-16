@@ -56,7 +56,7 @@ Coming soon..
 
 </div>
 
-<span v-if="selectedFramework === '1'">
+<div v-if="selectedFramework === '1'">
 
 ::: code-group
 
@@ -86,7 +86,7 @@ const whiteBelt = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
 
 :::
 
-</span>
+</div>
 
 ## Output
 
