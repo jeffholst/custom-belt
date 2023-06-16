@@ -57,6 +57,8 @@ Coming soon..
 
 </div>
 
+<div v-if="selectedFramework === '1'">
+
 <span v-if="selectedFramework === '1'">
 
 ::: code-group

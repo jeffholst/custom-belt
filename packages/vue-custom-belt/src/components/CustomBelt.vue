@@ -12,7 +12,7 @@
   >
     <g id="KnotBend3">
       <path
-        id="s7l3Colora"
+        id="s7l3Color"
         d="m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z"
         :style="s7l3Color"
       />
@@ -24,7 +24,7 @@
     </g>
     <g id="KnotBend2">
       <path
-        id="s2l3Colora"
+        id="s2l3Color"
         d="m233.5,112.4s-22.9-1.8-31.8-15.6c-8.9-13.8,52.1-40.5,52.1-40.5v31.9l-20.3,24.2h0Z"
         :style="s2l3Color"
       />
@@ -36,7 +36,7 @@
     </g>
     <g id="KnotBend1">
       <path
-        id="s1l3Colora"
+        id="s1l3Color"
         d="m238.9,14.7s-5.3-1.9-14.1,8.5c-8.9,10.3,15.1,8.2,15.1,8.2l-.9-16.7h-.1Z"
         :style="s1l3Color"
       />
