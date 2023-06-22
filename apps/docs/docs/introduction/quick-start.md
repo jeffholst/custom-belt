@@ -12,8 +12,11 @@
 </div>
 
 <div v-if="selectedFramework === '1'">
-<h2>Using
-<a href='https://www.npmjs.com/package/vue-custom-belt' target='_blank'>vue-custom-belt</a> npm</h2>
+   <h2>Using
+     <a href='https://www.npmjs.com/package/vue-custom-belt' target='_blank'>
+       vue-custom-belt
+     </a> npm
+   </h2>
 </div>
 
 ## Try it Online
@@ -59,8 +62,6 @@ Coming soon..
 
 <div v-if="selectedFramework === '1'">
 
-<span v-if="selectedFramework === '1'">
-
 ::: code-group
 
 ```vue [TypeScript]
@@ -89,7 +90,7 @@ const whiteBelt = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
 
 :::
 
-</span>
+</div>
 
 ## Output
 

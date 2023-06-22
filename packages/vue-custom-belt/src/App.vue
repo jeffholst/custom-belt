@@ -75,7 +75,7 @@ let randomSplit: BeltProps[] = getBeltPropsRandom(
   4000
 );
 
-const flagBeltsCallback = (event: Event | null, callbackType: BeltCallbackType, bp: BeltProps) => {
+const flagBeltsCallback = (callbackType: BeltCallbackType, bp: BeltProps) => {
   if (callbackType === BeltCallbackType.Refresh) {
     flagBeltName.value = `${bp.belt.name as string}`;
   }
@@ -131,11 +131,7 @@ const MexicoBelt = getBeltPropsStriped(
 
 const flagBelts = combineBeltProps([usaBelt, MexicoBelt]);
 
-const IBBJFBeltsCallback = (
-  event: Event | null,
-  callbackType: BeltCallbackType,
-  beltProps: BeltProps
-) => {
+const IBBJFBeltsCallback = (callbackType: BeltCallbackType, beltProps: BeltProps) => {
   if (callbackType === BeltCallbackType.Refresh) {
     ibjjBeltName.value = beltProps.belt.name;
   }

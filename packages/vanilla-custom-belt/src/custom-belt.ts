@@ -8,7 +8,7 @@ export class VanillaBelt {
   currentIndex: number;
 
   /**
-   * Instantiate a new VanilaaBelt object
+   * Instantiate a new VanillaBelt object
    * @param {element} HTMLElement HTML element to replace
    * @param {beltProps} BeltProps[] BeltProps array
    */
@@ -17,11 +17,11 @@ export class VanillaBelt {
     this.beltProps = beltProps;
     this.currentIndex = 0;
     this.currentBelt = beltProps[this.currentIndex];
-
     new BeltBuilder(this.beltProps, this.callback, this.element);
   }
 
-  callback(svgString: string, element: HTMLElement | null): void {
+  callback(event: Event | null, callbackType: BeltCallbackType, beltProps: BeltProps): void {
+    /*
     // Create a container element
     const container = document.createElement('div');
 
@@ -37,5 +37,6 @@ export class VanillaBelt {
       // Replace the old element with the new one
       parentElement.replaceChild(svgElement, element);
     }
+    */
   }
 }

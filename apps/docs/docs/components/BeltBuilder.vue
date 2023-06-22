@@ -94,7 +94,7 @@ for (const beltType in BeltType) {
   checkedRandomBelts.value.push(beltType as BeltType);
 }
 
-const belt = ref();
+const belt = ref(ibjjfSystem.getBeltPropsByName('White', 0));
 const color1 = ref('#FF0000');
 const color2 = ref('#FFFFFF');
 const color3 = ref('#0000FF');
@@ -103,7 +103,7 @@ const selectedCustomBelt = ref('Striped' as BeltType);
 const selectedIBJJFBelt = ref('White');
 const selectedBeltGroup = ref(0);
 const selectedStripeCount = ref(0);
-const stripesAvailable = ref();
+const stripesAvailable = ref([0, 1, 2, 3]);
 
 const updateBeltCustom = () => {
   belt.value = getBeltProps(
@@ -122,11 +122,9 @@ const updateBeltCustom = () => {
     '',
     '#FFFFFF',
     selectedStripeCount.value,
-    'Right',
+    StripePosition.Right,
     0,
     10,
-    'My Title',
-    'My Description',
     '',
     0
   );
@@ -143,15 +141,17 @@ watch(color3, () => {
   updateBeltCustom();
 });
 
-const pickBeltIBJJF = (newBeltName: string) => {
-  selectedIBJJFBelt.value = newBeltName;
-  setStripeSelect();
-  const newBelt = ibjjfSystem.getBeltPropsByName(
-    selectedIBJJFBelt.value,
-    selectedStripeCount.value
-  );
-  belt.value = newBelt;
-  colorCount.value = 0;
+const pickBeltIBJJF = (newBeltName: string, force: bool = false) => {
+  if (selectedIBJJFBelt.value != newBeltName || force) {
+    selectedIBJJFBelt.value = newBeltName;
+    setStripeSelect();
+    const newBelt = ibjjfSystem.getBeltPropsByName(
+      selectedIBJJFBelt.value,
+      selectedStripeCount.value
+    );
+    belt.value = newBelt;
+    colorCount.value = 0;
+  }
 };
 
 const pickBeltCustom = (newBeltType: BeltType) => {
@@ -164,21 +164,30 @@ const pickBeltCustom = (newBeltType: BeltType) => {
 };
 
 const updateStripeCount = (newValue: number) => {
-  selectedStripeCount.value = newValue;
-  beltGroupChanged(selectedBeltGroup.value);
+  debugger;
+  if (selectedStripeCount.value != newValue) {
+    selectedStripeCount.value = newValue;
+    refreshBelt(true);
+  }
 };
 
 const beltGroupChanged = (groupValue: number) => {
-  selectedBeltGroup.value = groupValue;
+  if (selectedBeltGroup.value != groupValue) {
+    selectedBeltGroup.value = groupValue;
+    refreshBelt();
+  }
+};
+
+const refreshBelt = (force: bool = false) => {
   setStripeSelect();
-  if (groupValue === 0) {
+  if (selectedBeltGroup.value === 0) {
     // IBJJF Belts
-    pickBeltIBJJF(selectedIBJJFBelt.value);
-  } else if (groupValue === 1) {
+    pickBeltIBJJF(selectedIBJJFBelt.value, force);
+  } else if (selectedBeltGroup.value === 1) {
     // Custom Belts
     pickBeltCustom(selectedCustomBelt.value);
     updateBeltCustom();
-  } else if (groupValue === 2) {
+  } else if (selectedBeltGroup.value === 2) {
     // Random Belts
     colorCount.value = 0;
     belt.value = getBeltPropsRandom(
@@ -293,7 +302,7 @@ if (typeof window !== 'undefined') {
       pickBeltCustom(selectedCustomBelt.value);
     }
   } else {
-    pickBeltIBJJF(selectedIBJJFBelt.value);
+    //pickBeltIBJJF(selectedIBJJFBelt.value);
   }
 }
 </script>

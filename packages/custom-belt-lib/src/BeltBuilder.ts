@@ -1,52 +1,122 @@
-import { BeltProps, StripePosition, DefaultBeltColor, getBeltPropsRandom } from './Belt';
+import {
+  BeltProps,
+  StripePosition,
+  DefaultBeltColor,
+  BeltCallbackType,
+  getBeltPropsRandom
+} from './Belt';
+
+/**
+ * CustomBelt Initializer Object
+ * @interface
+ */
+export interface CustomBeltInit {
+  elements: HTMLElement[];
+  elementIds: string[];
+  elementClasses: string[];
+  beltProps: BeltProps[];
+}
+
+/**
+ * Create new CustomBeltInit object
+ * @param {HTMLElement[]} elements array of HTMLElements to replace
+ * @param {string[]} elementIds array of element Ids to replace
+ * @param {string[]} elementClasses array of element classes to replace
+ * @return {CustomBeltInit} CustomBeltInit object
+ */
+export const getCustomBeltInit = (
+  elements: HTMLElement[] | null,
+  elementIds: string[] | null,
+  elementClasses: string[] | null,
+  beltProps: BeltProps[]
+): CustomBeltInit => {
+  const customBeltInit: CustomBeltInit = {
+    elements: elements ? elements : [],
+    elementIds: elementIds ? elementIds : [],
+    elementClasses: elementClasses ? elementClasses : [],
+    beltProps: beltProps
+  };
+
+  return customBeltInit;
+};
 
 export class BeltBuilder {
-  beltProps: BeltProps[];
-  callback: (svgString: string, element: HTMLElement | undefined) => void;
+  customBeltInit: CustomBeltInit;
   currentBelt: BeltProps;
   currentIndex: number;
   originalId = '';
-  refreshIntervalId: any = undefined;
+  elements: HTMLElement[];
+  refreshIntervalId: ReturnType<typeof setTimeout> | undefined = undefined;
+  clickDelay = 700;
+  clickCount = 0;
+  clickTimer: ReturnType<typeof setTimeout> | undefined = undefined;
 
   /**
    * Instantiate a new VanilaaBelt object
    * @param {element} HTMLElement HTML element to replace
    * @param {beltProps} BeltProps[] BeltProps array
    */
-  constructor(
-    beltProps: BeltProps[],
-    callback: (svgString: string, element: HTMLElement | undefined) => void,
-    element: HTMLElement | undefined = undefined
-  ) {
-    this.beltProps = beltProps;
-    this.callback = callback;
+  constructor(customBeltInit: CustomBeltInit) {
+    debugger;
+    this.customBeltInit = customBeltInit;
     this.currentIndex = 0;
-    this.currentBelt = beltProps[this.currentIndex];
+    this.currentBelt = customBeltInit.beltProps[this.currentIndex];
     this.refreshIntervalId = undefined;
 
-    const svgString = this.getSVGString();
-    this.callback(svgString, element);
+    this.elements = this.initElements();
 
     if (
-      this.beltProps != undefined &&
-      this.beltProps.length > 0 &&
-      this.beltProps[0].refreshInterval != undefined &&
-      this.beltProps[0].refreshInterval > 0
+      this.customBeltInit.beltProps != undefined &&
+      this.customBeltInit.beltProps.length > 0 &&
+      this.customBeltInit.beltProps[0].refreshInterval != undefined &&
+      this.customBeltInit.beltProps[0].refreshInterval > 0
     ) {
-      this.originalId = this.beltProps[0].id;
+      this.originalId = this.customBeltInit.beltProps[0].id;
       if (this.refreshIntervalId != undefined) {
         clearInterval(this.refreshIntervalId);
       }
       this.refreshIntervalId = setTimeout(
         this.transitionNextBelt,
-        this.beltProps[0].refreshInterval
+        this.customBeltInit.beltProps[0].refreshInterval
       );
     }
   }
 
+  destroy = (): void => {
+    this.elements.forEach((e) => {
+      e.removeEventListener('click', this.oneClick);
+    });
+
+    clearTimeout(this.clickTimer);
+    clearTimeout(this.refreshIntervalId);
+  };
+
+  initElements = (): Array<HTMLElement> => {
+    const elements: Array<HTMLElement> = new Array<HTMLElement>();
+
+    const svgString = this.getSVGString();
+
+    this.customBeltInit.elements.forEach((e) => {
+      e.addEventListener('click', this.oneClick);
+      e.innerHTML = svgString;
+      elements.push(e);
+    });
+
+    return elements;
+  };
+
+  refreshElements = (): void => {
+    const svgString = this.getSVGString();
+
+    this.elements.forEach((e) => {
+      e.innerHTML = svgString;
+    });
+  };
+
   transitionNextBelt = () => {
-    this.currentIndex = this.currentIndex === this.beltProps.length - 1 ? 0 : this.currentIndex + 1;
-    this.currentBelt = this.beltProps[this.currentIndex];
+    this.currentIndex =
+      this.currentIndex === this.customBeltInit.beltProps.length - 1 ? 0 : this.currentIndex + 1;
+    this.currentBelt = this.customBeltInit.beltProps[this.currentIndex];
     if (
       this.currentBelt.randomSettings.includeBelts !== undefined &&
       this.currentBelt.randomSettings.includeBelts.length > 0
@@ -64,9 +134,55 @@ export class BeltBuilder {
       this.currentBelt = randomBelt[0];
     }
     this.currentBelt.id = this.originalId; // keep the same element id
-    const svgString = this.getSVGString();
-    this.callback(svgString, undefined);
+    this.refreshElements();
+    this.doCallback(null, BeltCallbackType.Refresh);
     this.refreshIntervalId = setTimeout(this.transitionNextBelt, this.currentBelt.refreshInterval);
+  };
+
+  oneClick = (event: Event) => {
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
+    const self = this;
+    this.clickCount++;
+    if (this.clickCount === 1) {
+      this.clickTimer = setTimeout(function () {
+        self.doCallback(event, BeltCallbackType.Click);
+        self.clickCount = 0;
+      }, self.clickDelay);
+    } else {
+      clearTimeout(this.clickTimer);
+      this.downLoadSVG(event);
+      this.doCallback(event, BeltCallbackType.DoubleClick);
+      this.clickCount = 0;
+    }
+  };
+
+  doCallback = (event: Event | null, callbackType: BeltCallbackType) => {
+    if (this.currentBelt.callback != null) {
+      this.currentBelt.callback(callbackType, this.currentBelt, event);
+    }
+  };
+
+  downLoadSVG = (event: Event) => {
+    if (event && event.target) {
+      const target = event.target as HTMLElement;
+      if (target.closest) {
+        const svgElement = target.closest('svg');
+        if (svgElement) {
+          const svgContent = svgElement.outerHTML;
+          const blob = new Blob([svgContent], {
+            type: 'image/svg+xml'
+          });
+          const link = document.createElement('a');
+          link.style.display = 'none';
+          link.href = URL.createObjectURL(blob);
+          link.download = 'svg-belt';
+
+          document.body.appendChild(link);
+          link.click();
+          link.remove();
+        }
+      }
+    }
   };
 
   additionalStyles = (): string => {
