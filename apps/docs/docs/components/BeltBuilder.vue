@@ -141,17 +141,15 @@ watch(color3, () => {
   updateBeltCustom();
 });
 
-const pickBeltIBJJF = (newBeltName: string, force: bool = false) => {
-  if (selectedIBJJFBelt.value != newBeltName || force) {
-    selectedIBJJFBelt.value = newBeltName;
-    setStripeSelect();
-    const newBelt = ibjjfSystem.getBeltPropsByName(
-      selectedIBJJFBelt.value,
-      selectedStripeCount.value
-    );
-    belt.value = newBelt;
-    colorCount.value = 0;
-  }
+const pickBeltIBJJF = (newBeltName: string) => {
+  selectedIBJJFBelt.value = newBeltName;
+  setStripeSelect();
+  const newBelt = ibjjfSystem.getBeltPropsByName(
+    selectedIBJJFBelt.value,
+    selectedStripeCount.value
+  );
+  belt.value = newBelt;
+  colorCount.value = 0;
 };
 
 const pickBeltCustom = (newBeltType: BeltType) => {
@@ -164,25 +162,20 @@ const pickBeltCustom = (newBeltType: BeltType) => {
 };
 
 const updateStripeCount = (newValue: number) => {
-  debugger;
-  if (selectedStripeCount.value != newValue) {
-    selectedStripeCount.value = newValue;
-    refreshBelt(true);
-  }
+  selectedStripeCount.value = newValue;
+  refreshBelt();
 };
 
 const beltGroupChanged = (groupValue: number) => {
-  if (selectedBeltGroup.value != groupValue) {
-    selectedBeltGroup.value = groupValue;
-    refreshBelt();
-  }
+  selectedBeltGroup.value = groupValue;
+  refreshBelt();
 };
 
-const refreshBelt = (force: bool = false) => {
+const refreshBelt = () => {
   setStripeSelect();
   if (selectedBeltGroup.value === 0) {
     // IBJJF Belts
-    pickBeltIBJJF(selectedIBJJFBelt.value, force);
+    pickBeltIBJJF(selectedIBJJFBelt.value);
   } else if (selectedBeltGroup.value === 1) {
     // Custom Belts
     pickBeltCustom(selectedCustomBelt.value);
@@ -204,7 +197,7 @@ const refreshBelt = (force: bool = false) => {
 
 const setStripeSelect = () => {
   let myBelt: Belt | undefined = undefined;
-  let ary: Number[] = [];
+  let ary: number[] = [];
   switch (selectedBeltGroup.value) {
     case 0: // IBJJF
       myBelt = ibjjfSystem.getBeltByName(selectedIBJJFBelt.value);

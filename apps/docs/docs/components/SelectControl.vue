@@ -16,7 +16,7 @@ watch(
   }
 );
 onMounted(() => {
-  props.callback(selection.value);
+  // Todo: remove props.callback(selection.value);
 });
 
 const selection = ref(props.selectedOption);

@@ -1,5 +1,6 @@
-# Quick Start
-
+---
+title: Quick Start 
+---
 <div style="text-align: right;">
 <SelectFramework
    :callback="frameworkCallback"
@@ -64,7 +65,7 @@ Coming soon..
 
 ::: code-group
 
-```vue [TypeScript]
+```vue-html [TypeScript]
 <template>
   <CustomBelt :belt-props="whiteBelt" />
 </template>
@@ -76,7 +77,7 @@ const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
 </script>
 ```
 
-```vue [JavaScript]
+```vue-html [JavaScript]
 <template>
   <CustomBelt :belt-props="whiteBelt" />
 </template>
