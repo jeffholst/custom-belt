@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue';
-import { BeltProps, BeltType, getBeltUniqueId } from '../../../custom-belt-lib/src/Belt';
+import { BeltProps, getBeltUniqueId } from '../../../custom-belt-lib/src/Belt';
 import {
   BeltBuilder,
   CustomBeltInit,
