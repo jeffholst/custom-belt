@@ -1,6 +1,5 @@
----
-title: Quick Start 
----
+# Quick Start
+
 <div style="text-align: right;">
 <SelectFramework
    :callback="frameworkCallback"
