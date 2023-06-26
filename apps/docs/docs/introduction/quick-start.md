@@ -62,34 +62,6 @@ Coming soon..
 
 <div v-if="selectedFramework === '1'">
 
-::: code-group
-
-```vue-html [TypeScript]
-<template>
-  <CustomBelt :belt-props="whiteBelt" />
-</template>
-
-<script setup lang="ts">
-import { type BeltProps, CustomBelt, getBeltPropsSolid } from 'vue-custom-belt';
-
-const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
-</script>
-```
-
-```vue-html [JavaScript]
-<template>
-  <CustomBelt :belt-props="whiteBelt" />
-</template>
-
-<script setup>
-import { CustomBelt, getBeltPropsSolid } from 'vue-custom-belt';
-
-const whiteBelt = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
-</script>
-```
-
-:::
-
 </div>
 
 ## Output

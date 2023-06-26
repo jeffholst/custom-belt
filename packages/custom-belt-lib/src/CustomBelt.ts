@@ -40,7 +40,7 @@ export const getCustomBeltInit = (
   return customBeltInit;
 };
 
-export class BeltBuilder {
+export class CustomBelt {
   customBeltInit: CustomBeltInit;
   currentBelt: BeltProps;
   currentIndex: number;
@@ -57,7 +57,6 @@ export class BeltBuilder {
    * @param {beltProps} BeltProps[] BeltProps array
    */
   constructor(customBeltInit: CustomBeltInit) {
-    debugger;
     this.customBeltInit = customBeltInit;
     this.currentIndex = 0;
     this.currentBelt = customBeltInit.beltProps[this.currentIndex];

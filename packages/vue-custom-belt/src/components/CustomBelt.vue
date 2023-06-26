@@ -6,10 +6,10 @@
 import { ref, onMounted, watch } from 'vue';
 import { BeltProps, getBeltUniqueId } from '../../../custom-belt-lib/src/Belt';
 import {
-  BeltBuilder,
+  CustomBelt,
   CustomBeltInit,
   getCustomBeltInit
-} from '../../../custom-belt-lib/src/BeltBuilder';
+} from '../../../custom-belt-lib/src/CustomBelt';
 
 const props = defineProps<{
   beltProps: BeltProps[];
@@ -18,7 +18,7 @@ const props = defineProps<{
 const svgUniqueId = getBeltUniqueId();
 const svgDiv = ref(null);
 const svgHTML = ref('');
-let myBeltBuilder: BeltBuilder | undefined = undefined;
+let myBeltBuilder: CustomBelt | undefined = undefined;
 
 onMounted(() => {
   build();
@@ -41,7 +41,7 @@ const build = () => {
       props.beltProps
     );
     if (myBeltBuilder != undefined) myBeltBuilder.destroy();
-    myBeltBuilder = new BeltBuilder(customBeltInit);
+    myBeltBuilder = new CustomBelt(customBeltInit);
   }
 };
 </script>
