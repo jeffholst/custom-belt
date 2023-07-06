@@ -8,3 +8,4 @@
 
 - [Belt](modules/Belt.md)
 - [BeltSystem](modules/BeltSystem.md)
+- [CustomBelt](modules/CustomBelt.md)

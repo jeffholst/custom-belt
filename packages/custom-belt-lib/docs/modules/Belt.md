@@ -38,6 +38,7 @@
 - [getBeltPropsSolid](Belt.md#getbeltpropssolid)
 - [getBeltPropsSplit](Belt.md#getbeltpropssplit)
 - [getBeltPropsStriped](Belt.md#getbeltpropsstriped)
+- [getBeltUniqueId](Belt.md#getbeltuniqueid)
 - [isValidHexCode](Belt.md#isvalidhexcode)
 - [mapBeltColor](Belt.md#mapbeltcolor)
 - [mapBeltColors](Belt.md#mapbeltcolors)
@@ -52,7 +53,7 @@ Default color when no color provided
 
 #### Defined in
 
-[Belt.ts:224](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L224)
+[Belt.ts:224](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L224)
 
 ___
 
@@ -64,7 +65,7 @@ Maximum number of stripes a belt may have
 
 #### Defined in
 
-[Belt.ts:226](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L226)
+[Belt.ts:226](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L226)
 
 ___
 
@@ -76,7 +77,7 @@ Minimum number of stripes
 
 #### Defined in
 
-[Belt.ts:228](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L228)
+[Belt.ts:228](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L228)
 
 ___
 
@@ -88,7 +89,7 @@ Default stripe position
 
 #### Defined in
 
-[Belt.ts:230](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L230)
+[Belt.ts:230](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L230)
 
 ## Functions
 
@@ -112,7 +113,7 @@ combined array of BeltProps[] arrays
 
 #### Defined in
 
-[Belt.ts:245](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L245)
+[Belt.ts:245](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L245)
 
 ___
 
@@ -154,7 +155,7 @@ Belt object
 
 #### Defined in
 
-[Belt.ts:276](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L276)
+[Belt.ts:276](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L276)
 
 ___
 
@@ -178,7 +179,7 @@ number of colors in beltType
 
 #### Defined in
 
-[Belt.ts:331](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L331)
+[Belt.ts:331](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L331)
 
 ___
 
@@ -212,7 +213,7 @@ Create new BeltProps[] array
 | `maxStripes` | `number` | `10` | maximum number of stripes for belt |
 | `transitionCSS` | `string` | `''` | CSS for transition animation |
 | `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | callback function to call after belt actions |
 
 #### Returns
 
@@ -222,7 +223,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:378](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L378)
+[Belt.ts:378](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L378)
 
 ___
 
@@ -254,7 +255,7 @@ Create new Checkered BeltProps[] array
 | `maxStripes` | `number` | `10` | maximum number of stripes for belt |
 | `transitionCSS` | `string` | `''` | CSS for transition animation |
 | `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | callback function to call after belt actions |
 
 #### Returns
 
@@ -264,7 +265,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:461](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L461)
+[Belt.ts:461](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L461)
 
 ___
 
@@ -296,7 +297,7 @@ Create new Coral BeltProps[] array
 | `maxStripes` | `number` | `10` | maximum number of stripes for belt |
 | `transitionCSS` | `string` | `''` | CSS for transition animation |
 | `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | callback function to call after belt actions |
 
 #### Returns
 
@@ -306,7 +307,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:530](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L530)
+[Belt.ts:530](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L530)
 
 ___
 
@@ -325,7 +326,7 @@ Create new BeltProps[] array from Belt object
 | `stripePosition?` | [`StripePosition`](../enums/Belt.StripePosition.md) | `StripePositionDefault` | starting position of stripes on belt patch |
 | `transitionCSS` | `string` | `''` | CSS for transition animation |
 | `refreshInterval` | `number` | `0` | interval in milliseconds before displaying next belt |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | callback function to call after belt actions |
 
 #### Returns
 
@@ -335,7 +336,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:586](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L586)
+[Belt.ts:586](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L586)
 
 ___
 
@@ -356,7 +357,7 @@ Create new random BeltProps[] array
 | `transitionCSS?` | `string` | CSS for transition animation |
 | `includeBelts?` | [`BeltType`](../enums/Belt.BeltType.md)[] | array of BeltTyps to include in random selection |
 | `refreshInterval?` | `number` | interval in milliseconds before displaying next belt |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | callback function to call after belt actions |
+| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | callback function to call after belt actions |
 
 #### Returns
 
@@ -366,7 +367,7 @@ Belt object
 
 #### Defined in
 
-[Belt.ts:734](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L734)
+[Belt.ts:734](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L734)
 
 ___
 
@@ -397,7 +398,7 @@ Create new Solid BeltProps[] array
 | `maxStripes` | `number` | `10` | maximum number of stripes for belt |
 | `transitionCSS` | `string` | `''` | CSS for transition animation |
 | `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | callback function to call after belt actions |
 
 #### Returns
 
@@ -407,7 +408,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:868](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L868)
+[Belt.ts:868](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L868)
 
 ___
 
@@ -439,7 +440,7 @@ Create new Split BeltProps[] array
 | `maxStripes` | `number` | `10` | maximum number of stripes for belt |
 | `transitionCSS` | `string` | `''` | CSS for transition animation |
 | `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | callback function to call after belt actions |
 
 #### Returns
 
@@ -449,7 +450,7 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:936](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L936)
+[Belt.ts:936](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L936)
 
 ___
 
@@ -482,7 +483,7 @@ Create new Striped BeltProps[] array
 | `maxStripes` | `number` | `10` | maximum number of stripes for belt |
 | `transitionCSS` | `string` | `''` | CSS for transition animation |
 | `refreshInterval` | `number` | `0` | interval for refreshing belt in milliseconds |
-| `callback?` | (`event`: ``null`` \| `Event`, `callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md)) => `void` | `undefined` | callback function to call after belt actions |
+| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | callback function to call after belt actions |
 
 #### Returns
 
@@ -492,7 +493,23 @@ BeltProps[] array
 
 #### Defined in
 
-[Belt.ts:1006](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L1006)
+[Belt.ts:1006](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L1006)
+
+___
+
+### getBeltUniqueId
+
+▸ **getBeltUniqueId**(): `string`
+
+Generate unique id for belt suitiable for element id
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[Belt.ts:1056](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L1056)
 
 ___
 
@@ -528,7 +545,7 @@ true if valid color hex code, false otherwise
 
 #### Defined in
 
-[Belt.ts:1071](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L1071)
+[Belt.ts:1078](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L1078)
 
 ___
 
@@ -553,7 +570,7 @@ found hex code or original color name
 
 #### Defined in
 
-[Belt.ts:1094](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L1094)
+[Belt.ts:1101](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L1101)
 
 ___
 
@@ -576,4 +593,4 @@ Map all belt color names in all Belt array object to hex codes
 
 #### Defined in
 
-[Belt.ts:1117](https://github.com/jeffholst/custom-belt/blob/1d5744b/packages/custom-belt-lib/src/Belt.ts#L1117)
+[Belt.ts:1124](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L1124)

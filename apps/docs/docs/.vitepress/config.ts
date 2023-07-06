@@ -34,7 +34,10 @@ export default defineConfig({
           {
             text: 'Classes',
             collapsed: true,
-            items: [{ text: 'BeltSystem', link: '/typedoc/classes/BeltSystem.BeltSystem' }]
+            items: [
+              { text: 'CustomBelt', link: '/typedoc/classes/CustomBelt.CustomBelt' },
+              { text: 'BeltSystem', link: '/typedoc/classes/BeltSystem.BeltSystem' }
+            ]
           },
           {
             text: 'Enums',
@@ -53,7 +56,8 @@ export default defineConfig({
               { text: 'Belt', link: '/typedoc/interfaces/Belt.Belt' },
               { text: 'BeltColor', link: '/typedoc/interfaces/Belt.BeltColor' },
               { text: 'BeltProps', link: '/typedoc/interfaces/Belt.BeltProps' },
-              { text: 'RandomSettings', link: '/typedoc/interfaces/Belt.RandomSettings' }
+              { text: 'RandomSettings', link: '/typedoc/interfaces/Belt.RandomSettings' },
+              { text: 'CustomBeltInit', link: '/typedoc/interfaces/CustomBelt.CustomBeltInit' }
             ]
           }
         ]

@@ -21,10 +21,10 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/Belt.ts", "src/BeltSystem.ts"],
+  "include": ["src/Belt.ts", "src/BeltSystem.ts", "src/CustomBelt.ts"],
   "typedocOptions": {
-    "plugin": ["typedoc-plugin-markdown", "typedoc-plugin-missing-exports"],
+    "plugin": ["typedoc-plugin-markdown"],
     "out": "docs",
-    "entryPoints": ["src/Belt.ts", "src/BeltSystem.ts"]
+    "entryPoints": ["src/Belt.ts", "src/BeltSystem.ts", "src/CustomBelt.ts"]
   }
 }
