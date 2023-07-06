@@ -34,6 +34,8 @@ const frameworkCallback = (newValue: string) => {
   selectedFramework.value = newValue;
   props.callback(newValue);
 };
+
+frameworkCallback(selectedFramework.value);
 </script>
 
 <style scoped></style>

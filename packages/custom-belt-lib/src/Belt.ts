@@ -574,6 +574,62 @@ export const getBeltPropsCoral = (
 };
 
 /**
+ * Create new Coral BeltProps[] array
+ * @param {string} name unique name of belt
+ * @param {number} id unique identifier for belt
+ * @param {string} borderColor hex value for belt border color
+ * @param {boolean} hasPatch whether belt has patch or not
+ * @param {string} patchColor hex value for patch color
+ * @param {string} patchBorderColor hex value for patch border color
+ * @param {boolean} hasProfessorPatch whether belt has professor patch or not
+ * @param {string} professorPatchColor hex value for professor patch color
+ * @param {string} professorBorderColor hex value for professor patch border color
+ * @param {string} stripeColor hex value for stripe color
+ * @param {number} stripeCount number of stripes for belt [0-10]
+ * @param {StripePosition} stripePosition starting position of stripes on belt
+ * @param {number} minStripes minimum number of stripes for belt
+ * @param {number} maxStripes maximum number of stripes for belt
+ * @param {string} transitionCSS CSS for transition animation
+ * @param {number} refreshInterval interval for refreshing belt in milliseconds
+ * @param {(callbackType: BeltCallbackType, belt: BeltProps, event: Event | null) => void} callback callback function to call after belt actions
+ * @return {BeltProps[]} BeltProps[] array
+ */
+export const getBeltPropsCrazy = (
+  id = 0,
+  borderColor = '#434244',
+  hasPatch = true,
+  patchColor = '#000000',
+  patchBorderColor = '',
+  hasProfessorPatch = false,
+  professorPatchColor = '',
+  professorBorderColor = '',
+  stripeColor = '',
+  stripeCount = 0,
+  stripePosition: StripePosition = StripePosition.Right,
+  transitionCSS = '',
+  refreshInterval = 0,
+  callback?: (callbackType: BeltCallbackType, belt: BeltProps, event: Event | null) => void
+): BeltProps[] => {
+  const crazyBelt: BeltProps[] = getBeltPropsRandom(
+    hasPatch,
+    hasProfessorPatch,
+    stripeCount,
+    stripePosition,
+    transitionCSS,
+    [BeltType.Crazy],
+    refreshInterval
+  );
+  crazyBelt[0].borderColor = borderColor;
+  crazyBelt[0].patchColor = patchColor;
+  crazyBelt[0].patchBorder = patchBorderColor;
+  crazyBelt[0].professorPatch = professorPatchColor;
+  crazyBelt[0].professorBorder = professorBorderColor;
+  crazyBelt[0].callback = callback;
+
+  return crazyBelt;
+};
+
+/**
  * Create new BeltProps[] array from Belt object
  * @param {Belt} belt Belt object to create BeltProps[] array from
  * @param {number} stripeCount number of stripes for belt [0-10]

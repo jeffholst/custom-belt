@@ -1,4 +1,8 @@
-# Examples
+# Crazy Belt
+
+<div class="example-belt">
+<CrazyBelt />
+</div>
 
 <div style="text-align: right;">
 <SelectFramework
@@ -23,7 +27,8 @@ Coming soon.
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import SelectFramework from '../components/SelectFramework.vue';
+import SelectFramework from '../../components/SelectFramework.vue';
+import CrazyBelt from '../../components/examples/CrazyBelt.vue';
 
 const selectedFramework = ref('0');
 

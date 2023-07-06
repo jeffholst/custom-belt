@@ -6,6 +6,7 @@ export default defineConfig({
   title: `Custom Belt`,
   base: '/custom-belt/',
   description: 'Custom Belt demo and documentation',
+  head: [['link', { rel: 'stylesheet', href: '/styles/custom.css' }]],
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -20,7 +21,18 @@ export default defineConfig({
         items: [
           { text: 'What is Custom Belt?', link: '/introduction/what-is-custom-belt' },
           { text: 'Quick Start', link: '/introduction/quick-start' },
-          { text: 'Examples', link: '/introduction/examples' }
+          {
+            text: 'Examples',
+            collapsed: true,
+            items: [
+              { text: 'Checkered Belt', link: '/introduction/examples/checkered-belt' },
+              { text: 'Coral Belt', link: '/introduction/examples/coral-belt' },
+              { text: 'Crazy Belt', link: '/introduction/examples/crazy-belt' },
+              { text: 'Solid Belt', link: '/introduction/examples/solid-belt' },
+              { text: 'Split Belt', link: '/introduction/examples/split-belt' },
+              { text: 'Striped Belt', link: '/introduction/examples/striped-belt' }
+            ]
+          }
         ]
       },
       {
