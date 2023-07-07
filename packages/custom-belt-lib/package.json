@@ -2,9 +2,22 @@
   "name": "custom-belt-lib",
   "author": "Jeff Holst",
   "version": "0.0.1",
+  "type": "module",
   "private": false,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/custom-belt-lib.umd.cjs",
+  "module": "./dist/custom-belt-lib.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/custom-belt-lib.js",
+      "require": "./dist/custom-belt-lib.umd.cjs"
+    }
+  },
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "vite build && tsc --emitDeclarationOnly",
     "build:docs": "typedoc --tsconfig ./tsconfig-typedoc.json && gulp copyFiles",
     "lint": "eslint . --ext js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "test": "vitest --root src/"

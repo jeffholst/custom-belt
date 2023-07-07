@@ -574,9 +574,7 @@ export const getBeltPropsCoral = (
 };
 
 /**
- * Create new Coral BeltProps[] array
- * @param {string} name unique name of belt
- * @param {number} id unique identifier for belt
+ * Create new Crazy BeltProps[] array
  * @param {string} borderColor hex value for belt border color
  * @param {boolean} hasPatch whether belt has patch or not
  * @param {string} patchColor hex value for patch color
@@ -595,7 +593,6 @@ export const getBeltPropsCoral = (
  * @return {BeltProps[]} BeltProps[] array
  */
 export const getBeltPropsCrazy = (
-  id = 0,
   borderColor = '#434244',
   hasPatch = true,
   patchColor = '#000000',
@@ -603,7 +600,6 @@ export const getBeltPropsCrazy = (
   hasProfessorPatch = false,
   professorPatchColor = '',
   professorBorderColor = '',
-  stripeColor = '',
   stripeCount = 0,
   stripePosition: StripePosition = StripePosition.Right,
   transitionCSS = '',
