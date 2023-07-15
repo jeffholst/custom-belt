@@ -68,10 +68,9 @@ export class CustomBelt {
     this.elements = this.initElements();
 
     if (
-      this.customBeltInit.beltProps != undefined &&
-      this.customBeltInit.beltProps.length > 0 &&
-      this.customBeltInit.beltProps[0].refreshInterval != undefined &&
-      this.customBeltInit.beltProps[0].refreshInterval > 0
+      this.currentBelt != null &&
+      this.currentBelt.refreshInterval != undefined &&
+      this.currentBelt.refreshInterval > 0
     ) {
       this.originalId = this.customBeltInit.beltProps[0].id;
       if (this.refreshIntervalId != undefined) {
