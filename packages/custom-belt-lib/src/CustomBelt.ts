@@ -42,7 +42,7 @@ export const getCustomBeltInit = (
 
 export class CustomBelt {
   customBeltInit: CustomBeltInit;
-  currentBelt: BeltProps;
+  currentBelt: BeltProps | null;
   currentIndex: number;
   originalId = '';
   elements: HTMLElement[];
@@ -59,9 +59,12 @@ export class CustomBelt {
   constructor(customBeltInit: CustomBeltInit) {
     this.customBeltInit = customBeltInit;
     this.currentIndex = 0;
-    this.currentBelt = customBeltInit.beltProps[this.currentIndex];
     this.refreshIntervalId = undefined;
 
+    this.currentBelt =
+      customBeltInit.beltProps && customBeltInit.beltProps.length > 0
+        ? customBeltInit.beltProps[this.currentIndex]
+        : null;
     this.elements = this.initElements();
 
     if (
@@ -93,7 +96,7 @@ export class CustomBelt {
   initElements = (): Array<HTMLElement> => {
     const elements: Array<HTMLElement> = new Array<HTMLElement>();
 
-    const svgString = this.getSVGString();
+    const svgString = this.currentBelt != null ? this.getSVGString() : 'Invalid beltParms received';
 
     this.customBeltInit.elements.forEach((e) => {
       e.addEventListener('click', this.oneClick);

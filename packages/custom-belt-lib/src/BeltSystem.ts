@@ -8,6 +8,10 @@ import {
   BeltCallbackType
 } from './Belt';
 
+/****************************************************/
+// INTERFACES
+/****************************************************/
+
 export interface BeltSystemInt {
   name: string;
   title: string;
@@ -16,6 +20,10 @@ export interface BeltSystemInt {
   colors: BeltColor[];
   belts: Belt[];
 }
+
+/****************************************************/
+// CLASSES
+/****************************************************/
 
 /**
  * Class used to represent predefined belt systems

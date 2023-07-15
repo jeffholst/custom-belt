@@ -1,11 +1,9 @@
 //import { version } from "../package.json"
 const version = '0.0.0';
-/*
- *  ___
- * | __|_ _ _  _ _ __  ___
- * | _|| ' \ || | '  \(_-<
- * |___|_||_\_,_|_|_|_/__/
- */
+
+/****************************************************/
+// ENUMS
+/****************************************************/
 
 /**
  * Callback types for belt interactions
@@ -61,12 +59,9 @@ export enum StripePosition {
   Right = 'Right'
 }
 
-/*
- *  ___     _            __
- * |_ _|_ _| |_ ___ _ _ / _|__ _ __ ___ ___
- *  | || ' \  _/ -_) '_|  _/ _` / _/ -_|_-<
- * |___|_||_\__\___|_| |_| \__,_\__\___/__/
- */
+/****************************************************/
+// INTERFACES
+/****************************************************/
 
 /**
  * Belt object definition
@@ -211,12 +206,9 @@ export interface RandomSettings {
   includeBelts: Array<BeltType> | undefined;
 }
 
-/*
- *  ___       __           _ _
- * |   \ ___ / _|__ _ _  _| | |_ ___
- * | |) / -_)  _/ _` | || | |  _(_-<
- * |___/\___|_| \__,_|\_,_|_|\__/__/
- */
+/****************************************************/
+// DEFAULTS
+/****************************************************/
 
 const UniqueIDPrefix = 'custom-belt-'; // prefix for unique ID generation
 
@@ -229,13 +221,9 @@ export const MinimumStripeCount = 0;
 /** Default stripe position */
 export const StripePositionDefault = StripePosition.Right;
 
-/*
- *  ___                   _     ___             _   _
- * | __|_ ___ __  ___ _ _| |_  | __|  _ _ _  __| |_(_)___ _ _  ___
- * | _|\ \ / '_ \/ _ \ '_|  _| | _| || | ' \/ _|  _| / _ \ ' \(_-<
- * |___/_\_\ .__/\___/_|  \__| |_| \_,_|_||_\__|\__|_\___/_||_/__/
- *         |_|
- */
+/****************************************************/
+// EXPORT FUNCTIONS
+/****************************************************/
 
 /**
  * Combine multiple BeltProps[] arrays into a single BeltProps[] array
