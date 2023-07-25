@@ -57,12 +57,13 @@ export class CustomBelt {
   currentBelt: BeltProps | null;
   currentIndex: number;
   originalId = '';
-  elements: HTMLElement[];
+  elements: HTMLElement[] | null;
   refreshIntervalId: ReturnType<typeof setTimeout> | undefined = undefined;
   clickDelay = 700;
   clickCount = 0;
   clickTimer: ReturnType<typeof setTimeout> | undefined = undefined;
-
+  svgString = '';
+  valid = true;
   /**
    * Instantiate a new CustomBelt object
    * @param {CustomBeltInit} customBeltInit initialization object
@@ -71,6 +72,15 @@ export class CustomBelt {
     this.customBeltInit = customBeltInit;
     this.currentIndex = 0;
     this.refreshIntervalId = undefined;
+
+    if (!this.customBeltInit) {
+      this.valid = false;
+      this.currentBelt = null;
+      this.elements = null;
+      return;
+    }
+
+    this.valid = true;
 
     this.currentBelt =
       customBeltInit.beltProps && customBeltInit.beltProps.length > 0
@@ -649,15 +659,19 @@ export class CustomBelt {
   initElements = (): Array<HTMLElement> => {
     const elements: Array<HTMLElement> = new Array<HTMLElement>();
 
-    const svgString = this.currentBelt != null ? this.getSVGString() : 'Invalid beltParms received';
+    this.svgString = this.currentBelt != null ? this.getSVGString() : 'Invalid beltParms received';
 
     this.customBeltInit.elements.forEach((e) => {
       e.addEventListener('click', this.oneClick);
-      e.innerHTML = svgString;
+      e.innerHTML = this.svgString;
       elements.push(e);
     });
 
     return elements;
+  };
+
+  isValid = (): boolean => {
+    return this.valid;
   };
 
   oneClick = (event: Event) => {
