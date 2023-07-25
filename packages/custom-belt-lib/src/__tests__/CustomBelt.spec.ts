@@ -1,6 +1,7 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, test } from 'vitest';
 import { getBeltPropsSolid, BeltProps } from '../../src/Belt';
 import { CustomBeltInit, CustomBelt, getCustomBeltInit } from '../../src/CustomBelt';
+import { setup, createPage } from 'vite-test-utils';
 
 describe('constructor instantiation', () => {
   it(`has null input returns false`, () => {
@@ -20,6 +21,17 @@ describe('build svgString', () => {
   });
 });
 
+await setup({
+  browser: true
+});
+
+test('render the index page', async () => {
+  // create a page instance of `playwright` via `createPage` helper API.
+  const page = await createPage('/');
+  const html = await page.innerHTML('body');
+
+  expect(html).toContain('White Belt');
+});
 /*
 const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#00FF00');
 const myDiv: HTMLElement = document.getElementById('whiteBelt') as HTMLElement;
