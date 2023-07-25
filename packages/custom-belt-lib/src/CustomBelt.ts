@@ -6,6 +6,10 @@ import {
   getBeltPropsRandom
 } from './Belt';
 
+/****************************************************/
+// INTERFACES
+/****************************************************/
+
 /**
  * CustomBelt Initializer Object
  * @interface
@@ -16,6 +20,10 @@ export interface CustomBeltInit {
   elementClasses: string[];
   beltProps: BeltProps[];
 }
+
+/****************************************************/
+// EXPORT FUNCTIONS
+/****************************************************/
 
 /**
  * Create new CustomBeltInit object
@@ -40,6 +48,10 @@ export const getCustomBeltInit = (
   return customBeltInit;
 };
 
+/****************************************************/
+// CLASSES
+/****************************************************/
+
 export class CustomBelt {
   customBeltInit: CustomBeltInit;
   currentBelt: BeltProps | null;
@@ -52,9 +64,8 @@ export class CustomBelt {
   clickTimer: ReturnType<typeof setTimeout> | undefined = undefined;
 
   /**
-   * Instantiate a new VanilaaBelt object
-   * @param {element} HTMLElement HTML element to replace
-   * @param {beltProps} BeltProps[] BeltProps array
+   * Instantiate a new CustomBelt object
+   * @param {CustomBeltInit} customBeltInit initialization object
    */
   constructor(customBeltInit: CustomBeltInit) {
     this.customBeltInit = customBeltInit;
@@ -65,6 +76,7 @@ export class CustomBelt {
       customBeltInit.beltProps && customBeltInit.beltProps.length > 0
         ? customBeltInit.beltProps[this.currentIndex]
         : null;
+
     this.elements = this.initElements();
 
     if (
@@ -83,6 +95,17 @@ export class CustomBelt {
     }
   }
 
+  additionalStyles = (): string => {
+    return this.transition();
+  };
+
+  borderColor = () => {
+    if (this.currentBelt === null || this.currentBelt === undefined) {
+      return '';
+    }
+    return `style='fill: ${this.currentBelt.borderColor}; ${this.additionalStyles()}'`;
+  };
+
   destroy = (): void => {
     this.elements.forEach((e) => {
       e.removeEventListener('click', this.oneClick);
@@ -92,73 +115,8 @@ export class CustomBelt {
     clearTimeout(this.refreshIntervalId);
   };
 
-  initElements = (): Array<HTMLElement> => {
-    const elements: Array<HTMLElement> = new Array<HTMLElement>();
-
-    const svgString = this.currentBelt != null ? this.getSVGString() : 'Invalid beltParms received';
-
-    this.customBeltInit.elements.forEach((e) => {
-      e.addEventListener('click', this.oneClick);
-      e.innerHTML = svgString;
-      elements.push(e);
-    });
-
-    return elements;
-  };
-
-  refreshElements = (): void => {
-    const svgString = this.getSVGString();
-
-    this.elements.forEach((e) => {
-      e.innerHTML = svgString;
-    });
-  };
-
-  transitionNextBelt = () => {
-    this.currentIndex =
-      this.currentIndex === this.customBeltInit.beltProps.length - 1 ? 0 : this.currentIndex + 1;
-    this.currentBelt = this.customBeltInit.beltProps[this.currentIndex];
-    if (
-      this.currentBelt.randomSettings.includeBelts !== undefined &&
-      this.currentBelt.randomSettings.includeBelts.length > 0
-    ) {
-      const randomBelt: BeltProps[] = getBeltPropsRandom(
-        this.currentBelt.randomSettings.hasPatch,
-        this.currentBelt.randomSettings.hasProfessorPatch,
-        this.currentBelt.randomSettings.stripeCount,
-        this.currentBelt.randomSettings.stripePosition,
-        this.currentBelt.transitionCSS,
-        this.currentBelt.randomSettings.includeBelts,
-        this.currentBelt.refreshInterval,
-        this.currentBelt.callback
-      );
-      this.currentBelt = randomBelt[0];
-    }
-    this.currentBelt.id = this.originalId; // keep the same element id
-    this.refreshElements();
-    this.doCallback(null, BeltCallbackType.Refresh);
-    this.refreshIntervalId = setTimeout(this.transitionNextBelt, this.currentBelt.refreshInterval);
-  };
-
-  oneClick = (event: Event) => {
-    // eslint-disable-next-line @typescript-eslint/no-this-alias
-    const self = this;
-    this.clickCount++;
-    if (this.clickCount === 1) {
-      this.clickTimer = setTimeout(function () {
-        self.doCallback(event, BeltCallbackType.Click);
-        self.clickCount = 0;
-      }, self.clickDelay);
-    } else {
-      clearTimeout(this.clickTimer);
-      this.downLoadSVG(event);
-      this.doCallback(event, BeltCallbackType.DoubleClick);
-      this.clickCount = 0;
-    }
-  };
-
   doCallback = (event: Event | null, callbackType: BeltCallbackType) => {
-    if (this.currentBelt.callback != null) {
+    if (this.currentBelt && this.currentBelt.callback != null) {
       this.currentBelt.callback(callbackType, this.currentBelt, event);
     }
   };
@@ -186,125 +144,6 @@ export class CustomBelt {
     }
   };
 
-  additionalStyles = (): string => {
-    return this.transition();
-  };
-
-  hasPatch = () => {
-    if (this.currentBelt === undefined) {
-      return '';
-    }
-    return `style='visibility: ${this.currentBelt.hasPatch ? 'visible' : 'hidden'};'`;
-  };
-
-  hasProfessorPatch = (): string => {
-    if (this.currentBelt === undefined) {
-      return '';
-    }
-    return `style='visibility: ${this.currentBelt.hasProfessorPatch ? 'visible' : 'hidden'}';`;
-  };
-
-  patchColor = (): string => {
-    if (this.currentBelt === undefined) {
-      return '';
-    }
-    return `style='fill: ${this.currentBelt.patchColor}; ${this.additionalStyles()}'`;
-  };
-
-  patchBorderColor = (): string => {
-    if (this.currentBelt === undefined) {
-      return '';
-    }
-    return `style='fill: ${this.currentBelt.patchBorder}; ${this.additionalStyles()}'`;
-  };
-
-  professorPatchColor = (): string => {
-    if (this.currentBelt === undefined) {
-      return '';
-    }
-    return `style='fill: ${this.currentBelt.professorPatch}; ${this.additionalStyles()}'`;
-  };
-
-  getStripeIndex = (stripeCount: number): number => {
-    if (this.currentBelt === undefined) {
-      return -1;
-    }
-    if (this.currentBelt.stripePosition === StripePosition.Left) {
-      return stripeCount;
-    } else {
-      return 11 - stripeCount;
-    }
-  };
-
-  stripeStyle = (stripeCount: number, fillColor: string) => {
-    if (this.currentBelt === undefined) {
-      return '';
-    }
-    return `style='fill: ${fillColor}; ${this.additionalStyles()} visibility: ${
-      this.currentBelt.stripeCount > 0 && this.currentBelt.stripeCount >= stripeCount
-        ? 'visible'
-        : 'hidden'
-    };'`;
-  };
-
-  stripe = (stripeCount: number) => {
-    if (this.currentBelt === undefined) {
-      return '';
-    }
-    let fillColor;
-    switch (stripeCount) {
-      case 1:
-        fillColor = this.currentBelt.stripeColor1;
-        break;
-      case 2:
-        fillColor = this.currentBelt.stripeColor2;
-        break;
-      case 3:
-        fillColor = this.currentBelt.stripeColor3;
-        break;
-      case 4:
-        fillColor = this.currentBelt.stripeColor4;
-        break;
-      case 5:
-        fillColor = this.currentBelt.stripeColor5;
-        break;
-      case 6:
-        fillColor = this.currentBelt.stripeColor6;
-        break;
-      case 7:
-        fillColor = this.currentBelt.stripeColor7;
-        break;
-      case 8:
-        fillColor = this.currentBelt.stripeColor8;
-        break;
-      case 9:
-        fillColor = this.currentBelt.stripeColor9;
-        break;
-      case 10:
-        fillColor = this.currentBelt.stripeColor10;
-        break;
-      default:
-        fillColor = DefaultBeltColor;
-        break;
-    }
-    return this.stripeStyle(this.getStripeIndex(stripeCount), fillColor);
-  };
-
-  transition = () => {
-    if (this.currentBelt === undefined) {
-      return '';
-    }
-    if (!this.currentBelt.transitionCSS) return '';
-    else return `${this.currentBelt.transitionCSS};`;
-  };
-
-  borderColor = () => {
-    if (this.currentBelt === undefined) {
-      return '';
-    }
-    return `style='fill: ${this.currentBelt.borderColor}; ${this.additionalStyles()}'`;
-  };
-
   getColor = (hexColor: string) => {
     if (hexColor === undefined) {
       return '';
@@ -314,7 +153,22 @@ export class CustomBelt {
     return result;
   };
 
+  getStripeIndex = (stripeCount: number): number => {
+    if (this.currentBelt === null || this.currentBelt === undefined) {
+      return -1;
+    }
+    if (this.currentBelt.stripePosition === StripePosition.Left) {
+      return stripeCount;
+    } else {
+      return 11 - stripeCount;
+    }
+  };
+
   getSVGString = (): string => {
+    if (this.currentBelt === null || this.currentBelt === undefined) {
+      return '';
+    }
+
     const svgString = `<svg
     id=""
     viewBox="0 0 471.2 190.2"
@@ -776,5 +630,167 @@ export class CustomBelt {
   `;
     //return '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect x="50" y="50" width="100" height="100" fill="blue" /></svg>';
     return svgString;
+  };
+
+  hasPatch = () => {
+    if (this.currentBelt === null || this.currentBelt === undefined) {
+      return '';
+    }
+    return `style='visibility: ${this.currentBelt.hasPatch ? 'visible' : 'hidden'};'`;
+  };
+
+  hasProfessorPatch = (): string => {
+    if (this.currentBelt === null || this.currentBelt === undefined) {
+      return '';
+    }
+    return `style='visibility: ${this.currentBelt.hasProfessorPatch ? 'visible' : 'hidden'}';`;
+  };
+
+  initElements = (): Array<HTMLElement> => {
+    const elements: Array<HTMLElement> = new Array<HTMLElement>();
+
+    const svgString = this.currentBelt != null ? this.getSVGString() : 'Invalid beltParms received';
+
+    this.customBeltInit.elements.forEach((e) => {
+      e.addEventListener('click', this.oneClick);
+      e.innerHTML = svgString;
+      elements.push(e);
+    });
+
+    return elements;
+  };
+
+  oneClick = (event: Event) => {
+    // eslint-disable-next-line @typescript-eslint/no-this-alias
+    const self = this;
+    this.clickCount++;
+    if (this.clickCount === 1) {
+      this.clickTimer = setTimeout(function () {
+        self.doCallback(event, BeltCallbackType.Click);
+        self.clickCount = 0;
+      }, self.clickDelay);
+    } else {
+      clearTimeout(this.clickTimer);
+      this.downLoadSVG(event);
+      this.doCallback(event, BeltCallbackType.DoubleClick);
+      this.clickCount = 0;
+    }
+  };
+
+  patchColor = (): string => {
+    if (this.currentBelt === undefined) {
+      return '';
+    }
+    return `style='fill: ${this.currentBelt.patchColor}; ${this.additionalStyles()}'`;
+  };
+
+  patchBorderColor = (): string => {
+    if (this.currentBelt === null || this.currentBelt === undefined) {
+      return '';
+    }
+    return `style='fill: ${this.currentBelt.patchBorder}; ${this.additionalStyles()}'`;
+  };
+
+  professorPatchColor = (): string => {
+    if (this.currentBelt === null || this.currentBelt === undefined) {
+      return '';
+    }
+    return `style='fill: ${this.currentBelt.professorPatch}; ${this.additionalStyles()}'`;
+  };
+
+  refreshElements = (): void => {
+    const svgString = this.getSVGString();
+
+    this.elements.forEach((e) => {
+      e.innerHTML = svgString;
+    });
+  };
+
+  stripe = (stripeCount: number) => {
+    if (this.currentBelt === null || this.currentBelt === undefined) {
+      return '';
+    }
+    let fillColor;
+    switch (stripeCount) {
+      case 1:
+        fillColor = this.currentBelt.stripeColor1;
+        break;
+      case 2:
+        fillColor = this.currentBelt.stripeColor2;
+        break;
+      case 3:
+        fillColor = this.currentBelt.stripeColor3;
+        break;
+      case 4:
+        fillColor = this.currentBelt.stripeColor4;
+        break;
+      case 5:
+        fillColor = this.currentBelt.stripeColor5;
+        break;
+      case 6:
+        fillColor = this.currentBelt.stripeColor6;
+        break;
+      case 7:
+        fillColor = this.currentBelt.stripeColor7;
+        break;
+      case 8:
+        fillColor = this.currentBelt.stripeColor8;
+        break;
+      case 9:
+        fillColor = this.currentBelt.stripeColor9;
+        break;
+      case 10:
+        fillColor = this.currentBelt.stripeColor10;
+        break;
+      default:
+        fillColor = DefaultBeltColor;
+        break;
+    }
+    return this.stripeStyle(this.getStripeIndex(stripeCount), fillColor);
+  };
+
+  stripeStyle = (stripeCount: number, fillColor: string) => {
+    if (this.currentBelt === null || this.currentBelt === undefined) {
+      return '';
+    }
+    return `style='fill: ${fillColor}; ${this.additionalStyles()} visibility: ${
+      this.currentBelt.stripeCount > 0 && this.currentBelt.stripeCount >= stripeCount
+        ? 'visible'
+        : 'hidden'
+    };'`;
+  };
+
+  transition = () => {
+    if (this.currentBelt === null || this.currentBelt === undefined) {
+      return '';
+    }
+    if (!this.currentBelt.transitionCSS) return '';
+    else return `${this.currentBelt.transitionCSS};`;
+  };
+
+  transitionNextBelt = () => {
+    this.currentIndex =
+      this.currentIndex === this.customBeltInit.beltProps.length - 1 ? 0 : this.currentIndex + 1;
+    this.currentBelt = this.customBeltInit.beltProps[this.currentIndex];
+    if (
+      this.currentBelt.randomSettings.includeBelts !== undefined &&
+      this.currentBelt.randomSettings.includeBelts.length > 0
+    ) {
+      const randomBelt: BeltProps[] = getBeltPropsRandom(
+        this.currentBelt.randomSettings.hasPatch,
+        this.currentBelt.randomSettings.hasProfessorPatch,
+        this.currentBelt.randomSettings.stripeCount,
+        this.currentBelt.randomSettings.stripePosition,
+        this.currentBelt.transitionCSS,
+        this.currentBelt.randomSettings.includeBelts,
+        this.currentBelt.refreshInterval,
+        this.currentBelt.callback
+      );
+      this.currentBelt = randomBelt[0];
+    }
+    this.currentBelt.id = this.originalId; // keep the same element id
+    this.refreshElements();
+    this.doCallback(null, BeltCallbackType.Refresh);
+    this.refreshIntervalId = setTimeout(this.transitionNextBelt, this.currentBelt.refreshInterval);
   };
 }
