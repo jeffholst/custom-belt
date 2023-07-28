@@ -105,6 +105,22 @@ export class CustomBelt {
     }
   }
 
+  addElementsByClasses = (elements: Array<HTMLElement>) => {
+    this.customBeltInit.elementClasses.forEach((elementClass) => {
+      const elems = document.getElementsByClassName(elementClass);
+      Array.from(elems).forEach(function (e) {
+        elements.push(e as HTMLElement);
+      });
+    });
+  };
+
+  addElementsByIds = (elements: Array<HTMLElement>) => {
+    this.customBeltInit.elementIds.forEach((elementId) => {
+      const elem = document.getElementById(elementId);
+      elements.push(elem as HTMLElement);
+    });
+  };
+
   additionalStyles = (): string => {
     return this.transition();
   };
@@ -659,12 +675,17 @@ export class CustomBelt {
   initElements = (): Array<HTMLElement> => {
     const elements: Array<HTMLElement> = new Array<HTMLElement>();
 
+    this.customBeltInit.elements.forEach((e) => {
+      elements.push(e);
+    });
+    this.addElementsByIds(elements);
+    this.addElementsByClasses(elements);
+
     this.svgString = this.currentBelt != null ? this.getSVGString() : 'Invalid beltParms received';
 
-    this.customBeltInit.elements.forEach((e) => {
+    elements.forEach((e) => {
       e.addEventListener('click', this.oneClick);
       e.innerHTML = this.svgString;
-      elements.push(e);
     });
 
     return elements;

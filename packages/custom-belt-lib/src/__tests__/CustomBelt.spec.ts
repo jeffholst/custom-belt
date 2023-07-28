@@ -30,8 +30,10 @@ test('render the index page', async () => {
   const page = await createPage('/');
   const html = await page.innerHTML('body');
 
-  expect(html).toContain('White Belt');
+  //expect(html).toContain('White Belt');
+  expect(html).toMatchSnapshot();
 });
+
 /*
 const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#00FF00');
 const myDiv: HTMLElement = document.getElementById('whiteBelt') as HTMLElement;
