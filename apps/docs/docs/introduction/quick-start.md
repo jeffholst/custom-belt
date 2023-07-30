@@ -65,12 +65,10 @@ npm install -D vue-custom-belt
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>White Belt</title>
   </head>
   <body>
-    <h1>White Belt</h1>
     <div id="whiteBelt" /> // this is where the belt will be rendered
     <script type="module" src="/src/main.ts"></script>
   </body>
