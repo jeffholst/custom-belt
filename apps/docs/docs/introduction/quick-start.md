@@ -93,8 +93,6 @@ const whiteBelt = getBeltPropsSolid("Solid White Belt", "#FFFFFF")
 const myDiv = document.getElementById("whiteBelt")
 const customBeltInit = getCustomBeltInit(
   [myDiv],
-  null,
-  null,
   whiteBelt
 )
 
@@ -115,8 +113,6 @@ const whiteBelt: BeltProps[] = getBeltPropsSolid("Solid White Belt", "#FFFFFF")
 const myDiv: HTMLElement = document.getElementById("whiteBelt") as HTMLElement
 const customBeltInit: CustomBeltInit = getCustomBeltInit(
   [myDiv],
-  null,
-  null,
   whiteBelt
 )
 new CustomBelt(customBeltInit)
