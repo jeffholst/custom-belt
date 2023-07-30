@@ -7,8 +7,11 @@
 </div>
 
 <div v-if="selectedFramework === '0'">
-<h2>Using
-<a href='' target='_blank'>vanilla-custom-belt</a> npm</h2>
+  <h2>Using
+    <a href='https://www.npmjs.com/package/custom-belt-lib' target='_blank'>
+      custom-belt-lib
+    </a> npm
+  </h2>
 </div>
 
 <div v-if="selectedFramework === '1'">
@@ -36,8 +39,8 @@ StackBlitz
 
 <div v-if="selectedFramework === '0'">
 
-```html
-Coming soon..
+```sh
+npm install -D custom-belt-lib
 ```
 
 </div>
@@ -53,28 +56,70 @@ npm install -D vue-custom-belt
 ### Up and running
 
 <div v-if="selectedFramework === '0'">
+<br/>
+
+#### Example index.html
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <h1>White Belt</h1>
+    <div id="whiteBelt" /> // this is where the belt will be rendered
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+```
+
+#### Example main.js and main.ts
 
 ::: code-group
 
-```js [config.js]
-/**
- * @type {import('vitepress').UserConfig}
- */
-const config = {
-  // ...
-}
+```js [JavaScript]
+// main.js
+import {
+  CustomBelt,
+  getCustomBeltInit,
+  getBeltPropsSolid
+} from "custom-belt-lib"
 
-export default config
+const whiteBelt = getBeltPropsSolid("Solid White Belt", "#FFFFFF")
+const myDiv = document.getElementById("whiteBelt")
+const customBeltInit = getCustomBeltInit(
+  [myDiv],
+  null,
+  null,
+  whiteBelt
+)
+
+new CustomBelt(customBeltInit)
 ```
 
-```ts [config.ts]
-import type { UserConfig } from 'vitepress'
+```ts [TypeScript]
+// main.ts
+import {
+  BeltProps,
+  CustomBeltInit,
+  CustomBelt,
+  getCustomBeltInit,
+  getBeltPropsSolid
+} from "custom-belt-lib"
 
-const config: UserConfig = {
-  // ...
-}
-
-export default config
+const whiteBelt: BeltProps[] = getBeltPropsSolid("Solid White Belt", "#FFFFFF")
+const myDiv: HTMLElement = document.getElementById("whiteBelt") as HTMLElement
+const customBeltInit: CustomBeltInit = getCustomBeltInit(
+  [myDiv],
+  null,
+  null,
+  whiteBelt
+)
+new CustomBelt(customBeltInit)
 ```
 
 :::
@@ -82,28 +127,32 @@ export default config
 </div>
 
 <div v-if="selectedFramework === '1'">
+<br/>
 
 ::: code-group
 
-```js [config.js]
-/**
- * @type {import('vitepress').UserConfig}
- */
-const config = {
-  // ...
-}
+```vue [JavaScript]
+<template>
+  <CustomBelt :belt-props="whiteBelt" />
+</template>
 
-export default config
+<script setup>
+import {CustomBelt, getBeltPropsSolid} from "vue-custom-belt"
+
+const whiteBelt = getBeltPropsSolid("Solid White Belt", "#FFFFFF")
+</script>
 ```
 
-```ts [config.ts]
-import type { UserConfig } from 'vitepress'
+```vue [TypeScript]
+<template>
+  <CustomBelt :belt-props="whiteBelt" />
+</template>
 
-const config: UserConfig = {
-  // ...
-}
+<script setup lang="ts"> 
+import {BeltProps, CustomBelt, getBeltPropsSolid} from "vue-custom-belt"
 
-export default config
+const whiteBelt: BeltProps[] = getBeltPropsSolid("Solid White Belt", "#FFFFFF")
+</script>
 ```
 
 :::
@@ -116,7 +165,7 @@ The above code will produce the image below.
 
 <WhiteBelt style="padding-top: 50px; max-width: 600px;"/>
 
-<script setup lang="ts">
+<script setup> // lang="ts" will break build
 import { ref } from 'vue'
 import WhiteBelt from '../components/WhiteBelt.vue';
 import SelectFramework from '../components/SelectFramework.vue';
