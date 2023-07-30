@@ -54,9 +54,30 @@ npm install -D vue-custom-belt
 
 <div v-if="selectedFramework === '0'">
 
-```html
-Coming soon..
+::: code-group
+
+```js [config.js]
+/**
+ * @type {import('vitepress').UserConfig}
+ */
+const config = {
+  // ...
+}
+
+export default config
 ```
+
+```ts [config.ts]
+import type { UserConfig } from 'vitepress'
+
+const config: UserConfig = {
+  // ...
+}
+
+export default config
+```
+
+:::
 
 </div>
 
