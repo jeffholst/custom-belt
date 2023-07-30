@@ -34,12 +34,7 @@ watch(
 const build = () => {
   const svgElement = svgDiv.value as unknown as HTMLElement;
   if (svgElement != null) {
-    const customBeltInit: CustomBeltInit = getCustomBeltInit(
-      [svgElement],
-      null,
-      null,
-      props.beltProps
-    );
+    const customBeltInit: CustomBeltInit = getCustomBeltInit([svgElement], props.beltProps);
     if (myBeltBuilder != undefined) myBeltBuilder.destroy();
     myBeltBuilder = new CustomBelt(customBeltInit);
   }
