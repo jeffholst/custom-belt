@@ -67,7 +67,7 @@ const MexicoBelt = getBeltPropsStriped(
 );
 
 const flagBelts = combineBeltProps([usaBelt, MexicoBelt]);
-const flagBeltsInit: CustomBeltInit = getCustomBeltInit([], ['flagBelts'], [], flagBelts);
+const flagBeltsInit: CustomBeltInit = getCustomBeltInit(['flagBelts'], flagBelts);
 new CustomBelt(flagBeltsInit);
 
 /*

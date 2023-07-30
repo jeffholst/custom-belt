@@ -15,9 +15,7 @@ import {
  * @interface
  */
 export interface CustomBeltInit {
-  elements: HTMLElement[];
-  elementIds: string[];
-  elementClasses: string[];
+  selectors: HTMLElement[] | string[];
   beltProps: BeltProps[];
 }
 
@@ -27,21 +25,15 @@ export interface CustomBeltInit {
 
 /**
  * Create new CustomBeltInit object
- * @param {HTMLElement[]} elements array of HTMLElements to replace
- * @param {string[]} elementIds array of element Ids to replace
- * @param {string[]} elementClasses array of element classes to replace
+ * @param {HTMLElement[] | string[]} selectors array of HTMLElements or array of HTML Ids and/or Classes to replace
  * @return {CustomBeltInit} CustomBeltInit object
  */
 export const getCustomBeltInit = (
-  elements: HTMLElement[] | null,
-  elementIds: string[] | null,
-  elementClasses: string[] | null,
+  selectors: HTMLElement[] | string[] | null,
   beltProps: BeltProps[]
 ): CustomBeltInit => {
   const customBeltInit: CustomBeltInit = {
-    elements: elements ? elements : [],
-    elementIds: elementIds ? elementIds : [],
-    elementClasses: elementClasses ? elementClasses : [],
+    selectors: selectors ? selectors : [],
     beltProps: beltProps
   };
 
@@ -57,7 +49,7 @@ export class CustomBelt {
   currentBelt: BeltProps | null;
   currentIndex: number;
   originalId = '';
-  elements: HTMLElement[] | null;
+  elements: HTMLElement[];
   refreshIntervalId: ReturnType<typeof setTimeout> | undefined = undefined;
   clickDelay = 700;
   clickCount = 0;
@@ -76,7 +68,7 @@ export class CustomBelt {
     if (!this.customBeltInit) {
       this.valid = false;
       this.currentBelt = null;
-      this.elements = null;
+      this.elements = new Array<HTMLElement>();
       return;
     }
 
@@ -104,22 +96,6 @@ export class CustomBelt {
       );
     }
   }
-
-  addElementsByClasses = (elements: Array<HTMLElement>) => {
-    this.customBeltInit.elementClasses.forEach((elementClass) => {
-      const elems = document.getElementsByClassName(elementClass);
-      Array.from(elems).forEach(function (e) {
-        elements.push(e as HTMLElement);
-      });
-    });
-  };
-
-  addElementsByIds = (elements: Array<HTMLElement>) => {
-    this.customBeltInit.elementIds.forEach((elementId) => {
-      const elem = document.getElementById(elementId);
-      elements.push(elem as HTMLElement);
-    });
-  };
 
   additionalStyles = (): string => {
     return this.transition();
@@ -675,11 +651,23 @@ export class CustomBelt {
   initElements = (): Array<HTMLElement> => {
     const elements: Array<HTMLElement> = new Array<HTMLElement>();
 
-    this.customBeltInit.elements.forEach((e) => {
-      elements.push(e);
+    this.customBeltInit.selectors.forEach((e) => {
+      if (typeof e === 'string' || e instanceof String) {
+        // if we have a string then try to get element by id then class
+        const elem = document.getElementById(e.toString());
+        if (elem != null) {
+          elements.push(elem);
+        } else {
+          // try to get by class
+          const elems = document.getElementsByClassName(e.toString());
+          Array.from(elems).forEach(function (e) {
+            elements.push(e as HTMLElement);
+          });
+        }
+      } else {
+        elements.push(e);
+      }
     });
-    this.addElementsByIds(elements);
-    this.addElementsByClasses(elements);
 
     this.svgString = this.currentBelt != null ? this.getSVGString() : 'Invalid beltParms received';
 
@@ -713,7 +701,7 @@ export class CustomBelt {
   };
 
   patchColor = (): string => {
-    if (this.currentBelt === undefined) {
+    if (this.currentBelt === null || this.currentBelt === undefined) {
       return '';
     }
     return `style='fill: ${this.currentBelt.patchColor}; ${this.additionalStyles()}'`;

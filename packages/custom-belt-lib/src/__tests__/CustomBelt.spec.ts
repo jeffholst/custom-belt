@@ -15,7 +15,7 @@ describe('constructor instantiation', () => {
 describe('build svgString', () => {
   it(`returns valid whitebelt`, () => {
     const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#00FF00');
-    const customBeltInit: CustomBeltInit = getCustomBeltInit([], null, null, whiteBelt);
+    const customBeltInit: CustomBeltInit = getCustomBeltInit([], whiteBelt);
     const customBelt = new CustomBelt(customBeltInit);
     expect(customBelt.svgString).toMatchSnapshot();
   });
