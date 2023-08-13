@@ -1,5 +1,5 @@
 <template>
-  <div ref="svgDiv" :id="svgUniqueId" v-html="svgHTML" class="customBelt"></div>
+  <div ref="svgDiv" :id="svgUniqueId" class="customBelt"></div>
 </template>
 
 <script setup lang="ts">
@@ -17,7 +17,6 @@ const props = defineProps<{
 
 const svgUniqueId = getBeltUniqueId();
 const svgDiv = ref(null);
-const svgHTML = ref('');
 let myBeltBuilder: CustomBelt | undefined = undefined;
 
 onMounted(() => {
