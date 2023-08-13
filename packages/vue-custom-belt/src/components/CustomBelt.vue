@@ -1,10 +1,10 @@
 <template>
-  <div ref="svgDiv" :id="svgUniqueId" class="customBelt"></div>
+  <div ref="svgDiv" class="customBelt"></div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue';
-import { BeltProps, getBeltUniqueId } from '../../../custom-belt-lib/src/Belt';
+import { BeltProps } from '../../../custom-belt-lib/src/Belt';
 import {
   CustomBelt,
   CustomBeltInit,
@@ -15,7 +15,6 @@ const props = defineProps<{
   beltProps: BeltProps[];
 }>();
 
-const svgUniqueId = getBeltUniqueId();
 const svgDiv = ref(null);
 let myBeltBuilder: CustomBelt | undefined = undefined;
 
