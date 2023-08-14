@@ -55,8 +55,8 @@ Instantiate a new VanilaaBelt object
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name             | Type                                                           |
+| :--------------- | :------------------------------------------------------------- |
 | `customBeltInit` | [`CustomBeltInit`](../interfaces/CustomBelt.CustomBeltInit.md) |
 
 #### Defined in
@@ -73,7 +73,7 @@ Instantiate a new VanilaaBelt object
 
 [CustomBelt.ts:51](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L51)
 
-___
+---
 
 ### clickDelay
 
@@ -83,7 +83,7 @@ ___
 
 [CustomBelt.ts:50](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L50)
 
-___
+---
 
 ### clickTimer
 
@@ -93,7 +93,7 @@ ___
 
 [CustomBelt.ts:52](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L52)
 
-___
+---
 
 ### currentBelt
 
@@ -103,7 +103,7 @@ ___
 
 [CustomBelt.ts:45](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L45)
 
-___
+---
 
 ### currentIndex
 
@@ -113,7 +113,7 @@ ___
 
 [CustomBelt.ts:46](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L46)
 
-___
+---
 
 ### customBeltInit
 
@@ -123,7 +123,7 @@ ___
 
 [CustomBelt.ts:44](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L44)
 
-___
+---
 
 ### elements
 
@@ -133,7 +133,7 @@ ___
 
 [CustomBelt.ts:48](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L48)
 
-___
+---
 
 ### originalId
 
@@ -143,7 +143,7 @@ ___
 
 [CustomBelt.ts:47](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L47)
 
-___
+---
 
 ### refreshIntervalId
 
@@ -167,7 +167,7 @@ ___
 
 [CustomBelt.ts:187](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L187)
 
-___
+---
 
 ### borderColor
 
@@ -181,7 +181,7 @@ ___
 
 [CustomBelt.ts:299](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L299)
 
-___
+---
 
 ### destroy
 
@@ -195,7 +195,7 @@ ___
 
 [CustomBelt.ts:84](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L84)
 
-___
+---
 
 ### doCallback
 
@@ -203,9 +203,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | ``null`` \| `Event` |
+| Name           | Type                                                    |
+| :------------- | :------------------------------------------------------ |
+| `event`        | `null` \| `Event`                                       |
 | `callbackType` | [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md) |
 
 #### Returns
@@ -216,7 +216,7 @@ ___
 
 [CustomBelt.ts:158](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L158)
 
-___
+---
 
 ### downLoadSVG
 
@@ -224,7 +224,7 @@ ___
 
 #### Parameters
 
-| Name | Type |
+| Name    | Type    |
 | :------ | :------ |
 | `event` | `Event` |
 
@@ -236,7 +236,7 @@ ___
 
 [CustomBelt.ts:164](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L164)
 
-___
+---
 
 ### getColor
 
@@ -244,8 +244,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type     |
+| :--------- | :------- |
 | `hexColor` | `string` |
 
 #### Returns
@@ -256,7 +256,7 @@ ___
 
 [CustomBelt.ts:306](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L306)
 
-___
+---
 
 ### getSVGString
 
@@ -270,7 +270,7 @@ ___
 
 [CustomBelt.ts:315](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L315)
 
-___
+---
 
 ### getStripeIndex
 
@@ -278,8 +278,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name          | Type     |
+| :------------ | :------- |
 | `stripeCount` | `number` |
 
 #### Returns
@@ -290,7 +290,7 @@ ___
 
 [CustomBelt.ts:226](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L226)
 
-___
+---
 
 ### hasPatch
 
@@ -304,7 +304,7 @@ ___
 
 [CustomBelt.ts:191](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L191)
 
-___
+---
 
 ### hasProfessorPatch
 
@@ -318,7 +318,7 @@ ___
 
 [CustomBelt.ts:198](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L198)
 
-___
+---
 
 ### initElements
 
@@ -332,7 +332,7 @@ ___
 
 [CustomBelt.ts:93](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L93)
 
-___
+---
 
 ### oneClick
 
@@ -340,7 +340,7 @@ ___
 
 #### Parameters
 
-| Name | Type |
+| Name    | Type    |
 | :------ | :------ |
 | `event` | `Event` |
 
@@ -352,7 +352,7 @@ ___
 
 [CustomBelt.ts:141](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L141)
 
-___
+---
 
 ### patchBorderColor
 
@@ -366,7 +366,7 @@ ___
 
 [CustomBelt.ts:212](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L212)
 
-___
+---
 
 ### patchColor
 
@@ -380,7 +380,7 @@ ___
 
 [CustomBelt.ts:205](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L205)
 
-___
+---
 
 ### professorPatchColor
 
@@ -394,7 +394,7 @@ ___
 
 [CustomBelt.ts:219](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L219)
 
-___
+---
 
 ### refreshElements
 
@@ -408,7 +408,7 @@ ___
 
 [CustomBelt.ts:107](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L107)
 
-___
+---
 
 ### stripe
 
@@ -416,8 +416,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name          | Type     |
+| :------------ | :------- |
 | `stripeCount` | `number` |
 
 #### Returns
@@ -428,7 +428,7 @@ ___
 
 [CustomBelt.ts:248](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L248)
 
-___
+---
 
 ### stripeStyle
 
@@ -436,10 +436,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name          | Type     |
+| :------------ | :------- |
 | `stripeCount` | `number` |
-| `fillColor` | `string` |
+| `fillColor`   | `string` |
 
 #### Returns
 
@@ -449,7 +449,7 @@ ___
 
 [CustomBelt.ts:237](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L237)
 
-___
+---
 
 ### transition
 
@@ -463,7 +463,7 @@ ___
 
 [CustomBelt.ts:291](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L291)
 
-___
+---
 
 ### transitionNextBelt
 

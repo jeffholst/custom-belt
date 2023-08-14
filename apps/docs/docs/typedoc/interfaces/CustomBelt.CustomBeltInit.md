@@ -25,7 +25,7 @@ CustomBelt Initializer Object
 
 [CustomBelt.ts:17](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L17)
 
-___
+---
 
 ### elementClasses
 
@@ -35,7 +35,7 @@ ___
 
 [CustomBelt.ts:16](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L16)
 
-___
+---
 
 ### elementIds
 
@@ -45,7 +45,7 @@ ___
 
 [CustomBelt.ts:15](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L15)
 
-___
+---
 
 ### elements
 

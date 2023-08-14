@@ -27,6 +27,6 @@
 
 ## 💬 Tips
 
-- running ```npm run build:docs``` will generate the TypeDocs for this package and use
-gulp to replace the files at ../../apps/docs/docs/typedoc for inclusion with the
-VitePress site.
+- running `npm run build:docs` will generate the TypeDocs for this package and use
+  gulp to replace the files at ../../apps/docs/docs/typedoc for inclusion with the
+  VitePress site.

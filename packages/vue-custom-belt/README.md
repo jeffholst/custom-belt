@@ -42,9 +42,9 @@ npm install vue-custom-belt
 </template>
 
 <script setup lang="ts">
-  import { CustomBelt, getBeltPropsSolid } from "vue-custom-belt";
+  import { CustomBelt, getBeltPropsSolid } from 'vue-custom-belt';
 
-  const whiteBelt = getBeltPropsSolid("My Solid White Belt", "#FFFFFF");
+  const whiteBelt = getBeltPropsSolid('My Solid White Belt', '#FFFFFF');
 </script>
 ```
 

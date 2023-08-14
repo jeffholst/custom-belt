@@ -36,4 +36,4 @@ The live version of this site is hosted on GitHub Pages and can be seen [here](h
 
 ## 💬 Tips
 
-* GitHub Pages build action is only triggered by github-pages branch commits.
+- GitHub Pages build action is only triggered by github-pages branch commits.

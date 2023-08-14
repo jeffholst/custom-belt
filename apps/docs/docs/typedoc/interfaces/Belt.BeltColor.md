@@ -7,7 +7,7 @@
 Used to assign/lookup friendly names to hex colors
 
 ```js
-const beltColors: BeltColor = { name: "White", hex: "#FFFFFF"};
+const beltColors: BeltColor = { name: 'White', hex: '#FFFFFF' };
 ```
 
 ## Table of contents
@@ -29,7 +29,7 @@ hex code beginning with # then 3 or 6 valid hex characters (ex. "#FFFFFF")
 
 [Belt.ts:110](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L110)
 
-___
+---
 
 ### name
 

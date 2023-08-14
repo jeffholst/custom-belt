@@ -61,7 +61,7 @@ npm install -D vue-custom-belt
 #### Example index.html
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -69,7 +69,8 @@ npm install -D vue-custom-belt
     <title>White Belt</title>
   </head>
   <body>
-    <div id="whiteBelt" /> // this is where the belt will be rendered
+    <div id="whiteBelt" />
+    // this is where the belt will be rendered
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
@@ -81,20 +82,13 @@ npm install -D vue-custom-belt
 
 ```js [JavaScript]
 // main.js
-import {
-  CustomBelt,
-  getCustomBeltInit,
-  getBeltPropsSolid
-} from "custom-belt-lib"
+import { CustomBelt, getCustomBeltInit, getBeltPropsSolid } from 'custom-belt-lib';
 
-const whiteBelt = getBeltPropsSolid("Solid White Belt", "#FFFFFF")
-const myDiv = document.getElementById("whiteBelt")
-const customBeltInit = getCustomBeltInit(
-  [myDiv],
-  whiteBelt
-)
+const whiteBelt = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
+const myDiv = document.getElementById('whiteBelt');
+const customBeltInit = getCustomBeltInit([myDiv], whiteBelt);
 
-new CustomBelt(customBeltInit)
+new CustomBelt(customBeltInit);
 ```
 
 ```ts [TypeScript]
@@ -105,15 +99,12 @@ import {
   CustomBelt,
   getCustomBeltInit,
   getBeltPropsSolid
-} from "custom-belt-lib"
+} from 'custom-belt-lib';
 
-const whiteBelt: BeltProps[] = getBeltPropsSolid("Solid White Belt", "#FFFFFF")
-const myDiv: HTMLElement = document.getElementById("whiteBelt") as HTMLElement
-const customBeltInit: CustomBeltInit = getCustomBeltInit(
-  [myDiv],
-  whiteBelt
-)
-new CustomBelt(customBeltInit)
+const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
+const myDiv: HTMLElement = document.getElementById('whiteBelt') as HTMLElement;
+const customBeltInit: CustomBeltInit = getCustomBeltInit([myDiv], whiteBelt);
+new CustomBelt(customBeltInit);
 ```
 
 :::
@@ -131,9 +122,9 @@ new CustomBelt(customBeltInit)
 </template>
 
 <script setup>
-import {CustomBelt, getBeltPropsSolid} from "vue-custom-belt"
+import { CustomBelt, getBeltPropsSolid } from 'vue-custom-belt';
 
-const whiteBelt = getBeltPropsSolid("Solid White Belt", "#FFFFFF")
+const whiteBelt = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
 </script>
 ```
 
@@ -142,10 +133,10 @@ const whiteBelt = getBeltPropsSolid("Solid White Belt", "#FFFFFF")
   <CustomBelt :belt-props="whiteBelt" />
 </template>
 
-<script setup lang="ts"> 
-import {BeltProps, CustomBelt, getBeltPropsSolid} from "vue-custom-belt"
+<script setup lang="ts">
+import { BeltProps, CustomBelt, getBeltPropsSolid } from 'vue-custom-belt';
 
-const whiteBelt: BeltProps[] = getBeltPropsSolid("Solid White Belt", "#FFFFFF")
+const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
 </script>
 ```
 

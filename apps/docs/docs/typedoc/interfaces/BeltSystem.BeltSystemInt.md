@@ -25,7 +25,7 @@
 
 [BeltSystem.ts:17](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L17)
 
-___
+---
 
 ### colors
 
@@ -35,7 +35,7 @@ ___
 
 [BeltSystem.ts:16](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L16)
 
-___
+---
 
 ### name
 
@@ -45,7 +45,7 @@ ___
 
 [BeltSystem.ts:12](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L12)
 
-___
+---
 
 ### refreshInterval
 
@@ -55,7 +55,7 @@ ___
 
 [BeltSystem.ts:15](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L15)
 
-___
+---
 
 ### title
 
@@ -65,7 +65,7 @@ ___
 
 [BeltSystem.ts:13](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L13)
 
-___
+---
 
 ### transitionCSS
 

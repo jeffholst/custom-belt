@@ -44,8 +44,8 @@ Instantiate a new BeltSystem object
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name     | Type     | Description               |
+| :------- | :------- | :------------------------ |
 | `system` | `string` | belt system object to use |
 
 #### Defined in
@@ -64,7 +64,7 @@ belts in the system
 
 [BeltSystem.ts:35](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L35)
 
-___
+---
 
 ### colors
 
@@ -76,7 +76,7 @@ lookup table of friendly color names to hex codes
 
 [BeltSystem.ts:33](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L33)
 
-___
+---
 
 ### name
 
@@ -88,7 +88,7 @@ name of belt system
 
 [BeltSystem.ts:25](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L25)
 
-___
+---
 
 ### refreshInterval
 
@@ -100,7 +100,7 @@ refresh interval in milliseconds
 
 [BeltSystem.ts:31](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L31)
 
-___
+---
 
 ### title
 
@@ -112,7 +112,7 @@ title of belt system
 
 [BeltSystem.ts:27](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L27)
 
-___
+---
 
 ### transitionCSS
 
@@ -134,8 +134,8 @@ Get a Belt by Id
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name | Type     | Description     |
+| :--- | :------- | :-------------- |
 | `id` | `number` | belt id to find |
 
 #### Returns
@@ -148,7 +148,7 @@ matching Belt or undefined
 
 [BeltSystem.ts:71](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L71)
 
-___
+---
 
 ### getBeltByName
 
@@ -158,8 +158,8 @@ Get a Belt by Name (case insensitive search)
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name   | Type     | Description       |
+| :----- | :------- | :---------------- |
 | `name` | `string` | belt name to find |
 
 #### Returns
@@ -172,7 +172,7 @@ matching Belt or undefined
 
 [BeltSystem.ts:80](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L80)
 
-___
+---
 
 ### getBeltProps
 
@@ -182,12 +182,12 @@ Get BeltpProps for provided Belt object and stripe info
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `belt` | [`Belt`](../interfaces/Belt.Belt.md) | `undefined` | belt object to use |
-| `stripeCount` | `number` | `undefined` | number of stripes to use (0-10) |
-| `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | `undefined` | stripe placement |
-| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | - |
+| Name             | Type                                                                                                                                                                    | Default value | Description                     |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :------------------------------ |
+| `belt`           | [`Belt`](../interfaces/Belt.Belt.md)                                                                                                                                    | `undefined`   | belt object to use              |
+| `stripeCount`    | `number`                                                                                                                                                                | `undefined`   | number of stripes to use (0-10) |
+| `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                      | `undefined`   | stripe placement                |
+| `callback?`      | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: `null` \| `Event`) => `void` | `undefined`   | -                               |
 
 #### Returns
 
@@ -199,7 +199,7 @@ BeltProps for provided Belt object and stripe info
 
 [BeltSystem.ts:91](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L91)
 
-___
+---
 
 ### getBeltPropsAll
 
@@ -209,11 +209,11 @@ Get all BeltProps from the belt system
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `transitionCSS` | `string` | `''` | transition css to use between belt changes. Empty for no effect |
-| `refreshInterval` | `number` | `0` | milliseconds to wait before changing belt. 0 for no rotate |
-| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | - |
+| Name              | Type                                                                                                                                                                    | Default value | Description                                                     |
+| :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :-------------------------------------------------------------- |
+| `transitionCSS`   | `string`                                                                                                                                                                | `''`          | transition css to use between belt changes. Empty for no effect |
+| `refreshInterval` | `number`                                                                                                                                                                | `0`           | milliseconds to wait before changing belt. 0 for no rotate      |
+| `callback?`       | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: `null` \| `Event`) => `void` | `undefined`   | -                                                               |
 
 #### Returns
 
@@ -225,7 +225,7 @@ all belts in the belt system
 
 [BeltSystem.ts:116](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L116)
 
-___
+---
 
 ### getBeltPropsById
 
@@ -235,12 +235,12 @@ Get BeltProps for matching belt id
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `id` | `number` | `undefined` | belt id to find |
-| `stripeCount` | `undefined` \| `number` | `undefined` | number of stripes to use (0-10) |
-| `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | `undefined` | stripe placement (Right or Left) |
-| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | - |
+| Name             | Type                                                                                                                                                                    | Default value | Description                      |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :------------------------------- |
+| `id`             | `number`                                                                                                                                                                | `undefined`   | belt id to find                  |
+| `stripeCount`    | `undefined` \| `number`                                                                                                                                                 | `undefined`   | number of stripes to use (0-10)  |
+| `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                      | `undefined`   | stripe placement (Right or Left) |
+| `callback?`      | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: `null` \| `Event`) => `void` | `undefined`   | -                                |
 
 #### Returns
 
@@ -252,7 +252,7 @@ BeltProps for matching belt name
 
 [BeltSystem.ts:143](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L143)
 
-___
+---
 
 ### getBeltPropsByIds
 
@@ -262,14 +262,14 @@ Get BeltProps for matching belt ids
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `ids` | `number`[] | `undefined` | ids of belts to return |
-| `stripeCount` | `undefined` \| `number` | `undefined` | the number of stripes to use |
-| `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | `undefined` | the stripe position to use |
-| `transitionCSS` | `string` | `''` | transition css to use between belt changes |
-| `refreshInterval` | `number` | `0` | milliseconds to wait before changing belt |
-| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | - |
+| Name              | Type                                                                                                                                                                    | Default value | Description                                |
+| :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :----------------------------------------- |
+| `ids`             | `number`[]                                                                                                                                                              | `undefined`   | ids of belts to return                     |
+| `stripeCount`     | `undefined` \| `number`                                                                                                                                                 | `undefined`   | the number of stripes to use               |
+| `stripePosition`  | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                      | `undefined`   | the stripe position to use                 |
+| `transitionCSS`   | `string`                                                                                                                                                                | `''`          | transition css to use between belt changes |
+| `refreshInterval` | `number`                                                                                                                                                                | `0`           | milliseconds to wait before changing belt  |
+| `callback?`       | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: `null` \| `Event`) => `void` | `undefined`   | -                                          |
 
 #### Returns
 
@@ -281,7 +281,7 @@ BeltProps[] of matching belts
 
 [BeltSystem.ts:175](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L175)
 
-___
+---
 
 ### getBeltPropsByName
 
@@ -291,12 +291,12 @@ Get BeltProps for matching belt name
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `name` | `string` | `undefined` | belt name to find |
-| `stripeCount` | `undefined` \| `number` | `undefined` | number of stripes to use (0-10) |
-| `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | `undefined` | stripe placement (Right or Left) |
-| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | - |
+| Name             | Type                                                                                                                                                                    | Default value | Description                      |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :------------------------------- |
+| `name`           | `string`                                                                                                                                                                | `undefined`   | belt name to find                |
+| `stripeCount`    | `undefined` \| `number`                                                                                                                                                 | `undefined`   | number of stripes to use (0-10)  |
+| `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                      | `undefined`   | stripe placement (Right or Left) |
+| `callback?`      | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: `null` \| `Event`) => `void` | `undefined`   | -                                |
 
 #### Returns
 
@@ -308,7 +308,7 @@ BeltProps for matching belt name
 
 [BeltSystem.ts:210](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L210)
 
-___
+---
 
 ### getBeltPropsByNames
 
@@ -318,14 +318,14 @@ Get BeltProps for matching belt names
 
 #### Parameters
 
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `names` | `string`[] | `undefined` | names of belts to return |
-| `stripeCount` | `undefined` \| `number` | `undefined` | the number of stripes to use |
-| `stripePosition` | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md) | `undefined` | the stripe position to use |
-| `transitionCSS` | `string` | `''` | transition css to use between belt changes |
-| `refreshInterval` | `number` | `0` | milliseconds to wait before changing belt |
-| `callback?` | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: ``null`` \| `Event`) => `void` | `undefined` | - |
+| Name              | Type                                                                                                                                                                    | Default value | Description                                |
+| :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------ | :----------------------------------------- |
+| `names`           | `string`[]                                                                                                                                                              | `undefined`   | names of belts to return                   |
+| `stripeCount`     | `undefined` \| `number`                                                                                                                                                 | `undefined`   | the number of stripes to use               |
+| `stripePosition`  | `undefined` \| [`StripePosition`](../enums/Belt.StripePosition.md)                                                                                                      | `undefined`   | the stripe position to use                 |
+| `transitionCSS`   | `string`                                                                                                                                                                | `''`          | transition css to use between belt changes |
+| `refreshInterval` | `number`                                                                                                                                                                | `0`           | milliseconds to wait before changing belt  |
+| `callback?`       | (`callbackType`: [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md), `belt`: [`BeltProps`](../interfaces/Belt.BeltProps.md), `event`: `null` \| `Event`) => `void` | `undefined`   | -                                          |
 
 #### Returns
 
@@ -337,7 +337,7 @@ BeltProps[] of matching belts
 
 [BeltSystem.ts:242](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L242)
 
-___
+---
 
 ### getBeltsByIds
 
@@ -347,8 +347,8 @@ Get matching belts by ids
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name  | Type       | Description            |
+| :---- | :--------- | :--------------------- |
 | `ids` | `number`[] | ids of belts to return |
 
 #### Returns
@@ -361,7 +361,7 @@ Belt[] of matching belts
 
 [BeltSystem.ts:275](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L275)
 
-___
+---
 
 ### getBeltsByNames
 
@@ -371,8 +371,8 @@ Get matching belts by names
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
+| Name    | Type       | Description              |
+| :------ | :--------- | :----------------------- |
 | `names` | `string`[] | names of belts to return |
 
 #### Returns

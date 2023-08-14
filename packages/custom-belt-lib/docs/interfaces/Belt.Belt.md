@@ -41,7 +41,7 @@ Belt object definition
 
 [Belt.ts:84](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L84)
 
-___
+---
 
 ### color1
 
@@ -51,7 +51,7 @@ ___
 
 [Belt.ts:81](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L81)
 
-___
+---
 
 ### color2
 
@@ -61,7 +61,7 @@ ___
 
 [Belt.ts:82](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L82)
 
-___
+---
 
 ### color3
 
@@ -71,7 +71,7 @@ ___
 
 [Belt.ts:83](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L83)
 
-___
+---
 
 ### hasPatch
 
@@ -81,7 +81,7 @@ ___
 
 [Belt.ts:85](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L85)
 
-___
+---
 
 ### hasProfessorPatch
 
@@ -91,7 +91,7 @@ ___
 
 [Belt.ts:88](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L88)
 
-___
+---
 
 ### id
 
@@ -101,7 +101,7 @@ ___
 
 [Belt.ts:77](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L77)
 
-___
+---
 
 ### maxStripes
 
@@ -111,7 +111,7 @@ ___
 
 [Belt.ts:95](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L95)
 
-___
+---
 
 ### minStripes
 
@@ -121,7 +121,7 @@ ___
 
 [Belt.ts:94](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L94)
 
-___
+---
 
 ### name
 
@@ -131,7 +131,7 @@ ___
 
 [Belt.ts:78](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L78)
 
-___
+---
 
 ### patchBorderColor
 
@@ -141,7 +141,7 @@ ___
 
 [Belt.ts:87](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L87)
 
-___
+---
 
 ### patchColor
 
@@ -151,7 +151,7 @@ ___
 
 [Belt.ts:86](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L86)
 
-___
+---
 
 ### professorBorderColor
 
@@ -161,7 +161,7 @@ ___
 
 [Belt.ts:90](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L90)
 
-___
+---
 
 ### professorPatchColor
 
@@ -171,7 +171,7 @@ ___
 
 [Belt.ts:89](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L89)
 
-___
+---
 
 ### sortOrder
 
@@ -181,7 +181,7 @@ ___
 
 [Belt.ts:79](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L79)
 
-___
+---
 
 ### stripeColor
 
@@ -191,7 +191,7 @@ ___
 
 [Belt.ts:91](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L91)
 
-___
+---
 
 ### stripeCount
 
@@ -201,7 +201,7 @@ ___
 
 [Belt.ts:92](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L92)
 
-___
+---
 
 ### stripePosition
 
@@ -211,7 +211,7 @@ ___
 
 [Belt.ts:93](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L93)
 
-___
+---
 
 ### system
 
@@ -221,7 +221,7 @@ ___
 
 [Belt.ts:76](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L76)
 
-___
+---
 
 ### type
 
