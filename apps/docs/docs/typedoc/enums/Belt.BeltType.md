@@ -25,7 +25,7 @@ Available belt types
 
 #### Defined in
 
-[Belt.ts:29](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L29)
+[Belt.ts:27](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L27)
 
 ---
 
@@ -35,7 +35,7 @@ Available belt types
 
 #### Defined in
 
-[Belt.ts:27](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L27)
+[Belt.ts:25](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L25)
 
 ---
 
@@ -45,7 +45,7 @@ Available belt types
 
 #### Defined in
 
-[Belt.ts:30](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L30)
+[Belt.ts:28](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L28)
 
 ---
 
@@ -55,7 +55,7 @@ Available belt types
 
 #### Defined in
 
-[Belt.ts:25](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L25)
+[Belt.ts:23](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L23)
 
 ---
 
@@ -65,7 +65,7 @@ Available belt types
 
 #### Defined in
 
-[Belt.ts:28](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L28)
+[Belt.ts:26](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L26)
 
 ---
 
@@ -75,4 +75,4 @@ Available belt types
 
 #### Defined in
 
-[Belt.ts:26](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L26)
+[Belt.ts:24](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L24)

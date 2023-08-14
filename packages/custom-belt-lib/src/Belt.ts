@@ -1091,13 +1091,6 @@ export const getBeltPropsStriped = (
 };
 
 /**
- * Generate unique id for belt suitiable for element id
- */
-export const getBeltUniqueId = (): string => {
-  return `custom_belt_${Math.random().toString(36).substring(2, 9)}`;
-};
-
-/**
  * Check for valid color hex code (must begin with # and then 3 or 6 valid hex characters)
  *
  * RegEx: /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/

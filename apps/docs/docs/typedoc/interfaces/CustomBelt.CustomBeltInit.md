@@ -11,9 +11,7 @@ CustomBelt Initializer Object
 ### Properties
 
 - [beltProps](CustomBelt.CustomBeltInit.md#beltprops)
-- [elementClasses](CustomBelt.CustomBeltInit.md#elementclasses)
-- [elementIds](CustomBelt.CustomBeltInit.md#elementids)
-- [elements](CustomBelt.CustomBeltInit.md#elements)
+- [selectors](CustomBelt.CustomBeltInit.md#selectors)
 
 ## Properties
 
@@ -23,34 +21,14 @@ CustomBelt Initializer Object
 
 #### Defined in
 
-[CustomBelt.ts:17](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L17)
+[CustomBelt.ts:19](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L19)
 
 ---
 
-### elementClasses
+### selectors
 
-• **elementClasses**: `string`[]
-
-#### Defined in
-
-[CustomBelt.ts:16](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L16)
-
----
-
-### elementIds
-
-• **elementIds**: `string`[]
+• **selectors**: `string`[] \| `HTMLElement`[]
 
 #### Defined in
 
-[CustomBelt.ts:15](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L15)
-
----
-
-### elements
-
-• **elements**: `HTMLElement`[]
-
-#### Defined in
-
-[CustomBelt.ts:14](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L14)
+[CustomBelt.ts:18](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L18)

@@ -50,7 +50,7 @@ Instantiate a new BeltSystem object
 
 #### Defined in
 
-[BeltSystem.ts:41](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L41)
+[BeltSystem.ts:49](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L49)
 
 ## Properties
 
@@ -62,7 +62,7 @@ belts in the system
 
 #### Defined in
 
-[BeltSystem.ts:35](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L35)
+[BeltSystem.ts:43](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L43)
 
 ---
 
@@ -74,7 +74,7 @@ lookup table of friendly color names to hex codes
 
 #### Defined in
 
-[BeltSystem.ts:33](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L33)
+[BeltSystem.ts:41](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L41)
 
 ---
 
@@ -86,7 +86,7 @@ name of belt system
 
 #### Defined in
 
-[BeltSystem.ts:25](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L25)
+[BeltSystem.ts:33](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L33)
 
 ---
 
@@ -98,7 +98,7 @@ refresh interval in milliseconds
 
 #### Defined in
 
-[BeltSystem.ts:31](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L31)
+[BeltSystem.ts:39](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L39)
 
 ---
 
@@ -110,7 +110,7 @@ title of belt system
 
 #### Defined in
 
-[BeltSystem.ts:27](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L27)
+[BeltSystem.ts:35](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L35)
 
 ---
 
@@ -122,7 +122,7 @@ transition CSS
 
 #### Defined in
 
-[BeltSystem.ts:29](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L29)
+[BeltSystem.ts:37](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L37)
 
 ## Methods
 
@@ -146,7 +146,7 @@ matching Belt or undefined
 
 #### Defined in
 
-[BeltSystem.ts:71](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L71)
+[BeltSystem.ts:79](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L79)
 
 ---
 
@@ -170,7 +170,7 @@ matching Belt or undefined
 
 #### Defined in
 
-[BeltSystem.ts:80](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L80)
+[BeltSystem.ts:88](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L88)
 
 ---
 
@@ -197,7 +197,7 @@ BeltProps for provided Belt object and stripe info
 
 #### Defined in
 
-[BeltSystem.ts:91](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L91)
+[BeltSystem.ts:99](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L99)
 
 ---
 
@@ -223,7 +223,7 @@ all belts in the belt system
 
 #### Defined in
 
-[BeltSystem.ts:116](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L116)
+[BeltSystem.ts:124](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L124)
 
 ---
 
@@ -250,7 +250,7 @@ BeltProps for matching belt name
 
 #### Defined in
 
-[BeltSystem.ts:143](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L143)
+[BeltSystem.ts:151](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L151)
 
 ---
 
@@ -279,7 +279,7 @@ BeltProps[] of matching belts
 
 #### Defined in
 
-[BeltSystem.ts:175](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L175)
+[BeltSystem.ts:183](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L183)
 
 ---
 
@@ -306,7 +306,7 @@ BeltProps for matching belt name
 
 #### Defined in
 
-[BeltSystem.ts:210](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L210)
+[BeltSystem.ts:218](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L218)
 
 ---
 
@@ -335,7 +335,7 @@ BeltProps[] of matching belts
 
 #### Defined in
 
-[BeltSystem.ts:242](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L242)
+[BeltSystem.ts:250](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L250)
 
 ---
 
@@ -359,7 +359,7 @@ Belt[] of matching belts
 
 #### Defined in
 
-[BeltSystem.ts:275](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L275)
+[BeltSystem.ts:283](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L283)
 
 ---
 
@@ -383,4 +383,4 @@ Belt[] of matching belts
 
 #### Defined in
 
-[BeltSystem.ts:292](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/BeltSystem.ts#L292)
+[BeltSystem.ts:300](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L300)

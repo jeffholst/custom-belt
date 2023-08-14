@@ -4,6 +4,8 @@
 
 [CustomBelt](../modules/CustomBelt.md).CustomBelt
 
+---
+
 ## Table of contents
 
 ### Constructors
@@ -21,6 +23,8 @@
 - [elements](CustomBelt.CustomBelt.md#elements)
 - [originalId](CustomBelt.CustomBelt.md#originalid)
 - [refreshIntervalId](CustomBelt.CustomBelt.md#refreshintervalid)
+- [svgString](CustomBelt.CustomBelt.md#svgstring)
+- [valid](CustomBelt.CustomBelt.md#valid)
 
 ### Methods
 
@@ -35,6 +39,7 @@
 - [hasPatch](CustomBelt.CustomBelt.md#haspatch)
 - [hasProfessorPatch](CustomBelt.CustomBelt.md#hasprofessorpatch)
 - [initElements](CustomBelt.CustomBelt.md#initelements)
+- [isValid](CustomBelt.CustomBelt.md#isvalid)
 - [oneClick](CustomBelt.CustomBelt.md#oneclick)
 - [patchBorderColor](CustomBelt.CustomBelt.md#patchbordercolor)
 - [patchColor](CustomBelt.CustomBelt.md#patchcolor)
@@ -51,17 +56,17 @@
 
 • **new CustomBelt**(`customBeltInit`)
 
-Instantiate a new VanilaaBelt object
+Instantiate a new CustomBelt object
 
 #### Parameters
 
-| Name             | Type                                                           |
-| :--------------- | :------------------------------------------------------------- |
-| `customBeltInit` | [`CustomBeltInit`](../interfaces/CustomBelt.CustomBeltInit.md) |
+| Name             | Type                                                           | Description           |
+| :--------------- | :------------------------------------------------------------- | :-------------------- |
+| `customBeltInit` | [`CustomBeltInit`](../interfaces/CustomBelt.CustomBeltInit.md) | initialization object |
 
 #### Defined in
 
-[CustomBelt.ts:59](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L59)
+[CustomBelt.ts:63](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L63)
 
 ## Properties
 
@@ -71,7 +76,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:51](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L51)
+[CustomBelt.ts:55](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L55)
 
 ---
 
@@ -81,7 +86,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:50](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L50)
+[CustomBelt.ts:54](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L54)
 
 ---
 
@@ -91,17 +96,17 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:52](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L52)
+[CustomBelt.ts:56](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L56)
 
 ---
 
 ### currentBelt
 
-• **currentBelt**: [`BeltProps`](../interfaces/Belt.BeltProps.md)
+• **currentBelt**: `null` \| [`BeltProps`](../interfaces/Belt.BeltProps.md)
 
 #### Defined in
 
-[CustomBelt.ts:45](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L45)
+[CustomBelt.ts:49](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L49)
 
 ---
 
@@ -111,7 +116,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:46](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L46)
+[CustomBelt.ts:50](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L50)
 
 ---
 
@@ -121,7 +126,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:44](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L44)
+[CustomBelt.ts:48](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L48)
 
 ---
 
@@ -131,7 +136,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:48](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L48)
+[CustomBelt.ts:52](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L52)
 
 ---
 
@@ -141,7 +146,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:47](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L47)
+[CustomBelt.ts:51](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L51)
 
 ---
 
@@ -151,7 +156,27 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:49](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L49)
+[CustomBelt.ts:53](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L53)
+
+---
+
+### svgString
+
+• **svgString**: `string` = `''`
+
+#### Defined in
+
+[CustomBelt.ts:57](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L57)
+
+---
+
+### valid
+
+• **valid**: `boolean` = `true`
+
+#### Defined in
+
+[CustomBelt.ts:58](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L58)
 
 ## Methods
 
@@ -165,7 +190,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:187](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L187)
+[CustomBelt.ts:100](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L100)
 
 ---
 
@@ -179,7 +204,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:299](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L299)
+[CustomBelt.ts:104](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L104)
 
 ---
 
@@ -193,7 +218,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:84](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L84)
+[CustomBelt.ts:111](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L111)
 
 ---
 
@@ -214,7 +239,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:158](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L158)
+[CustomBelt.ts:120](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L120)
 
 ---
 
@@ -234,7 +259,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:164](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L164)
+[CustomBelt.ts:126](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L126)
 
 ---
 
@@ -254,7 +279,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:306](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L306)
+[CustomBelt.ts:149](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L149)
 
 ---
 
@@ -268,7 +293,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:315](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L315)
+[CustomBelt.ts:169](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L169)
 
 ---
 
@@ -288,7 +313,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:226](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L226)
+[CustomBelt.ts:158](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L158)
 
 ---
 
@@ -302,7 +327,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:191](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L191)
+[CustomBelt.ts:637](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L637)
 
 ---
 
@@ -316,7 +341,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:198](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L198)
+[CustomBelt.ts:644](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L644)
 
 ---
 
@@ -330,7 +355,21 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:93](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L93)
+[CustomBelt.ts:651](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L651)
+
+---
+
+### isValid
+
+▸ **isValid**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[CustomBelt.ts:682](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L682)
 
 ---
 
@@ -350,7 +389,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:141](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L141)
+[CustomBelt.ts:686](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L686)
 
 ---
 
@@ -364,7 +403,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:212](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L212)
+[CustomBelt.ts:710](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L710)
 
 ---
 
@@ -378,7 +417,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:205](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L205)
+[CustomBelt.ts:703](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L703)
 
 ---
 
@@ -392,7 +431,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:219](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L219)
+[CustomBelt.ts:717](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L717)
 
 ---
 
@@ -406,7 +445,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:107](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L107)
+[CustomBelt.ts:724](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L724)
 
 ---
 
@@ -426,7 +465,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:248](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L248)
+[CustomBelt.ts:732](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L732)
 
 ---
 
@@ -447,7 +486,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:237](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L237)
+[CustomBelt.ts:775](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L775)
 
 ---
 
@@ -461,7 +500,7 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:291](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L291)
+[CustomBelt.ts:786](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L786)
 
 ---
 
@@ -475,4 +514,4 @@ Instantiate a new VanilaaBelt object
 
 #### Defined in
 
-[CustomBelt.ts:115](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/CustomBelt.ts#L115)
+[CustomBelt.ts:794](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L794)

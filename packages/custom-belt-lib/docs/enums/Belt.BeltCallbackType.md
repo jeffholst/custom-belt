@@ -22,7 +22,7 @@ Callback types for belt interactions
 
 #### Defined in
 
-[Belt.ts:16](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L16)
+[Belt.ts:14](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L14)
 
 ---
 
@@ -32,7 +32,7 @@ Callback types for belt interactions
 
 #### Defined in
 
-[Belt.ts:17](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L17)
+[Belt.ts:15](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L15)
 
 ---
 
@@ -42,4 +42,4 @@ Callback types for belt interactions
 
 #### Defined in
 
-[Belt.ts:15](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L15)
+[Belt.ts:13](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L13)

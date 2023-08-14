@@ -27,7 +27,7 @@ hex code beginning with # then 3 or 6 valid hex characters (ex. "#FFFFFF")
 
 #### Defined in
 
-[Belt.ts:110](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L110)
+[Belt.ts:105](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L105)
 
 ---
 
@@ -39,4 +39,4 @@ friendly lookup name for hex color (ex. "White")
 
 #### Defined in
 
-[Belt.ts:114](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L114)
+[Belt.ts:109](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L109)

@@ -97,7 +97,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:124](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L124)
+[Belt.ts:119](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L119)
 
 ---
 
@@ -107,7 +107,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:125](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L125)
+[Belt.ts:120](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L120)
 
 ---
 
@@ -133,7 +133,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:199](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L199)
+[Belt.ts:194](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L194)
 
 ---
 
@@ -143,7 +143,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:126](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L126)
+[Belt.ts:121](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L121)
 
 ---
 
@@ -153,7 +153,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:131](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L131)
+[Belt.ts:126](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L126)
 
 ---
 
@@ -163,7 +163,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:123](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L123)
+[Belt.ts:118](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L118)
 
 ---
 
@@ -173,7 +173,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:128](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L128)
+[Belt.ts:123](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L123)
 
 ---
 
@@ -183,7 +183,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:127](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L127)
+[Belt.ts:122](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L122)
 
 ---
 
@@ -193,7 +193,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:130](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L130)
+[Belt.ts:125](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L125)
 
 ---
 
@@ -203,7 +203,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:129](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L129)
+[Belt.ts:124](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L124)
 
 ---
 
@@ -213,7 +213,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:197](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L197)
+[Belt.ts:192](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L192)
 
 ---
 
@@ -223,7 +223,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:198](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L198)
+[Belt.ts:193](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L193)
 
 ---
 
@@ -233,7 +233,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:180](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L180)
+[Belt.ts:175](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L175)
 
 ---
 
@@ -243,7 +243,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:181](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L181)
+[Belt.ts:176](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L176)
 
 ---
 
@@ -253,7 +253,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:182](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L182)
+[Belt.ts:177](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L177)
 
 ---
 
@@ -263,7 +263,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:183](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L183)
+[Belt.ts:178](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L178)
 
 ---
 
@@ -273,7 +273,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:184](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L184)
+[Belt.ts:179](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L179)
 
 ---
 
@@ -283,7 +283,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:185](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L185)
+[Belt.ts:180](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L180)
 
 ---
 
@@ -293,7 +293,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:186](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L186)
+[Belt.ts:181](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L181)
 
 ---
 
@@ -303,7 +303,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:187](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L187)
+[Belt.ts:182](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L182)
 
 ---
 
@@ -313,7 +313,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:188](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L188)
+[Belt.ts:183](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L183)
 
 ---
 
@@ -323,7 +323,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:189](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L189)
+[Belt.ts:184](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L184)
 
 ---
 
@@ -333,7 +333,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:190](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L190)
+[Belt.ts:185](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L185)
 
 ---
 
@@ -343,7 +343,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:191](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L191)
+[Belt.ts:186](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L186)
 
 ---
 
@@ -353,7 +353,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:192](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L192)
+[Belt.ts:187](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L187)
 
 ---
 
@@ -363,7 +363,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:193](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L193)
+[Belt.ts:188](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L188)
 
 ---
 
@@ -373,7 +373,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:194](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L194)
+[Belt.ts:189](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L189)
 
 ---
 
@@ -383,7 +383,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:195](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L195)
+[Belt.ts:190](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L190)
 
 ---
 
@@ -393,7 +393,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:144](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L144)
+[Belt.ts:139](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L139)
 
 ---
 
@@ -403,7 +403,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:145](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L145)
+[Belt.ts:140](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L140)
 
 ---
 
@@ -413,7 +413,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:146](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L146)
+[Belt.ts:141](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L141)
 
 ---
 
@@ -423,7 +423,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:147](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L147)
+[Belt.ts:142](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L142)
 
 ---
 
@@ -433,7 +433,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:148](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L148)
+[Belt.ts:143](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L143)
 
 ---
 
@@ -443,7 +443,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:149](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L149)
+[Belt.ts:144](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L144)
 
 ---
 
@@ -453,7 +453,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:150](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L150)
+[Belt.ts:145](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L145)
 
 ---
 
@@ -463,7 +463,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:151](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L151)
+[Belt.ts:146](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L146)
 
 ---
 
@@ -473,7 +473,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:152](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L152)
+[Belt.ts:147](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L147)
 
 ---
 
@@ -483,7 +483,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:153](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L153)
+[Belt.ts:148](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L148)
 
 ---
 
@@ -493,7 +493,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:154](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L154)
+[Belt.ts:149](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L149)
 
 ---
 
@@ -503,7 +503,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:155](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L155)
+[Belt.ts:150](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L150)
 
 ---
 
@@ -513,7 +513,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:156](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L156)
+[Belt.ts:151](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L151)
 
 ---
 
@@ -523,7 +523,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:157](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L157)
+[Belt.ts:152](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L152)
 
 ---
 
@@ -533,7 +533,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:158](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L158)
+[Belt.ts:153](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L153)
 
 ---
 
@@ -543,7 +543,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:159](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L159)
+[Belt.ts:154](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L154)
 
 ---
 
@@ -553,7 +553,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:160](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L160)
+[Belt.ts:155](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L155)
 
 ---
 
@@ -563,7 +563,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:161](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L161)
+[Belt.ts:156](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L156)
 
 ---
 
@@ -573,7 +573,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:162](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L162)
+[Belt.ts:157](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L157)
 
 ---
 
@@ -583,7 +583,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:163](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L163)
+[Belt.ts:158](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L158)
 
 ---
 
@@ -593,7 +593,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:164](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L164)
+[Belt.ts:159](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L159)
 
 ---
 
@@ -603,7 +603,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:165](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L165)
+[Belt.ts:160](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L160)
 
 ---
 
@@ -613,7 +613,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:166](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L166)
+[Belt.ts:161](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L161)
 
 ---
 
@@ -623,7 +623,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:167](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L167)
+[Belt.ts:162](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L162)
 
 ---
 
@@ -633,7 +633,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:168](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L168)
+[Belt.ts:163](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L163)
 
 ---
 
@@ -643,7 +643,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:169](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L169)
+[Belt.ts:164](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L164)
 
 ---
 
@@ -653,7 +653,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:170](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L170)
+[Belt.ts:165](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L165)
 
 ---
 
@@ -663,7 +663,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:171](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L171)
+[Belt.ts:166](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L166)
 
 ---
 
@@ -673,7 +673,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:172](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L172)
+[Belt.ts:167](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L167)
 
 ---
 
@@ -683,7 +683,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:173](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L173)
+[Belt.ts:168](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L168)
 
 ---
 
@@ -693,7 +693,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:174](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L174)
+[Belt.ts:169](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L169)
 
 ---
 
@@ -703,7 +703,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:175](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L175)
+[Belt.ts:170](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L170)
 
 ---
 
@@ -713,7 +713,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:176](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L176)
+[Belt.ts:171](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L171)
 
 ---
 
@@ -723,7 +723,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:177](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L177)
+[Belt.ts:172](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L172)
 
 ---
 
@@ -733,7 +733,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:178](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L178)
+[Belt.ts:173](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L173)
 
 ---
 
@@ -743,7 +743,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:179](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L179)
+[Belt.ts:174](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L174)
 
 ---
 
@@ -753,7 +753,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:134](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L134)
+[Belt.ts:129](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L129)
 
 ---
 
@@ -763,7 +763,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:143](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L143)
+[Belt.ts:138](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L138)
 
 ---
 
@@ -773,7 +773,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:135](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L135)
+[Belt.ts:130](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L130)
 
 ---
 
@@ -783,7 +783,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:136](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L136)
+[Belt.ts:131](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L131)
 
 ---
 
@@ -793,7 +793,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:137](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L137)
+[Belt.ts:132](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L132)
 
 ---
 
@@ -803,7 +803,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:138](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L138)
+[Belt.ts:133](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L133)
 
 ---
 
@@ -813,7 +813,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:139](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L139)
+[Belt.ts:134](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L134)
 
 ---
 
@@ -823,7 +823,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:140](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L140)
+[Belt.ts:135](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L135)
 
 ---
 
@@ -833,7 +833,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:141](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L141)
+[Belt.ts:136](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L136)
 
 ---
 
@@ -843,7 +843,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:142](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L142)
+[Belt.ts:137](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L137)
 
 ---
 
@@ -853,7 +853,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:132](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L132)
+[Belt.ts:127](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L127)
 
 ---
 
@@ -863,7 +863,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:133](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L133)
+[Belt.ts:128](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L128)
 
 ---
 
@@ -873,7 +873,7 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:196](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L196)
+[Belt.ts:191](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L191)
 
 ---
 
@@ -883,4 +883,4 @@ Property object passed to <CustomBelt /> component
 
 #### Defined in
 
-[Belt.ts:122](https://github.com/jeffholst/custom-belt/blob/dc727c6/packages/custom-belt-lib/src/Belt.ts#L122)
+[Belt.ts:117](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L117)
