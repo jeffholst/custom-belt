@@ -24,9 +24,9 @@ Settings for random belt generation
 
 #### Defined in
 
-[Belt.ts:202](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L202)
+[Belt.ts:202](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L202)
 
----
+___
 
 ### hasProfessorPatch
 
@@ -34,9 +34,9 @@ Settings for random belt generation
 
 #### Defined in
 
-[Belt.ts:203](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L203)
+[Belt.ts:203](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L203)
 
----
+___
 
 ### includeBelts
 
@@ -44,9 +44,9 @@ Settings for random belt generation
 
 #### Defined in
 
-[Belt.ts:206](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L206)
+[Belt.ts:206](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L206)
 
----
+___
 
 ### stripeCount
 
@@ -54,9 +54,9 @@ Settings for random belt generation
 
 #### Defined in
 
-[Belt.ts:204](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L204)
+[Belt.ts:204](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L204)
 
----
+___
 
 ### stripePosition
 
@@ -64,4 +64,4 @@ Settings for random belt generation
 
 #### Defined in
 
-[Belt.ts:205](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L205)
+[Belt.ts:205](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L205)

@@ -4,7 +4,7 @@
 
 [BeltSystem](../modules/BeltSystem.md).BeltSystemInt
 
----
+*************************************************
 
 ## Table of contents
 
@@ -25,9 +25,9 @@
 
 #### Defined in
 
-[BeltSystem.ts:21](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L21)
+[BeltSystem.ts:21](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/BeltSystem.ts#L21)
 
----
+___
 
 ### colors
 
@@ -35,9 +35,9 @@
 
 #### Defined in
 
-[BeltSystem.ts:20](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L20)
+[BeltSystem.ts:20](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/BeltSystem.ts#L20)
 
----
+___
 
 ### name
 
@@ -45,9 +45,9 @@
 
 #### Defined in
 
-[BeltSystem.ts:16](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L16)
+[BeltSystem.ts:16](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/BeltSystem.ts#L16)
 
----
+___
 
 ### refreshInterval
 
@@ -55,9 +55,9 @@
 
 #### Defined in
 
-[BeltSystem.ts:19](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L19)
+[BeltSystem.ts:19](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/BeltSystem.ts#L19)
 
----
+___
 
 ### title
 
@@ -65,9 +65,9 @@
 
 #### Defined in
 
-[BeltSystem.ts:17](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L17)
+[BeltSystem.ts:17](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/BeltSystem.ts#L17)
 
----
+___
 
 ### transitionCSS
 
@@ -75,4 +75,4 @@
 
 #### Defined in
 
-[BeltSystem.ts:18](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/BeltSystem.ts#L18)
+[BeltSystem.ts:18](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/BeltSystem.ts#L18)

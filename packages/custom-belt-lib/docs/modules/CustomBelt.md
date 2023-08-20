@@ -26,10 +26,10 @@ Create new CustomBeltInit object
 
 #### Parameters
 
-| Name        | Type                                             | Description                                                          |
-| :---------- | :----------------------------------------------- | :------------------------------------------------------------------- |
-| `selectors` | `null` \| `string`[] \| `HTMLElement`[]          | array of HTMLElements or array of HTML Ids and/or Classes to replace |
-| `beltProps` | [`BeltProps`](../interfaces/Belt.BeltProps.md)[] | -                                                                    |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `selectors` | ``null`` \| `string`[] \| `HTMLElement`[] | array of HTMLElements or array of HTML Ids and/or Classes to replace |
+| `beltProps` | [`BeltProps`](../interfaces/Belt.BeltProps.md)[] | - |
 
 #### Returns
 
@@ -39,4 +39,4 @@ CustomBeltInit object
 
 #### Defined in
 
-[CustomBelt.ts:31](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L31)
+[CustomBelt.ts:31](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L31)

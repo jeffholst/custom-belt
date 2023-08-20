@@ -4,7 +4,7 @@
 
 [CustomBelt](../modules/CustomBelt.md).CustomBelt
 
----
+*************************************************
 
 ## Table of contents
 
@@ -60,13 +60,13 @@ Instantiate a new CustomBelt object
 
 #### Parameters
 
-| Name             | Type                                                           | Description           |
-| :--------------- | :------------------------------------------------------------- | :-------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `customBeltInit` | [`CustomBeltInit`](../interfaces/CustomBelt.CustomBeltInit.md) | initialization object |
 
 #### Defined in
 
-[CustomBelt.ts:63](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L63)
+[CustomBelt.ts:63](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L63)
 
 ## Properties
 
@@ -76,9 +76,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:55](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L55)
+[CustomBelt.ts:55](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L55)
 
----
+___
 
 ### clickDelay
 
@@ -86,9 +86,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:54](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L54)
+[CustomBelt.ts:54](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L54)
 
----
+___
 
 ### clickTimer
 
@@ -96,19 +96,19 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:56](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L56)
+[CustomBelt.ts:56](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L56)
 
----
+___
 
 ### currentBelt
 
-• **currentBelt**: `null` \| [`BeltProps`](../interfaces/Belt.BeltProps.md)
+• **currentBelt**: ``null`` \| [`BeltProps`](../interfaces/Belt.BeltProps.md)
 
 #### Defined in
 
-[CustomBelt.ts:49](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L49)
+[CustomBelt.ts:49](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L49)
 
----
+___
 
 ### currentIndex
 
@@ -116,9 +116,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:50](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L50)
+[CustomBelt.ts:50](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L50)
 
----
+___
 
 ### customBeltInit
 
@@ -126,9 +126,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:48](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L48)
+[CustomBelt.ts:48](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L48)
 
----
+___
 
 ### elements
 
@@ -136,9 +136,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:52](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L52)
+[CustomBelt.ts:52](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L52)
 
----
+___
 
 ### originalId
 
@@ -146,9 +146,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:51](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L51)
+[CustomBelt.ts:51](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L51)
 
----
+___
 
 ### refreshIntervalId
 
@@ -156,9 +156,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:53](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L53)
+[CustomBelt.ts:53](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L53)
 
----
+___
 
 ### svgString
 
@@ -166,9 +166,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:57](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L57)
+[CustomBelt.ts:57](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L57)
 
----
+___
 
 ### valid
 
@@ -176,7 +176,7 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:58](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L58)
+[CustomBelt.ts:58](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L58)
 
 ## Methods
 
@@ -190,9 +190,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:100](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L100)
+[CustomBelt.ts:100](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L100)
 
----
+___
 
 ### borderColor
 
@@ -204,9 +204,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:104](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L104)
+[CustomBelt.ts:104](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L104)
 
----
+___
 
 ### destroy
 
@@ -218,9 +218,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:111](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L111)
+[CustomBelt.ts:111](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L111)
 
----
+___
 
 ### doCallback
 
@@ -228,9 +228,9 @@ Instantiate a new CustomBelt object
 
 #### Parameters
 
-| Name           | Type                                                    |
-| :------------- | :------------------------------------------------------ |
-| `event`        | `null` \| `Event`                                       |
+| Name | Type |
+| :------ | :------ |
+| `event` | ``null`` \| `Event` |
 | `callbackType` | [`BeltCallbackType`](../enums/Belt.BeltCallbackType.md) |
 
 #### Returns
@@ -239,9 +239,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:120](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L120)
+[CustomBelt.ts:120](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L120)
 
----
+___
 
 ### downLoadSVG
 
@@ -249,7 +249,7 @@ Instantiate a new CustomBelt object
 
 #### Parameters
 
-| Name    | Type    |
+| Name | Type |
 | :------ | :------ |
 | `event` | `Event` |
 
@@ -259,9 +259,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:126](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L126)
+[CustomBelt.ts:126](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L126)
 
----
+___
 
 ### getColor
 
@@ -269,8 +269,8 @@ Instantiate a new CustomBelt object
 
 #### Parameters
 
-| Name       | Type     |
-| :--------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `hexColor` | `string` |
 
 #### Returns
@@ -279,9 +279,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:149](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L149)
+[CustomBelt.ts:149](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L149)
 
----
+___
 
 ### getSVGString
 
@@ -293,9 +293,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:169](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L169)
+[CustomBelt.ts:169](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L169)
 
----
+___
 
 ### getStripeIndex
 
@@ -303,8 +303,8 @@ Instantiate a new CustomBelt object
 
 #### Parameters
 
-| Name          | Type     |
-| :------------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `stripeCount` | `number` |
 
 #### Returns
@@ -313,9 +313,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:158](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L158)
+[CustomBelt.ts:158](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L158)
 
----
+___
 
 ### hasPatch
 
@@ -327,9 +327,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:637](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L637)
+[CustomBelt.ts:637](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L637)
 
----
+___
 
 ### hasProfessorPatch
 
@@ -341,9 +341,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:644](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L644)
+[CustomBelt.ts:644](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L644)
 
----
+___
 
 ### initElements
 
@@ -355,9 +355,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:651](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L651)
+[CustomBelt.ts:651](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L651)
 
----
+___
 
 ### isValid
 
@@ -369,9 +369,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:682](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L682)
+[CustomBelt.ts:682](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L682)
 
----
+___
 
 ### oneClick
 
@@ -379,7 +379,7 @@ Instantiate a new CustomBelt object
 
 #### Parameters
 
-| Name    | Type    |
+| Name | Type |
 | :------ | :------ |
 | `event` | `Event` |
 
@@ -389,9 +389,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:686](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L686)
+[CustomBelt.ts:686](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L686)
 
----
+___
 
 ### patchBorderColor
 
@@ -403,9 +403,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:710](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L710)
+[CustomBelt.ts:710](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L710)
 
----
+___
 
 ### patchColor
 
@@ -417,9 +417,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:703](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L703)
+[CustomBelt.ts:703](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L703)
 
----
+___
 
 ### professorPatchColor
 
@@ -431,9 +431,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:717](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L717)
+[CustomBelt.ts:717](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L717)
 
----
+___
 
 ### refreshElements
 
@@ -445,9 +445,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:724](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L724)
+[CustomBelt.ts:724](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L724)
 
----
+___
 
 ### stripe
 
@@ -455,8 +455,8 @@ Instantiate a new CustomBelt object
 
 #### Parameters
 
-| Name          | Type     |
-| :------------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `stripeCount` | `number` |
 
 #### Returns
@@ -465,9 +465,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:732](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L732)
+[CustomBelt.ts:732](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L732)
 
----
+___
 
 ### stripeStyle
 
@@ -475,10 +475,10 @@ Instantiate a new CustomBelt object
 
 #### Parameters
 
-| Name          | Type     |
-| :------------ | :------- |
+| Name | Type |
+| :------ | :------ |
 | `stripeCount` | `number` |
-| `fillColor`   | `string` |
+| `fillColor` | `string` |
 
 #### Returns
 
@@ -486,9 +486,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:775](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L775)
+[CustomBelt.ts:775](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L775)
 
----
+___
 
 ### transition
 
@@ -500,9 +500,9 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:786](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L786)
+[CustomBelt.ts:786](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L786)
 
----
+___
 
 ### transitionNextBelt
 
@@ -514,4 +514,4 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:794](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/CustomBelt.ts#L794)
+[CustomBelt.ts:794](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/CustomBelt.ts#L794)

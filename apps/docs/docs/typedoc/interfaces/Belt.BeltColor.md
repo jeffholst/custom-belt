@@ -7,7 +7,7 @@
 Used to assign/lookup friendly names to hex colors
 
 ```js
-const beltColors: BeltColor = { name: 'White', hex: '#FFFFFF' };
+const beltColors: BeltColor = { name: "White", hex: "#FFFFFF"};
 ```
 
 ## Table of contents
@@ -27,9 +27,9 @@ hex code beginning with # then 3 or 6 valid hex characters (ex. "#FFFFFF")
 
 #### Defined in
 
-[Belt.ts:105](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L105)
+[Belt.ts:105](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L105)
 
----
+___
 
 ### name
 
@@ -39,4 +39,4 @@ friendly lookup name for hex color (ex. "White")
 
 #### Defined in
 
-[Belt.ts:109](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L109)
+[Belt.ts:109](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L109)

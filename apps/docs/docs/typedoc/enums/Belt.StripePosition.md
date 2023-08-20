@@ -17,18 +17,18 @@ Where to start stripe placement on patch (Left or Right)
 
 ### Left
 
-• **Left** = `"Left"`
+• **Left** = ``"Left"``
 
 #### Defined in
 
-[Belt.ts:58](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L58)
+[Belt.ts:58](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L58)
 
----
+___
 
 ### Right
 
-• **Right** = `"Right"`
+• **Right** = ``"Right"``
 
 #### Defined in
 
-[Belt.ts:59](https://github.com/jeffholst/custom-belt/blob/3e8ce41/packages/custom-belt-lib/src/Belt.ts#L59)
+[Belt.ts:59](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L59)
