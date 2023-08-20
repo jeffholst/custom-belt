@@ -2,7 +2,6 @@ import {
   BeltProps,
   BeltCallbackType,
   combineBeltProps,
-  getBeltPropsSolid,
   getBeltPropsStriped,
   StripePosition
 } from './Belt';
