@@ -1,7 +1,7 @@
 {
   "name": "custom-belt-lib",
   "author": "Jeff Holst",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "commonjs",
   "private": false,
   "files": [
