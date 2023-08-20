@@ -42,6 +42,63 @@ const belts: belt.Belt[] = [
 ];
 
 /**
+ * Default values tests
+ */
+describe('Default Values', () => {
+  /**
+   * Test DefaultBeltColor has expected value
+   */
+  it(`DefaultBeltColor is valid`, () => {
+    expect(belt.DefaultBeltColor).toBe('#FF0000');
+  });
+
+  /**
+   * Test DefaultBeltBorderColor has expected value
+   */
+  it(`DefaultBeltBorderColor is valid`, () => {
+    expect(belt.DefaultBeltBorderColor).toBe('#434244');
+  });
+
+  /**
+   * Test MaximumStripeCount has expected value
+   */
+  it(`MaximumStripeCount is valid`, () => {
+    expect(belt.MaximumStripeCount).toBe(10);
+  });
+
+  /**
+   * Test MinimumStripeCount has expected value
+   */
+  it(`MinimumStripeCount is valid`, () => {
+    expect(belt.MinimumStripeCount).toBe(0);
+  });
+
+  /**
+   * Test StripePositionDefault has expected value
+   */
+  it(`StripePositionDefault is valid`, () => {
+    expect(belt.StripePositionDefault).toBe(belt.StripePosition.Right);
+  });
+});
+
+/**
+ * BeltCallbackType tests
+ */
+describe('BeltCallbackType', () => {
+  let rval = '';
+  for (const ss in belt.BeltCallbackType) {
+    rval += ss;
+
+    /**
+     * Test that BeltCallbackType only contains expected values
+     */
+    it(`is iterable`, () => {
+      expect(rval).toBe('RefreshClickDoubleClick');
+    });
+  }
+});
+
+/**
  * StripeStart tests
  */
 describe('StripeStart', () => {
@@ -171,6 +228,24 @@ describe('mapBeltColors', () => {
  * Test that getBeltProps returns expected values
  */
 describe('getBeltProps', () => {
+  const beltProps: belt.BeltProps[] = belt.getBeltProps(
+    'belt',
+    belt.BeltType.Solid,
+    '#FFFFFF',
+    '#000000',
+    '#00FF00'
+  );
+  it('should match snap', () => {
+    beltProps[0].id = ''; // blank id so snapshot doesn't fail
+    beltProps[0].version = ''; // blank out version so snapshot does not fail
+    expect(beltProps[0]).toMatchSnapshot();
+  });
+});
+
+/**
+ * Test that getBeltPropsFromBelt returns expected values
+ */
+describe('getBeltPropsFromBelt', () => {
   const myBelt: belt.Belt = belt.getBelt();
   it('should match snap', () => {
     const beltProps: belt.BeltProps = belt.getBeltPropsFromBelt(
@@ -184,6 +259,75 @@ describe('getBeltProps', () => {
     beltProps.id = ''; // blank id so snapshot doesn't fail
     beltProps.version = ''; // blank out version so snapshot does not fail
     expect(beltProps).toMatchSnapshot();
+  });
+});
+
+/**
+ * Test that getBeltPropsCheckered returns expected values
+ */
+describe('getBeltPropsCheckered', () => {
+  const checkeredBelt: belt.BeltProps[] = belt.getBeltPropsCheckered(
+    'checkered',
+    '#FFFFFF',
+    '#000000'
+  ); // arbitrary values
+  checkeredBelt[0].id = ''; // blank id so snapshot doesn't fail
+  checkeredBelt[0].version = ''; // blank id so snapshot doesn't fail
+  it('should match snap', () => {
+    expect(checkeredBelt).toMatchSnapshot();
+  });
+});
+
+/**
+ * Test that getBeltPropsCoral returns expected values
+ */
+describe('getBeltPropsCoral', () => {
+  const coralBelt: belt.BeltProps[] = belt.getBeltPropsCoral('coral', '#FFFFFF', '#000000'); // arbitrary values
+  coralBelt[0].id = ''; // blank id so snapshot doesn't fail
+  coralBelt[0].version = ''; // blank id so snapshot doesn't fail
+  it('should match snap', () => {
+    expect(coralBelt).toMatchSnapshot();
+  });
+});
+
+/**
+ * Test that getBeltPropsSolid returns expected values
+ */
+describe('getBeltPropsSolid', () => {
+  const solidBelt: belt.BeltProps[] = belt.getBeltPropsSolid('solid', '#FFFFFF'); // arbitrary values
+  solidBelt[0].id = ''; // blank id so snapshot doesn't fail
+  solidBelt[0].version = ''; // blank id so snapshot doesn't fail
+  it('should match snap', () => {
+    expect(solidBelt).toMatchSnapshot();
+  });
+});
+
+/**
+ * Test that getBeltPropsSplit returns expected values
+ */
+describe('getBeltPropsSplit', () => {
+  const splitBelt: belt.BeltProps[] = belt.getBeltPropsSplit('solid', '#FFFFFF', '#000000'); // arbitrary values
+  splitBelt[0].id = ''; // blank id so snapshot doesn't fail
+  splitBelt[0].version = ''; // blank id so snapshot doesn't fail
+  it('should match snap', () => {
+    expect(splitBelt).toMatchSnapshot();
+  });
+});
+
+/**
+ * Test that getBeltPropsStriped returns expected values
+ */
+describe('getBeltPropsStriped', () => {
+  const stripedBelt: belt.BeltProps[] = belt.getBeltPropsStriped(
+    'solid',
+    '#FFFFFF',
+    '#000000',
+    '#00FF00'
+  ); // arbitrary values
+  stripedBelt[0].id = ''; // blank id so snapshot doesn't fail
+  stripedBelt[0].version = ''; // blank id so snapshot doesn't fail
+  it('should match snap', () => {
+    expect(stripedBelt).toMatchSnapshot();
   });
 });
 
@@ -390,5 +534,47 @@ describe('validateBelt_StripeCount', () => {
     expect(b.color1).toBe(belt.DefaultBeltColor);
     expect(b.color2).toBe(belt.DefaultBeltColor);
     expect(b.color3).toBe(belt.DefaultBeltColor);
+  });
+});
+
+/*
+ * Test that getBeltColorCount returns expected values
+ */
+describe('getBeltColorCount', () => {
+  it('Solid should be one', () => {
+    const solid = belt.getBeltColorCount(belt.BeltType.Solid);
+    expect(solid).toBe(1);
+  });
+
+  it('Coral should be two', () => {
+    const coral = belt.getBeltColorCount(belt.BeltType.Coral);
+    expect(coral).toBe(2);
+  });
+
+  it('Split should be two', () => {
+    const split = belt.getBeltColorCount(belt.BeltType.Split);
+    expect(split).toBe(2);
+  });
+
+  it('Checkered should be two', () => {
+    const checkered = belt.getBeltColorCount(belt.BeltType.Checkered);
+    expect(checkered).toBe(2);
+  });
+
+  it('Striped should be three', () => {
+    const striped = belt.getBeltColorCount(belt.BeltType.Striped);
+    expect(striped).toBe(3);
+  });
+
+  it('Crazy should be three', () => {
+    const crazy = belt.getBeltColorCount(belt.BeltType.Crazy);
+    expect(crazy).toBe(3);
+  });
+
+  it('Invalid should be zero', () => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    const invalid = belt.getBeltColorCount('invalid');
+    expect(invalid).toBe(0);
   });
 });
