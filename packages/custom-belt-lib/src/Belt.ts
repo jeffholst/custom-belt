@@ -1,5 +1,5 @@
-//import { version } from "../package.json"
-const version = '0.0.0';
+import { version } from '../package.json';
+//const version = '0.0.3';
 
 /****************************************************/
 // ENUMS
@@ -214,13 +214,14 @@ const UniqueIDPrefix = 'custom-belt-'; // prefix for unique ID generation
 
 /** Default color when no color provided */
 export const DefaultBeltColor = '#FF0000';
+/** Default border color when no color provided */
+export const DefaultBeltBorderColor = '#434244';
 /** Maximum number of stripes a belt may have */
 export const MaximumStripeCount = 10;
 /** Minimum number of stripes */
 export const MinimumStripeCount = 0;
 /** Default stripe position */
 export const StripePositionDefault = StripePosition.Right;
-
 /****************************************************/
 // EXPORT FUNCTIONS
 /****************************************************/
@@ -370,7 +371,7 @@ export const getBeltProps = (
   color2: string,
   color3: string,
   id = 0,
-  borderColor = '#434244',
+  borderColor = DefaultBeltBorderColor,
   hasPatch = true,
   patchColor = '#000000',
   patchBorderColor = '',
@@ -451,7 +452,7 @@ export const getBeltPropsCheckered = (
   color1: string,
   color2: string,
   id = 0,
-  borderColor = '#434244',
+  borderColor = DefaultBeltBorderColor,
   hasPatch = true,
   patchColor = '#000000',
   patchBorderColor = '',
@@ -520,7 +521,7 @@ export const getBeltPropsCoral = (
   color1: string,
   color2: string,
   id = 0,
-  borderColor = '#434244',
+  borderColor = DefaultBeltBorderColor,
   hasPatch = true,
   patchColor = '#000000',
   patchBorderColor = '',
@@ -581,7 +582,7 @@ export const getBeltPropsCoral = (
  * @return {BeltProps[]} BeltProps[] array
  */
 export const getBeltPropsCrazy = (
-  borderColor = '#434244',
+  borderColor = DefaultBeltBorderColor,
   hasPatch = true,
   patchColor = '#000000',
   patchBorderColor = '',
@@ -909,7 +910,7 @@ export const getBeltPropsSolid = (
   name: string,
   color: string,
   id = 0,
-  borderColor = '#434244',
+  borderColor = DefaultBeltBorderColor,
   hasPatch = true,
   patchColor = '#000000',
   patchBorderColor = '',
@@ -978,7 +979,7 @@ export const getBeltPropsSplit = (
   color1: string,
   color2: string,
   id = 0,
-  borderColor = '#434244',
+  borderColor = DefaultBeltBorderColor,
   hasPatch = true,
   patchColor = '#000000',
   patchBorderColor = '',
@@ -1049,7 +1050,7 @@ export const getBeltPropsStriped = (
   color2: string,
   color3: string,
   id = 0,
-  borderColor = '#434244',
+  borderColor = DefaultBeltBorderColor,
   hasPatch = true,
   patchColor = '#000000',
   patchBorderColor = '',
