@@ -1,8 +1,8 @@
 {
   "name": "custom-belt-lib",
   "author": "Jeff Holst",
-  "version": "0.0.3",
-  "type": "commonjs",
+  "version": "0.0.7",
+  "type": "module",
   "private": false,
   "files": [
     "dist"
@@ -11,7 +11,7 @@
   "module": "./dist/custom-belt-lib.js",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./dist/src/index.d.ts",
       "import": "./dist/custom-belt-lib.js",
       "require": "./dist/custom-belt-lib.umd.cjs"
     }
@@ -30,6 +30,7 @@
     "gulp": "^4.0.2",
     "playwright": "^1.36.2",
     "prettier": "^2.8.8",
+    "ts-node": "^10.9.1",
     "typedoc": "^0.24.7",
     "typedoc-plugin-markdown": "^3.15.3",
     "typedoc-plugin-missing-exports": "^2.0.0",
