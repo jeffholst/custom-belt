@@ -24,7 +24,7 @@ Settings for random belt generation
 
 #### Defined in
 
-[Belt.ts:202](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L202)
+[Belt.ts:202](https://github.com/jeffholst/custom-belt/blob/f2fe97c/packages/custom-belt-lib/src/Belt.ts#L202)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[Belt.ts:203](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L203)
+[Belt.ts:203](https://github.com/jeffholst/custom-belt/blob/f2fe97c/packages/custom-belt-lib/src/Belt.ts#L203)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[Belt.ts:206](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L206)
+[Belt.ts:206](https://github.com/jeffholst/custom-belt/blob/f2fe97c/packages/custom-belt-lib/src/Belt.ts#L206)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[Belt.ts:204](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L204)
+[Belt.ts:204](https://github.com/jeffholst/custom-belt/blob/f2fe97c/packages/custom-belt-lib/src/Belt.ts#L204)
 
 ___
 
@@ -64,4 +64,4 @@ ___
 
 #### Defined in
 
-[Belt.ts:205](https://github.com/jeffholst/custom-belt/blob/d7c3591/packages/custom-belt-lib/src/Belt.ts#L205)
+[Belt.ts:205](https://github.com/jeffholst/custom-belt/blob/f2fe97c/packages/custom-belt-lib/src/Belt.ts#L205)
