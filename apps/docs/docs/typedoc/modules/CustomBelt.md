@@ -39,4 +39,4 @@ CustomBeltInit object
 
 #### Defined in
 
-[CustomBelt.ts:31](https://github.com/jeffholst/custom-belt/blob/f2fe97c/packages/custom-belt-lib/src/CustomBelt.ts#L31)
+[CustomBelt.ts:31](https://github.com/jeffholst/custom-belt/blob/9cbd5ad/packages/custom-belt-lib/src/CustomBelt.ts#L31)
