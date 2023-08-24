@@ -86,7 +86,7 @@ export class CustomBelt {
       this.currentBelt.refreshInterval != undefined &&
       this.currentBelt.refreshInterval > 0
     ) {
-      this.originalId = this.customBeltInit.beltProps[0].id;
+      this.originalId = this.customBeltInit.beltProps[0].elementId;
       if (this.refreshIntervalId != undefined) {
         clearInterval(this.refreshIntervalId);
       }
@@ -811,7 +811,7 @@ export class CustomBelt {
       );
       this.currentBelt = randomBelt[0];
     }
-    this.currentBelt.id = this.originalId; // keep the same element id
+    this.currentBelt.elementId = this.originalId; // keep the same element id
     this.refreshElements();
     this.doCallback(null, BeltCallbackType.Refresh);
     this.refreshIntervalId = setTimeout(this.transitionNextBelt, this.currentBelt.refreshInterval);

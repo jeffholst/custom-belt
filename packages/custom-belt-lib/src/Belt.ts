@@ -115,7 +115,7 @@ export interface BeltColor {
  */
 export interface BeltProps {
   version: string;
-  id: string;
+  elementId: string;
   belt: Belt;
   borderColor: string;
   hasPatch: boolean;
@@ -635,7 +635,7 @@ export const getBeltPropsFromBelt = (
   const randomSettings: RandomSettings = getRandomSettings();
   const beltProps: BeltProps = {
     version: version,
-    id: generateUniqueId(),
+    elementId: '',
     belt: belt,
     borderColor: '',
     hasPatch: true,

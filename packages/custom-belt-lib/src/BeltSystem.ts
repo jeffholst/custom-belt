@@ -131,8 +131,8 @@ export class BeltSystem {
     this.belts.forEach((belt) => {
       const beltProps = this.getBeltProps(belt, belt.minStripes, belt.stripePosition, callback);
       // use same element id for all belts
-      if (uniqueElementId === undefined) uniqueElementId = beltProps.id;
-      else beltProps.id = uniqueElementId;
+      if (uniqueElementId === undefined) uniqueElementId = beltProps.elementId;
+      else beltProps.elementId = uniqueElementId;
       beltProps.transitionCSS = transitionCSS;
       beltProps.refreshInterval = refreshInterval;
       beltPropsAry.push(beltProps);
