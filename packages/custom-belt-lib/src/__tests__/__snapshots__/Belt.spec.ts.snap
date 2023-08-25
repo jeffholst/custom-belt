@@ -26,7 +26,6 @@ exports[`getBeltProps > should match snap 1`] = `
   },
   "borderColor": "#434244",
   "callback": undefined,
-  "elementId": "",
   "hasPatch": true,
   "hasProfessorPatch": false,
   "patchBorder": "",
@@ -106,7 +105,6 @@ exports[`getBeltProps > should match snap 1`] = `
   "stripeCount": 0,
   "stripePosition": "Right",
   "transitionCSS": "",
-  "version": "",
 }
 `;
 
@@ -137,7 +135,6 @@ exports[`getBeltPropsCheckered > should match snap 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "",
@@ -217,7 +214,6 @@ exports[`getBeltPropsCheckered > should match snap 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -249,7 +245,6 @@ exports[`getBeltPropsCoral > should match snap 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "",
@@ -329,7 +324,6 @@ exports[`getBeltPropsCoral > should match snap 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -360,7 +354,6 @@ exports[`getBeltPropsFromBelt > should match snap 1`] = `
   },
   "borderColor": "",
   "callback": undefined,
-  "elementId": "",
   "hasPatch": false,
   "hasProfessorPatch": false,
   "patchBorder": "",
@@ -440,7 +433,6 @@ exports[`getBeltPropsFromBelt > should match snap 1`] = `
   "stripeCount": 0,
   "stripePosition": "Left",
   "transitionCSS": "",
-  "version": "",
 }
 `;
 
@@ -471,7 +463,6 @@ exports[`getBeltPropsSolid > should match snap 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "",
@@ -551,7 +542,6 @@ exports[`getBeltPropsSolid > should match snap 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -583,7 +573,6 @@ exports[`getBeltPropsSplit > should match snap 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "",
@@ -663,7 +652,6 @@ exports[`getBeltPropsSplit > should match snap 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -695,7 +683,6 @@ exports[`getBeltPropsStriped > should match snap 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "",
@@ -775,7 +762,6 @@ exports[`getBeltPropsStriped > should match snap 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;

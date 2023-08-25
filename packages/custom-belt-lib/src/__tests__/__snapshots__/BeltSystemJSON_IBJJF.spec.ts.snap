@@ -26,7 +26,6 @@ exports[`IBJJF System > Black 1`] = `
     },
     "borderColor": "#CCCCCC",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": true,
     "patchBorder": "#CCCCCC",
@@ -106,7 +105,6 @@ exports[`IBJJF System > Black 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -137,7 +135,6 @@ exports[`IBJJF System > Blue 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -217,7 +214,6 @@ exports[`IBJJF System > Blue 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -248,7 +244,6 @@ exports[`IBJJF System > Brown 1`] = `
     },
     "borderColor": "#CCCCCC",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#CCCCCC",
@@ -328,7 +323,6 @@ exports[`IBJJF System > Brown 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -359,7 +353,6 @@ exports[`IBJJF System > Gray 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -439,7 +432,6 @@ exports[`IBJJF System > Gray 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -470,7 +462,6 @@ exports[`IBJJF System > Gray/Black 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -550,7 +541,6 @@ exports[`IBJJF System > Gray/Black 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -581,7 +571,6 @@ exports[`IBJJF System > Gray/White 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -661,7 +650,6 @@ exports[`IBJJF System > Gray/White 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -692,7 +680,6 @@ exports[`IBJJF System > Green 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -772,7 +759,6 @@ exports[`IBJJF System > Green 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -803,7 +789,6 @@ exports[`IBJJF System > Green/Black 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -883,7 +868,6 @@ exports[`IBJJF System > Green/Black 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -914,7 +898,6 @@ exports[`IBJJF System > Green/White 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -994,7 +977,6 @@ exports[`IBJJF System > Green/White 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -1490,7 +1472,6 @@ exports[`IBJJF System > Orange 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1570,7 +1551,6 @@ exports[`IBJJF System > Orange 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -1601,7 +1581,6 @@ exports[`IBJJF System > Orange/Black 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1681,7 +1660,6 @@ exports[`IBJJF System > Orange/Black 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -1712,7 +1690,6 @@ exports[`IBJJF System > Orange/White 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1792,7 +1769,6 @@ exports[`IBJJF System > Orange/White 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -1823,7 +1799,6 @@ exports[`IBJJF System > Purple 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1903,7 +1878,6 @@ exports[`IBJJF System > Purple 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -1934,7 +1908,6 @@ exports[`IBJJF System > Red 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": true,
     "patchBorder": "#434244",
@@ -2014,7 +1987,6 @@ exports[`IBJJF System > Red 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -2045,7 +2017,6 @@ exports[`IBJJF System > Red/Black 1`] = `
     },
     "borderColor": "#CCCCCC",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": true,
     "patchBorder": "#CCCCCC",
@@ -2125,7 +2096,6 @@ exports[`IBJJF System > Red/Black 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -2156,7 +2126,6 @@ exports[`IBJJF System > Red/White 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": true,
     "patchBorder": "#434244",
@@ -2236,7 +2205,6 @@ exports[`IBJJF System > Red/White 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -2267,7 +2235,6 @@ exports[`IBJJF System > White 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -2347,7 +2314,6 @@ exports[`IBJJF System > White 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -2378,7 +2344,6 @@ exports[`IBJJF System > Yellow 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -2458,7 +2423,6 @@ exports[`IBJJF System > Yellow 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -2489,7 +2453,6 @@ exports[`IBJJF System > Yellow/Black 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -2569,7 +2532,6 @@ exports[`IBJJF System > Yellow/Black 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -2600,7 +2562,6 @@ exports[`IBJJF System > Yellow/White 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -2680,7 +2641,6 @@ exports[`IBJJF System > Yellow/White 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;

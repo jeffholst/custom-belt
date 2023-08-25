@@ -21,7 +21,7 @@ CustomBelt Initializer Object
 
 #### Defined in
 
-[CustomBelt.ts:19](https://github.com/jeffholst/custom-belt/blob/9cbd5ad/packages/custom-belt-lib/src/CustomBelt.ts#L19)
+[CustomBelt.ts:26](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L26)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:18](https://github.com/jeffholst/custom-belt/blob/9cbd5ad/packages/custom-belt-lib/src/CustomBelt.ts#L18)
+[CustomBelt.ts:25](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L25)

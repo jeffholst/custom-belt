@@ -1,6 +1,3 @@
-import { version } from '../package.json';
-//const version = '0.0.3';
-
 /****************************************************/
 // ENUMS
 /****************************************************/
@@ -114,8 +111,6 @@ export interface BeltColor {
  * @interface
  */
 export interface BeltProps {
-  version: string;
-  elementId: string;
   belt: Belt;
   borderColor: string;
   hasPatch: boolean;
@@ -209,8 +204,6 @@ export interface RandomSettings {
 /****************************************************/
 // DEFAULTS
 /****************************************************/
-
-const UniqueIDPrefix = 'custom-belt-'; // prefix for unique ID generation
 
 /** Default color when no color provided */
 export const DefaultBeltColor = '#FF0000';
@@ -634,8 +627,6 @@ export const getBeltPropsFromBelt = (
 ): BeltProps => {
   const randomSettings: RandomSettings = getRandomSettings();
   const beltProps: BeltProps = {
-    version: version,
-    elementId: '',
     belt: belt,
     borderColor: '',
     hasPatch: true,
@@ -1175,14 +1166,6 @@ export const mapBeltColors = (belts: Belt[], colors: BeltColor[]) => {
  * | |__/ _ \/ _/ _` | | | _| || | ' \/ _|  _| / _ \ ' \(_-<
  * |____\___/\__\__,_|_| |_| \_,_|_||_\__|\__|_\___/_||_/__/
  */
-
-/**
- * Generate a unique id suitable for use as element id
- * @return {string} unique id
- */
-const generateUniqueId = (): string => {
-  return `${UniqueIDPrefix}${Date.now()}${Math.floor(Math.random() * 1000)}`;
-};
 
 /**
  * Get index of BeltType

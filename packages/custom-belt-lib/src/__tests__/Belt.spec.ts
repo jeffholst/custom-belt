@@ -236,8 +236,6 @@ describe('getBeltProps', () => {
     '#00FF00'
   );
   it('should match snap', () => {
-    beltProps[0].elementId = ''; // blank id so snapshot doesn't fail
-    beltProps[0].version = ''; // blank out version so snapshot does not fail
     expect(beltProps[0]).toMatchSnapshot();
   });
 });
@@ -256,8 +254,6 @@ describe('getBeltPropsFromBelt', () => {
       0,
       undefined
     );
-    beltProps.elementId = ''; // blank id so snapshot doesn't fail
-    beltProps.version = ''; // blank out version so snapshot does not fail
     expect(beltProps).toMatchSnapshot();
   });
 });
@@ -271,8 +267,6 @@ describe('getBeltPropsCheckered', () => {
     '#FFFFFF',
     '#000000'
   ); // arbitrary values
-  checkeredBelt[0].elementId = ''; // blank id so snapshot doesn't fail
-  checkeredBelt[0].version = ''; // blank id so snapshot doesn't fail
   it('should match snap', () => {
     expect(checkeredBelt).toMatchSnapshot();
   });
@@ -283,8 +277,6 @@ describe('getBeltPropsCheckered', () => {
  */
 describe('getBeltPropsCoral', () => {
   const coralBelt: belt.BeltProps[] = belt.getBeltPropsCoral('coral', '#FFFFFF', '#000000'); // arbitrary values
-  coralBelt[0].elementId = ''; // blank id so snapshot doesn't fail
-  coralBelt[0].version = ''; // blank id so snapshot doesn't fail
   it('should match snap', () => {
     expect(coralBelt).toMatchSnapshot();
   });
@@ -295,8 +287,6 @@ describe('getBeltPropsCoral', () => {
  */
 describe('getBeltPropsSolid', () => {
   const solidBelt: belt.BeltProps[] = belt.getBeltPropsSolid('solid', '#FFFFFF'); // arbitrary values
-  solidBelt[0].elementId = ''; // blank id so snapshot doesn't fail
-  solidBelt[0].version = ''; // blank id so snapshot doesn't fail
   it('should match snap', () => {
     expect(solidBelt).toMatchSnapshot();
   });
@@ -307,8 +297,6 @@ describe('getBeltPropsSolid', () => {
  */
 describe('getBeltPropsSplit', () => {
   const splitBelt: belt.BeltProps[] = belt.getBeltPropsSplit('solid', '#FFFFFF', '#000000'); // arbitrary values
-  splitBelt[0].elementId = ''; // blank id so snapshot doesn't fail
-  splitBelt[0].version = ''; // blank id so snapshot doesn't fail
   it('should match snap', () => {
     expect(splitBelt).toMatchSnapshot();
   });
@@ -324,8 +312,6 @@ describe('getBeltPropsStriped', () => {
     '#000000',
     '#00FF00'
   ); // arbitrary values
-  stripedBelt[0].elementId = ''; // blank id so snapshot doesn't fail
-  stripedBelt[0].version = ''; // blank id so snapshot doesn't fail
   it('should match snap', () => {
     expect(stripedBelt).toMatchSnapshot();
   });

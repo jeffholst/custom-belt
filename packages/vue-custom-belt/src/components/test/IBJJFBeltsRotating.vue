@@ -26,7 +26,7 @@ const ibjjBeltName = ref(allIBJJBelts[0].belt.name);
   <h1 class="text-2xl font-bold text-slate-800 dark:text-white pb-10">
     {{ ibjjfSystem.title }} Belts Rotating ({{ ibjjBeltName }})
   </h1>
-  <CustomBelt :belt-props="allIBJJBelts" />
+  <CustomBelt :belt-props="allIBJJBelts" element-id="allIBJJBelts" />
 </template>
 
 <style scoped></style>

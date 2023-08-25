@@ -15,7 +15,7 @@ const ibjjfSystem: BeltSystem = new BeltSystem(JSON.stringify(BeltSystemJSON_IBJ
       <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">
         {{ belt.name }}
       </h2>
-      <CustomBelt :belt-props="ibjjfSystem.getBeltPropsByName(belt.name)" />
+      <CustomBelt :belt-props="ibjjfSystem.getBeltPropsByName(belt.name)" :element-id="belt.name" />
     </div>
   </div>
 </template>

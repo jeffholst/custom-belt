@@ -12,12 +12,21 @@ describe('constructor instantiation', () => {
   });
 });
 
-describe('build svgString', () => {
+describe('build svgString with elementId', () => {
+  it(`returns valid whitebelt`, () => {
+    const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#00FF00');
+    const customBeltInit: CustomBeltInit = getCustomBeltInit([], whiteBelt);
+    const customBelt = new CustomBelt(customBeltInit, 'whiteBelt');
+    expect(customBelt.svgString).toMatchSnapshot();
+  });
+});
+
+describe('build svgString without elementId', () => {
   it(`returns valid whitebelt`, () => {
     const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#00FF00');
     const customBeltInit: CustomBeltInit = getCustomBeltInit([], whiteBelt);
     const customBelt = new CustomBelt(customBeltInit);
-    expect(customBelt.svgString).toMatchSnapshot();
+    expect(customBelt.svgString).toContain('id="custom-belt-');
   });
 });
 

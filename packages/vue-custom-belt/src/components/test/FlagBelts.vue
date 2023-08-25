@@ -70,7 +70,7 @@ const flagBelts = combineBeltProps([usaBelt, MexicoBelt]);
   <h1 class="text-2xl font-bold text-slate-800 dark:text-white pb-10">
     Flag Belts ({{ flagBeltName }})
   </h1>
-  <CustomBelt :belt-props="flagBelts" />
+  <CustomBelt :belt-props="flagBelts" element-id="flagBelts" />
 </template>
 
 <style scoped></style>

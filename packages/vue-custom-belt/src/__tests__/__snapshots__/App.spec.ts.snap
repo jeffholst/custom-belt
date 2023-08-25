@@ -2,7 +2,7 @@
 
 exports[`FlagBelts > renders properly 1`] = `
 "<h1 class=\\"text-2xl font-bold text-slate-800 dark:text-white pb-10\\"> Flag Belts (USA Belt) </h1>
-<div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+<div class=\\"customBelt\\"><svg id=\\"flagBelts\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
     <g id=\\"KnotBend3\\">
       <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #002868; transition: all 2.0s ease;;\\"></path>
       <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: Black; transition: all 2.0s ease;;\\"></path>
@@ -147,7 +147,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
 <div class=\\"grid grid-cols-2 gap-4\\">
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">White</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"White\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #FFFFFF; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -288,7 +288,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Gray/White</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Gray/White\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #999999; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -429,7 +429,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Gray</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Gray\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #999999; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -570,7 +570,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Gray/Black</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Gray/Black\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #999999; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -711,7 +711,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Yellow/White</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Yellow/White\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #FFCC00; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -852,7 +852,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Yellow</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Yellow\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #FFCC00; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -993,7 +993,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Yellow/Black</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Yellow/Black\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #FFCC00; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -1134,7 +1134,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Orange/White</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Orange/White\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #CC6633; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -1275,7 +1275,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Orange</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Orange\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #CC6633; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -1416,7 +1416,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Orange/Black</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Orange/Black\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #CC6633; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -1557,7 +1557,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Green/White</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Green/White\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #006633; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -1698,7 +1698,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Green</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Green\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #006633; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -1839,7 +1839,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Green/Black</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Green/Black\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #006633; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -1980,7 +1980,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Blue</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Blue\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #0099CC; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -2121,7 +2121,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Purple</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Purple\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #993399; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -2262,7 +2262,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Brown</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Brown\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #663300; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #CCCCCC; \\"></path>
@@ -2403,7 +2403,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Black</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Black\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #000000; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #CCCCCC; \\"></path>
@@ -2544,7 +2544,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Red/Black</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Red/Black\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #990000; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #CCCCCC; \\"></path>
@@ -2685,7 +2685,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Red/White</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Red/White\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #FFFFFF; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -2826,7 +2826,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
   </div>
   <div>
     <h2 class=\\"text-lg font-bold text-slate-800 dark:text-white py-5\\">Red</h2>
-    <div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+    <div class=\\"customBelt\\"><svg id=\\"Red\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
         <g id=\\"KnotBend3\\">
           <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #990000; \\"></path>
           <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; \\"></path>
@@ -2970,7 +2970,7 @@ exports[`IBJJFBeltsAll > renders properly 1`] = `
 
 exports[`IBJJFBeltsRotating > renders properly 1`] = `
 "<h1 class=\\"text-2xl font-bold text-slate-800 dark:text-white pb-10\\">IBJJF Belts Rotating (White) </h1>
-<div class=\\"customBelt\\"><svg id=\\"\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"\\" :data-belt=\\"\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
+<div class=\\"customBelt\\"><svg id=\\"allIBJJBelts\\" viewBox=\\"0 0 471.2 190.2\\" class=\\"customBelt\\" :data-version=\\"0.0.8\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\">
     <g id=\\"KnotBend3\\">
       <path id=\\"s7l3Color\\" d=\\"m169.7,34.3s-1.5,5,.2,7.4,24.9,1.8,24.9,1.8l-11.3-10.2-13.8,1h0Z\\" style=\\"fill: #FFFFFF; transition: all 3.0s ease-in-out;;\\"></path>
       <path id=\\"border8\\" d=\\"m187.3,45.6c-17.1,0-18.5-2-19-2.8-2.2-3.1-.7-8.5-.5-9.1l.4-1.3,16-1.2,15.6,14.1h-5c-2.8.2-5.3.2-7.5.3h0Zm-15.9-5c1.8.8,10,1.2,18.2,1.2l-6.9-6.2-11.5.9c-.3,1.5-.3,3.2.1,4.2h.1q0,0,0,0Zm-.1,0\\" style=\\"fill: #434244; transition: all 3.0s ease-in-out;;\\"></path>

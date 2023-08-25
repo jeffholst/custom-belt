@@ -127,12 +127,9 @@ export class BeltSystem {
     callback?: (callbackType: BeltCallbackType, belt: BeltProps, event: Event | null) => void
   ): BeltProps[] {
     const beltPropsAry: BeltProps[] = [];
-    let uniqueElementId: string | undefined = undefined;
     this.belts.forEach((belt) => {
       const beltProps = this.getBeltProps(belt, belt.minStripes, belt.stripePosition, callback);
       // use same element id for all belts
-      if (uniqueElementId === undefined) uniqueElementId = beltProps.elementId;
-      else beltProps.elementId = uniqueElementId;
       beltProps.transitionCSS = transitionCSS;
       beltProps.refreshInterval = refreshInterval;
       beltPropsAry.push(beltProps);

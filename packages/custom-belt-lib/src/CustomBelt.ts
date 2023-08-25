@@ -6,6 +6,13 @@ import {
   getBeltPropsRandom
 } from './Belt';
 
+import { version } from '../package.json';
+
+/****************************************************/
+// DEFAULTS
+/****************************************************/
+const UniqueIDPrefix = 'custom-belt-'; // prefix for unique ID generation
+
 /****************************************************/
 // INTERFACES
 /****************************************************/
@@ -48,7 +55,7 @@ export class CustomBelt {
   customBeltInit: CustomBeltInit;
   currentBelt: BeltProps | null;
   currentIndex: number;
-  originalId = '';
+  elementId: string;
   elements: HTMLElement[];
   refreshIntervalId: ReturnType<typeof setTimeout> | undefined = undefined;
   clickDelay = 700;
@@ -60,7 +67,13 @@ export class CustomBelt {
    * Instantiate a new CustomBelt object
    * @param {CustomBeltInit} customBeltInit initialization object
    */
-  constructor(customBeltInit: CustomBeltInit) {
+  constructor(customBeltInit: CustomBeltInit, elementId: string | null = null) {
+    if (elementId === null) {
+      this.elementId = this.generateUniqueId();
+    } else {
+      this.elementId = elementId;
+    }
+
     this.customBeltInit = customBeltInit;
     this.currentIndex = 0;
     this.refreshIntervalId = undefined;
@@ -86,7 +99,6 @@ export class CustomBelt {
       this.currentBelt.refreshInterval != undefined &&
       this.currentBelt.refreshInterval > 0
     ) {
-      this.originalId = this.customBeltInit.beltProps[0].elementId;
       if (this.refreshIntervalId != undefined) {
         clearInterval(this.refreshIntervalId);
       }
@@ -146,6 +158,10 @@ export class CustomBelt {
     }
   };
 
+  generateUniqueId = (): string => {
+    return `${UniqueIDPrefix}${Date.now()}${Math.floor(Math.random() * 1000)}`;
+  };
+
   getColor = (hexColor: string) => {
     if (hexColor === undefined) {
       return '';
@@ -153,6 +169,10 @@ export class CustomBelt {
     const result = `style='fill: ${hexColor}; ${this.additionalStyles()}'`;
 
     return result;
+  };
+
+  getElementId = (): string => {
+    return this.elementId;
   };
 
   getStripeIndex = (stripeCount: number): number => {
@@ -172,11 +192,10 @@ export class CustomBelt {
     }
 
     const svgString = `<svg
-    id=""
+    id="${this.elementId}"
     viewBox="0 0 471.2 190.2"
     class="customBelt"
-    :data-version=""
-    :data-belt=""
+    :data-version="${version}"
     role="img"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -811,7 +830,6 @@ export class CustomBelt {
       );
       this.currentBelt = randomBelt[0];
     }
-    this.currentBelt.elementId = this.originalId; // keep the same element id
     this.refreshElements();
     this.doCallback(null, BeltCallbackType.Refresh);
     this.refreshIntervalId = setTimeout(this.transitionNextBelt, this.currentBelt.refreshInterval);

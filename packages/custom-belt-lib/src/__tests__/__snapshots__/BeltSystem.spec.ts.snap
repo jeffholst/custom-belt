@@ -25,7 +25,6 @@ exports[`BeltSystem > getBeltProps returns valid data (stripePosition undefined)
   },
   "borderColor": "#434244",
   "callback": undefined,
-  "elementId": "",
   "hasPatch": true,
   "hasProfessorPatch": false,
   "patchBorder": "#434244",
@@ -105,7 +104,6 @@ exports[`BeltSystem > getBeltProps returns valid data (stripePosition undefined)
   "stripeCount": 2,
   "stripePosition": "Right",
   "transitionCSS": "",
-  "version": "",
 }
 `;
 
@@ -134,7 +132,6 @@ exports[`BeltSystem > getBeltProps returns valid data 1`] = `
   },
   "borderColor": "#434244",
   "callback": undefined,
-  "elementId": "",
   "hasPatch": true,
   "hasProfessorPatch": false,
   "patchBorder": "#434244",
@@ -214,7 +211,6 @@ exports[`BeltSystem > getBeltProps returns valid data 1`] = `
   "stripeCount": 1,
   "stripePosition": "Left",
   "transitionCSS": "",
-  "version": "",
 }
 `;
 
@@ -244,7 +240,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -324,7 +319,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -350,7 +344,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -430,7 +423,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -456,7 +448,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -536,7 +527,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -562,7 +552,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -642,7 +631,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -668,7 +656,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -748,7 +735,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -774,7 +760,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -854,7 +839,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -880,7 +864,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -960,7 +943,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -986,7 +968,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1066,7 +1047,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -1092,7 +1072,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1172,7 +1151,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -1198,7 +1176,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1278,7 +1255,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -1304,7 +1280,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1384,7 +1359,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -1410,7 +1384,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1490,7 +1463,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -1516,7 +1488,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1596,7 +1567,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -1622,7 +1592,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1702,7 +1671,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -1728,7 +1696,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -1808,7 +1775,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -1834,7 +1800,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#CCCCCC",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#CCCCCC",
@@ -1914,7 +1879,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -1940,7 +1904,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#CCCCCC",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": true,
     "patchBorder": "#CCCCCC",
@@ -2020,7 +1983,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -2046,7 +2008,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#CCCCCC",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": true,
     "patchBorder": "#CCCCCC",
@@ -2126,7 +2087,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 7,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -2152,7 +2112,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": true,
     "patchBorder": "#434244",
@@ -2232,7 +2191,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 8,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -2258,7 +2216,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": true,
     "patchBorder": "#434244",
@@ -2338,7 +2295,6 @@ exports[`BeltSystem > getBeltPropsAll returns valid data 1`] = `
     "stripeCount": 9,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
 ]
 `;
@@ -2369,7 +2325,6 @@ exports[`BeltSystem > getBeltPropsById returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -2449,7 +2404,6 @@ exports[`BeltSystem > getBeltPropsById returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -2480,7 +2434,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (no parms) 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -2560,7 +2513,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (no parms) 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
   {
     "belt": {
@@ -2586,7 +2538,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (no parms) 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": true,
     "patchBorder": "#434244",
@@ -2666,7 +2617,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (no parms) 1`] = `
     "stripeCount": 9,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -2697,7 +2647,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (with extra info) 1`]
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -2777,7 +2726,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (with extra info) 1`]
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -2803,7 +2751,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (with extra info) 1`]
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -2883,7 +2830,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (with extra info) 1`]
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
 ]
 `;
@@ -2914,7 +2860,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (with stripe info) 1`
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -2994,7 +2939,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (with stripe info) 1`
     "stripeCount": 1,
     "stripePosition": "Left",
     "transitionCSS": "",
-    "version": "",
   },
   {
     "belt": {
@@ -3020,7 +2964,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (with stripe info) 1`
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": true,
     "patchBorder": "#434244",
@@ -3100,7 +3043,6 @@ exports[`BeltSystem > getBeltPropsByIds returns valid data (with stripe info) 1`
     "stripeCount": 1,
     "stripePosition": "Left",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -3131,7 +3073,6 @@ exports[`BeltSystem > getBeltPropsByName returns valid data 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -3211,7 +3152,6 @@ exports[`BeltSystem > getBeltPropsByName returns valid data 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -3242,7 +3182,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (no parms) 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -3322,7 +3261,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (no parms) 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
   {
     "belt": {
@@ -3348,7 +3286,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (no parms) 1`] = `
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -3428,7 +3365,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (no parms) 1`] = `
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;
@@ -3459,7 +3395,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (with extra info) 1
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -3539,7 +3474,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (with extra info) 1
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
   {
     "belt": {
@@ -3565,7 +3499,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (with extra info) 1
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -3645,7 +3578,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (with extra info) 1
     "stripeCount": 0,
     "stripePosition": "Right",
     "transitionCSS": "test",
-    "version": "",
   },
 ]
 `;
@@ -3676,7 +3608,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (with stripe info) 
     },
     "borderColor": "#434244",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#434244",
@@ -3756,7 +3687,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (with stripe info) 
     "stripeCount": 1,
     "stripePosition": "Left",
     "transitionCSS": "",
-    "version": "",
   },
   {
     "belt": {
@@ -3782,7 +3712,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (with stripe info) 
     },
     "borderColor": "#CCCCCC",
     "callback": undefined,
-    "elementId": "",
     "hasPatch": true,
     "hasProfessorPatch": false,
     "patchBorder": "#CCCCCC",
@@ -3862,7 +3791,6 @@ exports[`BeltSystem > getBeltPropsByNames returns valid data (with stripe info) 
     "stripeCount": 1,
     "stripePosition": "Left",
     "transitionCSS": "",
-    "version": "",
   },
 ]
 `;

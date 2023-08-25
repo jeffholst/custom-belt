@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[BeltSystem.ts:21](https://github.com/jeffholst/custom-belt/blob/9cbd5ad/packages/custom-belt-lib/src/BeltSystem.ts#L21)
+[BeltSystem.ts:21](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/BeltSystem.ts#L21)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[BeltSystem.ts:20](https://github.com/jeffholst/custom-belt/blob/9cbd5ad/packages/custom-belt-lib/src/BeltSystem.ts#L20)
+[BeltSystem.ts:20](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/BeltSystem.ts#L20)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[BeltSystem.ts:16](https://github.com/jeffholst/custom-belt/blob/9cbd5ad/packages/custom-belt-lib/src/BeltSystem.ts#L16)
+[BeltSystem.ts:16](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/BeltSystem.ts#L16)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[BeltSystem.ts:19](https://github.com/jeffholst/custom-belt/blob/9cbd5ad/packages/custom-belt-lib/src/BeltSystem.ts#L19)
+[BeltSystem.ts:19](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/BeltSystem.ts#L19)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[BeltSystem.ts:17](https://github.com/jeffholst/custom-belt/blob/9cbd5ad/packages/custom-belt-lib/src/BeltSystem.ts#L17)
+[BeltSystem.ts:17](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/BeltSystem.ts#L17)
 
 ___
 
@@ -75,4 +75,4 @@ ___
 
 #### Defined in
 
-[BeltSystem.ts:18](https://github.com/jeffholst/custom-belt/blob/9cbd5ad/packages/custom-belt-lib/src/BeltSystem.ts#L18)
+[BeltSystem.ts:18](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/BeltSystem.ts#L18)

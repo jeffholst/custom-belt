@@ -67,8 +67,7 @@ const MexicoBelt = getBeltPropsStriped(
 
 const flagBelts = combineBeltProps([usaBelt, MexicoBelt]);
 const flagBeltsInit: CustomBeltInit = getCustomBeltInit(['flagBelts'], flagBelts);
-new CustomBelt(flagBeltsInit);
-
+new CustomBelt(flagBeltsInit, 'flagBelts');
 /*
 const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
 const blackBelt: BeltProps[] = getBeltPropsSolid('Solid Black Belt', '#000000');
