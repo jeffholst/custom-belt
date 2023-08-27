@@ -10,10 +10,21 @@ CustomBelt Initializer Object
 
 ### Properties
 
+- [beltAttributes](CustomBelt.CustomBeltInit.md#beltattributes)
 - [beltProps](CustomBelt.CustomBeltInit.md#beltprops)
 - [selectors](CustomBelt.CustomBeltInit.md#selectors)
 
 ## Properties
+
+### beltAttributes
+
+• **beltAttributes**: ``null`` \| [`BeltAttributes`](Belt.BeltAttributes.md)
+
+#### Defined in
+
+[CustomBelt.ts:24](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L24)
+
+___
 
 ### beltProps
 
@@ -21,7 +32,7 @@ CustomBelt Initializer Object
 
 #### Defined in
 
-[CustomBelt.ts:26](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L26)
+[CustomBelt.ts:23](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L23)
 
 ___
 
@@ -31,4 +42,4 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:25](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L25)
+[CustomBelt.ts:22](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L22)

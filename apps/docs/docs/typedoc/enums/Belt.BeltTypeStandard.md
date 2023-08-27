@@ -24,7 +24,7 @@ Belt types excluding Crazy
 
 #### Defined in
 
-[Belt.ts:37](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/Belt.ts#L37)
+[Belt.ts:37](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/Belt.ts#L37)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[Belt.ts:35](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/Belt.ts#L35)
+[Belt.ts:35](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/Belt.ts#L35)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[Belt.ts:33](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/Belt.ts#L33)
+[Belt.ts:33](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/Belt.ts#L33)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[Belt.ts:36](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/Belt.ts#L36)
+[Belt.ts:36](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/Belt.ts#L36)
 
 ___
 
@@ -64,4 +64,4 @@ ___
 
 #### Defined in
 
-[Belt.ts:34](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/Belt.ts#L34)
+[Belt.ts:34](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/Belt.ts#L34)

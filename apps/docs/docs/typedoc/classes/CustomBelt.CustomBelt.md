@@ -14,13 +14,13 @@
 
 ### Properties
 
+- [beltAttributes](CustomBelt.CustomBelt.md#beltattributes)
 - [clickCount](CustomBelt.CustomBelt.md#clickcount)
 - [clickDelay](CustomBelt.CustomBelt.md#clickdelay)
 - [clickTimer](CustomBelt.CustomBelt.md#clicktimer)
 - [currentBelt](CustomBelt.CustomBelt.md#currentbelt)
 - [currentIndex](CustomBelt.CustomBelt.md#currentindex)
 - [customBeltInit](CustomBelt.CustomBelt.md#custombeltinit)
-- [elementId](CustomBelt.CustomBelt.md#elementid)
 - [elements](CustomBelt.CustomBelt.md#elements)
 - [refreshIntervalId](CustomBelt.CustomBelt.md#refreshintervalid)
 - [svgString](CustomBelt.CustomBelt.md#svgstring)
@@ -33,9 +33,7 @@
 - [destroy](CustomBelt.CustomBelt.md#destroy)
 - [doCallback](CustomBelt.CustomBelt.md#docallback)
 - [downLoadSVG](CustomBelt.CustomBelt.md#downloadsvg)
-- [generateUniqueId](CustomBelt.CustomBelt.md#generateuniqueid)
 - [getColor](CustomBelt.CustomBelt.md#getcolor)
-- [getElementId](CustomBelt.CustomBelt.md#getelementid)
 - [getSVGString](CustomBelt.CustomBelt.md#getsvgstring)
 - [getStripeIndex](CustomBelt.CustomBelt.md#getstripeindex)
 - [hasPatch](CustomBelt.CustomBelt.md#haspatch)
@@ -56,7 +54,7 @@
 
 ### constructor
 
-• **new CustomBelt**(`customBeltInit`, `elementId?`)
+• **new CustomBelt**(`customBeltInit`, `beltAttributes?`)
 
 Instantiate a new CustomBelt object
 
@@ -65,13 +63,23 @@ Instantiate a new CustomBelt object
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `customBeltInit` | [`CustomBeltInit`](../interfaces/CustomBelt.CustomBeltInit.md) | `undefined` | initialization object |
-| `elementId` | ``null`` \| `string` | `null` | - |
+| `beltAttributes` | ``null`` \| [`BeltAttributes`](../interfaces/Belt.BeltAttributes.md) | `null` | - |
 
 #### Defined in
 
-[CustomBelt.ts:70](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L70)
+[CustomBelt.ts:70](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L70)
 
 ## Properties
+
+### beltAttributes
+
+• **beltAttributes**: [`BeltAttributes`](../interfaces/Belt.BeltAttributes.md)
+
+#### Defined in
+
+[CustomBelt.ts:55](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L55)
+
+___
 
 ### clickCount
 
@@ -79,7 +87,7 @@ Instantiate a new CustomBelt object
 
 #### Defined in
 
-[CustomBelt.ts:62](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L62)
+[CustomBelt.ts:62](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L62)
 
 ___
 
@@ -89,7 +97,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:61](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L61)
+[CustomBelt.ts:61](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L61)
 
 ___
 
@@ -99,7 +107,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:63](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L63)
+[CustomBelt.ts:63](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L63)
 
 ___
 
@@ -109,7 +117,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:56](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L56)
+[CustomBelt.ts:57](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L57)
 
 ___
 
@@ -119,7 +127,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:57](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L57)
+[CustomBelt.ts:58](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L58)
 
 ___
 
@@ -129,17 +137,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:55](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L55)
-
-___
-
-### elementId
-
-• **elementId**: `string`
-
-#### Defined in
-
-[CustomBelt.ts:58](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L58)
+[CustomBelt.ts:56](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L56)
 
 ___
 
@@ -149,7 +147,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:59](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L59)
+[CustomBelt.ts:59](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L59)
 
 ___
 
@@ -159,7 +157,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:60](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L60)
+[CustomBelt.ts:60](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L60)
 
 ___
 
@@ -169,7 +167,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:64](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L64)
+[CustomBelt.ts:64](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L64)
 
 ___
 
@@ -179,7 +177,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:65](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L65)
+[CustomBelt.ts:65](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L65)
 
 ## Methods
 
@@ -193,7 +191,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:112](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L112)
+[CustomBelt.ts:112](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L112)
 
 ___
 
@@ -207,7 +205,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:116](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L116)
+[CustomBelt.ts:116](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L116)
 
 ___
 
@@ -221,7 +219,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:123](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L123)
+[CustomBelt.ts:123](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L123)
 
 ___
 
@@ -242,7 +240,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:132](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L132)
+[CustomBelt.ts:132](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L132)
 
 ___
 
@@ -262,21 +260,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:138](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L138)
-
-___
-
-### generateUniqueId
-
-▸ **generateUniqueId**(): `string`
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[CustomBelt.ts:161](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L161)
+[CustomBelt.ts:138](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L138)
 
 ___
 
@@ -296,21 +280,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:165](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L165)
-
-___
-
-### getElementId
-
-▸ **getElementId**(): `string`
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[CustomBelt.ts:174](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L174)
+[CustomBelt.ts:161](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L161)
 
 ___
 
@@ -324,7 +294,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:189](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L189)
+[CustomBelt.ts:181](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L181)
 
 ___
 
@@ -344,7 +314,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:178](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L178)
+[CustomBelt.ts:170](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L170)
 
 ___
 
@@ -358,7 +328,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:656](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L656)
+[CustomBelt.ts:656](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L656)
 
 ___
 
@@ -372,7 +342,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:663](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L663)
+[CustomBelt.ts:663](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L663)
 
 ___
 
@@ -386,7 +356,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:670](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L670)
+[CustomBelt.ts:670](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L670)
 
 ___
 
@@ -400,7 +370,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:701](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L701)
+[CustomBelt.ts:701](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L701)
 
 ___
 
@@ -420,7 +390,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:705](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L705)
+[CustomBelt.ts:705](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L705)
 
 ___
 
@@ -434,7 +404,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:729](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L729)
+[CustomBelt.ts:729](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L729)
 
 ___
 
@@ -448,7 +418,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:722](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L722)
+[CustomBelt.ts:722](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L722)
 
 ___
 
@@ -462,7 +432,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:736](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L736)
+[CustomBelt.ts:736](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L736)
 
 ___
 
@@ -476,7 +446,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:743](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L743)
+[CustomBelt.ts:743](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L743)
 
 ___
 
@@ -496,7 +466,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:751](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L751)
+[CustomBelt.ts:751](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L751)
 
 ___
 
@@ -517,7 +487,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:794](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L794)
+[CustomBelt.ts:794](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L794)
 
 ___
 
@@ -531,7 +501,7 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:805](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L805)
+[CustomBelt.ts:805](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L805)
 
 ___
 
@@ -545,4 +515,4 @@ ___
 
 #### Defined in
 
-[CustomBelt.ts:813](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/CustomBelt.ts#L813)
+[CustomBelt.ts:813](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/CustomBelt.ts#L813)

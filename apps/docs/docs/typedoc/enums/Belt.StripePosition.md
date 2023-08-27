@@ -21,7 +21,7 @@ Where to start stripe placement on patch (Left or Right)
 
 #### Defined in
 
-[Belt.ts:55](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/Belt.ts#L55)
+[Belt.ts:55](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/Belt.ts#L55)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[Belt.ts:56](https://github.com/jeffholst/custom-belt/blob/88558d4/packages/custom-belt-lib/src/Belt.ts#L56)
+[Belt.ts:56](https://github.com/jeffholst/custom-belt/blob/392183a/packages/custom-belt-lib/src/Belt.ts#L56)
