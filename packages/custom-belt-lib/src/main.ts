@@ -2,6 +2,7 @@ import {
   BeltProps,
   BeltCallbackType,
   combineBeltProps,
+  getBeltAttributes,
   getBeltPropsStriped,
   StripePosition
 } from './Belt';
@@ -66,8 +67,9 @@ const MexicoBelt = getBeltPropsStriped(
 );
 
 const flagBelts = combineBeltProps([usaBelt, MexicoBelt]);
+const beltAttributes = getBeltAttributes('flagBeltsId');
 const flagBeltsInit: CustomBeltInit = getCustomBeltInit(['flagBelts'], flagBelts);
-new CustomBelt(flagBeltsInit, 'flagBelts');
+new CustomBelt(flagBeltsInit, beltAttributes);
 /*
 const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
 const blackBelt: BeltProps[] = getBeltPropsSolid('Solid Black Belt', '#000000');

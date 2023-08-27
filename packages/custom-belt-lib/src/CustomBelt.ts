@@ -1,17 +1,14 @@
 import {
   BeltProps,
+  BeltAttributes,
   StripePosition,
   DefaultBeltColor,
   BeltCallbackType,
+  getBeltAttributes,
   getBeltPropsRandom
 } from './Belt';
 
 import { version } from '../package.json';
-
-/****************************************************/
-// DEFAULTS
-/****************************************************/
-const UniqueIDPrefix = 'custom-belt-'; // prefix for unique ID generation
 
 /****************************************************/
 // INTERFACES
@@ -24,6 +21,7 @@ const UniqueIDPrefix = 'custom-belt-'; // prefix for unique ID generation
 export interface CustomBeltInit {
   selectors: HTMLElement[] | string[];
   beltProps: BeltProps[];
+  beltAttributes: BeltAttributes | null;
 }
 
 /****************************************************/
@@ -37,11 +35,13 @@ export interface CustomBeltInit {
  */
 export const getCustomBeltInit = (
   selectors: HTMLElement[] | string[] | null,
-  beltProps: BeltProps[]
+  beltProps: BeltProps[],
+  beltAttributes: BeltAttributes | null = null
 ): CustomBeltInit => {
   const customBeltInit: CustomBeltInit = {
     selectors: selectors ? selectors : [],
-    beltProps: beltProps
+    beltProps: beltProps,
+    beltAttributes: beltAttributes
   };
 
   return customBeltInit;
@@ -52,10 +52,10 @@ export const getCustomBeltInit = (
 /****************************************************/
 
 export class CustomBelt {
+  beltAttributes: BeltAttributes;
   customBeltInit: CustomBeltInit;
   currentBelt: BeltProps | null;
   currentIndex: number;
-  elementId: string;
   elements: HTMLElement[];
   refreshIntervalId: ReturnType<typeof setTimeout> | undefined = undefined;
   clickDelay = 700;
@@ -67,14 +67,14 @@ export class CustomBelt {
    * Instantiate a new CustomBelt object
    * @param {CustomBeltInit} customBeltInit initialization object
    */
-  constructor(customBeltInit: CustomBeltInit, elementId: string | null = null) {
-    if (elementId === null) {
-      this.elementId = this.generateUniqueId();
+  constructor(customBeltInit: CustomBeltInit, beltAttributes: BeltAttributes | null = null) {
+    this.customBeltInit = customBeltInit;
+    if (beltAttributes) {
+      this.beltAttributes = beltAttributes;
     } else {
-      this.elementId = elementId;
+      this.beltAttributes = getBeltAttributes();
     }
 
-    this.customBeltInit = customBeltInit;
     this.currentIndex = 0;
     this.refreshIntervalId = undefined;
 
@@ -158,10 +158,6 @@ export class CustomBelt {
     }
   };
 
-  generateUniqueId = (): string => {
-    return `${UniqueIDPrefix}${Date.now()}${Math.floor(Math.random() * 1000)}`;
-  };
-
   getColor = (hexColor: string) => {
     if (hexColor === undefined) {
       return '';
@@ -169,10 +165,6 @@ export class CustomBelt {
     const result = `style='fill: ${hexColor}; ${this.additionalStyles()}'`;
 
     return result;
-  };
-
-  getElementId = (): string => {
-    return this.elementId;
   };
 
   getStripeIndex = (stripeCount: number): number => {
@@ -191,8 +183,16 @@ export class CustomBelt {
       return '';
     }
 
+    let styles = ` style="width: ${this.beltAttributes.width}; ${this.beltAttributes.styles}`;
+    styles += `" `;
+
+    const classes =
+      this.beltAttributes.classes != '' ? ` class="${this.beltAttributes.classes}" ` : '';
+
     const svgString = `<svg
-    id="${this.elementId}"
+    id="${this.beltAttributes.id}"
+    ${styles} 
+    ${classes} 
     viewBox="0 0 471.2 190.2"
     class="customBelt"
     :data-version="${version}"

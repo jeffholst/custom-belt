@@ -88,6 +88,17 @@ export interface Belt {
 }
 
 /**
+ * BeltAttributes object definition
+ * @interface
+ */
+export interface BeltAttributes {
+  id: string;
+  width: string;
+  styles: string;
+  classes: string;
+}
+
+/**
  * Used to assign/lookup friendly names to hex colors
  *
  * ```js
@@ -215,6 +226,9 @@ export const MaximumStripeCount = 10;
 export const MinimumStripeCount = 0;
 /** Default stripe position */
 export const StripePositionDefault = StripePosition.Right;
+/** Default prefix for unique element id */
+export const UniqueIDPrefix = 'custom-belt-'; // prefix for unique ID generation
+
 /****************************************************/
 // EXPORT FUNCTIONS
 /****************************************************/
@@ -230,6 +244,14 @@ export const combineBeltProps = (beltProps: BeltProps[][]): BeltProps[] => {
     combinedBeltProps = combinedBeltProps.concat(beltProp);
   });
   return combinedBeltProps;
+};
+
+/**
+ * Generate unique element id for belt
+ * @return {String} unique element id
+ */
+export const generateUniqueId = (): string => {
+  return `${UniqueIDPrefix}${Date.now()}${Math.floor(Math.random() * 1000)}`;
 };
 
 /**
@@ -302,6 +324,30 @@ export const getBelt = (
   validateBelt(belt);
 
   return belt;
+};
+
+/**
+ * Create new BeltAttributes object
+ * @param {string} id element id for belt SVG
+ * @param {string} width width of belt SVG
+ * @param {string} styles additional style elements for belt SVG
+ * @param {string} classes classes for belt SVG
+ * @return {Belt} Belt object
+ */
+export const getBeltAttributes = (
+  id: string | null = null,
+  width: string | null = null,
+  styles: string | null = null,
+  classes: string | null = null
+): BeltAttributes => {
+  const beltAttrs: BeltAttributes = {
+    id: id ? id : generateUniqueId(),
+    width: width ? width : '100%',
+    styles: styles ? styles : '',
+    classes: classes ? classes : ''
+  };
+
+  return beltAttrs;
 };
 
 // Todo: use in custom-belt
