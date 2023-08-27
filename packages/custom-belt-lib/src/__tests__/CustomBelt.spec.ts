@@ -1,5 +1,5 @@
 import { describe, it, expect, test } from 'vitest';
-import { getBeltPropsSolid, BeltProps } from '../../src/Belt';
+import { getBeltAttributes, getBeltPropsSolid, BeltProps } from '../../src/Belt';
 import { CustomBeltInit, CustomBelt, getCustomBeltInit } from '../../src/CustomBelt';
 import { setup, createPage } from 'vite-test-utils';
 
@@ -16,7 +16,8 @@ describe('build svgString with elementId', () => {
   it(`returns valid whitebelt`, () => {
     const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#00FF00');
     const customBeltInit: CustomBeltInit = getCustomBeltInit([], whiteBelt);
-    const customBelt = new CustomBelt(customBeltInit, 'whiteBelt');
+    const beltAttributes = getBeltAttributes('whiteBelt');
+    const customBelt = new CustomBelt(customBeltInit, beltAttributes);
     expect(customBelt.svgString).toMatchSnapshot();
   });
 });

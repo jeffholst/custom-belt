@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue';
-import { BeltProps } from '../../../custom-belt-lib/src/Belt';
+import { BeltProps, BeltAttributes, getBeltAttributes } from '../../../custom-belt-lib/src/Belt';
 import {
   CustomBelt,
   CustomBeltInit,
@@ -13,7 +13,7 @@ import {
 
 const props = defineProps<{
   beltProps: BeltProps[];
-  elementId?: string;
+  beltAttributes?: BeltAttributes;
 }>();
 
 const svgDiv = ref(null);
@@ -35,7 +35,10 @@ const build = () => {
   if (svgElement != null) {
     const customBeltInit: CustomBeltInit = getCustomBeltInit([svgElement], props.beltProps);
     if (myBeltBuilder != undefined) myBeltBuilder.destroy();
-    myBeltBuilder = new CustomBelt(customBeltInit, props.elementId);
+    myBeltBuilder = new CustomBelt(
+      customBeltInit,
+      props.beltAttributes ? props.beltAttributes : getBeltAttributes()
+    );
   }
 };
 </script>

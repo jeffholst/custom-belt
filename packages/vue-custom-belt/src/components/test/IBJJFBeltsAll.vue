@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import CustomBelt from '../CustomBelt.vue';
 import { BeltSystem } from '../../../../custom-belt-lib/src/BeltSystem';
+import { getBeltAttributes } from '../../../../custom-belt-lib/src/Belt';
 import BeltSystemJSON_IBJJF from '../../../../custom-belt-lib/src/belt-systems/IBJJF.json';
 
+const beltAttributes = getBeltAttributes('ibjjfBeltsId');
 const ibjjfSystem: BeltSystem = new BeltSystem(JSON.stringify(BeltSystemJSON_IBJJF));
 </script>
 
@@ -15,7 +17,10 @@ const ibjjfSystem: BeltSystem = new BeltSystem(JSON.stringify(BeltSystemJSON_IBJ
       <h2 class="text-lg font-bold text-slate-800 dark:text-white py-5">
         {{ belt.name }}
       </h2>
-      <CustomBelt :belt-props="ibjjfSystem.getBeltPropsByName(belt.name)" :element-id="belt.name" />
+      <CustomBelt
+        :belt-props="ibjjfSystem.getBeltPropsByName(belt.name)"
+        :belt-attributes="beltAttributes"
+      />
     </div>
   </div>
 </template>

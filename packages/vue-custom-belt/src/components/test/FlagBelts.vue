@@ -4,10 +4,13 @@ import CustomBelt from '../CustomBelt.vue';
 import {
   BeltProps,
   StripePosition,
+  getBeltAttributes,
   getBeltPropsStriped,
   combineBeltProps,
   BeltCallbackType
 } from '../../../../custom-belt-lib/src/Belt';
+
+const beltAttributes = getBeltAttributes('flagBeltsId');
 
 const flagBeltsCallback = (callbackType: BeltCallbackType, bp: BeltProps) => {
   if (callbackType === BeltCallbackType.Refresh) {
@@ -70,7 +73,7 @@ const flagBelts = combineBeltProps([usaBelt, MexicoBelt]);
   <h1 class="text-2xl font-bold text-slate-800 dark:text-white pb-10">
     Flag Belts ({{ flagBeltName }})
   </h1>
-  <CustomBelt :belt-props="flagBelts" element-id="flagBelts" />
+  <CustomBelt :belt-props="flagBelts" :belt-Attributes="beltAttributes" />
 </template>
 
 <style scoped></style>
