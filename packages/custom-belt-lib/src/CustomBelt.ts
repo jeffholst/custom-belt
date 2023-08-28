@@ -183,7 +183,14 @@ export class CustomBelt {
       return '';
     }
 
-    let styles = ` style="width: ${this.beltAttributes.width}; ${this.beltAttributes.styles}`;
+    let styles = ` style="width: ${this.beltAttributes.width};`;
+    if (this.beltAttributes.styles != '') {
+      styles += ` ${this.beltAttributes.styles}`;
+    }
+    if (this.currentBelt.transitionCSS != '') {
+      styles += ` ${this.currentBelt.transitionCSS}`;
+    }
+
     styles += `" `;
 
     const classes =
@@ -191,7 +198,7 @@ export class CustomBelt {
 
     const svgString = `<svg
     id="${this.beltAttributes.id}"
-    ${styles} 
+    ${styles}
     ${classes} 
     viewBox="0 0 471.2 190.2"
     class="customBelt"
