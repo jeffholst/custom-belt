@@ -122,6 +122,8 @@ export interface BeltColor {
  * @interface
  */
 export interface BeltProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [key: string]: any;
   belt: Belt;
   borderColor: string;
   hasPatch: boolean;
@@ -228,6 +230,62 @@ export const MinimumStripeCount = 0;
 export const StripePositionDefault = StripePosition.Right;
 /** Default prefix for unique element id */
 export const UniqueIDPrefix = 'custom-belt-'; // prefix for unique ID generation
+
+/** Shape Ids in belt */
+export const BeltShapeIds = [
+  's1l1Color',
+  's1l2aColor',
+  's1l2bColor',
+  's1l3Color',
+  's2l1Color',
+  's2l2aColor',
+  's2l2bColor',
+  's2l3Color',
+  's3l1Color',
+  's3l2aColor',
+  's3l2bColor',
+  's3l3Color',
+  's4l1Color',
+  's4l2aColor',
+  's4l2bColor',
+  's4l3Color',
+  's5l1Color',
+  's5l2aColor',
+  's5l2bColor',
+  's5l3Color',
+  's6l1Color',
+  's6l2aColor',
+  's6l2bColor',
+  's6l3Color',
+  's7l1Color',
+  's7l2aColor',
+  's7l2bColor',
+  's7l3Color',
+  's8l1Color',
+  's8l2aColor',
+  's8l2bColor',
+  's8l3Color',
+  's9l1Color',
+  's9l2aColor',
+  's9l2bColor',
+  's9l3Color',
+  's10l1Color',
+  's10l2aColor',
+  's10l2bColor',
+  's10l3Color',
+  's11l1Color',
+  's11l2aColor',
+  's11l2bColor',
+  's11l3Color',
+  's12l1Color',
+  's12l2aColor',
+  's12l2bColor',
+  's12l3Color',
+  's13l1Color',
+  's13l2aColor',
+  's13l2bColor',
+  's13l3Color'
+];
 
 /****************************************************/
 // EXPORT FUNCTIONS
