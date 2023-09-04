@@ -12,6 +12,7 @@ import {
 
 const beltAttributes = getBeltAttributes('flagBeltsId');
 beltAttributes.id = 'flagBeltsId'; // hard code id for testing
+beltAttributes.testing = true;
 
 const flagBeltsCallback = (callbackType: BeltCallbackType, bp: BeltProps) => {
   if (callbackType === BeltCallbackType.Refresh) {
