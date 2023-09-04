@@ -3,6 +3,7 @@ import {
   BeltCallbackType,
   combineBeltProps,
   getBeltAttributes,
+  getBeltPropsSolid,
   getBeltPropsStriped,
   StripePosition
 } from './Belt';
@@ -66,10 +67,21 @@ const MexicoBelt = getBeltPropsStriped(
   flagBeltsCallback
 );
 
+const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
+const myDiv1: HTMLElement = document.getElementById('whiteBelt1') as HTMLElement;
+const myDiv2: HTMLElement = document.getElementById('whiteBelt2') as HTMLElement;
+const customBeltInit: CustomBeltInit = getCustomBeltInit([myDiv1, myDiv2], whiteBelt);
+const ba1 = getBeltAttributes();
+// update id for unit test
+ba1.id = 'whiteBelt';
+new CustomBelt(customBeltInit, ba1);
+
 const flagBelts = combineBeltProps([usaBelt, MexicoBelt]);
-const beltAttributes = getBeltAttributes('flagBeltsId');
-const flagBeltsInit: CustomBeltInit = getCustomBeltInit(['flagBelts'], flagBelts);
-new CustomBelt(flagBeltsInit, beltAttributes);
+const ba2 = getBeltAttributes('flagBeltsId');
+// update id for unit test
+ba2.id = 'flagBelts';
+const flagBeltsInit: CustomBeltInit = getCustomBeltInit(['flagBelts1', 'flagBelts2'], flagBelts);
+new CustomBelt(flagBeltsInit, ba2);
 /*
 const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#FFFFFF');
 const blackBelt: BeltProps[] = getBeltPropsSolid('Solid Black Belt', '#000000');

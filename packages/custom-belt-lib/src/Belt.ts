@@ -393,17 +393,18 @@ export const getBelt = (
  * @return {Belt} Belt object
  */
 export const getBeltAttributes = (
-  id: string | null = null,
   width: string | null = null,
   styles: string | null = null,
   classes: string | null = null
 ): BeltAttributes => {
   const beltAttrs: BeltAttributes = {
-    id: id ? id : generateUniqueId(),
+    id: generateUniqueId(),
     width: width ? width : '100%',
     styles: styles ? styles : '',
     classes: classes ? classes : ''
   };
+
+  validateBeltAttributes(beltAttrs);
 
   return beltAttrs;
 };
@@ -1869,5 +1870,27 @@ const validateBelt_StripeCount = (belt: Belt) => {
     msg = `minStripes (${belt.minStripes}) must be <= maxStripes (${belt.maxStripes}) setting minStripes to (${MinimumStripeCount})`;
     logMessage(LogType.Warning, belt.name, belt.id, msg);
     belt.minStripes = MinimumStripeCount;
+  }
+};
+
+/**
+ * Validate parameters received for BeltAttributes object
+ * @param {BeltAttributes} beltAttributes beltAttributes object to validate
+ */
+const validateBeltAttributes = (beltAttributes: BeltAttributes) => {
+  validateBeltAttributes_Width(beltAttributes);
+};
+
+/**
+ * Validate width parameter received for BeltAttributes object
+ * @param {BeltAttriubutes} beltAttributes belt object to validate
+ */
+const validateBeltAttributes_Width = (beltAttributes: BeltAttributes) => {
+  const widthPattern =
+    /^(auto|initial|inherit|unset|(\d+(\.\d+)?(px|em|ex|ch|rem|lh|cm|mm|in|pt|pc|vw|vh|vmin|vmax|%))|(calc\(\s*\d+(\.\d+)?(px|em|ex|ch|rem|lh|cm|mm|in|pt|pc|vw|vh|vmin|vmax|%)\s*([-+*/]\s*\d+(\.\d+)?(px|em|ex|ch|rem|lh|cm|mm|in|pt|pc|vw|vh|vmin|vmax|%)\s*)*\)))$/;
+
+  if (!widthPattern.test(beltAttributes.width)) {
+    const msg = `invalid BeltAttribute width (${beltAttributes.width})`;
+    logMessage(LogType.Warning, '', 0, msg);
   }
 };

@@ -12,22 +12,47 @@ describe('constructor instantiation', () => {
   });
 });
 
-describe('build svgString with elementId', () => {
+describe('build svgString with no BeltAttributes', () => {
   it(`returns valid whitebelt`, () => {
     const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#00FF00');
     const customBeltInit: CustomBeltInit = getCustomBeltInit([], whiteBelt);
-    const beltAttributes = getBeltAttributes('whiteBelt');
+    const beltAttributes = getBeltAttributes();
+    beltAttributes.id = ''; // blank out id for unit test
     const customBelt = new CustomBelt(customBeltInit, beltAttributes);
     expect(customBelt.svgString).toMatchSnapshot();
   });
 });
 
-describe('build svgString without elementId', () => {
+describe('build svgString with width 100% BeltAttribute', () => {
   it(`returns valid whitebelt`, () => {
     const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#00FF00');
     const customBeltInit: CustomBeltInit = getCustomBeltInit([], whiteBelt);
-    const customBelt = new CustomBelt(customBeltInit);
-    expect(customBelt.svgString).toContain('id="custom-belt-');
+    const beltAttributes = getBeltAttributes('100%');
+    beltAttributes.id = ''; // blank out id for unit test
+    const customBelt = new CustomBelt(customBeltInit, beltAttributes);
+    expect(customBelt.svgString).toMatchSnapshot();
+  });
+});
+
+describe('build svgString with width 100px BeltAttribute', () => {
+  it(`returns valid whitebelt`, () => {
+    const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#00FF00');
+    const customBeltInit: CustomBeltInit = getCustomBeltInit([], whiteBelt);
+    const beltAttributes = getBeltAttributes('100px');
+    beltAttributes.id = ''; // blank out id for unit test
+    const customBelt = new CustomBelt(customBeltInit, beltAttributes);
+    expect(customBelt.svgString).toMatchSnapshot();
+  });
+});
+
+describe('build svgString with width and style BeltAttribute', () => {
+  it(`returns valid whitebelt`, () => {
+    const whiteBelt: BeltProps[] = getBeltPropsSolid('Solid White Belt', '#00FF00');
+    const customBeltInit: CustomBeltInit = getCustomBeltInit([], whiteBelt);
+    const beltAttributes = getBeltAttributes('100%', 'background-color: #000000;');
+    beltAttributes.id = ''; // blank out id for unit test
+    const customBelt = new CustomBelt(customBeltInit, beltAttributes);
+    expect(customBelt.svgString).toMatchSnapshot();
   });
 });
 

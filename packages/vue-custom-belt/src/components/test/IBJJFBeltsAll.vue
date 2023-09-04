@@ -5,6 +5,7 @@ import { getBeltAttributes } from '../../../../custom-belt-lib/src/Belt';
 import BeltSystemJSON_IBJJF from '../../../../custom-belt-lib/src/belt-systems/IBJJF.json';
 
 const beltAttributes = getBeltAttributes('ibjjfBeltsId');
+beltAttributes.id = 'ibjjfBeltsId'; // hard code id for testing
 const ibjjfSystem: BeltSystem = new BeltSystem(JSON.stringify(BeltSystemJSON_IBJJF));
 </script>
 

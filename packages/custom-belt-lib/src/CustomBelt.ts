@@ -211,7 +211,8 @@ export class CustomBelt {
       this.beltAttributes.classes != '' ? ` class="${this.beltAttributes.classes}" ` : '';
 
     const svgString = `<svg
-    id="${this.beltAttributes.id}"
+    id="${this.beltAttributes.id}_${elementNumber}"
+    name="${this.currentBelt.belt.name}"
     ${styles}
     ${classes} 
     viewBox="0 0 471.2 190.2"
@@ -766,7 +767,7 @@ export class CustomBelt {
   refreshElements = (): void => {
     let myId;
     let elementNumber = 0;
-    this.elements.forEach((e) => {
+    this.elements.forEach(() => {
       BeltShapeIds.forEach((id) => {
         myId = this.getId(elementNumber, id);
         const element = document.getElementById(myId);

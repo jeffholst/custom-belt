@@ -11,6 +11,7 @@ import {
 } from '../../../../custom-belt-lib/src/Belt';
 
 const beltAttributes = getBeltAttributes('flagBeltsId');
+beltAttributes.id = 'flagBeltsId'; // hard code id for testing
 
 const flagBeltsCallback = (callbackType: BeltCallbackType, bp: BeltProps) => {
   if (callbackType === BeltCallbackType.Refresh) {
