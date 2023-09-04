@@ -74,12 +74,14 @@ const customBeltInit: CustomBeltInit = getCustomBeltInit([myDiv1, myDiv2], white
 const ba1 = getBeltAttributes();
 // update id for unit test
 ba1.id = 'whiteBelt';
+ba1.testing = true;
 new CustomBelt(customBeltInit, ba1);
 
 const flagBelts = combineBeltProps([usaBelt, MexicoBelt]);
 const ba2 = getBeltAttributes('flagBeltsId');
 // update id for unit test
 ba2.id = 'flagBelts';
+ba2.testing = true;
 const flagBeltsInit: CustomBeltInit = getCustomBeltInit(['flagBelts1', 'flagBelts2'], flagBelts);
 new CustomBelt(flagBeltsInit, ba2);
 /*

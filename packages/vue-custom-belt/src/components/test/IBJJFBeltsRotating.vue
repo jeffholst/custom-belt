@@ -11,6 +11,7 @@ import BeltSystemJSON_IBJJF from '../../../../custom-belt-lib/src/belt-systems/I
 
 const beltAttributes = getBeltAttributes('ibjjfBeltsId');
 beltAttributes.id = 'ibjjfBeltsId'; // hard code id for testing
+beltAttributes.testing = true;
 const ibjjfSystem: BeltSystem = new BeltSystem(JSON.stringify(BeltSystemJSON_IBJJF));
 
 const IBBJFBeltsCallback = (callbackType: BeltCallbackType, beltProps: BeltProps) => {

@@ -96,6 +96,7 @@ export interface BeltAttributes {
   width: string;
   styles: string;
   classes: string;
+  testing: boolean;
 }
 
 /**
@@ -395,13 +396,15 @@ export const getBelt = (
 export const getBeltAttributes = (
   width: string | null = null,
   styles: string | null = null,
-  classes: string | null = null
+  classes: string | null = null,
+  testing = false
 ): BeltAttributes => {
   const beltAttrs: BeltAttributes = {
     id: generateUniqueId(),
     width: width ? width : '100%',
     styles: styles ? styles : '',
-    classes: classes ? classes : ''
+    classes: classes ? classes : '',
+    testing: testing
   };
 
   validateBeltAttributes(beltAttrs);

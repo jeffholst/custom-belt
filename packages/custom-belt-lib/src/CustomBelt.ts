@@ -217,7 +217,7 @@ export class CustomBelt {
     ${classes} 
     viewBox="0 0 471.2 190.2"
     class="customBelt"
-    :data-version="${version}"
+    :data-version="${this.beltAttributes.testing ? '' : version}"
     role="img"
     xmlns="http://www.w3.org/2000/svg"
   >
